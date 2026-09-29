@@ -1,0 +1,49 @@
+C:\Users\aryan\OneDrive\Desktop\health_paper\venv\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+C:\Users\aryan\OneDrive\Desktop\health_paper\venv\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+[dev] 123 development rows, linkers ['medcpt', 'sapbert'], query lengths [64, 128, 256, 512], git {'commit': 'e2652045011a9f086ef8c257785ffa3f3f988a17', 'dirty': True}
+  20/123 rows, 8s
+  40/123 rows, 19s
+  60/123 rows, 31s
+  80/123 rows, 42s
+  100/123 rows, 56s
+  120/123 rows, 67s
+C:\Users\aryan\OneDrive\Desktop\health_paper\src\hsr\analysis.py:92: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = pd.concat(frames, ignore_index=True)
+selected: {'query_max_length': 64, 'alpha': 0.3, 'C': 10.0, 'linker': 'sapbert', 'tau': 0.55, 'beta': 1.0, 'beta_exact_tuned': 0.45, 'beta_substring_tuned': 0.6, 'pool_beta': {'exact:3': 0.35, 'exact:5': 0.45, 'exact:10': 0.45, 'exact:20': 0.45, 'exact:all': 0.45, 'linked:3': 1.0, 'linked:5': 1.0, 'linked:10': 1.0, 'linked:20': 1.0, 'linked:all': 1.0}} -> C:\Users\aryan\OneDrive\Desktop\health_paper\configs\selected_params.json
+
+DEVELOPMENT RESULTS (lexicon A, dev rows): MRR by group
+group                      canonical_full  canonical_partial  lay_full  lay_partial
+system                                                                             
+BM25                                0.976              0.879     0.414        0.330
+Dense                               0.914              0.746     0.588        0.465
+Hybrid                              0.955              0.835     0.597        0.474
+RRF                                 0.956              0.838     0.552        0.436
+Classifier                          0.996              0.789     0.461        0.335
+KG-exact                            1.000              0.897     0.130        0.115
+KG-linked                           1.000              0.897     0.849        0.641
+Hybrid+KG-exact                     1.000              0.897     0.130        0.115
+Hybrid+KG-linked                    1.000              0.897     0.849        0.641
+KG-substring                        1.000              0.897     0.163        0.124
+Hybrid+KG-exact-tuned               0.986              0.880     0.608        0.483
+Hybrid+KG-substring-tuned           0.986              0.880     0.622        0.487
+
+query length (Dense objective)
+ query_max_length  objective  is_standard
+               64     0.6780         True
+              128     0.6814        False
+              256     0.6814        False
+              512     0.6814        False
+
+linker candidates at their own best (tau, beta)
+ linker   tau  beta  objective  canonical_full  canonical_partial  lay_full  lay_partial
+ medcpt 0.575   0.7     0.8313          0.9864             0.8797    0.8169       0.6421
+sapbert 0.550   1.0     0.8470          1.0000             0.8973    0.8493       0.6415
+
+linking accuracy per segment
+lexicon             group  segments  exact_recall  exact_precision  substring_recall  substring_precision  linked_medcpt@0.575_recall  linked_medcpt@0.575_precision  linked_sapbert@0.55_recall  linked_sapbert@0.55_precision
+      A          lay_full       853         0.011              1.0             0.019                0.842                       0.477                          0.545                       0.555                          0.689
+      A       lay_partial       558         0.018              1.0             0.023                0.867                       0.484                          0.543                       0.548                          0.686
+   none    canonical_full       853         1.000              1.0             1.000                0.994                       1.000                          1.000                       1.000                          1.000
+   none canonical_partial       558         1.000              1.0             1.000                0.989                       1.000                          1.000                       1.000                          1.000

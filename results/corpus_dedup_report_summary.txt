@@ -1,0 +1,12 @@
+============================================================
+CORPUS DUPLICATE-CONTENT AUDIT
+============================================================
+Total chunks                         : 104
+Distinct text hashes                  : 104
+Chunks involved in a text duplicate    : 0
+Duplicate-content groups               : 0
+Groups spanning >1 disease_tag (SEVERE): 0
+
+No cross-disease text duplication detected in this corpus.
+
+Full report written to results/corpus_dedup_report.csv

@@ -1,0 +1,42 @@
+Disease,dev_pool_rows,represented_in_dev_val,dev_train_rows_final,reason
+(vertigo) Paroymsal  Positional Vertigo,4,True,3,
+AIDS,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Acne,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Alcoholic hepatitis,5,True,4,
+Allergy,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Arthritis,3,True,2,
+Bronchial Asthma,4,True,3,
+Cervical spondylosis,3,True,2,
+Chicken pox,7,True,6,
+Chronic cholestasis,5,True,4,
+Common Cold,6,True,5,
+Dengue,7,True,6,
+Diabetes,6,True,5,
+Dimorphic hemmorhoids(piles),3,True,2,
+Drug Reaction,3,True,2,
+Fungal infection,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+GERD,4,True,3,
+Gastroenteritis,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Heart attack,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Hepatitis B,6,True,5,
+Hepatitis C,4,True,3,
+Hepatitis D,7,True,6,
+Hepatitis E,6,True,5,
+Hypertension,3,True,2,
+Hyperthyroidism,6,True,5,
+Hypoglycemia,6,True,5,
+Hypothyroidism,5,True,4,
+Impetigo,3,True,2,
+Jaundice,6,True,5,
+Malaria,5,True,4,
+Migraine,7,True,6,
+Osteoarthristis,4,True,3,
+Paralysis (brain hemorrhage),2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Peptic ulcer diseae,4,True,3,
+Pneumonia,6,True,5,
+Psoriasis,4,True,3,
+Tuberculosis,6,True,5,
+Typhoid,6,True,5,
+Urinary tract infection,2,False,2,dev_pool_rows - 1 = 1 < MIN_TRAIN_ROWS_PER_DISEASE (2)
+Varicose veins,5,True,4,
+hepatitis A,6,True,5,

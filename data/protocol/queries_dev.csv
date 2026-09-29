@@ -1,0 +1,701 @@
+query_id,row_id,disease,condition,group,lexicon,n_symptoms,n_segments,n_query_tokens,text
+1:canonical_full,1,Fungal infection,canonical_full,canonical_full,none,3,3,14,"Skin rash, nodal skin eruptions, dischromic patches."
+1:canonical_partial_k2,1,Fungal infection,canonical_partial_k2,canonical_partial,none,2,2,9,"Skin rash, dischromic patches."
+1:lay_full:A,1,Fungal infection,lay_full,lay_full,A,3,3,32,My skin broke out in red blotches. Small raised nodules have appeared on my skin. Some areas of my skin have gone lighter or darker.
+1:lay_partial_k2:A,1,Fungal infection,lay_partial_k2,lay_partial,A,2,2,23,My skin broke out in red blotches. Some areas of my skin have gone lighter or darker.
+3:canonical_full,3,Fungal infection,canonical_full,canonical_full,none,3,3,12,"Itching, skin rash, dischromic patches."
+3:canonical_partial_k2,3,Fungal infection,canonical_partial_k2,canonical_partial,none,2,2,9,"Itching, dischromic patches."
+3:lay_full:A,3,Fungal infection,lay_full,lay_full,A,3,3,31,I can't stop scratching. My skin broke out in red blotches. I have patches of skin that are a different colour.
+3:lay_partial_k2:A,3,Fungal infection,lay_partial_k2,lay_partial,A,2,2,21,I can't stop scratching. I have patches of skin that are a different colour.
+4:canonical_full,4,Fungal infection,canonical_full,canonical_full,none,3,3,13,"Itching, skin rash, nodal skin eruptions."
+4:canonical_partial_k2,4,Fungal infection,canonical_partial_k2,canonical_partial,none,2,2,8,"Itching, skin rash."
+4:lay_full:A,4,Fungal infection,lay_full,lay_full,A,3,3,29,I can't stop scratching. My skin broke out in red blotches. Small raised nodules have appeared on my skin.
+4:lay_partial_k2:A,4,Fungal infection,lay_partial_k2,lay_partial,A,2,2,20,I can't stop scratching. My skin broke out in red blotches.
+5:canonical_full,5,Allergy,canonical_full,canonical_full,none,4,4,20,"Continuous sneezing, shivering, chills, watering from eyes."
+5:canonical_partial_k2,5,Allergy,canonical_partial_k2,canonical_partial,none,2,2,11,"Chills, watering from eyes."
+5:canonical_partial_k3,5,Allergy,canonical_partial_k3,canonical_partial,none,3,3,15,"Shivering, chills, watering from eyes."
+5:lay_full:A,5,Allergy,lay_full,lay_full,A,4,4,37,I can't stop sneezing. I'm trembling like I'm freezing. I keep feeling cold and shaky. Tears keep running from my eyes.
+5:lay_partial_k2:A,5,Allergy,lay_partial_k2,lay_partial,A,2,2,17,I keep feeling cold and shaky. Tears keep running from my eyes.
+5:lay_partial_k3:A,5,Allergy,lay_partial_k3,lay_partial,A,3,3,28,I'm trembling like I'm freezing. I keep feeling cold and shaky. Tears keep running from my eyes.
+8:canonical_full,8,Allergy,canonical_full,canonical_full,none,3,3,16,"Continuous sneezing, shivering, watering from eyes."
+8:canonical_partial_k2,8,Allergy,canonical_partial_k2,canonical_partial,none,2,2,12,"Continuous sneezing, watering from eyes."
+8:lay_full:A,8,Allergy,lay_full,lay_full,A,3,3,24,I can't stop sneezing. I can't stop shaking. My eyes keep watering.
+8:lay_partial_k2:A,8,Allergy,lay_partial_k2,lay_partial,A,2,2,17,I can't stop sneezing. My eyes keep watering.
+9:canonical_full,9,Allergy,canonical_full,canonical_full,none,3,3,15,"Continuous sneezing, shivering, chills."
+9:canonical_partial_k2,9,Allergy,canonical_partial_k2,canonical_partial,none,2,2,11,"Continuous sneezing, chills."
+9:lay_full:A,9,Allergy,lay_full,lay_full,A,3,3,26,I can't stop sneezing. I can't stop shaking. I keep feeling cold and shaky.
+9:lay_partial_k2:A,9,Allergy,lay_partial_k2,lay_partial,A,2,2,19,I can't stop sneezing. I keep feeling cold and shaky.
+12:canonical_full,12,GERD,canonical_full,canonical_full,none,5,5,14,"Stomach pain, acidity, vomiting, cough, chest pain."
+12:canonical_partial_k2,12,GERD,canonical_partial_k2,canonical_partial,none,2,2,7,"Acidity, chest pain."
+12:canonical_partial_k3,12,GERD,canonical_partial_k3,canonical_partial,none,3,3,9,"Acidity, cough, chest pain."
+12:lay_full:A,12,GERD,lay_full,lay_full,A,5,5,33,My stomach hurts. I keep getting heartburn. I keep throwing up. I keep hacking all day. My chest hurts.
+12:lay_partial_k2:A,12,GERD,lay_partial_k2,lay_partial,A,2,2,13,I keep getting heartburn. My chest hurts.
+12:lay_partial_k3:A,12,GERD,lay_partial_k3,lay_partial,A,3,3,21,I keep getting heartburn. I keep hacking all day. My chest hurts.
+14:canonical_full,14,GERD,canonical_full,canonical_full,none,5,5,16,"Stomach pain, acidity, ulcers on tongue, vomiting, chest pain."
+14:canonical_partial_k2,14,GERD,canonical_partial_k2,canonical_partial,none,2,2,6,"Acidity, vomiting."
+14:canonical_partial_k3,14,GERD,canonical_partial_k3,canonical_partial,none,3,3,9,"Acidity, vomiting, chest pain."
+14:lay_full:A,14,GERD,lay_full,lay_full,A,5,5,41,I have a pain in my stomach. I keep getting heartburn. There are painful spots on my tongue. I keep throwing up. I have a tight painful feeling in my chest.
+14:lay_partial_k2:A,14,GERD,lay_partial_k2,lay_partial,A,2,2,15,I keep getting heartburn. I keep throwing up.
+14:lay_partial_k3:A,14,GERD,lay_partial_k3,lay_partial,A,3,3,25,I keep getting heartburn. I keep throwing up. I have a tight painful feeling in my chest.
+16:canonical_full,16,GERD,canonical_full,canonical_full,none,5,5,15,"Acidity, ulcers on tongue, vomiting, cough, chest pain."
+16:canonical_partial_k2,16,GERD,canonical_partial_k2,canonical_partial,none,2,2,9,"Ulcers on tongue, chest pain."
+16:canonical_partial_k3,16,GERD,canonical_partial_k3,canonical_partial,none,3,3,11,"Ulcers on tongue, vomiting, chest pain."
+16:lay_full:A,16,GERD,lay_full,lay_full,A,5,5,44,I get a sour burning feeling after I eat. I have sores on my tongue. I've been sick several times today. I keep coughing. I have a tight painful feeling in my chest.
+16:lay_partial_k2:A,16,GERD,lay_partial_k2,lay_partial,A,2,2,20,I have sores on my tongue. I have a tight painful feeling in my chest.
+16:lay_partial_k3:A,16,GERD,lay_partial_k3,lay_partial,A,3,3,29,I have sores on my tongue. I've been sick several times today. I have a tight painful feeling in my chest.
+17:canonical_full,17,Chronic cholestasis,canonical_full,canonical_full,none,7,7,25,"Itching, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes."
+17:canonical_partial_k2,17,Chronic cholestasis,canonical_partial_k2,canonical_partial,none,2,2,11,"Yellowish skin, yellowing of eyes."
+17:canonical_partial_k3,17,Chronic cholestasis,canonical_partial_k3,canonical_partial,none,3,3,15,"Yellowish skin, loss of appetite, yellowing of eyes."
+17:lay_full:A,17,Chronic cholestasis,lay_full,lay_full,A,7,7,60,I can't stop scratching. I keep throwing up. My skin looks yellow. I feel like I'm going to throw up. I've lost interest in food. I have cramping pain in my gut. The whites of my eyes look yellow.
+17:lay_partial_k2:A,17,Chronic cholestasis,lay_partial_k2,lay_partial,A,2,2,15,My skin looks yellow. The whites of my eyes look yellow.
+17:lay_partial_k3:A,17,Chronic cholestasis,lay_partial_k3,lay_partial,A,3,3,23,My skin looks yellow. I've lost interest in food. The whites of my eyes look yellow.
+20:canonical_full,20,Chronic cholestasis,canonical_full,canonical_full,none,6,6,21,"Itching, vomiting, nausea, loss of appetite, abdominal pain, yellowing of eyes."
+20:canonical_partial_k2,20,Chronic cholestasis,canonical_partial_k2,canonical_partial,none,2,2,9,"Nausea, yellowing of eyes."
+20:canonical_partial_k3,20,Chronic cholestasis,canonical_partial_k3,canonical_partial,none,3,3,12,"Nausea, abdominal pain, yellowing of eyes."
+20:lay_full:A,20,Chronic cholestasis,lay_full,lay_full,A,6,6,46,My skin is really itchy. I keep throwing up. I feel sick to my stomach. I don't feel like eating. My whole tummy area aches. My eyes have turned yellowish.
+20:lay_partial_k2:A,20,Chronic cholestasis,lay_partial_k2,lay_partial,A,2,2,16,I feel sick to my stomach. My eyes have turned yellowish.
+20:lay_partial_k3:A,20,Chronic cholestasis,lay_partial_k3,lay_partial,A,3,3,24,I feel sick to my stomach. My whole tummy area aches. My eyes have turned yellowish.
+22:canonical_full,22,Chronic cholestasis,canonical_full,canonical_full,none,6,6,21,"Itching, vomiting, yellowish skin, nausea, abdominal pain, yellowing of eyes."
+22:canonical_partial_k2,22,Chronic cholestasis,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, abdominal pain."
+22:canonical_partial_k3,22,Chronic cholestasis,canonical_partial_k3,canonical_partial,none,3,3,11,"Vomiting, yellowish skin, abdominal pain."
+22:lay_full:A,22,Chronic cholestasis,lay_full,lay_full,A,6,6,46,I can't stop scratching. I've been sick several times today. My skin looks yellow. I feel sick to my stomach. My whole tummy area aches. My eyes have turned yellowish.
+22:lay_partial_k2:A,22,Chronic cholestasis,lay_partial_k2,lay_partial,A,2,2,19,I've been sick several times today. My whole tummy area aches.
+22:lay_partial_k3:A,22,Chronic cholestasis,lay_partial_k3,lay_partial,A,3,3,24,I've been sick several times today. My skin looks yellow. My whole tummy area aches.
+26:canonical_full,26,Drug Reaction,canonical_full,canonical_full,none,4,4,18,"Itching, stomach pain, burning micturition, spotting urination."
+26:canonical_partial_k2,26,Drug Reaction,canonical_partial_k2,canonical_partial,none,2,2,10,"Stomach pain, spotting urination."
+26:canonical_partial_k3,26,Drug Reaction,canonical_partial_k3,canonical_partial,none,3,3,15,"Stomach pain, burning micturition, spotting urination."
+26:lay_full:A,26,Drug Reaction,lay_full,lay_full,A,4,4,32,My skin is really itchy. My stomach hurts. It burns when I pee. There's a bit of blood in my urine.
+26:lay_partial_k2:A,26,Drug Reaction,lay_partial_k2,lay_partial,A,2,2,18,My stomach hurts. There's a bit of blood in my urine.
+26:lay_partial_k3:A,26,Drug Reaction,lay_partial_k3,lay_partial,A,3,3,25,My stomach hurts. It burns when I pee. There's a bit of blood in my urine.
+29:canonical_full,29,Drug Reaction,canonical_full,canonical_full,none,4,4,16,"Itching, skin rash, stomach pain, burning micturition."
+29:canonical_partial_k2,29,Drug Reaction,canonical_partial_k2,canonical_partial,none,2,2,10,"Itching, burning micturition."
+29:canonical_partial_k3,29,Drug Reaction,canonical_partial_k3,canonical_partial,none,3,3,13,"Itching, skin rash, burning micturition."
+29:lay_full:A,29,Drug Reaction,lay_full,lay_full,A,4,4,31,I can't stop scratching. I have a rash. I have a pain in my stomach. Peeing stings a lot.
+29:lay_partial_k2:A,29,Drug Reaction,lay_partial_k2,lay_partial,A,2,2,18,I can't stop scratching. Peeing stings a lot.
+29:lay_partial_k3:A,29,Drug Reaction,lay_partial_k3,lay_partial,A,3,3,23,I can't stop scratching. I have a rash. Peeing stings a lot.
+30:canonical_full,30,Drug Reaction,canonical_full,canonical_full,none,4,4,18,"Skin rash, stomach pain, burning micturition, spotting urination."
+30:canonical_partial_k2,30,Drug Reaction,canonical_partial_k2,canonical_partial,none,2,2,8,"Skin rash, stomach pain."
+30:canonical_partial_k3,30,Drug Reaction,canonical_partial_k3,canonical_partial,none,3,3,13,"Skin rash, stomach pain, spotting urination."
+30:lay_full:A,30,Drug Reaction,lay_full,lay_full,A,4,4,38,My skin broke out in red blotches. I have a pain in my stomach. It burns when I pee. There's a bit of blood in my urine.
+30:lay_partial_k2:A,30,Drug Reaction,lay_partial_k2,lay_partial,A,2,2,20,My skin broke out in red blotches. I have a pain in my stomach.
+30:lay_partial_k3:A,30,Drug Reaction,lay_partial_k3,lay_partial,A,3,3,31,My skin broke out in red blotches. I have a pain in my stomach. There's a bit of blood in my urine.
+31:canonical_full,31,Peptic ulcer diseae,canonical_full,canonical_full,none,5,5,19,"Vomiting, loss of appetite, abdominal pain, passage of gases, internal itching."
+31:canonical_partial_k2,31,Peptic ulcer diseae,canonical_partial_k2,canonical_partial,none,2,2,8,"Vomiting, internal itching."
+31:canonical_partial_k3,31,Peptic ulcer diseae,canonical_partial_k3,canonical_partial,none,3,3,12,"Vomiting, loss of appetite, internal itching."
+31:lay_full:A,31,Peptic ulcer diseae,lay_full,lay_full,A,5,5,51,I've been sick several times today. I've lost interest in food. My whole tummy area aches. I'm passing a lot of wind. There's an itch inside my body that I can't reach.
+31:lay_partial_k2:A,31,Peptic ulcer diseae,lay_partial_k2,lay_partial,A,2,2,26,I've been sick several times today. There's an itch inside my body that I can't reach.
+31:lay_partial_k3:A,31,Peptic ulcer diseae,lay_partial_k3,lay_partial,A,3,3,34,I've been sick several times today. I've lost interest in food. There's an itch inside my body that I can't reach.
+33:canonical_full,33,Peptic ulcer diseae,canonical_full,canonical_full,none,5,5,21,"Indigestion, loss of appetite, abdominal pain, passage of gases, internal itching."
+33:canonical_partial_k2,33,Peptic ulcer diseae,canonical_partial_k2,canonical_partial,none,2,2,10,"Loss of appetite, internal itching."
+33:canonical_partial_k3,33,Peptic ulcer diseae,canonical_partial_k3,canonical_partial,none,3,3,13,"Loss of appetite, abdominal pain, internal itching."
+33:lay_full:A,33,Peptic ulcer diseae,lay_full,lay_full,A,5,5,51,Food just sits heavy in my stomach. I don't feel like eating. My whole tummy area aches. I'm passing a lot of wind. There's an itch inside my body that I can't reach.
+33:lay_partial_k2:A,33,Peptic ulcer diseae,lay_partial_k2,lay_partial,A,2,2,25,I don't feel like eating. There's an itch inside my body that I can't reach.
+33:lay_partial_k3:A,33,Peptic ulcer diseae,lay_partial_k3,lay_partial,A,3,3,33,I don't feel like eating. My whole tummy area aches. There's an itch inside my body that I can't reach.
+37:canonical_full,37,Peptic ulcer diseae,canonical_full,canonical_full,none,6,6,23,"Vomiting, indigestion, loss of appetite, abdominal pain, passage of gases, internal itching."
+37:canonical_partial_k2,37,Peptic ulcer diseae,canonical_partial_k2,canonical_partial,none,2,2,8,"Vomiting, internal itching."
+37:canonical_partial_k3,37,Peptic ulcer diseae,canonical_partial_k3,canonical_partial,none,3,3,11,"Vomiting, abdominal pain, internal itching."
+37:lay_full:A,37,Peptic ulcer diseae,lay_full,lay_full,A,6,6,54,I keep throwing up. Food just sits heavy in my stomach. I don't feel like eating. My whole tummy area aches. I keep farting. There's an itch inside my body that I can't reach.
+37:lay_partial_k2:A,37,Peptic ulcer diseae,lay_partial_k2,lay_partial,A,2,2,24,I keep throwing up. There's an itch inside my body that I can't reach.
+37:lay_partial_k3:A,37,Peptic ulcer diseae,lay_partial_k3,lay_partial,A,3,3,32,I keep throwing up. My whole tummy area aches. There's an itch inside my body that I can't reach.
+38:canonical_full,38,AIDS,canonical_full,canonical_full,none,4,4,16,"Muscle wasting, patches in throat, high fever, extra marital contacts."
+38:canonical_partial_k2,38,AIDS,canonical_partial_k2,canonical_partial,none,2,2,9,"Patches in throat, high fever."
+38:canonical_partial_k3,38,AIDS,canonical_partial_k3,canonical_partial,none,3,3,12,"Muscle wasting, patches in throat, high fever."
+38:lay_full:A,38,AIDS,lay_full,lay_full,A,4,4,36,I'm losing muscle and getting weaker. There are white spots in my throat. I'm burning up with fever. I've had several sexual partners recently.
+38:lay_partial_k2:A,38,AIDS,lay_partial_k2,lay_partial,A,2,2,18,There are white spots in my throat. I'm burning up with fever.
+38:lay_partial_k3:A,38,AIDS,lay_partial_k3,lay_partial,A,3,3,27,I'm losing muscle and getting weaker. There are white spots in my throat. I'm burning up with fever.
+39:canonical_full,39,AIDS,canonical_full,canonical_full,none,3,3,13,"Patches in throat, high fever, extra marital contacts."
+39:canonical_partial_k2,39,AIDS,canonical_partial_k2,canonical_partial,none,2,2,9,"High fever, extra marital contacts."
+39:lay_full:A,39,AIDS,lay_full,lay_full,A,3,3,29,There are white spots in my throat. I'm burning up with fever. I've had sex with people outside my relationship.
+39:lay_partial_k2:A,39,AIDS,lay_partial_k2,lay_partial,A,2,2,21,I'm burning up with fever. I've had sex with people outside my relationship.
+42:canonical_full,42,AIDS,canonical_full,canonical_full,none,3,3,12,"Muscle wasting, patches in throat, high fever."
+42:canonical_partial_k2,42,AIDS,canonical_partial_k2,canonical_partial,none,2,2,9,"Muscle wasting, patches in throat."
+42:lay_full:A,42,AIDS,lay_full,lay_full,A,3,3,27,My muscles are getting thinner. I can see patches at the back of my throat. I'm burning up with fever.
+42:lay_partial_k2:A,42,AIDS,lay_partial_k2,lay_partial,A,2,2,19,My muscles are getting thinner. I can see patches at the back of my throat.
+44:canonical_full,44,Diabetes,canonical_full,canonical_full,none,9,9,33,"Weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, excessive hunger, increased appetite, polyuria."
+44:canonical_partial_k2,44,Diabetes,canonical_partial_k2,canonical_partial,none,2,2,8,"Irregular sugar level, obesity."
+44:canonical_partial_k3,44,Diabetes,canonical_partial_k3,canonical_partial,none,3,3,14,"Irregular sugar level, blurred and distorted vision, obesity."
+44:lay_full:A,44,Diabetes,lay_full,lay_full,A,9,9,70,I've been losing weight. I can't sit still. I feel sluggish and slow. My blood sugar keeps going up and down. Everything looks blurry. I'm very overweight. I'm hungry all the time. My appetite has gone way up. I pee a lot more than usual.
+44:lay_partial_k2:A,44,Diabetes,lay_partial_k2,lay_partial,A,2,2,18,My blood sugar keeps going up and down. I'm very overweight.
+44:lay_partial_k3:A,44,Diabetes,lay_partial_k3,lay_partial,A,3,3,23,My blood sugar keeps going up and down. Everything looks blurry. I'm very overweight.
+49:canonical_full,49,Diabetes,canonical_full,canonical_full,none,9,9,29,"Fatigue, weight loss, restlessness, lethargy, irregular sugar level, obesity, excessive hunger, increased appetite, polyuria."
+49:canonical_partial_k2,49,Diabetes,canonical_partial_k2,canonical_partial,none,2,2,8,"Excessive hunger, polyuria."
+49:canonical_partial_k3,49,Diabetes,canonical_partial_k3,canonical_partial,none,3,3,11,"Weight loss, excessive hunger, polyuria."
+49:lay_full:A,49,Diabetes,lay_full,lay_full,A,9,9,79,I'm exhausted all the time. I've dropped a lot of weight without trying. I can't sit still. I feel sluggish and slow. My blood sugar keeps going up and down. I'm very overweight. I can never seem to eat enough. I want to eat much more than usual. I pee a lot more than usual.
+49:lay_partial_k2:A,49,Diabetes,lay_partial_k2,lay_partial,A,2,2,19,I can never seem to eat enough. I pee a lot more than usual.
+49:lay_partial_k3:A,49,Diabetes,lay_partial_k3,lay_partial,A,3,3,30,I've dropped a lot of weight without trying. I can never seem to eat enough. I pee a lot more than usual.
+51:canonical_full,51,Diabetes,canonical_full,canonical_full,none,9,9,32,"Fatigue, weight loss, restlessness, lethargy, irregular sugar level, blurred and distorted vision, obesity, increased appetite, polyuria."
+51:canonical_partial_k2,51,Diabetes,canonical_partial_k2,canonical_partial,none,2,2,8,"Irregular sugar level, obesity."
+51:canonical_partial_k3,51,Diabetes,canonical_partial_k3,canonical_partial,none,3,3,10,"Fatigue, irregular sugar level, obesity."
+51:lay_full:A,51,Diabetes,lay_full,lay_full,A,9,9,93,I have no energy and feel worn out. I've dropped a lot of weight without trying. I feel restless and fidgety. I can barely get myself to do anything. My blood sugar keeps going up and down. My eyesight has gone fuzzy and warped. I carry a lot of extra weight. I want to eat much more than usual. I'm going to the bathroom to urinate all the time.
+51:lay_partial_k2:A,51,Diabetes,lay_partial_k2,lay_partial,A,2,2,20,My blood sugar keeps going up and down. I carry a lot of extra weight.
+51:lay_partial_k3:A,51,Diabetes,lay_partial_k3,lay_partial,A,3,3,29,I have no energy and feel worn out. My blood sugar keeps going up and down. I carry a lot of extra weight.
+52:canonical_full,52,Gastroenteritis,canonical_full,canonical_full,none,4,4,12,"Vomiting, sunken eyes, dehydration, diarrhoea."
+52:canonical_partial_k2,52,Gastroenteritis,canonical_partial_k2,canonical_partial,none,2,2,8,"Sunken eyes, diarrhoea."
+52:canonical_partial_k3,52,Gastroenteritis,canonical_partial_k3,canonical_partial,none,3,3,10,"Vomiting, sunken eyes, diarrhoea."
+52:lay_full:A,52,Gastroenteritis,lay_full,lay_full,A,4,4,40,I've been sick several times today. My eyes have sunk in. My mouth is dry and I barely pee. I keep running to the toilet with the runs.
+52:lay_partial_k2:A,52,Gastroenteritis,lay_partial_k2,lay_partial,A,2,2,21,My eyes have sunk in. I keep running to the toilet with the runs.
+52:lay_partial_k3:A,52,Gastroenteritis,lay_partial_k3,lay_partial,A,3,3,30,I've been sick several times today. My eyes have sunk in. I keep running to the toilet with the runs.
+55:canonical_full,55,Gastroenteritis,canonical_full,canonical_full,none,3,3,10,"Vomiting, sunken eyes, diarrhoea."
+55:canonical_partial_k2,55,Gastroenteritis,canonical_partial_k2,canonical_partial,none,2,2,6,"Vomiting, diarrhoea."
+55:lay_full:A,55,Gastroenteritis,lay_full,lay_full,A,3,3,28,I keep throwing up. My eyes have sunk in. I keep running to the toilet with the runs.
+55:lay_partial_k2:A,55,Gastroenteritis,lay_partial_k2,lay_partial,A,2,2,21,I keep throwing up. I keep running to the toilet with the runs.
+56:canonical_full,56,Gastroenteritis,canonical_full,canonical_full,none,3,3,10,"Vomiting, sunken eyes, dehydration."
+56:canonical_partial_k2,56,Gastroenteritis,canonical_partial_k2,canonical_partial,none,2,2,8,"Vomiting, sunken eyes."
+56:lay_full:A,56,Gastroenteritis,lay_full,lay_full,A,3,3,26,I keep throwing up. My eyes have sunk in. My mouth is dry and I barely pee.
+56:lay_partial_k2:A,56,Gastroenteritis,lay_partial_k2,lay_partial,A,2,2,16,I keep throwing up. My eyes have sunk in.
+60:canonical_full,60,Bronchial Asthma,canonical_full,canonical_full,none,5,5,16,"Fatigue, cough, breathlessness, family history, mucoid sputum."
+60:canonical_partial_k2,60,Bronchial Asthma,canonical_partial_k2,canonical_partial,none,2,2,7,"Fatigue, breathlessness."
+60:canonical_partial_k3,60,Bronchial Asthma,canonical_partial_k3,canonical_partial,none,3,3,9,"Fatigue, cough, breathlessness."
+60:lay_full:A,60,Bronchial Asthma,lay_full,lay_full,A,5,5,43,I'm exhausted all the time. I keep coughing. I get out of breath really easily. This runs in my family. I keep bringing up slimy stuff from my chest.
+60:lay_partial_k2:A,60,Bronchial Asthma,lay_partial_k2,lay_partial,A,2,2,19,I'm exhausted all the time. I get out of breath really easily.
+60:lay_partial_k3:A,60,Bronchial Asthma,lay_partial_k3,lay_partial,A,3,3,24,I'm exhausted all the time. I keep coughing. I get out of breath really easily.
+61:canonical_full,61,Bronchial Asthma,canonical_full,canonical_full,none,5,5,16,"Fatigue, cough, high fever, family history, mucoid sputum."
+61:canonical_partial_k2,61,Bronchial Asthma,canonical_partial_k2,canonical_partial,none,2,2,8,"Fatigue, mucoid sputum."
+61:canonical_partial_k3,61,Bronchial Asthma,canonical_partial_k3,canonical_partial,none,3,3,11,"Fatigue, family history, mucoid sputum."
+61:lay_full:A,61,Bronchial Asthma,lay_full,lay_full,A,5,5,46,I have no energy and feel worn out. I keep hacking all day. I'm burning up with fever. This runs in my family. I keep bringing up slimy stuff from my chest.
+61:lay_partial_k2:A,61,Bronchial Asthma,lay_partial_k2,lay_partial,A,2,2,24,I have no energy and feel worn out. I keep bringing up slimy stuff from my chest.
+61:lay_partial_k3:A,61,Bronchial Asthma,lay_partial_k3,lay_partial,A,3,3,30,I have no energy and feel worn out. This runs in my family. I keep bringing up slimy stuff from my chest.
+63:canonical_full,63,Bronchial Asthma,canonical_full,canonical_full,none,5,5,15,"Fatigue, cough, high fever, breathlessness, family history."
+63:canonical_partial_k2,63,Bronchial Asthma,canonical_partial_k2,canonical_partial,none,2,2,7,"Fatigue, breathlessness."
+63:canonical_partial_k3,63,Bronchial Asthma,canonical_partial_k3,canonical_partial,none,3,3,10,"Fatigue, high fever, breathlessness."
+63:lay_full:A,63,Bronchial Asthma,lay_full,lay_full,A,5,5,39,I'm exhausted all the time. I keep coughing. I'm burning up with fever. I get out of breath really easily. My parents had the same problem.
+63:lay_partial_k2:A,63,Bronchial Asthma,lay_partial_k2,lay_partial,A,2,2,19,I'm exhausted all the time. I get out of breath really easily.
+63:lay_partial_k3:A,63,Bronchial Asthma,lay_partial_k3,lay_partial,A,3,3,27,I'm exhausted all the time. I'm burning up with fever. I get out of breath really easily.
+64:canonical_full,64,Hypertension,canonical_full,canonical_full,none,5,5,17,"Headache, chest pain, dizziness, loss of balance, lack of concentration."
+64:canonical_partial_k2,64,Hypertension,canonical_partial_k2,canonical_partial,none,2,2,8,"Dizziness, lack of concentration."
+64:canonical_partial_k3,64,Hypertension,canonical_partial_k3,canonical_partial,none,3,3,12,"Dizziness, loss of balance, lack of concentration."
+64:lay_full:A,64,Hypertension,lay_full,lay_full,A,5,5,38,My head is pounding. I have a tight painful feeling in my chest. I feel dizzy. I keep losing my balance. I can't focus on anything.
+64:lay_partial_k2:A,64,Hypertension,lay_partial_k2,lay_partial,A,2,2,15,I feel dizzy. I can't focus on anything.
+64:lay_partial_k3:A,64,Hypertension,lay_partial_k3,lay_partial,A,3,3,21,I feel dizzy. I keep losing my balance. I can't focus on anything.
+65:canonical_full,65,Hypertension,canonical_full,canonical_full,none,4,4,15,"Chest pain, dizziness, loss of balance, lack of concentration."
+65:canonical_partial_k2,65,Hypertension,canonical_partial_k2,canonical_partial,none,2,2,7,"Chest pain, dizziness."
+65:canonical_partial_k3,65,Hypertension,canonical_partial_k3,canonical_partial,none,3,3,11,"Chest pain, dizziness, lack of concentration."
+65:lay_full:A,65,Hypertension,lay_full,lay_full,A,4,4,40,I have a tight painful feeling in my chest. I feel lightheaded a lot. I keep losing my balance. My mind keeps wandering and I can't concentrate.
+65:lay_partial_k2:A,65,Hypertension,lay_partial_k2,lay_partial,A,2,2,20,I have a tight painful feeling in my chest. I feel lightheaded a lot.
+65:lay_partial_k3:A,65,Hypertension,lay_partial_k3,lay_partial,A,3,3,34,I have a tight painful feeling in my chest. I feel lightheaded a lot. My mind keeps wandering and I can't concentrate.
+67:canonical_full,67,Hypertension,canonical_full,canonical_full,none,4,4,15,"Headache, chest pain, loss of balance, lack of concentration."
+67:canonical_partial_k2,67,Hypertension,canonical_partial_k2,canonical_partial,none,2,2,8,"Headache, loss of balance."
+67:canonical_partial_k3,67,Hypertension,canonical_partial_k3,canonical_partial,none,3,3,12,"Headache, loss of balance, lack of concentration."
+67:lay_full:A,67,Hypertension,lay_full,lay_full,A,4,4,37,My head is pounding. My chest hurts. I feel wobbly on my feet. My mind keeps wandering and I can't concentrate.
+67:lay_partial_k2:A,67,Hypertension,lay_partial_k2,lay_partial,A,2,2,18,My head is pounding. I feel wobbly on my feet.
+67:lay_partial_k3:A,67,Hypertension,lay_partial_k3,lay_partial,A,3,3,32,My head is pounding. I feel wobbly on my feet. My mind keeps wandering and I can't concentrate.
+72:canonical_full,72,Migraine,canonical_full,canonical_full,none,8,8,25,"Acidity, headache, blurred and distorted vision, excessive hunger, stiff neck, depression, irritability, visual disturbances."
+72:canonical_partial_k2,72,Migraine,canonical_partial_k2,canonical_partial,none,2,2,7,"Acidity, stiff neck."
+72:canonical_partial_k3,72,Migraine,canonical_partial_k3,canonical_partial,none,3,3,13,"Acidity, blurred and distorted vision, stiff neck."
+72:lay_full:A,72,Migraine,lay_full,lay_full,A,8,8,78,I get a sour burning feeling after I eat. I have a throbbing pain in my head. My eyesight has gone fuzzy and warped. I'm hungry all the time. I can't turn my head easily. I've been sad and empty for weeks. I snap at people easily. I see flashes and odd things in my sight.
+72:lay_partial_k2:A,72,Migraine,lay_partial_k2,lay_partial,A,2,2,21,I get a sour burning feeling after I eat. I can't turn my head easily.
+72:lay_partial_k3:A,72,Migraine,lay_partial_k3,lay_partial,A,3,3,31,I get a sour burning feeling after I eat. My eyesight has gone fuzzy and warped. I can't turn my head easily.
+75:canonical_full,75,Migraine,canonical_full,canonical_full,none,8,8,26,"Acidity, indigestion, headache, blurred and distorted vision, stiff neck, depression, irritability, visual disturbances."
+75:canonical_partial_k2,75,Migraine,canonical_partial_k2,canonical_partial,none,2,2,7,"Stiff neck, irritability."
+75:canonical_partial_k3,75,Migraine,canonical_partial_k3,canonical_partial,none,3,3,9,"Acidity, stiff neck, irritability."
+75:lay_full:A,75,Migraine,lay_full,lay_full,A,8,8,63,I keep getting heartburn. Food just sits heavy in my stomach. I have a throbbing pain in my head. Everything looks blurry. My neck is stiff. I've been sad and empty for weeks. I snap at people easily. My vision has been acting strange.
+75:lay_partial_k2:A,75,Migraine,lay_partial_k2,lay_partial,A,2,2,13,My neck is stiff. I snap at people easily.
+75:lay_partial_k3:A,75,Migraine,lay_partial_k3,lay_partial,A,3,3,19,I keep getting heartburn. My neck is stiff. I snap at people easily.
+77:canonical_full,77,Migraine,canonical_full,canonical_full,none,8,8,27,"Acidity, indigestion, headache, blurred and distorted vision, excessive hunger, stiff neck, irritability, visual disturbances."
+77:canonical_partial_k2,77,Migraine,canonical_partial_k2,canonical_partial,none,2,2,6,"Headache, irritability."
+77:canonical_partial_k3,77,Migraine,canonical_partial_k3,canonical_partial,none,3,3,10,"Indigestion, headache, irritability."
+77:lay_full:A,77,Migraine,lay_full,lay_full,A,8,8,71,I get a sour burning feeling after I eat. Food just sits heavy in my stomach. I have a throbbing pain in my head. Everything looks blurry. I can never seem to eat enough. I can't turn my head easily. I snap at people easily. I see flashes and odd things in my sight.
+77:lay_partial_k2:A,77,Migraine,lay_partial_k2,lay_partial,A,2,2,19,I have a throbbing pain in my head. I snap at people easily.
+77:lay_partial_k3:A,77,Migraine,lay_partial_k3,lay_partial,A,3,3,28,Food just sits heavy in my stomach. I have a throbbing pain in my head. I snap at people easily.
+80:canonical_full,80,Cervical spondylosis,canonical_full,canonical_full,none,5,5,18,"Back pain, weakness in limbs, neck pain, dizziness, loss of balance."
+80:canonical_partial_k2,80,Cervical spondylosis,canonical_partial_k2,canonical_partial,none,2,2,7,"Back pain, dizziness."
+80:canonical_partial_k3,80,Cervical spondylosis,canonical_partial_k3,canonical_partial,none,3,3,10,"Back pain, neck pain, dizziness."
+80:lay_full:A,80,Cervical spondylosis,lay_full,lay_full,A,5,5,37,My lower back aches. My arms and legs feel weak. I have an ache in my neck. I feel dizzy. I feel wobbly on my feet.
+80:lay_partial_k2:A,80,Cervical spondylosis,lay_partial_k2,lay_partial,A,2,2,13,My lower back aches. I feel dizzy.
+80:lay_partial_k3:A,80,Cervical spondylosis,lay_partial_k3,lay_partial,A,3,3,21,My lower back aches. I have an ache in my neck. I feel dizzy.
+81:canonical_full,81,Cervical spondylosis,canonical_full,canonical_full,none,4,4,15,"Weakness in limbs, neck pain, dizziness, loss of balance."
+81:canonical_partial_k2,81,Cervical spondylosis,canonical_partial_k2,canonical_partial,none,2,2,9,"Weakness in limbs, neck pain."
+81:canonical_partial_k3,81,Cervical spondylosis,canonical_partial_k3,canonical_partial,none,3,3,11,"Weakness in limbs, neck pain, dizziness."
+81:lay_full:A,81,Cervical spondylosis,lay_full,lay_full,A,4,4,34,My arms and legs feel weak. I have an ache in my neck. I feel lightheaded a lot. I feel wobbly on my feet.
+81:lay_partial_k2:A,81,Cervical spondylosis,lay_partial_k2,lay_partial,A,2,2,17,My arms and legs feel weak. I have an ache in my neck.
+81:lay_partial_k3:A,81,Cervical spondylosis,lay_partial_k3,lay_partial,A,3,3,25,My arms and legs feel weak. I have an ache in my neck. I feel lightheaded a lot.
+85:canonical_full,85,Cervical spondylosis,canonical_full,canonical_full,none,4,4,14,"Back pain, weakness in limbs, neck pain, dizziness."
+85:canonical_partial_k2,85,Cervical spondylosis,canonical_partial_k2,canonical_partial,none,2,2,8,"Back pain, neck pain."
+85:canonical_partial_k3,85,Cervical spondylosis,canonical_partial_k3,canonical_partial,none,3,3,10,"Back pain, neck pain, dizziness."
+85:lay_full:A,85,Cervical spondylosis,lay_full,lay_full,A,4,4,27,My lower back aches. My limbs have no strength. My neck hurts. I feel lightheaded a lot.
+85:lay_partial_k2:A,85,Cervical spondylosis,lay_partial_k2,lay_partial,A,2,2,13,My lower back aches. My neck hurts.
+85:lay_partial_k3:A,85,Cervical spondylosis,lay_partial_k3,lay_partial,A,3,3,21,My lower back aches. My neck hurts. I feel lightheaded a lot.
+86:canonical_full,86,Paralysis (brain hemorrhage),canonical_full,canonical_full,none,4,4,16,"Vomiting, headache, weakness of one body side, altered sensorium."
+86:canonical_partial_k2,86,Paralysis (brain hemorrhage),canonical_partial_k2,canonical_partial,none,2,2,10,"Vomiting, weakness of one body side."
+86:canonical_partial_k3,86,Paralysis (brain hemorrhage),canonical_partial_k3,canonical_partial,none,3,3,12,"Vomiting, headache, weakness of one body side."
+86:lay_full:A,86,Paralysis (brain hemorrhage),lay_full,lay_full,A,4,4,39,I keep throwing up. My head is pounding. One side of my body feels weak. I feel confused and not fully aware of what's around me.
+86:lay_partial_k2:A,86,Paralysis (brain hemorrhage),lay_partial_k2,lay_partial,A,2,2,18,I keep throwing up. One side of my body feels weak.
+86:lay_partial_k3:A,86,Paralysis (brain hemorrhage),lay_partial_k3,lay_partial,A,3,3,25,I keep throwing up. My head is pounding. One side of my body feels weak.
+87:canonical_full,87,Paralysis (brain hemorrhage),canonical_full,canonical_full,none,3,3,14,"Headache, weakness of one body side, altered sensorium."
+87:canonical_partial_k2,87,Paralysis (brain hemorrhage),canonical_partial_k2,canonical_partial,none,2,2,12,"Weakness of one body side, altered sensorium."
+87:lay_full:A,87,Paralysis (brain hemorrhage),lay_full,lay_full,A,3,3,31,My head is pounding. I can't use one arm and leg properly. I'm really foggy and disoriented.
+87:lay_partial_k2:A,87,Paralysis (brain hemorrhage),lay_partial_k2,lay_partial,A,2,2,24,I can't use one arm and leg properly. I'm really foggy and disoriented.
+88:canonical_full,88,Paralysis (brain hemorrhage),canonical_full,canonical_full,none,3,3,14,"Vomiting, weakness of one body side, altered sensorium."
+88:canonical_partial_k2,88,Paralysis (brain hemorrhage),canonical_partial_k2,canonical_partial,none,2,2,12,"Weakness of one body side, altered sensorium."
+88:lay_full:A,88,Paralysis (brain hemorrhage),lay_full,lay_full,A,3,3,31,I've been sick several times today. One side of my body feels weak. I'm really foggy and disoriented.
+88:lay_partial_k2:A,88,Paralysis (brain hemorrhage),lay_partial_k2,lay_partial,A,2,2,22,One side of my body feels weak. I'm really foggy and disoriented.
+93:canonical_full,93,Jaundice,canonical_full,canonical_full,none,7,7,23,"Itching, fatigue, weight loss, high fever, yellowish skin, dark urine, abdominal pain."
+93:canonical_partial_k2,93,Jaundice,canonical_partial_k2,canonical_partial,none,2,2,8,"Weight loss, dark urine."
+93:canonical_partial_k3,93,Jaundice,canonical_partial_k3,canonical_partial,none,3,3,11,"Weight loss, dark urine, abdominal pain."
+93:lay_full:A,93,Jaundice,lay_full,lay_full,A,7,7,61,My skin is really itchy. I have no energy and feel worn out. I've dropped a lot of weight without trying. I have a very high temperature. My skin has a yellow tinge. My pee is really dark. I have cramping pain in my gut.
+93:lay_partial_k2:A,93,Jaundice,lay_partial_k2,lay_partial,A,2,2,20,I've dropped a lot of weight without trying. My pee is really dark.
+93:lay_partial_k3:A,93,Jaundice,lay_partial_k3,lay_partial,A,3,3,30,I've dropped a lot of weight without trying. My pee is really dark. I have cramping pain in my gut.
+95:canonical_full,95,Jaundice,canonical_full,canonical_full,none,7,7,22,"Itching, vomiting, fatigue, high fever, yellowish skin, dark urine, abdominal pain."
+95:canonical_partial_k2,95,Jaundice,canonical_partial_k2,canonical_partial,none,2,2,8,"Vomiting, yellowish skin."
+95:canonical_partial_k3,95,Jaundice,canonical_partial_k3,canonical_partial,none,3,3,10,"Vomiting, fatigue, yellowish skin."
+95:lay_full:A,95,Jaundice,lay_full,lay_full,A,7,7,56,My skin is really itchy. I keep throwing up. I have no energy and feel worn out. I have a very high temperature. My skin has a yellow tinge. My urine looks like tea. I have cramping pain in my gut.
+95:lay_partial_k2:A,95,Jaundice,lay_partial_k2,lay_partial,A,2,2,17,I keep throwing up. My skin has a yellow tinge.
+95:lay_partial_k3:A,95,Jaundice,lay_partial_k3,lay_partial,A,3,3,26,I keep throwing up. I have no energy and feel worn out. My skin has a yellow tinge.
+96:canonical_full,96,Jaundice,canonical_full,canonical_full,none,7,7,22,"Itching, vomiting, fatigue, weight loss, yellowish skin, dark urine, abdominal pain."
+96:canonical_partial_k2,96,Jaundice,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, weight loss."
+96:canonical_partial_k3,96,Jaundice,canonical_partial_k3,canonical_partial,none,3,3,10,"Itching, vomiting, weight loss."
+96:lay_full:A,96,Jaundice,lay_full,lay_full,A,7,7,55,I can't stop scratching. I keep throwing up. I have no energy and feel worn out. I've been losing weight. My skin has a yellow tinge. My urine looks like tea. My whole tummy area aches.
+96:lay_partial_k2:A,96,Jaundice,lay_partial_k2,lay_partial,A,2,2,16,I keep throwing up. I've been losing weight.
+96:lay_partial_k3:A,96,Jaundice,lay_partial_k3,lay_partial,A,3,3,24,I can't stop scratching. I keep throwing up. I've been losing weight.
+103:canonical_full,103,Malaria,canonical_full,canonical_full,none,7,7,21,"Chills, high fever, sweating, headache, nausea, diarrhoea, muscle pain."
+103:canonical_partial_k2,103,Malaria,canonical_partial_k2,canonical_partial,none,2,2,7,"Sweating, headache."
+103:canonical_partial_k3,103,Malaria,canonical_partial_k3,canonical_partial,none,3,3,9,"Sweating, headache, diarrhoea."
+103:lay_full:A,103,Malaria,lay_full,lay_full,A,7,7,59,I keep feeling cold and shaky. I'm burning up with fever. I'm sweating a lot. My head is pounding. I feel like I'm going to throw up. I have loose watery poop. My whole body aches.
+103:lay_partial_k2:A,103,Malaria,lay_partial_k2,lay_partial,A,2,2,17,I'm sweating a lot. My head is pounding.
+103:lay_partial_k3:A,103,Malaria,lay_partial_k3,lay_partial,A,3,3,25,I'm sweating a lot. My head is pounding. I have loose watery poop.
+104:canonical_full,104,Malaria,canonical_full,canonical_full,none,7,7,20,"Chills, vomiting, sweating, headache, nausea, diarrhoea, muscle pain."
+104:canonical_partial_k2,104,Malaria,canonical_partial_k2,canonical_partial,none,2,2,9,"Chills, sweating."
+104:canonical_partial_k3,104,Malaria,canonical_partial_k3,canonical_partial,none,3,3,11,"Chills, sweating, diarrhoea."
+104:lay_full:A,104,Malaria,lay_full,lay_full,A,7,7,68,I get cold spells even under a blanket. I've been sick several times today. I'm sweating a lot. My head is pounding. I feel like I'm going to throw up. I keep running to the toilet with the runs. My whole body aches.
+104:lay_partial_k2:A,104,Malaria,lay_partial_k2,lay_partial,A,2,2,22,I get cold spells even under a blanket. I'm sweating a lot.
+104:lay_partial_k3:A,104,Malaria,lay_partial_k3,lay_partial,A,3,3,34,I get cold spells even under a blanket. I'm sweating a lot. I keep running to the toilet with the runs.
+107:canonical_full,107,Malaria,canonical_full,canonical_full,none,7,7,21,"Chills, vomiting, high fever, sweating, headache, diarrhoea, muscle pain."
+107:canonical_partial_k2,107,Malaria,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, muscle pain."
+107:canonical_partial_k3,107,Malaria,canonical_partial_k3,canonical_partial,none,3,3,11,"Chills, vomiting, muscle pain."
+107:lay_full:A,107,Malaria,lay_full,lay_full,A,7,7,59,I keep feeling cold and shaky. I keep throwing up. I'm burning up with fever. I keep getting drenched in sweat. I have a throbbing pain in my head. I have loose watery poop. My muscles are sore.
+107:lay_partial_k2:A,107,Malaria,lay_partial_k2,lay_partial,A,2,2,15,I keep throwing up. My muscles are sore.
+107:lay_partial_k3:A,107,Malaria,lay_partial_k3,lay_partial,A,3,3,23,I keep feeling cold and shaky. I keep throwing up. My muscles are sore.
+108:canonical_full,108,Chicken pox,canonical_full,canonical_full,none,11,11,41,"Itching, skin rash, fatigue, lethargy, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body."
+108:canonical_partial_k2,108,Chicken pox,canonical_partial_k2,canonical_partial,none,2,2,9,"Headache, red spots over body."
+108:canonical_partial_k3,108,Chicken pox,canonical_partial_k3,canonical_partial,none,3,3,13,"Headache, malaise, red spots over body."
+108:lay_full:A,108,Chicken pox,lay_full,lay_full,A,11,11,95,I can't stop scratching. My skin broke out in red blotches. I have no energy and feel worn out. I feel sluggish and slow. I'm burning up with fever. I have a throbbing pain in my head. I don't feel like eating. I feel a little feverish. The glands in my neck are swollen. I just feel generally unwell. Red spots have appeared all over my body.
+108:lay_partial_k2:A,108,Chicken pox,lay_partial_k2,lay_partial,A,2,2,22,I have a throbbing pain in my head. Red spots have appeared all over my body.
+108:lay_partial_k3:A,108,Chicken pox,lay_partial_k3,lay_partial,A,3,3,29,I have a throbbing pain in my head. I just feel generally unwell. Red spots have appeared all over my body.
+112:canonical_full,112,Chicken pox,canonical_full,canonical_full,none,10,10,37,"Itching, skin rash, fatigue, high fever, headache, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body."
+112:canonical_partial_k2,112,Chicken pox,canonical_partial_k2,canonical_partial,none,2,2,10,"High fever, red spots over body."
+112:canonical_partial_k3,112,Chicken pox,canonical_partial_k3,canonical_partial,none,3,3,16,"High fever, swelled lymph nodes, red spots over body."
+112:lay_full:A,112,Chicken pox,lay_full,lay_full,A,10,10,76,My skin is really itchy. I have a rash. I have no energy and feel worn out. I have a very high temperature. My head is pounding. I've lost interest in food. I feel a little feverish. The glands in my neck are swollen. I just feel generally unwell. Red spots have appeared all over my body.
+112:lay_partial_k2:A,112,Chicken pox,lay_partial_k2,lay_partial,A,2,2,18,I have a very high temperature. Red spots have appeared all over my body.
+112:lay_partial_k3:A,112,Chicken pox,lay_partial_k3,lay_partial,A,3,3,26,I have a very high temperature. The glands in my neck are swollen. Red spots have appeared all over my body.
+114:canonical_full,114,Chicken pox,canonical_full,canonical_full,none,10,10,39,"Itching, skin rash, fatigue, lethargy, high fever, loss of appetite, mild fever, swelled lymph nodes, malaise, red spots over body."
+114:canonical_partial_k2,114,Chicken pox,canonical_partial_k2,canonical_partial,none,2,2,8,"Itching, skin rash."
+114:canonical_partial_k3,114,Chicken pox,canonical_partial_k3,canonical_partial,none,3,3,11,"Itching, skin rash, mild fever."
+114:lay_full:A,114,Chicken pox,lay_full,lay_full,A,10,10,79,My skin is really itchy. I have a rash. I'm exhausted all the time. I can barely get myself to do anything. I'm burning up with fever. I don't feel like eating. I have a slight temperature. The glands in my neck are swollen. I just feel generally unwell. Red spots have appeared all over my body.
+114:lay_partial_k2:A,114,Chicken pox,lay_partial_k2,lay_partial,A,2,2,14,My skin is really itchy. I have a rash.
+114:lay_partial_k3:A,114,Chicken pox,lay_partial_k3,lay_partial,A,3,3,20,My skin is really itchy. I have a rash. I have a slight temperature.
+120:canonical_full,120,Dengue,canonical_full,canonical_full,none,13,13,42,"Skin rash, chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain."
+120:canonical_partial_k2,120,Dengue,canonical_partial_k2,canonical_partial,none,2,2,8,"Back pain, muscle pain."
+120:canonical_partial_k3,120,Dengue,canonical_partial_k3,canonical_partial,none,3,3,11,"Joint pain, back pain, muscle pain."
+120:lay_full:A,120,Dengue,lay_full,lay_full,A,13,13,92,I have a rash. I keep feeling cold and shaky. My joints ache. I keep throwing up. I have no energy and feel worn out. I'm burning up with fever. My head is pounding. I feel sick to my stomach. I've lost interest in food. It hurts behind my eyes. My lower back aches. I feel off and not myself. My muscles are sore.
+120:lay_partial_k2:A,120,Dengue,lay_partial_k2,lay_partial,A,2,2,14,My lower back aches. My muscles are sore.
+120:lay_partial_k3:A,120,Dengue,lay_partial_k3,lay_partial,A,3,3,18,My joints ache. My lower back aches. My muscles are sore.
+122:canonical_full,122,Dengue,canonical_full,canonical_full,none,13,13,44,"Chills, joint pain, vomiting, fatigue, high fever, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body."
+122:canonical_partial_k2,122,Dengue,canonical_partial_k2,canonical_partial,none,2,2,7,"High fever, headache."
+122:canonical_partial_k3,122,Dengue,canonical_partial_k3,canonical_partial,none,3,3,10,"High fever, headache, muscle pain."
+122:lay_full:A,122,Dengue,lay_full,lay_full,A,13,13,114,I keep feeling cold and shaky. It hurts in several of my joints. I keep throwing up. I'm exhausted all the time. I have a very high temperature. I have a throbbing pain in my head. I feel like I'm going to throw up. I don't feel like eating. There's a deep ache behind my eyeballs. My lower back aches. I feel off and not myself. My whole body aches. I'm covered in little red dots.
+122:lay_partial_k2:A,122,Dengue,lay_partial_k2,lay_partial,A,2,2,20,I have a very high temperature. I have a throbbing pain in my head.
+122:lay_partial_k3:A,122,Dengue,lay_partial_k3,lay_partial,A,3,3,26,I have a very high temperature. I have a throbbing pain in my head. My whole body aches.
+127:canonical_full,127,Dengue,canonical_full,canonical_full,none,13,13,44,"Skin rash, chills, joint pain, vomiting, fatigue, headache, nausea, loss of appetite, pain behind the eyes, back pain, malaise, muscle pain, red spots over body."
+127:canonical_partial_k2,127,Dengue,canonical_partial_k2,canonical_partial,none,2,2,10,"Pain behind the eyes, muscle pain."
+127:canonical_partial_k3,127,Dengue,canonical_partial_k3,canonical_partial,none,3,3,12,"Fatigue, pain behind the eyes, muscle pain."
+127:lay_full:A,127,Dengue,lay_full,lay_full,A,13,13,106,My skin broke out in red blotches. I get cold spells even under a blanket. My joints ache. I keep throwing up. I have no energy and feel worn out. My head is pounding. I feel sick to my stomach. I don't feel like eating. There's a deep ache behind my eyeballs. My lower back aches. I just feel generally unwell. My muscles are sore. I'm covered in little red dots.
+127:lay_partial_k2:A,127,Dengue,lay_partial_k2,lay_partial,A,2,2,20,There's a deep ache behind my eyeballs. My muscles are sore.
+127:lay_partial_k3:A,127,Dengue,lay_partial_k3,lay_partial,A,3,3,29,I have no energy and feel worn out. There's a deep ache behind my eyeballs. My muscles are sore.
+129:canonical_full,129,Typhoid,canonical_full,canonical_full,none,10,10,33,"Chills, vomiting, fatigue, high fever, headache, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain."
+129:canonical_partial_k2,129,Typhoid,canonical_partial_k2,canonical_partial,none,2,2,8,"Constipation, belly pain."
+129:canonical_partial_k3,129,Typhoid,canonical_partial_k3,canonical_partial,none,3,3,10,"Constipation, diarrhoea, belly pain."
+129:lay_full:A,129,Typhoid,lay_full,lay_full,A,10,10,98,I get cold spells even under a blanket. I've been sick several times today. I'm exhausted all the time. I'm burning up with fever. I have a throbbing pain in my head. I haven't been able to poop for days. My whole tummy area aches. I keep running to the toilet with the runs. I look really ill and washed out. My belly hurts.
+129:lay_partial_k2:A,129,Typhoid,lay_partial_k2,lay_partial,A,2,2,21,I haven't been able to poop for days. My belly hurts.
+129:lay_partial_k3:A,129,Typhoid,lay_partial_k3,lay_partial,A,3,3,33,I haven't been able to poop for days. I keep running to the toilet with the runs. My belly hurts.
+134:canonical_full,134,Typhoid,canonical_full,canonical_full,none,10,10,31,"Chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos)."
+134:canonical_partial_k2,134,Typhoid,canonical_partial_k2,canonical_partial,none,2,2,6,"Vomiting, diarrhoea."
+134:canonical_partial_k3,134,Typhoid,canonical_partial_k3,canonical_partial,none,3,3,8,"Vomiting, fatigue, diarrhoea."
+134:lay_full:A,134,Typhoid,lay_full,lay_full,A,10,10,97,I get cold spells even under a blanket. I keep throwing up. I have no energy and feel worn out. I'm burning up with fever. My head is pounding. I feel like I'm going to throw up. It's really hard for me to go to the toilet. I have cramping pain in my gut. I have loose watery poop. People say I look seriously sick.
+134:lay_partial_k2:A,134,Typhoid,lay_partial_k2,lay_partial,A,2,2,17,I keep throwing up. I have loose watery poop.
+134:lay_partial_k3:A,134,Typhoid,lay_partial_k3,lay_partial,A,3,3,26,I keep throwing up. I have no energy and feel worn out. I have loose watery poop.
+135:canonical_full,135,Typhoid,canonical_full,canonical_full,none,11,11,35,"Chills, vomiting, fatigue, high fever, headache, nausea, constipation, abdominal pain, diarrhoea, toxic look (typhos), belly pain."
+135:canonical_partial_k2,135,Typhoid,canonical_partial_k2,canonical_partial,none,2,2,6,"Vomiting, nausea."
+135:canonical_partial_k3,135,Typhoid,canonical_partial_k3,canonical_partial,none,3,3,8,"Vomiting, nausea, diarrhoea."
+135:lay_full:A,135,Typhoid,lay_full,lay_full,A,11,11,99,I keep feeling cold and shaky. I've been sick several times today. I have no energy and feel worn out. I have a very high temperature. My head is pounding. I feel sick to my stomach. I haven't been able to poop for days. My whole tummy area aches. I keep running to the toilet with the runs. People say I look seriously sick. There's pain around my belly button.
+135:lay_partial_k2:A,135,Typhoid,lay_partial_k2,lay_partial,A,2,2,18,I've been sick several times today. I feel sick to my stomach.
+135:lay_partial_k3:A,135,Typhoid,lay_partial_k3,lay_partial,A,3,3,30,I've been sick several times today. I feel sick to my stomach. I keep running to the toilet with the runs.
+141:canonical_full,141,hepatitis A,canonical_full,canonical_full,none,10,10,33,"Joint pain, vomiting, yellowish skin, nausea, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain."
+141:canonical_partial_k2,141,hepatitis A,canonical_partial_k2,canonical_partial,none,2,2,7,"Nausea, mild fever."
+141:canonical_partial_k3,141,hepatitis A,canonical_partial_k3,canonical_partial,none,3,3,11,"Nausea, loss of appetite, mild fever."
+141:lay_full:A,141,hepatitis A,lay_full,lay_full,A,10,10,75,My joints ache. I keep throwing up. My skin looks yellow. I feel sick to my stomach. I've lost interest in food. I have cramping pain in my gut. I keep running to the toilet with the runs. I have a slight temperature. The whites of my eyes look yellow. My muscles are sore.
+141:lay_partial_k2:A,141,hepatitis A,lay_partial_k2,lay_partial,A,2,2,15,I feel sick to my stomach. I have a slight temperature.
+141:lay_partial_k3:A,141,hepatitis A,lay_partial_k3,lay_partial,A,3,3,23,I feel sick to my stomach. I've lost interest in food. I have a slight temperature.
+142:canonical_full,142,hepatitis A,canonical_full,canonical_full,none,10,10,34,"Joint pain, vomiting, yellowish skin, dark urine, loss of appetite, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain."
+142:canonical_partial_k2,142,hepatitis A,canonical_partial_k2,canonical_partial,none,2,2,10,"Yellowish skin, loss of appetite."
+142:canonical_partial_k3,142,hepatitis A,canonical_partial_k3,canonical_partial,none,3,3,12,"Yellowish skin, loss of appetite, diarrhoea."
+142:lay_full:A,142,hepatitis A,lay_full,lay_full,A,10,10,81,It hurts in several of my joints. I keep throwing up. My skin has a yellow tinge. My urine looks like tea. I've lost interest in food. I have cramping pain in my gut. I keep running to the toilet with the runs. I have a slight temperature. My eyes have turned yellowish. My whole body aches.
+142:lay_partial_k2:A,142,hepatitis A,lay_partial_k2,lay_partial,A,2,2,18,My skin has a yellow tinge. I've lost interest in food.
+142:lay_partial_k3:A,142,hepatitis A,lay_partial_k3,lay_partial,A,3,3,30,My skin has a yellow tinge. I've lost interest in food. I keep running to the toilet with the runs.
+143:canonical_full,143,hepatitis A,canonical_full,canonical_full,none,10,10,32,"Joint pain, vomiting, yellowish skin, dark urine, nausea, abdominal pain, diarrhoea, mild fever, yellowing of eyes, muscle pain."
+143:canonical_partial_k2,143,hepatitis A,canonical_partial_k2,canonical_partial,none,2,2,7,"Abdominal pain, diarrhoea."
+143:canonical_partial_k3,143,hepatitis A,canonical_partial_k3,canonical_partial,none,3,3,10,"Dark urine, abdominal pain, diarrhoea."
+143:lay_full:A,143,hepatitis A,lay_full,lay_full,A,10,10,78,My joints ache. I've been sick several times today. My skin has a yellow tinge. My pee is really dark. I feel like I'm going to throw up. My whole tummy area aches. I have loose watery poop. I have a slight temperature. The whites of my eyes look yellow. My muscles are sore.
+143:lay_partial_k2:A,143,hepatitis A,lay_partial_k2,lay_partial,A,2,2,18,My whole tummy area aches. I have loose watery poop.
+143:lay_partial_k3:A,143,hepatitis A,lay_partial_k3,lay_partial,A,3,3,25,My pee is really dark. My whole tummy area aches. I have loose watery poop.
+147:canonical_full,147,Hepatitis B,canonical_full,canonical_full,none,11,11,44,"Fatigue, lethargy, yellowish skin, dark urine, loss of appetite, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections."
+147:canonical_partial_k2,147,Hepatitis B,canonical_partial_k2,canonical_partial,none,2,2,11,"Lethargy, yellowing of eyes."
+147:canonical_partial_k3,147,Hepatitis B,canonical_partial_k3,canonical_partial,none,3,3,15,"Lethargy, yellowing of eyes, malaise."
+147:lay_full:A,147,Hepatitis B,lay_full,lay_full,A,11,11,91,I'm exhausted all the time. I feel sluggish and slow. My skin has a yellow tinge. My urine looks like tea. I've lost interest in food. My whole tummy area aches. My urine is bright yellow. The whites of my eyes look yellow. I just feel generally unwell. I had a blood transfusion recently. I got an injection with a needle that may not have been clean.
+147:lay_partial_k2:A,147,Hepatitis B,lay_partial_k2,lay_partial,A,2,2,18,I feel sluggish and slow. The whites of my eyes look yellow.
+147:lay_partial_k3:A,147,Hepatitis B,lay_partial_k3,lay_partial,A,3,3,25,I feel sluggish and slow. The whites of my eyes look yellow. I just feel generally unwell.
+152:canonical_full,152,Hepatitis B,canonical_full,canonical_full,none,11,11,43,"Itching, fatigue, lethargy, yellowish skin, dark urine, abdominal pain, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections."
+152:canonical_partial_k2,152,Hepatitis B,canonical_partial_k2,canonical_partial,none,2,2,8,"Itching, yellow urine."
+152:canonical_partial_k3,152,Hepatitis B,canonical_partial_k3,canonical_partial,none,3,3,11,"Itching, abdominal pain, yellow urine."
+152:lay_full:A,152,Hepatitis B,lay_full,lay_full,A,11,11,99,I can't stop scratching. I have no energy and feel worn out. I feel sluggish and slow. My skin has a yellow tinge. My pee is really dark. I have cramping pain in my gut. My pee is very yellow. The whites of my eyes look yellow. I just feel generally unwell. I was given someone else's blood in hospital. I got an injection with a needle that may not have been clean.
+152:lay_partial_k2:A,152,Hepatitis B,lay_partial_k2,lay_partial,A,2,2,17,I can't stop scratching. My pee is very yellow.
+152:lay_partial_k3:A,152,Hepatitis B,lay_partial_k3,lay_partial,A,3,3,27,I can't stop scratching. I have cramping pain in my gut. My pee is very yellow.
+153:canonical_full,153,Hepatitis B,canonical_full,canonical_full,none,11,11,44,"Itching, fatigue, lethargy, yellowish skin, dark urine, loss of appetite, yellow urine, yellowing of eyes, malaise, receiving blood transfusion, receiving unsterile injections."
+153:canonical_partial_k2,153,Hepatitis B,canonical_partial_k2,canonical_partial,none,2,2,8,"Itching, dark urine."
+153:canonical_partial_k3,153,Hepatitis B,canonical_partial_k3,canonical_partial,none,3,3,14,"Itching, dark urine, receiving unsterile injections."
+153:lay_full:A,153,Hepatitis B,lay_full,lay_full,A,11,11,85,My skin is really itchy. I have no energy and feel worn out. I can barely get myself to do anything. My skin looks yellow. My urine looks like tea. I've lost interest in food. My urine is bright yellow. My eyes have turned yellowish. I feel off and not myself. I was given someone else's blood in hospital. I've shared needles.
+153:lay_partial_k2:A,153,Hepatitis B,lay_partial_k2,lay_partial,A,2,2,15,My skin is really itchy. My urine looks like tea.
+153:lay_partial_k3:A,153,Hepatitis B,lay_partial_k3,lay_partial,A,3,3,21,My skin is really itchy. My urine looks like tea. I've shared needles.
+155:canonical_full,155,Hepatitis C,canonical_full,canonical_full,none,5,5,17,"Fatigue, yellowish skin, nausea, loss of appetite, family history."
+155:canonical_partial_k2,155,Hepatitis C,canonical_partial_k2,canonical_partial,none,2,2,10,"Yellowish skin, loss of appetite."
+155:canonical_partial_k3,155,Hepatitis C,canonical_partial_k3,canonical_partial,none,3,3,12,"Fatigue, yellowish skin, loss of appetite."
+155:lay_full:A,155,Hepatitis C,lay_full,lay_full,A,5,5,42,I'm exhausted all the time. My skin looks yellow. I feel like I'm going to throw up. I've lost interest in food. This runs in my family.
+155:lay_partial_k2:A,155,Hepatitis C,lay_partial_k2,lay_partial,A,2,2,15,My skin looks yellow. I've lost interest in food.
+155:lay_partial_k3:A,155,Hepatitis C,lay_partial_k3,lay_partial,A,3,3,24,I'm exhausted all the time. My skin looks yellow. I've lost interest in food.
+157:canonical_full,157,Hepatitis C,canonical_full,canonical_full,none,5,5,20,"Yellowish skin, nausea, loss of appetite, yellowing of eyes, family history."
+157:canonical_partial_k2,157,Hepatitis C,canonical_partial_k2,canonical_partial,none,2,2,7,"Nausea, family history."
+157:canonical_partial_k3,157,Hepatitis C,canonical_partial_k3,canonical_partial,none,3,3,12,"Nausea, yellowing of eyes, family history."
+157:lay_full:A,157,Hepatitis C,lay_full,lay_full,A,5,5,43,My skin has a yellow tinge. I feel like I'm going to throw up. I've lost interest in food. My eyes have turned yellowish. This runs in my family.
+157:lay_partial_k2:A,157,Hepatitis C,lay_partial_k2,lay_partial,A,2,2,20,I feel like I'm going to throw up. This runs in my family.
+157:lay_partial_k3:A,157,Hepatitis C,lay_partial_k3,lay_partial,A,3,3,27,I feel like I'm going to throw up. My eyes have turned yellowish. This runs in my family.
+158:canonical_full,158,Hepatitis C,canonical_full,canonical_full,none,5,5,18,"Fatigue, nausea, loss of appetite, yellowing of eyes, family history."
+158:canonical_partial_k2,158,Hepatitis C,canonical_partial_k2,canonical_partial,none,2,2,6,"Fatigue, nausea."
+158:canonical_partial_k3,158,Hepatitis C,canonical_partial_k3,canonical_partial,none,3,3,9,"Fatigue, nausea, family history."
+158:lay_full:A,158,Hepatitis C,lay_full,lay_full,A,5,5,45,I'm exhausted all the time. I feel like I'm going to throw up. I've lost interest in food. My eyes have turned yellowish. My parents had the same problem.
+158:lay_partial_k2:A,158,Hepatitis C,lay_partial_k2,lay_partial,A,2,2,23,I'm exhausted all the time. I feel like I'm going to throw up.
+158:lay_partial_k3:A,158,Hepatitis C,lay_partial_k3,lay_partial,A,3,3,30,I'm exhausted all the time. I feel like I'm going to throw up. My parents had the same problem.
+165:canonical_full,165,Hepatitis D,canonical_full,canonical_full,none,8,8,28,"Joint pain, vomiting, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes."
+165:canonical_partial_k2,165,Hepatitis D,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, abdominal pain."
+165:canonical_partial_k3,165,Hepatitis D,canonical_partial_k3,canonical_partial,none,3,3,11,"Vomiting, yellowish skin, abdominal pain."
+165:lay_full:A,165,Hepatitis D,lay_full,lay_full,A,8,8,59,My joints ache. I've been sick several times today. My skin has a yellow tinge. My urine looks like tea. I feel sick to my stomach. I've lost interest in food. My whole tummy area aches. My eyes have turned yellowish.
+165:lay_partial_k2:A,165,Hepatitis D,lay_partial_k2,lay_partial,A,2,2,19,I've been sick several times today. My whole tummy area aches.
+165:lay_partial_k3:A,165,Hepatitis D,lay_partial_k3,lay_partial,A,3,3,27,I've been sick several times today. My skin has a yellow tinge. My whole tummy area aches.
+166:canonical_full,166,Hepatitis D,canonical_full,canonical_full,none,8,8,26,"Joint pain, vomiting, fatigue, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes."
+166:canonical_partial_k2,166,Hepatitis D,canonical_partial_k2,canonical_partial,none,2,2,7,"Dark urine, nausea."
+166:canonical_partial_k3,166,Hepatitis D,canonical_partial_k3,canonical_partial,none,3,3,9,"Vomiting, dark urine, nausea."
+166:lay_full:A,166,Hepatitis D,lay_full,lay_full,A,8,8,70,It hurts in several of my joints. I keep throwing up. I'm exhausted all the time. My urine looks like tea. I feel like I'm going to throw up. I don't feel like eating. I have cramping pain in my gut. My eyes have turned yellowish.
+166:lay_partial_k2:A,166,Hepatitis D,lay_partial_k2,lay_partial,A,2,2,20,My urine looks like tea. I feel like I'm going to throw up.
+166:lay_partial_k3:A,166,Hepatitis D,lay_partial_k3,lay_partial,A,3,3,27,I keep throwing up. My urine looks like tea. I feel like I'm going to throw up.
+168:canonical_full,168,Hepatitis D,canonical_full,canonical_full,none,8,8,28,"Joint pain, vomiting, fatigue, yellowish skin, dark urine, loss of appetite, abdominal pain, yellowing of eyes."
+168:canonical_partial_k2,168,Hepatitis D,canonical_partial_k2,canonical_partial,none,2,2,9,"Joint pain, yellowish skin."
+168:canonical_partial_k3,168,Hepatitis D,canonical_partial_k3,canonical_partial,none,3,3,12,"Joint pain, yellowish skin, dark urine."
+168:lay_full:A,168,Hepatitis D,lay_full,lay_full,A,8,8,63,My joints ache. I keep throwing up. I'm exhausted all the time. My skin has a yellow tinge. My pee is really dark. I've lost interest in food. I have cramping pain in my gut. The whites of my eyes look yellow.
+168:lay_partial_k2:A,168,Hepatitis D,lay_partial_k2,lay_partial,A,2,2,14,My joints ache. My skin has a yellow tinge.
+168:lay_partial_k3:A,168,Hepatitis D,lay_partial_k3,lay_partial,A,3,3,21,My joints ache. My skin has a yellow tinge. My pee is really dark.
+172:canonical_full,172,Hepatitis E,canonical_full,canonical_full,none,12,12,38,"Joint pain, vomiting, fatigue, high fever, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, coma, stomach bleeding."
+172:canonical_partial_k2,172,Hepatitis E,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, high fever."
+172:canonical_partial_k3,172,Hepatitis E,canonical_partial_k3,canonical_partial,none,3,3,9,"Vomiting, high fever, nausea."
+172:lay_full:A,172,Hepatitis E,lay_full,lay_full,A,12,12,105,It hurts in several of my joints. I've been sick several times today. I'm exhausted all the time. I'm burning up with fever. My skin looks yellow. My urine looks like tea. I feel sick to my stomach. I don't feel like eating. I have cramping pain in my gut. My eyes have turned yellowish. My family says I passed out and wouldn't wake up. I vomited something that looked like coffee grounds.
+172:lay_partial_k2:A,172,Hepatitis E,lay_partial_k2,lay_partial,A,2,2,19,I've been sick several times today. I'm burning up with fever.
+172:lay_partial_k3:A,172,Hepatitis E,lay_partial_k3,lay_partial,A,3,3,26,I've been sick several times today. I'm burning up with fever. I feel sick to my stomach.
+177:canonical_full,177,Hepatitis E,canonical_full,canonical_full,none,12,12,39,"Joint pain, vomiting, fatigue, yellowish skin, dark urine, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding."
+177:canonical_partial_k2,177,Hepatitis E,canonical_partial_k2,canonical_partial,none,2,2,8,"Loss of appetite, coma."
+177:canonical_partial_k3,177,Hepatitis E,canonical_partial_k3,canonical_partial,none,3,3,12,"Loss of appetite, acute liver failure, coma."
+177:lay_full:A,177,Hepatitis E,lay_full,lay_full,A,12,12,100,My joints ache. I've been sick several times today. I have no energy and feel worn out. My skin looks yellow. My urine looks like tea. I feel sick to my stomach. I've lost interest in food. My whole tummy area aches. My eyes have turned yellowish. The doctor said my liver is shutting down. My family says I passed out and wouldn't wake up. I vomited something that looked like coffee grounds.
+177:lay_partial_k2:A,177,Hepatitis E,lay_partial_k2,lay_partial,A,2,2,25,I've lost interest in food. My family says I passed out and wouldn't wake up.
+177:lay_partial_k3:A,177,Hepatitis E,lay_partial_k3,lay_partial,A,3,3,35,I've lost interest in food. The doctor said my liver is shutting down. My family says I passed out and wouldn't wake up.
+179:canonical_full,179,Hepatitis E,canonical_full,canonical_full,none,12,12,39,"Joint pain, vomiting, fatigue, high fever, yellowish skin, nausea, loss of appetite, abdominal pain, yellowing of eyes, acute liver failure, coma, stomach bleeding."
+179:canonical_partial_k2,179,Hepatitis E,canonical_partial_k2,canonical_partial,none,2,2,9,"Loss of appetite, abdominal pain."
+179:canonical_partial_k3,179,Hepatitis E,canonical_partial_k3,canonical_partial,none,3,3,11,"Loss of appetite, abdominal pain, coma."
+179:lay_full:A,179,Hepatitis E,lay_full,lay_full,A,12,12,112,It hurts in several of my joints. I keep throwing up. I have no energy and feel worn out. I'm burning up with fever. My skin has a yellow tinge. I feel like I'm going to throw up. I've lost interest in food. My whole tummy area aches. The whites of my eyes look yellow. My liver suddenly stopped working properly. My family says I passed out and wouldn't wake up. I think I'm bleeding inside my stomach.
+179:lay_partial_k2:A,179,Hepatitis E,lay_partial_k2,lay_partial,A,2,2,18,I've lost interest in food. My whole tummy area aches.
+179:lay_partial_k3:A,179,Hepatitis E,lay_partial_k3,lay_partial,A,3,3,33,I've lost interest in food. My whole tummy area aches. My family says I passed out and wouldn't wake up.
+182:canonical_full,182,Alcoholic hepatitis,canonical_full,canonical_full,none,6,6,26,"Yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, history of alcohol consumption, fluid overload."
+182:canonical_partial_k2,182,Alcoholic hepatitis,canonical_partial_k2,canonical_partial,none,2,2,12,"Distention of abdomen, history of alcohol consumption."
+182:canonical_partial_k3,182,Alcoholic hepatitis,canonical_partial_k3,canonical_partial,none,3,3,16,"Swelling of stomach, distention of abdomen, history of alcohol consumption."
+182:lay_full:A,182,Alcoholic hepatitis,lay_full,lay_full,A,6,6,53,My skin looks yellow. I have cramping pain in my gut. My tummy is getting bigger and bigger. My belly looks swollen and stretched. I drink a lot of alcohol. I feel puffy and waterlogged all over.
+182:lay_partial_k2:A,182,Alcoholic hepatitis,lay_partial_k2,lay_partial,A,2,2,17,My belly looks swollen and stretched. I drink a lot of alcohol.
+182:lay_partial_k3:A,182,Alcoholic hepatitis,lay_partial_k3,lay_partial,A,3,3,26,My tummy is getting bigger and bigger. My belly looks swollen and stretched. I drink a lot of alcohol.
+186:canonical_full,186,Alcoholic hepatitis,canonical_full,canonical_full,none,6,6,23,"Vomiting, yellowish skin, abdominal pain, swelling of stomach, history of alcohol consumption, fluid overload."
+186:canonical_partial_k2,186,Alcoholic hepatitis,canonical_partial_k2,canonical_partial,none,2,2,9,"Vomiting, history of alcohol consumption."
+186:canonical_partial_k3,186,Alcoholic hepatitis,canonical_partial_k3,canonical_partial,none,3,3,13,"Vomiting, yellowish skin, history of alcohol consumption."
+186:lay_full:A,186,Alcoholic hepatitis,lay_full,lay_full,A,6,6,55,I've been sick several times today. My skin looks yellow. I have cramping pain in my gut. My stomach has swollen up. I've been a heavy drinker for years. My body seems to be holding a lot of extra fluid.
+186:lay_partial_k2:A,186,Alcoholic hepatitis,lay_partial_k2,lay_partial,A,2,2,22,I've been sick several times today. I've been a heavy drinker for years.
+186:lay_partial_k3:A,186,Alcoholic hepatitis,lay_partial_k3,lay_partial,A,3,3,27,I've been sick several times today. My skin looks yellow. I've been a heavy drinker for years.
+187:canonical_full,187,Alcoholic hepatitis,canonical_full,canonical_full,none,6,6,23,"Vomiting, yellowish skin, abdominal pain, swelling of stomach, distention of abdomen, fluid overload."
+187:canonical_partial_k2,187,Alcoholic hepatitis,canonical_partial_k2,canonical_partial,none,2,2,11,"Yellowish skin, distention of abdomen."
+187:canonical_partial_k3,187,Alcoholic hepatitis,canonical_partial_k3,canonical_partial,none,3,3,13,"Vomiting, yellowish skin, distention of abdomen."
+187:lay_full:A,187,Alcoholic hepatitis,lay_full,lay_full,A,6,6,52,I've been sick several times today. My skin looks yellow. I have cramping pain in my gut. My stomach has swollen up. My belly looks swollen and stretched. My body seems to be holding a lot of extra fluid.
+187:lay_partial_k2:A,187,Alcoholic hepatitis,lay_partial_k2,lay_partial,A,2,2,15,My skin looks yellow. My belly looks swollen and stretched.
+187:lay_partial_k3:A,187,Alcoholic hepatitis,lay_partial_k3,lay_partial,A,3,3,24,I've been sick several times today. My skin looks yellow. My belly looks swollen and stretched.
+190:canonical_full,190,Tuberculosis,canonical_full,canonical_full,none,15,15,52,"Vomiting, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum."
+190:canonical_partial_k2,190,Tuberculosis,canonical_partial_k2,canonical_partial,none,2,2,8,"High fever, chest pain."
+190:canonical_partial_k3,190,Tuberculosis,canonical_partial_k3,canonical_partial,none,3,3,11,"High fever, phlegm, chest pain."
+190:lay_full:A,190,Tuberculosis,lay_full,lay_full,A,15,15,119,I keep throwing up. I'm exhausted all the time. I've dropped a lot of weight without trying. I keep coughing. I have a very high temperature. I get out of breath really easily. I keep getting drenched in sweat. I don't feel like eating. I have a slight temperature. My eyes have turned yellowish. The glands in my neck are swollen. I feel off and not myself. I keep bringing up mucus. I have a tight painful feeling in my chest. I'm coughing up blood.
+190:lay_partial_k2:A,190,Tuberculosis,lay_partial_k2,lay_partial,A,2,2,19,I have a very high temperature. I have a tight painful feeling in my chest.
+190:lay_partial_k3:A,190,Tuberculosis,lay_partial_k3,lay_partial,A,3,3,25,I have a very high temperature. I keep bringing up mucus. I have a tight painful feeling in my chest.
+191:canonical_full,191,Tuberculosis,canonical_full,canonical_full,none,15,15,54,"Chills, fatigue, weight loss, cough, high fever, breathlessness, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum."
+191:canonical_partial_k2,191,Tuberculosis,canonical_partial_k2,canonical_partial,none,2,2,9,"Sweating, blood in sputum."
+191:canonical_partial_k3,191,Tuberculosis,canonical_partial_k3,canonical_partial,none,3,3,15,"Sweating, swelled lymph nodes, blood in sputum."
+191:lay_full:A,191,Tuberculosis,lay_full,lay_full,A,15,15,131,I get cold spells even under a blanket. I'm exhausted all the time. I've dropped a lot of weight without trying. I keep hacking all day. I'm burning up with fever. I can't seem to get enough air. I keep getting drenched in sweat. I've lost interest in food. I have a slight temperature. The whites of my eyes look yellow. The glands in my neck are swollen. I feel off and not myself. I keep bringing up mucus. I have a tight painful feeling in my chest. I'm coughing up blood.
+191:lay_partial_k2:A,191,Tuberculosis,lay_partial_k2,lay_partial,A,2,2,19,I keep getting drenched in sweat. I'm coughing up blood.
+191:lay_partial_k3:A,191,Tuberculosis,lay_partial_k3,lay_partial,A,3,3,27,I keep getting drenched in sweat. The glands in my neck are swollen. I'm coughing up blood.
+196:canonical_full,196,Tuberculosis,canonical_full,canonical_full,none,15,15,53,"Chills, vomiting, fatigue, weight loss, cough, high fever, sweating, loss of appetite, mild fever, yellowing of eyes, swelled lymph nodes, malaise, phlegm, chest pain, blood in sputum."
+196:canonical_partial_k2,196,Tuberculosis,canonical_partial_k2,canonical_partial,none,2,2,10,"High fever, yellowing of eyes."
+196:canonical_partial_k3,196,Tuberculosis,canonical_partial_k3,canonical_partial,none,3,3,14,"High fever, loss of appetite, yellowing of eyes."
+196:lay_full:A,196,Tuberculosis,lay_full,lay_full,A,15,15,128,I get cold spells even under a blanket. I keep throwing up. I have no energy and feel worn out. I've dropped a lot of weight without trying. I keep hacking all day. I have a very high temperature. I'm sweating a lot. I don't feel like eating. I feel a little feverish. My eyes have turned yellowish. The glands in my neck are swollen. I feel off and not myself. My chest is full of gunk. I have a tight painful feeling in my chest. I'm coughing up blood.
+196:lay_partial_k2:A,196,Tuberculosis,lay_partial_k2,lay_partial,A,2,2,16,I have a very high temperature. My eyes have turned yellowish.
+196:lay_partial_k3:A,196,Tuberculosis,lay_partial_k3,lay_partial,A,3,3,24,I have a very high temperature. I don't feel like eating. My eyes have turned yellowish.
+199:canonical_full,199,Common Cold,canonical_full,canonical_full,none,16,16,56,"Chills, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain."
+199:canonical_partial_k2,199,Common Cold,canonical_partial_k2,canonical_partial,none,2,2,8,"Phlegm, chest pain."
+199:canonical_partial_k3,199,Common Cold,canonical_partial_k3,canonical_partial,none,3,3,10,"Headache, phlegm, chest pain."
+199:lay_full:A,199,Common Cold,lay_full,lay_full,A,16,16,128,I keep feeling cold and shaky. I'm exhausted all the time. I keep hacking all day. I'm burning up with fever. My head is pounding. I have tender lumps under my jaw. I feel off and not myself. My chest is full of gunk. My throat is raw and irritated. My eyes look bloodshot. My face feels full and pressured. My nose keeps running. My nose is all blocked up. I have a tight painful feeling in my chest. I can't smell anything. My whole body aches.
+199:lay_partial_k2:A,199,Common Cold,lay_partial_k2,lay_partial,A,2,2,20,My chest is full of gunk. I have a tight painful feeling in my chest.
+199:lay_partial_k3:A,199,Common Cold,lay_partial_k3,lay_partial,A,3,3,27,My head is pounding. My chest is full of gunk. I have a tight painful feeling in my chest.
+200:canonical_full,200,Common Cold,canonical_full,canonical_full,none,16,16,57,"Continuous sneezing, fatigue, cough, high fever, headache, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain."
+200:canonical_partial_k2,200,Common Cold,canonical_partial_k2,canonical_partial,none,2,2,6,"Cough, congestion."
+200:canonical_partial_k3,200,Common Cold,canonical_partial_k3,canonical_partial,none,3,3,8,"Fatigue, cough, congestion."
+200:lay_full:A,200,Common Cold,lay_full,lay_full,A,16,16,123,I can't stop sneezing. I have no energy and feel worn out. I keep coughing. I have a very high temperature. My head is pounding. The glands in my neck are swollen. I feel off and not myself. My chest is full of gunk. My throat is raw and irritated. My eyes look bloodshot. There's pressure around my nose and forehead. I have a drippy nose. My nose is all blocked up. My chest hurts. I can't smell anything. My muscles are sore.
+200:lay_partial_k2:A,200,Common Cold,lay_partial_k2,lay_partial,A,2,2,14,I keep coughing. My nose is all blocked up.
+200:lay_partial_k3:A,200,Common Cold,lay_partial_k3,lay_partial,A,3,3,23,I have no energy and feel worn out. I keep coughing. My nose is all blocked up.
+204:canonical_full,204,Common Cold,canonical_full,canonical_full,none,16,16,59,"Continuous sneezing, chills, fatigue, cough, high fever, swelled lymph nodes, malaise, phlegm, throat irritation, redness of eyes, sinus pressure, runny nose, congestion, chest pain, loss of smell, muscle pain."
+204:canonical_partial_k2,204,Common Cold,canonical_partial_k2,canonical_partial,none,2,2,7,"Throat irritation, congestion."
+204:canonical_partial_k3,204,Common Cold,canonical_partial_k3,canonical_partial,none,3,3,11,"Throat irritation, runny nose, congestion."
+204:lay_full:A,204,Common Cold,lay_full,lay_full,A,16,16,130,I keep sneezing over and over. I get cold spells even under a blanket. I'm exhausted all the time. I keep hacking all day. I have a very high temperature. I have tender lumps under my jaw. I just feel generally unwell. I keep bringing up mucus. My throat is raw and irritated. My eyes are red. There's pressure around my nose and forehead. My nose keeps running. I feel really stuffy. I have a tight painful feeling in my chest. My sense of smell is gone. My whole body aches.
+204:lay_partial_k2:A,204,Common Cold,lay_partial_k2,lay_partial,A,2,2,17,My throat is raw and irritated. I feel really stuffy.
+204:lay_partial_k3:A,204,Common Cold,lay_partial_k3,lay_partial,A,3,3,23,My throat is raw and irritated. My nose keeps running. I feel really stuffy.
+211:canonical_full,211,Pneumonia,canonical_full,canonical_full,none,10,10,35,"Chills, fatigue, high fever, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum."
+211:canonical_partial_k2,211,Pneumonia,canonical_partial_k2,canonical_partial,none,2,2,8,"High fever, phlegm."
+211:canonical_partial_k3,211,Pneumonia,canonical_partial_k3,canonical_partial,none,3,3,12,"Chills, high fever, phlegm."
+211:lay_full:A,211,Pneumonia,lay_full,lay_full,A,10,10,88,I get cold spells even under a blanket. I'm exhausted all the time. I'm burning up with fever. I get out of breath really easily. I keep getting drenched in sweat. I feel off and not myself. I keep bringing up mucus. My chest hurts. My heart is racing. I'm bringing up rust-coloured gunk from my chest.
+211:lay_partial_k2:A,211,Pneumonia,lay_partial_k2,lay_partial,A,2,2,16,I'm burning up with fever. I keep bringing up mucus.
+211:lay_partial_k3:A,211,Pneumonia,lay_partial_k3,lay_partial,A,3,3,28,I get cold spells even under a blanket. I'm burning up with fever. I keep bringing up mucus.
+212:canonical_full,212,Pneumonia,canonical_full,canonical_full,none,10,10,34,"Chills, fatigue, cough, breathlessness, sweating, malaise, phlegm, chest pain, fast heart rate, rusty sputum."
+212:canonical_partial_k2,212,Pneumonia,canonical_partial_k2,canonical_partial,none,2,2,9,"Sweating, fast heart rate."
+212:canonical_partial_k3,212,Pneumonia,canonical_partial_k3,canonical_partial,none,3,3,13,"Sweating, malaise, fast heart rate."
+212:lay_full:A,212,Pneumonia,lay_full,lay_full,A,10,10,84,I get cold spells even under a blanket. I'm exhausted all the time. I keep coughing. I get out of breath really easily. I'm sweating a lot. I feel off and not myself. I keep bringing up mucus. My chest hurts. My heart is racing. I'm bringing up rust-coloured gunk from my chest.
+212:lay_partial_k2:A,212,Pneumonia,lay_partial_k2,lay_partial,A,2,2,16,I'm sweating a lot. My heart is racing.
+212:lay_partial_k3:A,212,Pneumonia,lay_partial_k3,lay_partial,A,3,3,24,I'm sweating a lot. I feel off and not myself. My heart is racing.
+215:canonical_full,215,Pneumonia,canonical_full,canonical_full,none,10,10,33,"Chills, fatigue, cough, high fever, breathlessness, sweating, phlegm, chest pain, fast heart rate, rusty sputum."
+215:canonical_partial_k2,215,Pneumonia,canonical_partial_k2,canonical_partial,none,2,2,8,"Phlegm, chest pain."
+215:canonical_partial_k3,215,Pneumonia,canonical_partial_k3,canonical_partial,none,3,3,10,"Fatigue, phlegm, chest pain."
+215:lay_full:A,215,Pneumonia,lay_full,lay_full,A,10,10,88,I get cold spells even under a blanket. I have no energy and feel worn out. I keep coughing. I'm burning up with fever. I get out of breath really easily. I keep getting drenched in sweat. My chest is full of gunk. My chest hurts. My pulse feels really fast. I'm bringing up rust-coloured gunk from my chest.
+215:lay_partial_k2:A,215,Pneumonia,lay_partial_k2,lay_partial,A,2,2,15,My chest is full of gunk. My chest hurts.
+215:lay_partial_k3:A,215,Pneumonia,lay_partial_k3,lay_partial,A,3,3,24,I have no energy and feel worn out. My chest is full of gunk. My chest hurts.
+218:canonical_full,218,Dimorphic hemmorhoids(piles),canonical_full,canonical_full,none,4,4,18,"Constipation, pain in anal region, bloody stool, irritation in anus."
+218:canonical_partial_k2,218,Dimorphic hemmorhoids(piles),canonical_partial_k2,canonical_partial,none,2,2,9,"Constipation, pain in anal region."
+218:canonical_partial_k3,218,Dimorphic hemmorhoids(piles),canonical_partial_k3,canonical_partial,none,3,3,13,"Constipation, pain in anal region, bloody stool."
+218:lay_full:A,218,Dimorphic hemmorhoids(piles),lay_full,lay_full,A,4,4,43,I haven't been able to poop for days. I have pain around my anus. There's blood when I go to the toilet. My bottom feels irritated.
+218:lay_partial_k2:A,218,Dimorphic hemmorhoids(piles),lay_partial_k2,lay_partial,A,2,2,23,I haven't been able to poop for days. I have pain around my anus.
+218:lay_partial_k3:A,218,Dimorphic hemmorhoids(piles),lay_partial_k3,lay_partial,A,3,3,36,I haven't been able to poop for days. I have pain around my anus. There's blood when I go to the toilet.
+219:canonical_full,219,Dimorphic hemmorhoids(piles),canonical_full,canonical_full,none,4,4,18,"Constipation, pain during bowel movements, bloody stool, irritation in anus."
+219:canonical_partial_k2,219,Dimorphic hemmorhoids(piles),canonical_partial_k2,canonical_partial,none,2,2,11,"Bloody stool, irritation in anus."
+219:canonical_partial_k3,219,Dimorphic hemmorhoids(piles),canonical_partial_k3,canonical_partial,none,3,3,16,"Pain during bowel movements, bloody stool, irritation in anus."
+219:lay_full:A,219,Dimorphic hemmorhoids(piles),lay_full,lay_full,A,4,4,41,It's really hard for me to go to the toilet. Going to the toilet is painful. My poop has blood in it. My bottom feels irritated.
+219:lay_partial_k2:A,219,Dimorphic hemmorhoids(piles),lay_partial_k2,lay_partial,A,2,2,17,My poop has blood in it. My bottom feels irritated.
+219:lay_partial_k3:A,219,Dimorphic hemmorhoids(piles),lay_partial_k3,lay_partial,A,3,3,26,Going to the toilet is painful. My poop has blood in it. My bottom feels irritated.
+221:canonical_full,221,Dimorphic hemmorhoids(piles),canonical_full,canonical_full,none,4,4,18,"Constipation, pain during bowel movements, pain in anal region, bloody stool."
+221:canonical_partial_k2,221,Dimorphic hemmorhoids(piles),canonical_partial_k2,canonical_partial,none,2,2,11,"Pain in anal region, bloody stool."
+221:canonical_partial_k3,221,Dimorphic hemmorhoids(piles),canonical_partial_k3,canonical_partial,none,3,3,13,"Constipation, pain in anal region, bloody stool."
+221:lay_full:A,221,Dimorphic hemmorhoids(piles),lay_full,lay_full,A,4,4,44,It's really hard for me to go to the toilet. It hurts when I poop. My bottom is sore. There's blood when I go to the toilet.
+221:lay_partial_k2:A,221,Dimorphic hemmorhoids(piles),lay_partial_k2,lay_partial,A,2,2,21,My bottom is sore. There's blood when I go to the toilet.
+221:lay_partial_k3:A,221,Dimorphic hemmorhoids(piles),lay_partial_k3,lay_partial,A,3,3,36,It's really hard for me to go to the toilet. My bottom is sore. There's blood when I go to the toilet.
+223:canonical_full,223,Heart attack,canonical_full,canonical_full,none,3,3,11,"Breathlessness, sweating, chest pain."
+223:canonical_partial_k2,223,Heart attack,canonical_partial_k2,canonical_partial,none,2,2,8,"Breathlessness, sweating."
+223:lay_full:A,223,Heart attack,lay_full,lay_full,A,3,3,29,I get out of breath really easily. I keep getting drenched in sweat. I have a tight painful feeling in my chest.
+223:lay_partial_k2:A,223,Heart attack,lay_partial_k2,lay_partial,A,2,2,19,I get out of breath really easily. I keep getting drenched in sweat.
+224:canonical_full,224,Heart attack,canonical_full,canonical_full,none,3,3,10,"Vomiting, sweating, chest pain."
+224:canonical_partial_k2,224,Heart attack,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, sweating."
+224:lay_full:A,224,Heart attack,lay_full,lay_full,A,3,3,22,I keep throwing up. I'm sweating a lot. My chest hurts.
+224:lay_partial_k2:A,224,Heart attack,lay_partial_k2,lay_partial,A,2,2,17,I keep throwing up. I'm sweating a lot.
+225:canonical_full,225,Heart attack,canonical_full,canonical_full,none,3,3,10,"Vomiting, breathlessness, chest pain."
+225:canonical_partial_k2,225,Heart attack,canonical_partial_k2,canonical_partial,none,2,2,8,"Breathlessness, chest pain."
+225:lay_full:A,225,Heart attack,lay_full,lay_full,A,3,3,24,I keep throwing up. I can't seem to get enough air. My chest hurts.
+225:lay_partial_k2:A,225,Heart attack,lay_partial_k2,lay_partial,A,2,2,17,I can't seem to get enough air. My chest hurts.
+228:canonical_full,228,Varicose veins,canonical_full,canonical_full,none,6,6,23,"Cramps, bruising, obesity, swollen legs, swollen blood vessels, prominent veins on calf."
+228:canonical_partial_k2,228,Varicose veins,canonical_partial_k2,canonical_partial,none,2,2,10,"Swollen legs, prominent veins on calf."
+228:canonical_partial_k3,228,Varicose veins,canonical_partial_k3,canonical_partial,none,3,3,14,"Cramps, swollen legs, prominent veins on calf."
+228:lay_full:A,228,Varicose veins,lay_full,lay_full,A,6,6,41,I get painful muscle spasms. I bruise really easily. I'm very overweight. My legs are swollen. I have enlarged veins showing. I have bulging veins on my calves.
+228:lay_partial_k2:A,228,Varicose veins,lay_partial_k2,lay_partial,A,2,2,16,My legs are swollen. I have bulging veins on my calves.
+228:lay_partial_k3:A,228,Varicose veins,lay_partial_k3,lay_partial,A,3,3,23,I get painful muscle spasms. My legs are swollen. I have bulging veins on my calves.
+232:canonical_full,232,Varicose veins,canonical_full,canonical_full,none,6,6,22,"Fatigue, cramps, bruising, obesity, swollen blood vessels, prominent veins on calf."
+232:canonical_partial_k2,232,Varicose veins,canonical_partial_k2,canonical_partial,none,2,2,8,"Fatigue, cramps."
+232:canonical_partial_k3,232,Varicose veins,canonical_partial_k3,canonical_partial,none,3,3,11,"Fatigue, cramps, bruising."
+232:lay_full:A,232,Varicose veins,lay_full,lay_full,A,6,6,48,I'm exhausted all the time. I get painful muscle spasms. I keep finding purple marks on my skin. I'm very overweight. I have enlarged veins showing. I have bulging veins on my calves.
+232:lay_partial_k2:A,232,Varicose veins,lay_partial_k2,lay_partial,A,2,2,18,I'm exhausted all the time. I get painful muscle spasms.
+232:lay_partial_k3:A,232,Varicose veins,lay_partial_k3,lay_partial,A,3,3,27,I'm exhausted all the time. I get painful muscle spasms. I keep finding purple marks on my skin.
+233:canonical_full,233,Varicose veins,canonical_full,canonical_full,none,6,6,21,"Fatigue, cramps, bruising, obesity, swollen legs, prominent veins on calf."
+233:canonical_partial_k2,233,Varicose veins,canonical_partial_k2,canonical_partial,none,2,2,7,"Fatigue, swollen legs."
+233:canonical_partial_k3,233,Varicose veins,canonical_partial_k3,canonical_partial,none,3,3,11,"Fatigue, cramps, swollen legs."
+233:lay_full:A,233,Varicose veins,lay_full,lay_full,A,6,6,51,I'm exhausted all the time. My muscles keep seizing up. I keep finding purple marks on my skin. I carry a lot of extra weight. My legs look puffy. I have bulging veins on my calves.
+233:lay_partial_k2:A,233,Varicose veins,lay_partial_k2,lay_partial,A,2,2,18,I'm exhausted all the time. My legs look puffy.
+233:lay_partial_k3:A,233,Varicose veins,lay_partial_k3,lay_partial,A,3,3,25,I'm exhausted all the time. My muscles keep seizing up. My legs look puffy.
+237:canonical_full,237,Hypothyroidism,canonical_full,canonical_full,none,12,12,47,"Fatigue, cold hands and feets, mood swings, lethargy, dizziness, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation."
+237:canonical_partial_k2,237,Hypothyroidism,canonical_partial_k2,canonical_partial,none,2,2,12,"Cold hands and feets, abnormal menstruation."
+237:canonical_partial_k3,237,Hypothyroidism,canonical_partial_k3,canonical_partial,none,3,3,17,"Cold hands and feets, brittle nails, abnormal menstruation."
+237:lay_full:A,237,Hypothyroidism,lay_full,lay_full,A,12,12,105,I have no energy and feel worn out. My hands and feet are always freezing. I go from happy to upset in no time. I feel sluggish and slow. I feel lightheaded a lot. I look puffy around my face. My thyroid gland looks bigger. My fingernails keep cracking and splitting. My hands and feet are swollen. I've been sad and empty for weeks. Little things make me really annoyed. Something is off with my monthly cycle.
+237:lay_partial_k2:A,237,Hypothyroidism,lay_partial_k2,lay_partial,A,2,2,18,My hands and feet are always freezing. Something is off with my monthly cycle.
+237:lay_partial_k3:A,237,Hypothyroidism,lay_partial_k3,lay_partial,A,3,3,28,My hands and feet are always freezing. My fingernails keep cracking and splitting. Something is off with my monthly cycle.
+241:canonical_full,241,Hypothyroidism,canonical_full,canonical_full,none,12,12,48,"Fatigue, weight gain, cold hands and feets, mood swings, lethargy, puffy face and eyes, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation."
+241:canonical_partial_k2,241,Hypothyroidism,canonical_partial_k2,canonical_partial,none,2,2,8,"Lethargy, irritability."
+241:canonical_partial_k3,241,Hypothyroidism,canonical_partial_k3,canonical_partial,none,3,3,11,"Lethargy, enlarged thyroid, irritability."
+241:lay_full:A,241,Hypothyroidism,lay_full,lay_full,A,12,12,105,I have no energy and feel worn out. I'm getting heavier without trying. My fingers and toes feel icy all the time. I go from happy to upset in no time. I feel sluggish and slow. I look puffy around my face. My thyroid gland looks bigger. My nails break really easily. My arms and legs are puffy. I've been sad and empty for weeks. I snap at people easily. Something is off with my monthly cycle.
+241:lay_partial_k2:A,241,Hypothyroidism,lay_partial_k2,lay_partial,A,2,2,16,I feel sluggish and slow. I snap at people easily.
+241:lay_partial_k3:A,241,Hypothyroidism,lay_partial_k3,lay_partial,A,3,3,22,I feel sluggish and slow. My thyroid gland looks bigger. I snap at people easily.
+242:canonical_full,242,Hypothyroidism,canonical_full,canonical_full,none,12,12,43,"Fatigue, weight gain, cold hands and feets, mood swings, lethargy, dizziness, enlarged thyroid, brittle nails, swollen extremeties, depression, irritability, abnormal menstruation."
+242:canonical_partial_k2,242,Hypothyroidism,canonical_partial_k2,canonical_partial,none,2,2,9,"Lethargy, enlarged thyroid."
+242:canonical_partial_k3,242,Hypothyroidism,canonical_partial_k3,canonical_partial,none,3,3,13,"Mood swings, lethargy, enlarged thyroid."
+242:lay_full:A,242,Hypothyroidism,lay_full,lay_full,A,12,12,97,I'm exhausted all the time. I've put on weight. My fingers and toes feel icy all the time. My mood keeps changing quickly. I feel sluggish and slow. I feel dizzy. My thyroid gland looks bigger. My nails break really easily. My hands and feet are swollen. I've been sad and empty for weeks. Little things make me really annoyed. Something is off with my monthly cycle.
+242:lay_partial_k2:A,242,Hypothyroidism,lay_partial_k2,lay_partial,A,2,2,16,I feel sluggish and slow. My thyroid gland looks bigger.
+242:lay_partial_k3:A,242,Hypothyroidism,lay_partial_k3,lay_partial,A,3,3,23,My mood keeps changing quickly. I feel sluggish and slow. My thyroid gland looks bigger.
+247:canonical_full,247,Hyperthyroidism,canonical_full,canonical_full,none,10,10,32,"Fatigue, mood swings, weight loss, sweating, diarrhoea, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation."
+247:canonical_partial_k2,247,Hyperthyroidism,canonical_partial_k2,canonical_partial,none,2,2,8,"Weight loss, excessive hunger."
+247:canonical_partial_k3,247,Hyperthyroidism,canonical_partial_k3,canonical_partial,none,3,3,10,"Weight loss, diarrhoea, excessive hunger."
+247:lay_full:A,247,Hyperthyroidism,lay_full,lay_full,A,10,10,79,I have no energy and feel worn out. I go from happy to upset in no time. I've been losing weight. I keep getting drenched in sweat. I have loose watery poop. My pulse feels really fast. I can never seem to eat enough. My muscles feel weak. I snap at people easily. My periods have been really irregular.
+247:lay_partial_k2:A,247,Hyperthyroidism,lay_partial_k2,lay_partial,A,2,2,17,I've been losing weight. I can never seem to eat enough.
+247:lay_partial_k3:A,247,Hyperthyroidism,lay_partial_k3,lay_partial,A,3,3,25,I've been losing weight. I have loose watery poop. I can never seem to eat enough.
+249:canonical_full,249,Hyperthyroidism,canonical_full,canonical_full,none,10,10,33,"Fatigue, mood swings, weight loss, restlessness, sweating, fast heart rate, excessive hunger, muscle weakness, irritability, abnormal menstruation."
+249:canonical_partial_k2,249,Hyperthyroidism,canonical_partial_k2,canonical_partial,none,2,2,7,"Fatigue, excessive hunger."
+249:canonical_partial_k3,249,Hyperthyroidism,canonical_partial_k3,canonical_partial,none,3,3,9,"Fatigue, excessive hunger, irritability."
+249:lay_full:A,249,Hyperthyroidism,lay_full,lay_full,A,10,10,89,I'm exhausted all the time. I go from happy to upset in no time. I've dropped a lot of weight without trying. I feel restless and fidgety. I keep getting drenched in sweat. My heart is racing. I'm hungry all the time. I don't have my usual strength. I snap at people easily. Something is off with my monthly cycle.
+249:lay_partial_k2:A,249,Hyperthyroidism,lay_partial_k2,lay_partial,A,2,2,20,I'm exhausted all the time. I'm hungry all the time.
+249:lay_partial_k3:A,249,Hyperthyroidism,lay_partial_k3,lay_partial,A,3,3,26,I'm exhausted all the time. I'm hungry all the time. I snap at people easily.
+251:canonical_full,251,Hyperthyroidism,canonical_full,canonical_full,none,10,10,32,"Fatigue, mood swings, weight loss, restlessness, sweating, diarrhoea, fast heart rate, muscle weakness, irritability, abnormal menstruation."
+251:canonical_partial_k2,251,Hyperthyroidism,canonical_partial_k2,canonical_partial,none,2,2,8,"Fast heart rate, irritability."
+251:canonical_partial_k3,251,Hyperthyroidism,canonical_partial_k3,canonical_partial,none,3,3,11,"Sweating, fast heart rate, irritability."
+251:lay_full:A,251,Hyperthyroidism,lay_full,lay_full,A,10,10,86,I have no energy and feel worn out. I go from happy to upset in no time. I've dropped a lot of weight without trying. I feel restless and fidgety. I'm sweating a lot. I have loose watery poop. My heart is racing. My muscles feel weak. Little things make me really annoyed. Something is off with my monthly cycle.
+251:lay_partial_k2:A,251,Hyperthyroidism,lay_partial_k2,lay_partial,A,2,2,17,My heart is racing. Little things make me really annoyed.
+251:lay_partial_k3:A,251,Hyperthyroidism,lay_partial_k3,lay_partial,A,3,3,25,I'm sweating a lot. My heart is racing. Little things make me really annoyed.
+252:canonical_full,252,Hypoglycemia,canonical_full,canonical_full,none,11,11,33,"Vomiting, fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, slurred speech, irritability, palpitations."
+252:canonical_partial_k2,252,Hypoglycemia,canonical_partial_k2,canonical_partial,none,2,2,6,"Fatigue, nausea."
+252:canonical_partial_k3,252,Hypoglycemia,canonical_partial_k3,canonical_partial,none,3,3,8,"Vomiting, fatigue, nausea."
+252:lay_full:A,252,Hypoglycemia,lay_full,lay_full,A,11,11,94,I've been sick several times today. I have no energy and feel worn out. I keep worrying and can't calm down. I'm sweating a lot. My head is pounding. I feel like I'm going to throw up. Everything looks blurry. I'm hungry all the time. My words come out slurred. I snap at people easily. I can feel my heart pounding.
+252:lay_partial_k2:A,252,Hypoglycemia,lay_partial_k2,lay_partial,A,2,2,23,I have no energy and feel worn out. I feel like I'm going to throw up.
+252:lay_partial_k3:A,252,Hypoglycemia,lay_partial_k3,lay_partial,A,3,3,32,I've been sick several times today. I have no energy and feel worn out. I feel like I'm going to throw up.
+254:canonical_full,254,Hypoglycemia,canonical_full,canonical_full,none,11,11,38,"Fatigue, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations."
+254:canonical_partial_k2,254,Hypoglycemia,canonical_partial_k2,canonical_partial,none,2,2,7,"Sweating, irritability."
+254:canonical_partial_k3,254,Hypoglycemia,canonical_partial_k3,canonical_partial,none,3,3,13,"Sweating, blurred and distorted vision, irritability."
+254:lay_full:A,254,Hypoglycemia,lay_full,lay_full,A,11,11,96,I have no energy and feel worn out. I keep worrying and can't calm down. I'm sweating a lot. My head is pounding. I feel like I'm going to throw up. Everything looks blurry. I can never seem to eat enough. My lips feel cracked and prickly. My words come out slurred. Little things make me really annoyed. I can feel my heart pounding.
+254:lay_partial_k2:A,254,Hypoglycemia,lay_partial_k2,lay_partial,A,2,2,19,I'm sweating a lot. Little things make me really annoyed.
+254:lay_partial_k3:A,254,Hypoglycemia,lay_partial_k3,lay_partial,A,3,3,24,I'm sweating a lot. Everything looks blurry. Little things make me really annoyed.
+255:canonical_full,255,Hypoglycemia,canonical_full,canonical_full,none,11,11,38,"Vomiting, anxiety, sweating, headache, nausea, blurred and distorted vision, excessive hunger, drying and tingling lips, slurred speech, irritability, palpitations."
+255:canonical_partial_k2,255,Hypoglycemia,canonical_partial_k2,canonical_partial,none,2,2,7,"Vomiting, palpitations."
+255:canonical_partial_k3,255,Hypoglycemia,canonical_partial_k3,canonical_partial,none,3,3,10,"Vomiting, excessive hunger, palpitations."
+255:lay_full:A,255,Hypoglycemia,lay_full,lay_full,A,11,11,95,I keep throwing up. I keep worrying and can't calm down. I'm sweating a lot. I have a throbbing pain in my head. I feel like I'm going to throw up. Everything looks blurry. I can never seem to eat enough. My lips feel cracked and prickly. My words come out slurred. I snap at people easily. I can feel my heart pounding.
+255:lay_partial_k2:A,255,Hypoglycemia,lay_partial_k2,lay_partial,A,2,2,18,I keep throwing up. I can feel my heart pounding.
+255:lay_partial_k3:A,255,Hypoglycemia,lay_partial_k3,lay_partial,A,3,3,26,I keep throwing up. I can never seem to eat enough. I can feel my heart pounding.
+261:canonical_full,261,Osteoarthristis,canonical_full,canonical_full,none,6,6,21,"Joint pain, neck pain, knee pain, hip joint pain, swelling joints, painful walking."
+261:canonical_partial_k2,261,Osteoarthristis,canonical_partial_k2,canonical_partial,none,2,2,8,"Neck pain, knee pain."
+261:canonical_partial_k3,261,Osteoarthristis,canonical_partial_k3,canonical_partial,none,3,3,11,"Neck pain, knee pain, swelling joints."
+261:lay_full:A,261,Osteoarthristis,lay_full,lay_full,A,6,6,47,It hurts in several of my joints. I have an ache in my neck. I have an ache in my knee. My hip hurts. My joints look puffy and enlarged. Walking is painful for me.
+261:lay_partial_k2:A,261,Osteoarthristis,lay_partial_k2,lay_partial,A,2,2,18,I have an ache in my neck. I have an ache in my knee.
+261:lay_partial_k3:A,261,Osteoarthristis,lay_partial_k3,lay_partial,A,3,3,27,I have an ache in my neck. I have an ache in my knee. My joints look puffy and enlarged.
+262:canonical_full,262,Osteoarthristis,canonical_full,canonical_full,none,5,5,18,"Neck pain, knee pain, hip joint pain, swelling joints, painful walking."
+262:canonical_partial_k2,262,Osteoarthristis,canonical_partial_k2,canonical_partial,none,2,2,8,"Swelling joints, painful walking."
+262:canonical_partial_k3,262,Osteoarthristis,canonical_partial_k3,canonical_partial,none,3,3,11,"Knee pain, swelling joints, painful walking."
+262:lay_full:A,262,Osteoarthristis,lay_full,lay_full,A,5,5,37,I have an ache in my neck. My knees hurt. I have pain deep in my hip when I move. My joints are swollen. Walking is painful for me.
+262:lay_partial_k2:A,262,Osteoarthristis,lay_partial_k2,lay_partial,A,2,2,13,My joints are swollen. Walking is painful for me.
+262:lay_partial_k3:A,262,Osteoarthristis,lay_partial_k3,lay_partial,A,3,3,18,My knees hurt. My joints are swollen. Walking is painful for me.
+265:canonical_full,265,Osteoarthristis,canonical_full,canonical_full,none,5,5,17,"Joint pain, neck pain, knee pain, swelling joints, painful walking."
+265:canonical_partial_k2,265,Osteoarthristis,canonical_partial_k2,canonical_partial,none,2,2,8,"Joint pain, knee pain."
+265:canonical_partial_k3,265,Osteoarthristis,canonical_partial_k3,canonical_partial,none,3,3,11,"Joint pain, knee pain, painful walking."
+265:lay_full:A,265,Osteoarthristis,lay_full,lay_full,A,5,5,33,My joints ache. I have an ache in my neck. I have an ache in my knee. My joints are swollen. Walking is painful for me.
+265:lay_partial_k2:A,265,Osteoarthristis,lay_partial_k2,lay_partial,A,2,2,14,My joints ache. I have an ache in my knee.
+265:lay_partial_k3:A,265,Osteoarthristis,lay_partial_k3,lay_partial,A,3,3,20,My joints ache. I have an ache in my knee. Walking is painful for me.
+270:canonical_full,270,Arthritis,canonical_full,canonical_full,none,4,4,14,"Muscle weakness, swelling joints, movement stiffness, painful walking."
+270:canonical_partial_k2,270,Arthritis,canonical_partial_k2,canonical_partial,none,2,2,8,"Swelling joints, painful walking."
+270:canonical_partial_k3,270,Arthritis,canonical_partial_k3,canonical_partial,none,3,3,11,"Swelling joints, movement stiffness, painful walking."
+270:lay_full:A,270,Arthritis,lay_full,lay_full,A,4,4,27,My muscles feel weak. My joints are swollen. My body feels stiff when I move. It hurts to walk.
+270:lay_partial_k2:A,270,Arthritis,lay_partial_k2,lay_partial,A,2,2,13,My joints are swollen. It hurts to walk.
+270:lay_partial_k3:A,270,Arthritis,lay_partial_k3,lay_partial,A,3,3,22,My joints are swollen. My body feels stiff when I move. It hurts to walk.
+271:canonical_full,271,Arthritis,canonical_full,canonical_full,none,4,4,14,"Muscle weakness, stiff neck, movement stiffness, painful walking."
+271:canonical_partial_k2,271,Arthritis,canonical_partial_k2,canonical_partial,none,2,2,8,"Muscle weakness, movement stiffness."
+271:canonical_partial_k3,271,Arthritis,canonical_partial_k3,canonical_partial,none,3,3,11,"Muscle weakness, movement stiffness, painful walking."
+271:lay_full:A,271,Arthritis,lay_full,lay_full,A,4,4,36,My muscles feel weak. I can't turn my head easily. It's hard to get moving because I'm so stiff. Walking is painful for me.
+271:lay_partial_k2:A,271,Arthritis,lay_partial_k2,lay_partial,A,2,2,21,My muscles feel weak. It's hard to get moving because I'm so stiff.
+271:lay_partial_k3:A,271,Arthritis,lay_partial_k3,lay_partial,A,3,3,27,My muscles feel weak. It's hard to get moving because I'm so stiff. Walking is painful for me.
+272:canonical_full,272,Arthritis,canonical_full,canonical_full,none,4,4,14,"Muscle weakness, stiff neck, swelling joints, painful walking."
+272:canonical_partial_k2,272,Arthritis,canonical_partial_k2,canonical_partial,none,2,2,8,"Muscle weakness, stiff neck."
+272:canonical_partial_k3,272,Arthritis,canonical_partial_k3,canonical_partial,none,3,3,11,"Muscle weakness, stiff neck, painful walking."
+272:lay_full:A,272,Arthritis,lay_full,lay_full,A,4,4,27,My muscles feel weak. I can't turn my head easily. My joints are swollen. It hurts to walk.
+272:lay_partial_k2:A,272,Arthritis,lay_partial_k2,lay_partial,A,2,2,16,My muscles feel weak. I can't turn my head easily.
+272:lay_partial_k3:A,272,Arthritis,lay_partial_k3,lay_partial,A,3,3,22,My muscles feel weak. I can't turn my head easily. It hurts to walk.
+274:canonical_full,274,(vertigo) Paroymsal  Positional Vertigo,canonical_full,canonical_full,none,6,6,20,"Vomiting, headache, nausea, spinning movements, loss of balance, unsteadiness."
+274:canonical_partial_k2,274,(vertigo) Paroymsal  Positional Vertigo,canonical_partial_k2,canonical_partial,none,2,2,6,"Vomiting, nausea."
+274:canonical_partial_k3,274,(vertigo) Paroymsal  Positional Vertigo,canonical_partial_k3,canonical_partial,none,3,3,11,"Vomiting, nausea, unsteadiness."
+274:lay_full:A,274,(vertigo) Paroymsal  Positional Vertigo,lay_full,lay_full,A,6,6,53,I've been sick several times today. I have a throbbing pain in my head. I feel sick to my stomach. I feel like the room is whirling. I keep losing my balance. I feel shaky on my feet.
+274:lay_partial_k2:A,274,(vertigo) Paroymsal  Positional Vertigo,lay_partial_k2,lay_partial,A,2,2,18,I've been sick several times today. I feel sick to my stomach.
+274:lay_partial_k3:A,274,(vertigo) Paroymsal  Positional Vertigo,lay_partial_k3,lay_partial,A,3,3,26,I've been sick several times today. I feel sick to my stomach. I feel shaky on my feet.
+275:canonical_full,275,(vertigo) Paroymsal  Positional Vertigo,canonical_full,canonical_full,none,5,5,18,"Headache, nausea, spinning movements, loss of balance, unsteadiness."
+275:canonical_partial_k2,275,(vertigo) Paroymsal  Positional Vertigo,canonical_partial_k2,canonical_partial,none,2,2,9,"Headache, unsteadiness."
+275:canonical_partial_k3,275,(vertigo) Paroymsal  Positional Vertigo,canonical_partial_k3,canonical_partial,none,3,3,11,"Headache, nausea, unsteadiness."
+275:lay_full:A,275,(vertigo) Paroymsal  Positional Vertigo,lay_full,lay_full,A,5,5,42,My head is pounding. I feel like I'm going to throw up. Everything is spinning around me. I keep losing my balance. I feel unsteady when I stand.
+275:lay_partial_k2:A,275,(vertigo) Paroymsal  Positional Vertigo,lay_partial_k2,lay_partial,A,2,2,18,My head is pounding. I feel unsteady when I stand.
+275:lay_partial_k3:A,275,(vertigo) Paroymsal  Positional Vertigo,lay_partial_k3,lay_partial,A,3,3,30,My head is pounding. I feel like I'm going to throw up. I feel unsteady when I stand.
+278:canonical_full,278,(vertigo) Paroymsal  Positional Vertigo,canonical_full,canonical_full,none,5,5,17,"Vomiting, headache, nausea, loss of balance, unsteadiness."
+278:canonical_partial_k2,278,(vertigo) Paroymsal  Positional Vertigo,canonical_partial_k2,canonical_partial,none,2,2,9,"Nausea, unsteadiness."
+278:canonical_partial_k3,278,(vertigo) Paroymsal  Positional Vertigo,canonical_partial_k3,canonical_partial,none,3,3,13,"Nausea, loss of balance, unsteadiness."
+278:lay_full:A,278,(vertigo) Paroymsal  Positional Vertigo,lay_full,lay_full,A,5,5,47,I've been sick several times today. My head is pounding. I feel like I'm going to throw up. I feel wobbly on my feet. I feel shaky on my feet.
+278:lay_partial_k2:A,278,(vertigo) Paroymsal  Positional Vertigo,lay_partial_k2,lay_partial,A,2,2,22,I feel like I'm going to throw up. I feel shaky on my feet.
+278:lay_partial_k3:A,278,(vertigo) Paroymsal  Positional Vertigo,lay_partial_k3,lay_partial,A,3,3,31,I feel like I'm going to throw up. I feel wobbly on my feet. I feel shaky on my feet.
+283:canonical_full,283,Acne,canonical_full,canonical_full,none,3,3,11,"Skin rash, blackheads, scurring."
+283:canonical_partial_k2,283,Acne,canonical_partial_k2,canonical_partial,none,2,2,8,"Blackheads, scurring."
+283:lay_full:A,283,Acne,lay_full,lay_full,A,3,3,25,I have a rash. I have lots of little black dots on my nose. My skin is left with scars.
+283:lay_partial_k2:A,283,Acne,lay_partial_k2,lay_partial,A,2,2,20,I have lots of little black dots on my nose. My skin is left with scars.
+284:canonical_full,284,Acne,canonical_full,canonical_full,none,3,3,13,"Skin rash, pus filled pimples, scurring."
+284:canonical_partial_k2,284,Acne,canonical_partial_k2,canonical_partial,none,2,2,10,"Pus filled pimples, scurring."
+284:lay_full:A,284,Acne,lay_full,lay_full,A,3,3,27,I have a rash. I have whiteheads that ooze when squeezed. My skin is left with scars.
+284:lay_partial_k2:A,284,Acne,lay_partial_k2,lay_partial,A,2,2,22,I have whiteheads that ooze when squeezed. My skin is left with scars.
+285:canonical_full,285,Acne,canonical_full,canonical_full,none,3,3,13,"Skin rash, pus filled pimples, blackheads."
+285:canonical_partial_k2,285,Acne,canonical_partial_k2,canonical_partial,none,2,2,10,"Skin rash, pus filled pimples."
+285:lay_full:A,285,Acne,lay_full,lay_full,A,3,3,30,My skin broke out in red blotches. I have pimples full of pus. My pores are clogged with dark spots.
+285:lay_partial_k2:A,285,Acne,lay_partial_k2,lay_partial,A,2,2,20,My skin broke out in red blotches. I have pimples full of pus.
+286:canonical_full,286,Urinary tract infection,canonical_full,canonical_full,none,4,4,22,"Burning micturition, bladder discomfort, foul smell of urine, continuous feel of urine."
+286:canonical_partial_k2,286,Urinary tract infection,canonical_partial_k2,canonical_partial,none,2,2,10,"Burning micturition, bladder discomfort."
+286:canonical_partial_k3,286,Urinary tract infection,canonical_partial_k3,canonical_partial,none,3,3,15,"Burning micturition, bladder discomfort, continuous feel of urine."
+286:lay_full:A,286,Urinary tract infection,lay_full,lay_full,A,4,4,37,It burns when I pee. My bladder feels uncomfortable. My urine has a strong nasty odour. I constantly feel like I need to pee.
+286:lay_partial_k2:A,286,Urinary tract infection,lay_partial_k2,lay_partial,A,2,2,17,It burns when I pee. My bladder feels uncomfortable.
+286:lay_partial_k3:A,286,Urinary tract infection,lay_partial_k3,lay_partial,A,3,3,27,It burns when I pee. My bladder feels uncomfortable. I constantly feel like I need to pee.
+288:canonical_full,288,Urinary tract infection,canonical_full,canonical_full,none,3,3,19,"Burning micturition, foul smell of urine, continuous feel of urine."
+288:canonical_partial_k2,288,Urinary tract infection,canonical_partial_k2,canonical_partial,none,2,2,14,"Foul smell of urine, continuous feel of urine."
+288:lay_full:A,288,Urinary tract infection,lay_full,lay_full,A,3,3,30,Peeing stings a lot. My urine has a strong nasty odour. I constantly feel like I need to pee.
+288:lay_partial_k2:A,288,Urinary tract infection,lay_partial_k2,lay_partial,A,2,2,22,My urine has a strong nasty odour. I constantly feel like I need to pee.
+290:canonical_full,290,Urinary tract infection,canonical_full,canonical_full,none,3,3,17,"Burning micturition, bladder discomfort, foul smell of urine."
+290:canonical_partial_k2,290,Urinary tract infection,canonical_partial_k2,canonical_partial,none,2,2,10,"Burning micturition, bladder discomfort."
+290:lay_full:A,290,Urinary tract infection,lay_full,lay_full,A,3,3,30,Peeing stings a lot. I feel pressure down low when I need to pee. My pee smells really bad.
+290:lay_partial_k2:A,290,Urinary tract infection,lay_partial_k2,lay_partial,A,2,2,22,Peeing stings a lot. I feel pressure down low when I need to pee.
+293:canonical_full,293,Psoriasis,canonical_full,canonical_full,none,5,5,25,"Skin rash, skin peeling, silver like dusting, small dents in nails, inflammatory nails."
+293:canonical_partial_k2,293,Psoriasis,canonical_partial_k2,canonical_partial,none,2,2,11,"Skin peeling, silver like dusting."
+293:canonical_partial_k3,293,Psoriasis,canonical_partial_k3,canonical_partial,none,3,3,18,"Skin peeling, silver like dusting, small dents in nails."
+293:lay_full:A,293,Psoriasis,lay_full,lay_full,A,5,5,49,My skin broke out in red blotches. The skin keeps peeling. There's a silver powdery scale on my skin. My nails have tiny pits in them. My nails look sore and inflamed.
+293:lay_partial_k2:A,293,Psoriasis,lay_partial_k2,lay_partial,A,2,2,21,The skin keeps peeling. There's a silver powdery scale on my skin.
+293:lay_partial_k3:A,293,Psoriasis,lay_partial_k3,lay_partial,A,3,3,30,The skin keeps peeling. There's a silver powdery scale on my skin. My nails have tiny pits in them.
+294:canonical_full,294,Psoriasis,canonical_full,canonical_full,none,5,5,24,"Skin rash, joint pain, silver like dusting, small dents in nails, inflammatory nails."
+294:canonical_partial_k2,294,Psoriasis,canonical_partial_k2,canonical_partial,none,2,2,9,"Joint pain, inflammatory nails."
+294:canonical_partial_k3,294,Psoriasis,canonical_partial_k3,canonical_partial,none,3,3,14,"Joint pain, silver like dusting, inflammatory nails."
+294:lay_full:A,294,Psoriasis,lay_full,lay_full,A,5,5,48,My skin broke out in red blotches. My joints ache. There's a silver powdery scale on my skin. My nails have tiny pits in them. The skin around my nails is red and swollen.
+294:lay_partial_k2:A,294,Psoriasis,lay_partial_k2,lay_partial,A,2,2,17,My joints ache. The skin around my nails is red and swollen.
+294:lay_partial_k3:A,294,Psoriasis,lay_partial_k3,lay_partial,A,3,3,29,My joints ache. There's a silver powdery scale on my skin. The skin around my nails is red and swollen.
+297:canonical_full,297,Psoriasis,canonical_full,canonical_full,none,5,5,24,"Skin rash, joint pain, skin peeling, silver like dusting, small dents in nails."
+297:canonical_partial_k2,297,Psoriasis,canonical_partial_k2,canonical_partial,none,2,2,10,"Skin rash, silver like dusting."
+297:canonical_partial_k3,297,Psoriasis,canonical_partial_k3,canonical_partial,none,3,3,13,"Skin rash, joint pain, silver like dusting."
+297:lay_full:A,297,Psoriasis,lay_full,lay_full,A,5,5,45,My skin broke out in red blotches. It hurts in several of my joints. The skin keeps peeling. My skin has silvery flakes. My nails have tiny pits in them.
+297:lay_partial_k2:A,297,Psoriasis,lay_partial_k2,lay_partial,A,2,2,20,My skin broke out in red blotches. My skin has silvery flakes.
+297:lay_partial_k3:A,297,Psoriasis,lay_partial_k3,lay_partial,A,3,3,29,My skin broke out in red blotches. It hurts in several of my joints. My skin has silvery flakes.
+299:canonical_full,299,Impetigo,canonical_full,canonical_full,none,4,4,20,"High fever, blister, red sore around nose, yellow crust ooze."
+299:canonical_partial_k2,299,Impetigo,canonical_partial_k2,canonical_partial,none,2,2,11,"Blister, red sore around nose."
+299:canonical_partial_k3,299,Impetigo,canonical_partial_k3,canonical_partial,none,3,3,17,"Blister, red sore around nose, yellow crust ooze."
+299:lay_full:A,299,Impetigo,lay_full,lay_full,A,4,4,47,I'm burning up with fever. I have small fluid-filled bumps on my skin. The skin around my nostrils is red and raw. My sores leak and form honey-coloured crusts.
+299:lay_partial_k2:A,299,Impetigo,lay_partial_k2,lay_partial,A,2,2,27,I have small fluid-filled bumps on my skin. The skin around my nostrils is red and raw.
+299:lay_partial_k3:A,299,Impetigo,lay_partial_k3,lay_partial,A,3,3,39,I have small fluid-filled bumps on my skin. The skin around my nostrils is red and raw. My sores leak and form honey-coloured crusts.
+301:canonical_full,301,Impetigo,canonical_full,canonical_full,none,4,4,20,"Skin rash, high fever, red sore around nose, yellow crust ooze."
+301:canonical_partial_k2,301,Impetigo,canonical_partial_k2,canonical_partial,none,2,2,11,"High fever, red sore around nose."
+301:canonical_partial_k3,301,Impetigo,canonical_partial_k3,canonical_partial,none,3,3,14,"Skin rash, high fever, red sore around nose."
+301:lay_full:A,301,Impetigo,lay_full,lay_full,A,4,4,39,I have a rash. I'm burning up with fever. The skin around my nostrils is red and raw. My sores leak and form honey-coloured crusts.
+301:lay_partial_k2:A,301,Impetigo,lay_partial_k2,lay_partial,A,2,2,22,I'm burning up with fever. The skin around my nostrils is red and raw.
+301:lay_partial_k3:A,301,Impetigo,lay_partial_k3,lay_partial,A,3,3,27,I have a rash. I'm burning up with fever. The skin around my nostrils is red and raw.
+302:canonical_full,302,Impetigo,canonical_full,canonical_full,none,4,4,17,"Skin rash, high fever, blister, yellow crust ooze."
+302:canonical_partial_k2,302,Impetigo,canonical_partial_k2,canonical_partial,none,2,2,11,"Skin rash, yellow crust ooze."
+302:canonical_partial_k3,302,Impetigo,canonical_partial_k3,canonical_partial,none,3,3,14,"Skin rash, blister, yellow crust ooze."
+302:lay_full:A,302,Impetigo,lay_full,lay_full,A,4,4,37,I have a rash. I'm burning up with fever. Little watery bubbles came up on my skin. My sores leak and form honey-coloured crusts.
+302:lay_partial_k2:A,302,Impetigo,lay_partial_k2,lay_partial,A,2,2,19,I have a rash. My sores leak and form honey-coloured crusts.
+302:lay_partial_k3:A,302,Impetigo,lay_partial_k3,lay_partial,A,3,3,29,I have a rash. Little watery bubbles came up on my skin. My sores leak and form honey-coloured crusts.

@@ -1,0 +1,739 @@
+method,query_index,true_label,correct
+BM25-only,0,Fungal infection,1
+BM25-only,1,Fungal infection,1
+BM25-only,2,Allergy,1
+BM25-only,3,Allergy,1
+BM25-only,4,GERD,1
+BM25-only,5,GERD,1
+BM25-only,6,Chronic cholestasis,1
+BM25-only,7,Chronic cholestasis,1
+BM25-only,8,Drug Reaction,1
+BM25-only,9,Drug Reaction,1
+BM25-only,10,Peptic ulcer diseae,1
+BM25-only,11,Peptic ulcer diseae,1
+BM25-only,12,AIDS,1
+BM25-only,13,AIDS,1
+BM25-only,14,Diabetes,1
+BM25-only,15,Diabetes,1
+BM25-only,16,Gastroenteritis,0
+BM25-only,17,Gastroenteritis,1
+BM25-only,18,Bronchial Asthma,1
+BM25-only,19,Bronchial Asthma,1
+BM25-only,20,Hypertension,1
+BM25-only,21,Hypertension,1
+BM25-only,22,Migraine,1
+BM25-only,23,Migraine,1
+BM25-only,24,Cervical spondylosis,1
+BM25-only,25,Cervical spondylosis,1
+BM25-only,26,Paralysis (brain hemorrhage),1
+BM25-only,27,Paralysis (brain hemorrhage),1
+BM25-only,28,Jaundice,1
+BM25-only,29,Jaundice,1
+BM25-only,30,Malaria,1
+BM25-only,31,Malaria,1
+BM25-only,32,Chicken pox,1
+BM25-only,33,Chicken pox,1
+BM25-only,34,Dengue,0
+BM25-only,35,Dengue,0
+BM25-only,36,Typhoid,1
+BM25-only,37,Typhoid,1
+BM25-only,38,hepatitis A,1
+BM25-only,39,hepatitis A,1
+BM25-only,40,Hepatitis B,1
+BM25-only,41,Hepatitis B,1
+BM25-only,42,Hepatitis C,1
+BM25-only,43,Hepatitis C,1
+BM25-only,44,Hepatitis D,0
+BM25-only,45,Hepatitis D,1
+BM25-only,46,Hepatitis E,1
+BM25-only,47,Hepatitis E,1
+BM25-only,48,Alcoholic hepatitis,1
+BM25-only,49,Alcoholic hepatitis,1
+BM25-only,50,Tuberculosis,1
+BM25-only,51,Tuberculosis,1
+BM25-only,52,Common Cold,1
+BM25-only,53,Common Cold,1
+BM25-only,54,Pneumonia,1
+BM25-only,55,Pneumonia,1
+BM25-only,56,Dimorphic hemmorhoids(piles),1
+BM25-only,57,Dimorphic hemmorhoids(piles),1
+BM25-only,58,Heart attack,1
+BM25-only,59,Heart attack,1
+BM25-only,60,Varicose veins,1
+BM25-only,61,Varicose veins,1
+BM25-only,62,Hypothyroidism,1
+BM25-only,63,Hypothyroidism,1
+BM25-only,64,Hyperthyroidism,1
+BM25-only,65,Hyperthyroidism,1
+BM25-only,66,Hypoglycemia,1
+BM25-only,67,Hypoglycemia,1
+BM25-only,68,Osteoarthristis,1
+BM25-only,69,Osteoarthristis,1
+BM25-only,70,Arthritis,1
+BM25-only,71,Arthritis,1
+BM25-only,72,(vertigo) Paroymsal  Positional Vertigo,1
+BM25-only,73,(vertigo) Paroymsal  Positional Vertigo,1
+BM25-only,74,Acne,1
+BM25-only,75,Acne,1
+BM25-only,76,Urinary tract infection,1
+BM25-only,77,Urinary tract infection,1
+BM25-only,78,Psoriasis,1
+BM25-only,79,Psoriasis,1
+BM25-only,80,Impetigo,1
+BM25-only,81,Impetigo,1
+Dense-only,0,Fungal infection,1
+Dense-only,1,Fungal infection,1
+Dense-only,2,Allergy,1
+Dense-only,3,Allergy,1
+Dense-only,4,GERD,1
+Dense-only,5,GERD,1
+Dense-only,6,Chronic cholestasis,0
+Dense-only,7,Chronic cholestasis,0
+Dense-only,8,Drug Reaction,1
+Dense-only,9,Drug Reaction,1
+Dense-only,10,Peptic ulcer diseae,0
+Dense-only,11,Peptic ulcer diseae,1
+Dense-only,12,AIDS,1
+Dense-only,13,AIDS,1
+Dense-only,14,Diabetes,1
+Dense-only,15,Diabetes,1
+Dense-only,16,Gastroenteritis,1
+Dense-only,17,Gastroenteritis,1
+Dense-only,18,Bronchial Asthma,1
+Dense-only,19,Bronchial Asthma,1
+Dense-only,20,Hypertension,0
+Dense-only,21,Hypertension,1
+Dense-only,22,Migraine,1
+Dense-only,23,Migraine,1
+Dense-only,24,Cervical spondylosis,1
+Dense-only,25,Cervical spondylosis,1
+Dense-only,26,Paralysis (brain hemorrhage),1
+Dense-only,27,Paralysis (brain hemorrhage),0
+Dense-only,28,Jaundice,0
+Dense-only,29,Jaundice,1
+Dense-only,30,Malaria,0
+Dense-only,31,Malaria,1
+Dense-only,32,Chicken pox,0
+Dense-only,33,Chicken pox,0
+Dense-only,34,Dengue,1
+Dense-only,35,Dengue,1
+Dense-only,36,Typhoid,1
+Dense-only,37,Typhoid,1
+Dense-only,38,hepatitis A,1
+Dense-only,39,hepatitis A,1
+Dense-only,40,Hepatitis B,1
+Dense-only,41,Hepatitis B,1
+Dense-only,42,Hepatitis C,1
+Dense-only,43,Hepatitis C,1
+Dense-only,44,Hepatitis D,0
+Dense-only,45,Hepatitis D,1
+Dense-only,46,Hepatitis E,0
+Dense-only,47,Hepatitis E,1
+Dense-only,48,Alcoholic hepatitis,1
+Dense-only,49,Alcoholic hepatitis,1
+Dense-only,50,Tuberculosis,0
+Dense-only,51,Tuberculosis,0
+Dense-only,52,Common Cold,1
+Dense-only,53,Common Cold,0
+Dense-only,54,Pneumonia,1
+Dense-only,55,Pneumonia,1
+Dense-only,56,Dimorphic hemmorhoids(piles),1
+Dense-only,57,Dimorphic hemmorhoids(piles),1
+Dense-only,58,Heart attack,1
+Dense-only,59,Heart attack,1
+Dense-only,60,Varicose veins,1
+Dense-only,61,Varicose veins,1
+Dense-only,62,Hypothyroidism,1
+Dense-only,63,Hypothyroidism,1
+Dense-only,64,Hyperthyroidism,1
+Dense-only,65,Hyperthyroidism,1
+Dense-only,66,Hypoglycemia,0
+Dense-only,67,Hypoglycemia,0
+Dense-only,68,Osteoarthristis,1
+Dense-only,69,Osteoarthristis,0
+Dense-only,70,Arthritis,1
+Dense-only,71,Arthritis,1
+Dense-only,72,(vertigo) Paroymsal  Positional Vertigo,1
+Dense-only,73,(vertigo) Paroymsal  Positional Vertigo,1
+Dense-only,74,Acne,0
+Dense-only,75,Acne,1
+Dense-only,76,Urinary tract infection,1
+Dense-only,77,Urinary tract infection,1
+Dense-only,78,Psoriasis,1
+Dense-only,79,Psoriasis,1
+Dense-only,80,Impetigo,1
+Dense-only,81,Impetigo,1
+Hybrid,0,Fungal infection,1
+Hybrid,1,Fungal infection,1
+Hybrid,2,Allergy,1
+Hybrid,3,Allergy,1
+Hybrid,4,GERD,1
+Hybrid,5,GERD,1
+Hybrid,6,Chronic cholestasis,1
+Hybrid,7,Chronic cholestasis,1
+Hybrid,8,Drug Reaction,1
+Hybrid,9,Drug Reaction,1
+Hybrid,10,Peptic ulcer diseae,1
+Hybrid,11,Peptic ulcer diseae,1
+Hybrid,12,AIDS,1
+Hybrid,13,AIDS,1
+Hybrid,14,Diabetes,1
+Hybrid,15,Diabetes,1
+Hybrid,16,Gastroenteritis,0
+Hybrid,17,Gastroenteritis,1
+Hybrid,18,Bronchial Asthma,1
+Hybrid,19,Bronchial Asthma,1
+Hybrid,20,Hypertension,1
+Hybrid,21,Hypertension,1
+Hybrid,22,Migraine,1
+Hybrid,23,Migraine,1
+Hybrid,24,Cervical spondylosis,1
+Hybrid,25,Cervical spondylosis,1
+Hybrid,26,Paralysis (brain hemorrhage),1
+Hybrid,27,Paralysis (brain hemorrhage),1
+Hybrid,28,Jaundice,1
+Hybrid,29,Jaundice,1
+Hybrid,30,Malaria,1
+Hybrid,31,Malaria,1
+Hybrid,32,Chicken pox,1
+Hybrid,33,Chicken pox,1
+Hybrid,34,Dengue,0
+Hybrid,35,Dengue,0
+Hybrid,36,Typhoid,1
+Hybrid,37,Typhoid,1
+Hybrid,38,hepatitis A,1
+Hybrid,39,hepatitis A,1
+Hybrid,40,Hepatitis B,1
+Hybrid,41,Hepatitis B,1
+Hybrid,42,Hepatitis C,1
+Hybrid,43,Hepatitis C,1
+Hybrid,44,Hepatitis D,0
+Hybrid,45,Hepatitis D,1
+Hybrid,46,Hepatitis E,1
+Hybrid,47,Hepatitis E,1
+Hybrid,48,Alcoholic hepatitis,1
+Hybrid,49,Alcoholic hepatitis,1
+Hybrid,50,Tuberculosis,1
+Hybrid,51,Tuberculosis,1
+Hybrid,52,Common Cold,1
+Hybrid,53,Common Cold,1
+Hybrid,54,Pneumonia,1
+Hybrid,55,Pneumonia,1
+Hybrid,56,Dimorphic hemmorhoids(piles),1
+Hybrid,57,Dimorphic hemmorhoids(piles),1
+Hybrid,58,Heart attack,1
+Hybrid,59,Heart attack,1
+Hybrid,60,Varicose veins,1
+Hybrid,61,Varicose veins,1
+Hybrid,62,Hypothyroidism,1
+Hybrid,63,Hypothyroidism,1
+Hybrid,64,Hyperthyroidism,1
+Hybrid,65,Hyperthyroidism,1
+Hybrid,66,Hypoglycemia,1
+Hybrid,67,Hypoglycemia,1
+Hybrid,68,Osteoarthristis,1
+Hybrid,69,Osteoarthristis,1
+Hybrid,70,Arthritis,1
+Hybrid,71,Arthritis,1
+Hybrid,72,(vertigo) Paroymsal  Positional Vertigo,1
+Hybrid,73,(vertigo) Paroymsal  Positional Vertigo,1
+Hybrid,74,Acne,1
+Hybrid,75,Acne,1
+Hybrid,76,Urinary tract infection,1
+Hybrid,77,Urinary tract infection,1
+Hybrid,78,Psoriasis,1
+Hybrid,79,Psoriasis,1
+Hybrid,80,Impetigo,1
+Hybrid,81,Impetigo,1
+Hybrid+KG (no recency),0,Fungal infection,1
+Hybrid+KG (no recency),1,Fungal infection,1
+Hybrid+KG (no recency),2,Allergy,1
+Hybrid+KG (no recency),3,Allergy,1
+Hybrid+KG (no recency),4,GERD,1
+Hybrid+KG (no recency),5,GERD,1
+Hybrid+KG (no recency),6,Chronic cholestasis,1
+Hybrid+KG (no recency),7,Chronic cholestasis,1
+Hybrid+KG (no recency),8,Drug Reaction,1
+Hybrid+KG (no recency),9,Drug Reaction,1
+Hybrid+KG (no recency),10,Peptic ulcer diseae,1
+Hybrid+KG (no recency),11,Peptic ulcer diseae,1
+Hybrid+KG (no recency),12,AIDS,1
+Hybrid+KG (no recency),13,AIDS,1
+Hybrid+KG (no recency),14,Diabetes,1
+Hybrid+KG (no recency),15,Diabetes,1
+Hybrid+KG (no recency),16,Gastroenteritis,1
+Hybrid+KG (no recency),17,Gastroenteritis,1
+Hybrid+KG (no recency),18,Bronchial Asthma,1
+Hybrid+KG (no recency),19,Bronchial Asthma,1
+Hybrid+KG (no recency),20,Hypertension,1
+Hybrid+KG (no recency),21,Hypertension,1
+Hybrid+KG (no recency),22,Migraine,1
+Hybrid+KG (no recency),23,Migraine,1
+Hybrid+KG (no recency),24,Cervical spondylosis,1
+Hybrid+KG (no recency),25,Cervical spondylosis,1
+Hybrid+KG (no recency),26,Paralysis (brain hemorrhage),1
+Hybrid+KG (no recency),27,Paralysis (brain hemorrhage),1
+Hybrid+KG (no recency),28,Jaundice,1
+Hybrid+KG (no recency),29,Jaundice,1
+Hybrid+KG (no recency),30,Malaria,1
+Hybrid+KG (no recency),31,Malaria,1
+Hybrid+KG (no recency),32,Chicken pox,1
+Hybrid+KG (no recency),33,Chicken pox,1
+Hybrid+KG (no recency),34,Dengue,1
+Hybrid+KG (no recency),35,Dengue,1
+Hybrid+KG (no recency),36,Typhoid,1
+Hybrid+KG (no recency),37,Typhoid,1
+Hybrid+KG (no recency),38,hepatitis A,1
+Hybrid+KG (no recency),39,hepatitis A,1
+Hybrid+KG (no recency),40,Hepatitis B,1
+Hybrid+KG (no recency),41,Hepatitis B,1
+Hybrid+KG (no recency),42,Hepatitis C,1
+Hybrid+KG (no recency),43,Hepatitis C,1
+Hybrid+KG (no recency),44,Hepatitis D,0
+Hybrid+KG (no recency),45,Hepatitis D,0
+Hybrid+KG (no recency),46,Hepatitis E,1
+Hybrid+KG (no recency),47,Hepatitis E,1
+Hybrid+KG (no recency),48,Alcoholic hepatitis,1
+Hybrid+KG (no recency),49,Alcoholic hepatitis,1
+Hybrid+KG (no recency),50,Tuberculosis,1
+Hybrid+KG (no recency),51,Tuberculosis,1
+Hybrid+KG (no recency),52,Common Cold,1
+Hybrid+KG (no recency),53,Common Cold,1
+Hybrid+KG (no recency),54,Pneumonia,1
+Hybrid+KG (no recency),55,Pneumonia,1
+Hybrid+KG (no recency),56,Dimorphic hemmorhoids(piles),1
+Hybrid+KG (no recency),57,Dimorphic hemmorhoids(piles),1
+Hybrid+KG (no recency),58,Heart attack,1
+Hybrid+KG (no recency),59,Heart attack,1
+Hybrid+KG (no recency),60,Varicose veins,1
+Hybrid+KG (no recency),61,Varicose veins,1
+Hybrid+KG (no recency),62,Hypothyroidism,1
+Hybrid+KG (no recency),63,Hypothyroidism,1
+Hybrid+KG (no recency),64,Hyperthyroidism,1
+Hybrid+KG (no recency),65,Hyperthyroidism,1
+Hybrid+KG (no recency),66,Hypoglycemia,1
+Hybrid+KG (no recency),67,Hypoglycemia,1
+Hybrid+KG (no recency),68,Osteoarthristis,1
+Hybrid+KG (no recency),69,Osteoarthristis,1
+Hybrid+KG (no recency),70,Arthritis,1
+Hybrid+KG (no recency),71,Arthritis,1
+Hybrid+KG (no recency),72,(vertigo) Paroymsal  Positional Vertigo,1
+Hybrid+KG (no recency),73,(vertigo) Paroymsal  Positional Vertigo,1
+Hybrid+KG (no recency),74,Acne,1
+Hybrid+KG (no recency),75,Acne,1
+Hybrid+KG (no recency),76,Urinary tract infection,1
+Hybrid+KG (no recency),77,Urinary tract infection,1
+Hybrid+KG (no recency),78,Psoriasis,1
+Hybrid+KG (no recency),79,Psoriasis,1
+Hybrid+KG (no recency),80,Impetigo,1
+Hybrid+KG (no recency),81,Impetigo,1
+Proposed (CRFS),0,Fungal infection,1
+Proposed (CRFS),1,Fungal infection,1
+Proposed (CRFS),2,Allergy,1
+Proposed (CRFS),3,Allergy,1
+Proposed (CRFS),4,GERD,1
+Proposed (CRFS),5,GERD,1
+Proposed (CRFS),6,Chronic cholestasis,1
+Proposed (CRFS),7,Chronic cholestasis,1
+Proposed (CRFS),8,Drug Reaction,1
+Proposed (CRFS),9,Drug Reaction,1
+Proposed (CRFS),10,Peptic ulcer diseae,1
+Proposed (CRFS),11,Peptic ulcer diseae,1
+Proposed (CRFS),12,AIDS,1
+Proposed (CRFS),13,AIDS,1
+Proposed (CRFS),14,Diabetes,1
+Proposed (CRFS),15,Diabetes,1
+Proposed (CRFS),16,Gastroenteritis,1
+Proposed (CRFS),17,Gastroenteritis,1
+Proposed (CRFS),18,Bronchial Asthma,1
+Proposed (CRFS),19,Bronchial Asthma,1
+Proposed (CRFS),20,Hypertension,1
+Proposed (CRFS),21,Hypertension,1
+Proposed (CRFS),22,Migraine,1
+Proposed (CRFS),23,Migraine,1
+Proposed (CRFS),24,Cervical spondylosis,1
+Proposed (CRFS),25,Cervical spondylosis,1
+Proposed (CRFS),26,Paralysis (brain hemorrhage),1
+Proposed (CRFS),27,Paralysis (brain hemorrhage),1
+Proposed (CRFS),28,Jaundice,1
+Proposed (CRFS),29,Jaundice,1
+Proposed (CRFS),30,Malaria,1
+Proposed (CRFS),31,Malaria,1
+Proposed (CRFS),32,Chicken pox,1
+Proposed (CRFS),33,Chicken pox,1
+Proposed (CRFS),34,Dengue,1
+Proposed (CRFS),35,Dengue,1
+Proposed (CRFS),36,Typhoid,1
+Proposed (CRFS),37,Typhoid,1
+Proposed (CRFS),38,hepatitis A,1
+Proposed (CRFS),39,hepatitis A,1
+Proposed (CRFS),40,Hepatitis B,1
+Proposed (CRFS),41,Hepatitis B,1
+Proposed (CRFS),42,Hepatitis C,1
+Proposed (CRFS),43,Hepatitis C,1
+Proposed (CRFS),44,Hepatitis D,0
+Proposed (CRFS),45,Hepatitis D,0
+Proposed (CRFS),46,Hepatitis E,1
+Proposed (CRFS),47,Hepatitis E,1
+Proposed (CRFS),48,Alcoholic hepatitis,1
+Proposed (CRFS),49,Alcoholic hepatitis,1
+Proposed (CRFS),50,Tuberculosis,1
+Proposed (CRFS),51,Tuberculosis,1
+Proposed (CRFS),52,Common Cold,1
+Proposed (CRFS),53,Common Cold,1
+Proposed (CRFS),54,Pneumonia,1
+Proposed (CRFS),55,Pneumonia,1
+Proposed (CRFS),56,Dimorphic hemmorhoids(piles),1
+Proposed (CRFS),57,Dimorphic hemmorhoids(piles),1
+Proposed (CRFS),58,Heart attack,1
+Proposed (CRFS),59,Heart attack,1
+Proposed (CRFS),60,Varicose veins,1
+Proposed (CRFS),61,Varicose veins,1
+Proposed (CRFS),62,Hypothyroidism,1
+Proposed (CRFS),63,Hypothyroidism,1
+Proposed (CRFS),64,Hyperthyroidism,1
+Proposed (CRFS),65,Hyperthyroidism,1
+Proposed (CRFS),66,Hypoglycemia,1
+Proposed (CRFS),67,Hypoglycemia,1
+Proposed (CRFS),68,Osteoarthristis,1
+Proposed (CRFS),69,Osteoarthristis,1
+Proposed (CRFS),70,Arthritis,1
+Proposed (CRFS),71,Arthritis,1
+Proposed (CRFS),72,(vertigo) Paroymsal  Positional Vertigo,1
+Proposed (CRFS),73,(vertigo) Paroymsal  Positional Vertigo,1
+Proposed (CRFS),74,Acne,1
+Proposed (CRFS),75,Acne,1
+Proposed (CRFS),76,Urinary tract infection,1
+Proposed (CRFS),77,Urinary tract infection,1
+Proposed (CRFS),78,Psoriasis,1
+Proposed (CRFS),79,Psoriasis,1
+Proposed (CRFS),80,Impetigo,1
+Proposed (CRFS),81,Impetigo,1
+ablation::Full Proposed System,0,Fungal infection,1
+ablation::Full Proposed System,1,Fungal infection,1
+ablation::Full Proposed System,2,Allergy,1
+ablation::Full Proposed System,3,Allergy,1
+ablation::Full Proposed System,4,GERD,1
+ablation::Full Proposed System,5,GERD,1
+ablation::Full Proposed System,6,Chronic cholestasis,1
+ablation::Full Proposed System,7,Chronic cholestasis,1
+ablation::Full Proposed System,8,Drug Reaction,1
+ablation::Full Proposed System,9,Drug Reaction,1
+ablation::Full Proposed System,10,Peptic ulcer diseae,1
+ablation::Full Proposed System,11,Peptic ulcer diseae,1
+ablation::Full Proposed System,12,AIDS,1
+ablation::Full Proposed System,13,AIDS,1
+ablation::Full Proposed System,14,Diabetes,1
+ablation::Full Proposed System,15,Diabetes,1
+ablation::Full Proposed System,16,Gastroenteritis,1
+ablation::Full Proposed System,17,Gastroenteritis,1
+ablation::Full Proposed System,18,Bronchial Asthma,1
+ablation::Full Proposed System,19,Bronchial Asthma,1
+ablation::Full Proposed System,20,Hypertension,1
+ablation::Full Proposed System,21,Hypertension,1
+ablation::Full Proposed System,22,Migraine,1
+ablation::Full Proposed System,23,Migraine,1
+ablation::Full Proposed System,24,Cervical spondylosis,1
+ablation::Full Proposed System,25,Cervical spondylosis,1
+ablation::Full Proposed System,26,Paralysis (brain hemorrhage),1
+ablation::Full Proposed System,27,Paralysis (brain hemorrhage),1
+ablation::Full Proposed System,28,Jaundice,1
+ablation::Full Proposed System,29,Jaundice,1
+ablation::Full Proposed System,30,Malaria,1
+ablation::Full Proposed System,31,Malaria,1
+ablation::Full Proposed System,32,Chicken pox,1
+ablation::Full Proposed System,33,Chicken pox,1
+ablation::Full Proposed System,34,Dengue,1
+ablation::Full Proposed System,35,Dengue,1
+ablation::Full Proposed System,36,Typhoid,1
+ablation::Full Proposed System,37,Typhoid,1
+ablation::Full Proposed System,38,hepatitis A,1
+ablation::Full Proposed System,39,hepatitis A,1
+ablation::Full Proposed System,40,Hepatitis B,1
+ablation::Full Proposed System,41,Hepatitis B,1
+ablation::Full Proposed System,42,Hepatitis C,1
+ablation::Full Proposed System,43,Hepatitis C,1
+ablation::Full Proposed System,44,Hepatitis D,0
+ablation::Full Proposed System,45,Hepatitis D,0
+ablation::Full Proposed System,46,Hepatitis E,1
+ablation::Full Proposed System,47,Hepatitis E,1
+ablation::Full Proposed System,48,Alcoholic hepatitis,1
+ablation::Full Proposed System,49,Alcoholic hepatitis,1
+ablation::Full Proposed System,50,Tuberculosis,1
+ablation::Full Proposed System,51,Tuberculosis,1
+ablation::Full Proposed System,52,Common Cold,1
+ablation::Full Proposed System,53,Common Cold,1
+ablation::Full Proposed System,54,Pneumonia,1
+ablation::Full Proposed System,55,Pneumonia,1
+ablation::Full Proposed System,56,Dimorphic hemmorhoids(piles),1
+ablation::Full Proposed System,57,Dimorphic hemmorhoids(piles),1
+ablation::Full Proposed System,58,Heart attack,1
+ablation::Full Proposed System,59,Heart attack,1
+ablation::Full Proposed System,60,Varicose veins,1
+ablation::Full Proposed System,61,Varicose veins,1
+ablation::Full Proposed System,62,Hypothyroidism,1
+ablation::Full Proposed System,63,Hypothyroidism,1
+ablation::Full Proposed System,64,Hyperthyroidism,1
+ablation::Full Proposed System,65,Hyperthyroidism,1
+ablation::Full Proposed System,66,Hypoglycemia,1
+ablation::Full Proposed System,67,Hypoglycemia,1
+ablation::Full Proposed System,68,Osteoarthristis,1
+ablation::Full Proposed System,69,Osteoarthristis,1
+ablation::Full Proposed System,70,Arthritis,1
+ablation::Full Proposed System,71,Arthritis,1
+ablation::Full Proposed System,72,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::Full Proposed System,73,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::Full Proposed System,74,Acne,1
+ablation::Full Proposed System,75,Acne,1
+ablation::Full Proposed System,76,Urinary tract infection,1
+ablation::Full Proposed System,77,Urinary tract infection,1
+ablation::Full Proposed System,78,Psoriasis,1
+ablation::Full Proposed System,79,Psoriasis,1
+ablation::Full Proposed System,80,Impetigo,1
+ablation::Full Proposed System,81,Impetigo,1
+ablation::w/o Knowledge Graph,0,Fungal infection,1
+ablation::w/o Knowledge Graph,1,Fungal infection,1
+ablation::w/o Knowledge Graph,2,Allergy,1
+ablation::w/o Knowledge Graph,3,Allergy,1
+ablation::w/o Knowledge Graph,4,GERD,1
+ablation::w/o Knowledge Graph,5,GERD,1
+ablation::w/o Knowledge Graph,6,Chronic cholestasis,1
+ablation::w/o Knowledge Graph,7,Chronic cholestasis,1
+ablation::w/o Knowledge Graph,8,Drug Reaction,1
+ablation::w/o Knowledge Graph,9,Drug Reaction,1
+ablation::w/o Knowledge Graph,10,Peptic ulcer diseae,1
+ablation::w/o Knowledge Graph,11,Peptic ulcer diseae,1
+ablation::w/o Knowledge Graph,12,AIDS,1
+ablation::w/o Knowledge Graph,13,AIDS,1
+ablation::w/o Knowledge Graph,14,Diabetes,1
+ablation::w/o Knowledge Graph,15,Diabetes,1
+ablation::w/o Knowledge Graph,16,Gastroenteritis,0
+ablation::w/o Knowledge Graph,17,Gastroenteritis,1
+ablation::w/o Knowledge Graph,18,Bronchial Asthma,1
+ablation::w/o Knowledge Graph,19,Bronchial Asthma,1
+ablation::w/o Knowledge Graph,20,Hypertension,1
+ablation::w/o Knowledge Graph,21,Hypertension,1
+ablation::w/o Knowledge Graph,22,Migraine,1
+ablation::w/o Knowledge Graph,23,Migraine,1
+ablation::w/o Knowledge Graph,24,Cervical spondylosis,1
+ablation::w/o Knowledge Graph,25,Cervical spondylosis,1
+ablation::w/o Knowledge Graph,26,Paralysis (brain hemorrhage),1
+ablation::w/o Knowledge Graph,27,Paralysis (brain hemorrhage),1
+ablation::w/o Knowledge Graph,28,Jaundice,1
+ablation::w/o Knowledge Graph,29,Jaundice,1
+ablation::w/o Knowledge Graph,30,Malaria,1
+ablation::w/o Knowledge Graph,31,Malaria,1
+ablation::w/o Knowledge Graph,32,Chicken pox,1
+ablation::w/o Knowledge Graph,33,Chicken pox,1
+ablation::w/o Knowledge Graph,34,Dengue,0
+ablation::w/o Knowledge Graph,35,Dengue,0
+ablation::w/o Knowledge Graph,36,Typhoid,1
+ablation::w/o Knowledge Graph,37,Typhoid,1
+ablation::w/o Knowledge Graph,38,hepatitis A,1
+ablation::w/o Knowledge Graph,39,hepatitis A,1
+ablation::w/o Knowledge Graph,40,Hepatitis B,1
+ablation::w/o Knowledge Graph,41,Hepatitis B,1
+ablation::w/o Knowledge Graph,42,Hepatitis C,1
+ablation::w/o Knowledge Graph,43,Hepatitis C,1
+ablation::w/o Knowledge Graph,44,Hepatitis D,0
+ablation::w/o Knowledge Graph,45,Hepatitis D,1
+ablation::w/o Knowledge Graph,46,Hepatitis E,1
+ablation::w/o Knowledge Graph,47,Hepatitis E,1
+ablation::w/o Knowledge Graph,48,Alcoholic hepatitis,1
+ablation::w/o Knowledge Graph,49,Alcoholic hepatitis,1
+ablation::w/o Knowledge Graph,50,Tuberculosis,1
+ablation::w/o Knowledge Graph,51,Tuberculosis,1
+ablation::w/o Knowledge Graph,52,Common Cold,1
+ablation::w/o Knowledge Graph,53,Common Cold,1
+ablation::w/o Knowledge Graph,54,Pneumonia,1
+ablation::w/o Knowledge Graph,55,Pneumonia,1
+ablation::w/o Knowledge Graph,56,Dimorphic hemmorhoids(piles),1
+ablation::w/o Knowledge Graph,57,Dimorphic hemmorhoids(piles),1
+ablation::w/o Knowledge Graph,58,Heart attack,1
+ablation::w/o Knowledge Graph,59,Heart attack,1
+ablation::w/o Knowledge Graph,60,Varicose veins,1
+ablation::w/o Knowledge Graph,61,Varicose veins,1
+ablation::w/o Knowledge Graph,62,Hypothyroidism,1
+ablation::w/o Knowledge Graph,63,Hypothyroidism,1
+ablation::w/o Knowledge Graph,64,Hyperthyroidism,1
+ablation::w/o Knowledge Graph,65,Hyperthyroidism,1
+ablation::w/o Knowledge Graph,66,Hypoglycemia,1
+ablation::w/o Knowledge Graph,67,Hypoglycemia,1
+ablation::w/o Knowledge Graph,68,Osteoarthristis,1
+ablation::w/o Knowledge Graph,69,Osteoarthristis,1
+ablation::w/o Knowledge Graph,70,Arthritis,1
+ablation::w/o Knowledge Graph,71,Arthritis,1
+ablation::w/o Knowledge Graph,72,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::w/o Knowledge Graph,73,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::w/o Knowledge Graph,74,Acne,1
+ablation::w/o Knowledge Graph,75,Acne,1
+ablation::w/o Knowledge Graph,76,Urinary tract infection,1
+ablation::w/o Knowledge Graph,77,Urinary tract infection,1
+ablation::w/o Knowledge Graph,78,Psoriasis,1
+ablation::w/o Knowledge Graph,79,Psoriasis,1
+ablation::w/o Knowledge Graph,80,Impetigo,1
+ablation::w/o Knowledge Graph,81,Impetigo,1
+ablation::w/o Recency Weight,0,Fungal infection,1
+ablation::w/o Recency Weight,1,Fungal infection,1
+ablation::w/o Recency Weight,2,Allergy,1
+ablation::w/o Recency Weight,3,Allergy,1
+ablation::w/o Recency Weight,4,GERD,1
+ablation::w/o Recency Weight,5,GERD,1
+ablation::w/o Recency Weight,6,Chronic cholestasis,1
+ablation::w/o Recency Weight,7,Chronic cholestasis,1
+ablation::w/o Recency Weight,8,Drug Reaction,1
+ablation::w/o Recency Weight,9,Drug Reaction,1
+ablation::w/o Recency Weight,10,Peptic ulcer diseae,1
+ablation::w/o Recency Weight,11,Peptic ulcer diseae,1
+ablation::w/o Recency Weight,12,AIDS,1
+ablation::w/o Recency Weight,13,AIDS,1
+ablation::w/o Recency Weight,14,Diabetes,1
+ablation::w/o Recency Weight,15,Diabetes,1
+ablation::w/o Recency Weight,16,Gastroenteritis,1
+ablation::w/o Recency Weight,17,Gastroenteritis,1
+ablation::w/o Recency Weight,18,Bronchial Asthma,1
+ablation::w/o Recency Weight,19,Bronchial Asthma,1
+ablation::w/o Recency Weight,20,Hypertension,1
+ablation::w/o Recency Weight,21,Hypertension,1
+ablation::w/o Recency Weight,22,Migraine,1
+ablation::w/o Recency Weight,23,Migraine,1
+ablation::w/o Recency Weight,24,Cervical spondylosis,1
+ablation::w/o Recency Weight,25,Cervical spondylosis,1
+ablation::w/o Recency Weight,26,Paralysis (brain hemorrhage),1
+ablation::w/o Recency Weight,27,Paralysis (brain hemorrhage),1
+ablation::w/o Recency Weight,28,Jaundice,1
+ablation::w/o Recency Weight,29,Jaundice,1
+ablation::w/o Recency Weight,30,Malaria,1
+ablation::w/o Recency Weight,31,Malaria,1
+ablation::w/o Recency Weight,32,Chicken pox,1
+ablation::w/o Recency Weight,33,Chicken pox,1
+ablation::w/o Recency Weight,34,Dengue,1
+ablation::w/o Recency Weight,35,Dengue,1
+ablation::w/o Recency Weight,36,Typhoid,1
+ablation::w/o Recency Weight,37,Typhoid,1
+ablation::w/o Recency Weight,38,hepatitis A,1
+ablation::w/o Recency Weight,39,hepatitis A,1
+ablation::w/o Recency Weight,40,Hepatitis B,1
+ablation::w/o Recency Weight,41,Hepatitis B,1
+ablation::w/o Recency Weight,42,Hepatitis C,1
+ablation::w/o Recency Weight,43,Hepatitis C,1
+ablation::w/o Recency Weight,44,Hepatitis D,0
+ablation::w/o Recency Weight,45,Hepatitis D,0
+ablation::w/o Recency Weight,46,Hepatitis E,1
+ablation::w/o Recency Weight,47,Hepatitis E,1
+ablation::w/o Recency Weight,48,Alcoholic hepatitis,1
+ablation::w/o Recency Weight,49,Alcoholic hepatitis,1
+ablation::w/o Recency Weight,50,Tuberculosis,1
+ablation::w/o Recency Weight,51,Tuberculosis,1
+ablation::w/o Recency Weight,52,Common Cold,1
+ablation::w/o Recency Weight,53,Common Cold,1
+ablation::w/o Recency Weight,54,Pneumonia,1
+ablation::w/o Recency Weight,55,Pneumonia,1
+ablation::w/o Recency Weight,56,Dimorphic hemmorhoids(piles),1
+ablation::w/o Recency Weight,57,Dimorphic hemmorhoids(piles),1
+ablation::w/o Recency Weight,58,Heart attack,1
+ablation::w/o Recency Weight,59,Heart attack,1
+ablation::w/o Recency Weight,60,Varicose veins,1
+ablation::w/o Recency Weight,61,Varicose veins,1
+ablation::w/o Recency Weight,62,Hypothyroidism,1
+ablation::w/o Recency Weight,63,Hypothyroidism,1
+ablation::w/o Recency Weight,64,Hyperthyroidism,1
+ablation::w/o Recency Weight,65,Hyperthyroidism,1
+ablation::w/o Recency Weight,66,Hypoglycemia,1
+ablation::w/o Recency Weight,67,Hypoglycemia,1
+ablation::w/o Recency Weight,68,Osteoarthristis,1
+ablation::w/o Recency Weight,69,Osteoarthristis,1
+ablation::w/o Recency Weight,70,Arthritis,1
+ablation::w/o Recency Weight,71,Arthritis,1
+ablation::w/o Recency Weight,72,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::w/o Recency Weight,73,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::w/o Recency Weight,74,Acne,1
+ablation::w/o Recency Weight,75,Acne,1
+ablation::w/o Recency Weight,76,Urinary tract infection,1
+ablation::w/o Recency Weight,77,Urinary tract infection,1
+ablation::w/o Recency Weight,78,Psoriasis,1
+ablation::w/o Recency Weight,79,Psoriasis,1
+ablation::w/o Recency Weight,80,Impetigo,1
+ablation::w/o Recency Weight,81,Impetigo,1
+ablation::w/o Both (Hybrid only),0,Fungal infection,1
+ablation::w/o Both (Hybrid only),1,Fungal infection,1
+ablation::w/o Both (Hybrid only),2,Allergy,1
+ablation::w/o Both (Hybrid only),3,Allergy,1
+ablation::w/o Both (Hybrid only),4,GERD,1
+ablation::w/o Both (Hybrid only),5,GERD,1
+ablation::w/o Both (Hybrid only),6,Chronic cholestasis,1
+ablation::w/o Both (Hybrid only),7,Chronic cholestasis,1
+ablation::w/o Both (Hybrid only),8,Drug Reaction,1
+ablation::w/o Both (Hybrid only),9,Drug Reaction,1
+ablation::w/o Both (Hybrid only),10,Peptic ulcer diseae,1
+ablation::w/o Both (Hybrid only),11,Peptic ulcer diseae,1
+ablation::w/o Both (Hybrid only),12,AIDS,1
+ablation::w/o Both (Hybrid only),13,AIDS,1
+ablation::w/o Both (Hybrid only),14,Diabetes,1
+ablation::w/o Both (Hybrid only),15,Diabetes,1
+ablation::w/o Both (Hybrid only),16,Gastroenteritis,0
+ablation::w/o Both (Hybrid only),17,Gastroenteritis,1
+ablation::w/o Both (Hybrid only),18,Bronchial Asthma,1
+ablation::w/o Both (Hybrid only),19,Bronchial Asthma,1
+ablation::w/o Both (Hybrid only),20,Hypertension,1
+ablation::w/o Both (Hybrid only),21,Hypertension,1
+ablation::w/o Both (Hybrid only),22,Migraine,1
+ablation::w/o Both (Hybrid only),23,Migraine,1
+ablation::w/o Both (Hybrid only),24,Cervical spondylosis,1
+ablation::w/o Both (Hybrid only),25,Cervical spondylosis,1
+ablation::w/o Both (Hybrid only),26,Paralysis (brain hemorrhage),1
+ablation::w/o Both (Hybrid only),27,Paralysis (brain hemorrhage),1
+ablation::w/o Both (Hybrid only),28,Jaundice,1
+ablation::w/o Both (Hybrid only),29,Jaundice,1
+ablation::w/o Both (Hybrid only),30,Malaria,1
+ablation::w/o Both (Hybrid only),31,Malaria,1
+ablation::w/o Both (Hybrid only),32,Chicken pox,1
+ablation::w/o Both (Hybrid only),33,Chicken pox,1
+ablation::w/o Both (Hybrid only),34,Dengue,0
+ablation::w/o Both (Hybrid only),35,Dengue,0
+ablation::w/o Both (Hybrid only),36,Typhoid,1
+ablation::w/o Both (Hybrid only),37,Typhoid,1
+ablation::w/o Both (Hybrid only),38,hepatitis A,1
+ablation::w/o Both (Hybrid only),39,hepatitis A,1
+ablation::w/o Both (Hybrid only),40,Hepatitis B,1
+ablation::w/o Both (Hybrid only),41,Hepatitis B,1
+ablation::w/o Both (Hybrid only),42,Hepatitis C,1
+ablation::w/o Both (Hybrid only),43,Hepatitis C,1
+ablation::w/o Both (Hybrid only),44,Hepatitis D,0
+ablation::w/o Both (Hybrid only),45,Hepatitis D,1
+ablation::w/o Both (Hybrid only),46,Hepatitis E,1
+ablation::w/o Both (Hybrid only),47,Hepatitis E,1
+ablation::w/o Both (Hybrid only),48,Alcoholic hepatitis,1
+ablation::w/o Both (Hybrid only),49,Alcoholic hepatitis,1
+ablation::w/o Both (Hybrid only),50,Tuberculosis,1
+ablation::w/o Both (Hybrid only),51,Tuberculosis,1
+ablation::w/o Both (Hybrid only),52,Common Cold,1
+ablation::w/o Both (Hybrid only),53,Common Cold,1
+ablation::w/o Both (Hybrid only),54,Pneumonia,1
+ablation::w/o Both (Hybrid only),55,Pneumonia,1
+ablation::w/o Both (Hybrid only),56,Dimorphic hemmorhoids(piles),1
+ablation::w/o Both (Hybrid only),57,Dimorphic hemmorhoids(piles),1
+ablation::w/o Both (Hybrid only),58,Heart attack,1
+ablation::w/o Both (Hybrid only),59,Heart attack,1
+ablation::w/o Both (Hybrid only),60,Varicose veins,1
+ablation::w/o Both (Hybrid only),61,Varicose veins,1
+ablation::w/o Both (Hybrid only),62,Hypothyroidism,1
+ablation::w/o Both (Hybrid only),63,Hypothyroidism,1
+ablation::w/o Both (Hybrid only),64,Hyperthyroidism,1
+ablation::w/o Both (Hybrid only),65,Hyperthyroidism,1
+ablation::w/o Both (Hybrid only),66,Hypoglycemia,1
+ablation::w/o Both (Hybrid only),67,Hypoglycemia,1
+ablation::w/o Both (Hybrid only),68,Osteoarthristis,1
+ablation::w/o Both (Hybrid only),69,Osteoarthristis,1
+ablation::w/o Both (Hybrid only),70,Arthritis,1
+ablation::w/o Both (Hybrid only),71,Arthritis,1
+ablation::w/o Both (Hybrid only),72,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::w/o Both (Hybrid only),73,(vertigo) Paroymsal  Positional Vertigo,1
+ablation::w/o Both (Hybrid only),74,Acne,1
+ablation::w/o Both (Hybrid only),75,Acne,1
+ablation::w/o Both (Hybrid only),76,Urinary tract infection,1
+ablation::w/o Both (Hybrid only),77,Urinary tract infection,1
+ablation::w/o Both (Hybrid only),78,Psoriasis,1
+ablation::w/o Both (Hybrid only),79,Psoriasis,1
+ablation::w/o Both (Hybrid only),80,Impetigo,1
+ablation::w/o Both (Hybrid only),81,Impetigo,1

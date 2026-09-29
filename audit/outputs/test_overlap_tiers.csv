@@ -1,0 +1,4 @@
+tier,union_rows,union_in_v4_dev,union_in_v4_test,v4_test_untouched
+"A: historical test sets (v1, v2, v3)",208,95,113,68
+"B: A + tuning validation sets (v1, v3)",237,106,131,50
+C: B + v0 reconstructed (both variants),258,110,148,33

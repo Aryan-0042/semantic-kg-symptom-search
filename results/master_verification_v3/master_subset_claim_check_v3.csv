@@ -1,0 +1,17 @@
+Method,Subset,Expected,Actual,Status
+BM25-only,canonical,87.8,85.37,MISMATCH
+BM25-only,paraphrased,54.88,50.0,MISMATCH
+Dense-only,canonical,73.17,73.17,MATCH
+Dense-only,paraphrased,60.98,59.76,MISMATCH
+Hybrid,canonical,87.8,85.37,MISMATCH
+Hybrid,paraphrased,63.41,64.63,MISMATCH
+Hybrid+KG (no recency),canonical,97.56,97.56,MATCH
+Hybrid+KG (no recency),paraphrased,81.71,81.71,MATCH
+Proposed (CRFS),canonical,100.0,97.56,MISMATCH
+Proposed (CRFS),paraphrased,81.71,80.49,MISMATCH
+Proposed (RRF+KG+Recency),canonical,95.12,95.12,MATCH
+Proposed (RRF+KG+Recency),paraphrased,73.17,74.39,MISMATCH
+N1 (Linear+KG @ Top-3),canonical,95.12,97.56,MISMATCH
+N1 (Linear+KG @ Top-3),paraphrased,73.17,81.71,MISMATCH
+"N2 (RRF+KG @ Top-3, no recency)",canonical,95.12,95.12,MATCH
+"N2 (RRF+KG @ Top-3, no recency)",paraphrased,73.17,74.39,MISMATCH

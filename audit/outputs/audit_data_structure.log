@@ -1,0 +1,27 @@
+== 1. dataset structure
+raw rows 4920; raw rows per disease [120]
+deduplicated rows 304, diseases 41
+rows/disease min 5 median 7.0 max 10
+symptom sets shared by >1 disease: 0
+rows equal to their disease's full symptom union minus <=1 symptom: 304/304
+distinct symptoms 131; unique to one disease 80
+== 2. split overlap
+v1 test vs v1 dev: n_test=82 n_dev=222 exact_overlap=0 max_jaccard_mean=0.820 (>=0.8: 58) test_symptoms_covered_by_dev_union=1.000
+v2 test vs v1 dev (index pool of the v2 run): n_test=82 n_dev=222 exact_overlap=58 max_jaccard_mean=0.938 (>=0.8: 70) test_symptoms_covered_by_dev_union=1.000
+v3 test vs v3 dev: n_test=123 n_dev=181 exact_overlap=0 max_jaccard_mean=0.793 (>=0.8: 79) test_symptoms_covered_by_dev_union=1.000
+v1 dev-val vs v1 dev-train: n_test=41 n_dev=181 exact_overlap=0 max_jaccard_mean=0.795 (>=0.8: 25) test_symptoms_covered_by_dev_union=1.000
+v3 dev-val vs v3 dev-train: n_test=33 n_dev=148 exact_overlap=0 max_jaccard_mean=0.809 (>=0.8: 23) test_symptoms_covered_by_dev_union=1.000
+== 3. test-row reuse across generations
+v3 test rows also in v2 test: 37
+v3 test rows also in v1 test: 31
+== 4. paraphrase artefacts (v3 test)
+paraphrased rows 82; rows with nested-substitution artefacts 8
+    The patient reports I can't stop sneezing, getting cold shivers, feeling exhausted all the time, a hacking cough that won't quit, a really high temperature, a pounding head, the glands in my neck are swollen, just feeling off / unwell, a hacking cough that won't quiting up phlegm, my throat feels raw, redness of eyes, pressure behind my face, my nose won't stop running, I'm all stuffed up, a tightness in my chest, I can't smell anything, my muscles are so sore.
+    The patient reports I can't stop sneezing, feeling exhausted all the time, a hacking cough that won't quit, a really high temperature, a pounding head, the glands in my neck are swollen, just feeling off / unwell, a hacking cough that won't quiting up phlegm, my throat feels raw, redness of eyes, pressure behind my face, my nose won't stop running, I'm all stuffed up, a tightness in my chest, I can't smell anything, my muscles are so sore.
+    The patient reports indigestion, I don't feel like eating anything, cramping in my stomach, passage of gases, an my skin is really itchy feeling inside.
+    The patient reports throwing up, indigestion, I don't feel like eating anything, passage of gases, an my skin is really itchy feeling inside.
+    The patient reports getting cold shivers, a hacking cough that won't quit, a really high temperature, can't catch my breath, sweating a lot for no reason, just feeling off / unwell, a hacking cough that won't quiting up phlegm, a tightness in my chest, my heart is racing, rusty sputum.
+    The patient reports getting cold shivers, feeling exhausted all the time, a hacking cough that won't quit, a really high temperature, can't catch my breath, sweating a lot for no reason, a hacking cough that won't quiting up phlegm, a tightness in my chest, my heart is racing, rusty sputum.
+    The patient reports getting cold shivers, throwing up, feeling exhausted all the time, I've been losing weight without trying, a hacking cough that won't quit, a really high temperature, sweating a lot for no reason, I don't feel like eating anything, a bit of a temperature, the whites of my eyes look yellow, the glands in my neck are swollen, just feeling off / unwell, a hacking cough that won't quiting up phlegm, a tightness in my chest, blood in sputum.
+    The patient reports getting cold shivers, throwing up, feeling exhausted all the time, I've been losing weight without trying, a hacking cough that won't quit, can't catch my breath, sweating a lot for no reason, I don't feel like eating anything, a bit of a temperature, the whites of my eyes look yellow, the glands in my neck are swollen, just feeling off / unwell, a hacking cough that won't quiting up phlegm, a tightness in my chest, blood in sputum.
+mean fraction of canonical symptom strings still literally present: 0.31

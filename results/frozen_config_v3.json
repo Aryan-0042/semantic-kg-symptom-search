@@ -1,0 +1,16 @@
+{
+  "selected_weights": {
+    "w_bm25": 0.20468750000000002,
+    "w_dense": 0.3140625,
+    "w_kg": 0.37812500000000004,
+    "w_recency": 0.103125
+  },
+  "objective": "macro_F1_on_dev_val, tiebreak MRR, tiebreak centroid-of-ties",
+  "tiebreak_method": "centroid of 64 remaining tied configurations",
+  "n_combinations_searched": 286,
+  "n_val_queries": 33,
+  "n_diseases_in_val": 33,
+  "diseases_excluded_from_val": 8,
+  "selected_at": "2026-08-24T21:20:42.112654",
+  "note": "Selected using data/split_dev_train_v3.csv and data/split_dev_val_v3.csv ONLY. data/split_test_final_v3.csv was never loaded by this script. Dev pool is disjoint-by-construction from the v3 test set (exact complement)."
+}

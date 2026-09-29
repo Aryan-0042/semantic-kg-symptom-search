@@ -1,0 +1,15 @@
+{
+  "architecture": "RRF (BM25+Dense recall) -> KG rerank -> recency tiebreak",
+  "rrf_k": 60,
+  "rrf_k_tuned": false,
+  "rrf_k_source": "literature default (Cormack, Clarke & Buettcher 2009)",
+  "selected_shortlist_n": 15,
+  "objective": "macro_F1_on_dev_val, tiebreak MRR, tiebreak smallest shortlist_n",
+  "dev_val_f1": 100.0,
+  "dev_val_accuracy": 100.0,
+  "dev_val_mrr": 1.0,
+  "n_candidates_searched": 5,
+  "n_val_queries": 41,
+  "selected_at": "2026-08-08T12:07:16.908935",
+  "note": "Selected using data/split_dev_train.csv and data/split_dev_val.csv ONLY. No test split (old or new) was loaded by this script."
+}

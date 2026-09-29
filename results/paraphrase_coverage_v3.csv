@@ -1,0 +1,83 @@
+Disease,original_row_index,n_terms_substituted,substitution_occurred
+(vertigo) Paroymsal  Positional Vertigo,278,3,True
+(vertigo) Paroymsal  Positional Vertigo,280,3,True
+AIDS,39,1,True
+AIDS,38,1,True
+Acne,284,1,True
+Acne,281,1,True
+Alcoholic hepatitis,185,3,True
+Alcoholic hepatitis,183,2,True
+Allergy,6,2,True
+Allergy,8,2,True
+Arthritis,271,2,True
+Arthritis,269,2,True
+Bronchial Asthma,61,3,True
+Bronchial Asthma,62,4,True
+Cervical spondylosis,84,3,True
+Cervical spondylosis,85,4,True
+Chicken pox,108,11,True
+Chicken pox,113,10,True
+Chronic cholestasis,17,7,True
+Chronic cholestasis,18,6,True
+Common Cold,198,16,True
+Common Cold,200,15,True
+Dengue,127,12,True
+Dengue,126,12,True
+Diabetes,43,8,True
+Diabetes,48,8,True
+Dimorphic hemmorhoids(piles),218,2,True
+Dimorphic hemmorhoids(piles),219,2,True
+Drug Reaction,28,3,True
+Drug Reaction,27,3,True
+Fungal infection,2,1,True
+Fungal infection,1,1,True
+GERD,10,6,True
+GERD,16,5,True
+Gastroenteritis,53,3,True
+Gastroenteritis,52,4,True
+Heart attack,224,3,True
+Heart attack,226,3,True
+Hepatitis B,152,8,True
+Hepatitis B,147,8,True
+Hepatitis C,156,5,True
+Hepatitis C,160,4,True
+Hepatitis D,163,8,True
+Hepatitis D,166,8,True
+Hepatitis E,174,9,True
+Hepatitis E,177,9,True
+Hypertension,64,3,True
+Hypertension,68,3,True
+Hyperthyroidism,250,8,True
+Hyperthyroidism,244,8,True
+Hypoglycemia,258,7,True
+Hypoglycemia,252,8,True
+Hypothyroidism,235,10,True
+Hypothyroidism,237,10,True
+Impetigo,300,1,True
+Impetigo,298,2,True
+Jaundice,96,7,True
+Jaundice,98,7,True
+Malaria,105,7,True
+Malaria,102,7,True
+Migraine,72,5,True
+Migraine,75,4,True
+Osteoarthristis,264,3,True
+Osteoarthristis,266,3,True
+Paralysis (brain hemorrhage),88,3,True
+Paralysis (brain hemorrhage),89,3,True
+Peptic ulcer diseae,33,4,True
+Peptic ulcer diseae,34,4,True
+Pneumonia,210,9,True
+Pneumonia,215,9,True
+Psoriasis,297,2,True
+Psoriasis,291,2,True
+Tuberculosis,196,14,True
+Tuberculosis,195,14,True
+Typhoid,134,8,True
+Typhoid,128,7,True
+Urinary tract infection,288,2,True
+Urinary tract infection,289,1,True
+Varicose veins,229,2,True
+Varicose veins,227,2,True
+hepatitis A,142,10,True
+hepatitis A,138,10,True

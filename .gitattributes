@@ -1,0 +1,11 @@
+# Store research data byte-for-byte (no line-ending conversion), so checksums
+# recorded in DATA_SOURCES.md and in result provenance stay valid after checkout.
+*.csv    -text
+*.jsonl  -text
+*.json   -text
+*.txt    -text
+*.npy    binary
+*.pdf    binary
+*.jpeg   binary
+*.jpg    binary
+*.png    binary

@@ -1,0 +1,32 @@
+{
+  "note": "Implemented and run after the one-shot final evaluation; query texts only, no labels.",
+  "date": "2026-09-29T19:49:16",
+  "git": {
+    "commit": "33bd63d89881efe2ca6a97fb3bebf5a4fc0f1a8b",
+    "dirty": true
+  },
+  "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "torch": "2.5.1+cu121",
+  "cuda": "12.1",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "queries": 1060,
+  "repeats": 5,
+  "warmup_queries": 20,
+  "batch_size": 1,
+  "params": {
+    "query_max_length": 64,
+    "linker": "sapbert",
+    "tau": 0.525,
+    "alpha": 0.3,
+    "beta": 0.85
+  },
+  "segments_per_query": {
+    "canonical_full": 8.132596685082873,
+    "canonical_partial": 2.481375358166189,
+    "lay_full": 8.132596685082873,
+    "lay_partial": 2.481375358166189
+  },
+  "correctness_guard_max_abs_diff": 0.0
+}

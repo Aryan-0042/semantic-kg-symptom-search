@@ -1,0 +1,10 @@
+lexicon,condition,n,median_tokens,max_tokens,truncated_at_64,truncated_at_128,truncated_at_256,truncated_at_512
+A,lay_full,181,64.0,137,0.4972375690607735,0.04419889502762431,0.0,0.0
+A,lay_partial_k2,181,18.0,26,0.0,0.0,0.0,0.0
+A,lay_partial_k3,168,26.0,36,0.0,0.0,0.0,0.0
+B,lay_full,181,84.0,171,0.6187845303867403,0.15469613259668508,0.0,0.0
+B,lay_partial_k2,181,23.0,29,0.0,0.0,0.0,0.0
+B,lay_partial_k3,168,33.0,40,0.0,0.0,0.0,0.0
+none,canonical_full,181,26.0,61,0.0,0.0,0.0,0.0
+none,canonical_partial_k2,181,8.0,13,0.0,0.0,0.0,0.0
+none,canonical_partial_k3,168,11.0,18,0.0,0.0,0.0,0.0

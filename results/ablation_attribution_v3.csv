@@ -1,0 +1,5 @@
+Condition,Accuracy,Pool,Fusion,Recency
+Hybrid+KG (no recency),86.99,full,linear,no
+N1 (Linear+KG @ shortlist),80.49,top-3,linear,no
+"N2 (Proposed, no recency tiebreak)",80.49,top-3,RRF,no
+Proposed (RRF+KG+Recency),80.49,top-3,RRF,yes (tiebreak)

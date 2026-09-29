@@ -1,0 +1,1416 @@
+========== results\master_verification_v3\master_bootstrap_v3.csv ==========
+comparison,bootstrap_mean_diff_pp,bootstrap_95CI_low_pp,bootstrap_95CI_high_pp
+Proposed (RRF+KG+Recency) minus Hybrid,9.76,4.07,16.26
+Proposed (RRF+KG+Recency) minus Hybrid+KG (no recency),-5.69,-10.57,-0.81
+Proposed (RRF+KG+Recency) minus Proposed (CRFS),-4.88,-9.76,0.0
+Proposed (RRF+KG+Recency) minus Dense-only,17.07,8.13,26.02
+N1 (Linear+KG @ Top-3) minus Hybrid+KG (no recency),0.0,0.0,0.0
+Proposed (RRF+KG+Recency) minus N1 (Linear+KG @ Top-3),-5.69,-10.57,-0.81
+"Proposed (RRF+KG+Recency) minus N2 (RRF+KG @ Top-3, no recency)",0.0,0.0,0.0
+
+
+========== results\master_verification_v3\master_confidence_intervals_v3.csv ==========
+Method,N,Correct,Accuracy,Wilson_95CI_low,Wilson_95CI_high
+BM25-only,123,76,61.79,52.97,69.9
+Dense-only,123,79,64.23,55.44,72.15
+Hybrid,123,88,71.54,63.01,78.77
+Hybrid+KG (no recency),123,107,86.99,79.91,91.83
+Proposed (CRFS),123,106,86.18,78.98,91.19
+Proposed (RRF+KG+Recency),123,100,81.3,73.5,87.2
+N1 (Linear+KG @ Top-3),123,107,86.99,79.91,91.83
+"N2 (RRF+KG @ Top-3, no recency)",123,100,81.3,73.5,87.2
+
+
+========== results\master_verification_v3\master_main_claim_check_v3.csv ==========
+Method,Status
+BM25-only,MISMATCH
+Dense-only,MISMATCH
+Hybrid,MISMATCH
+Hybrid+KG (no recency),MATCH
+Proposed (CRFS),MISMATCH
+Proposed (RRF+KG+Recency),MISMATCH
+
+
+========== results\master_verification_v3\master_per_query_v3.csv ==========
+method,query_index,true_label,paraphrased,prediction,correct,reciprocal_rank,latency_ms
+BM25-only,0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,2.55129998549819
+BM25-only,1,(vertigo) Paroymsal  Positional Vertigo,True,Cervical spondylosis,0,0.125,1.4755000011064112
+BM25-only,2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,1.2214999878779054
+BM25-only,3,AIDS,False,AIDS,1,1.0,1.6151000163517892
+BM25-only,4,AIDS,True,AIDS,1,1.0,1.3984999968670309
+BM25-only,5,AIDS,True,AIDS,1,1.0,1.2011000071652234
+BM25-only,6,Acne,False,Acne,1,1.0,0.8385999826714396
+BM25-only,7,Acne,True,Acne,1,1.0,0.997799972537905
+BM25-only,8,Acne,True,Acne,1,1.0,1.1992000509053469
+BM25-only,9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,2.2374000400304794
+BM25-only,10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,2.3500999668613076
+BM25-only,11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,2.1370999747887254
+BM25-only,12,Allergy,False,Allergy,1,1.0,1.2746000429615378
+BM25-only,13,Allergy,True,Varicose veins,0,0.0,1.968099968507886
+BM25-only,14,Allergy,True,Drug Reaction,0,0.5,1.5184999792836607
+BM25-only,15,Arthritis,False,Arthritis,1,1.0,1.861700031440705
+BM25-only,16,Arthritis,True,Arthritis,1,1.0,1.4550000196322799
+BM25-only,17,Arthritis,True,Arthritis,1,1.0,1.1335000162944198
+BM25-only,18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,0.9742000256665051
+BM25-only,19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,1.5185000374913216
+BM25-only,20,Bronchial Asthma,True,Chicken pox,0,0.3333333333333333,1.726199989207089
+BM25-only,21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,1.184699998702854
+BM25-only,22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,1.2487999629229307
+BM25-only,23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,2.031399984844029
+BM25-only,24,Chicken pox,False,Chicken pox,1,1.0,1.566799997817725
+BM25-only,25,Chicken pox,True,Fungal infection,0,0.5,2.58089997805655
+BM25-only,26,Chicken pox,True,Chicken pox,1,1.0,2.576699946075678
+BM25-only,27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,1.090099976863712
+BM25-only,28,Chronic cholestasis,True,Jaundice,0,0.0,2.361999999266118
+BM25-only,29,Chronic cholestasis,True,Jaundice,0,0.0,2.5251999613828957
+BM25-only,30,Common Cold,False,Common Cold,1,1.0,1.8533000256866217
+BM25-only,31,Common Cold,True,Common Cold,1,1.0,4.171699983999133
+BM25-only,32,Common Cold,True,Common Cold,1,1.0,3.61799995880574
+BM25-only,33,Dengue,False,Chicken pox,0,0.5,1.7687000217847526
+BM25-only,34,Dengue,True,Chicken pox,0,0.16666666666666666,3.0898000113666058
+BM25-only,35,Dengue,True,Chicken pox,0,0.5,3.0255999881774187
+BM25-only,36,Diabetes,False,Diabetes,1,1.0,1.2095000129193068
+BM25-only,37,Diabetes,True,Diabetes,1,1.0,2.158600022085011
+BM25-only,38,Diabetes,True,Alcoholic hepatitis,0,0.5,2.406500047072768
+BM25-only,39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,2.1459999843500555
+BM25-only,40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,1.7222000169567764
+BM25-only,41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,1.1884999694302678
+BM25-only,42,Drug Reaction,False,Drug Reaction,1,1.0,0.9894999675452709
+BM25-only,43,Drug Reaction,True,Drug Reaction,1,1.0,1.6188999870792031
+BM25-only,44,Drug Reaction,True,Impetigo,0,0.3333333333333333,1.9382000318728387
+BM25-only,45,Fungal infection,False,Fungal infection,1,1.0,1.0063000372610986
+BM25-only,46,Fungal infection,True,Fungal infection,1,1.0,1.8939999863505363
+BM25-only,47,Fungal infection,True,Fungal infection,1,1.0,1.83269998524338
+BM25-only,48,GERD,False,GERD,1,1.0,1.8079999717883766
+BM25-only,49,GERD,True,Impetigo,0,0.5,2.7966999914497137
+BM25-only,50,GERD,True,Impetigo,0,0.5,2.452499989885837
+BM25-only,51,Gastroenteritis,False,Malaria,0,0.5,1.7226000200025737
+BM25-only,52,Gastroenteritis,True,Jaundice,0,0.3333333333333333,1.0885000228881836
+BM25-only,53,Gastroenteritis,True,Jaundice,0,0.3333333333333333,1.0912999860011041
+BM25-only,54,Heart attack,False,Pneumonia,0,0.5,0.7674999651499093
+BM25-only,55,Heart attack,True,Hepatitis B,0,0.16666666666666666,1.0861000046133995
+BM25-only,56,Heart attack,True,Heart attack,1,1.0,1.0421000188216567
+BM25-only,57,Hepatitis B,False,Hepatitis B,1,1.0,1.5143999480642378
+BM25-only,58,Hepatitis B,True,Hepatitis B,1,1.0,2.3469000007025898
+BM25-only,59,Hepatitis B,True,Hepatitis B,1,1.0,2.2356000263243914
+BM25-only,60,Hepatitis C,False,Hepatitis C,1,1.0,1.1847999994643033
+BM25-only,61,Hepatitis C,True,Jaundice,0,0.0,1.542600046377629
+BM25-only,62,Hepatitis C,True,Jaundice,0,0.07692307692307693,1.5607999521307647
+BM25-only,63,Hepatitis D,False,Hepatitis E,0,0.25,1.5020999708212912
+BM25-only,64,Hepatitis D,True,Jaundice,0,0.0,2.8301000129431486
+BM25-only,65,Hepatitis D,True,Jaundice,0,0.0,2.087900007609278
+BM25-only,66,Hepatitis E,False,Hepatitis D,0,0.5,1.3887000386603177
+BM25-only,67,Hepatitis E,True,Jaundice,0,0.2,2.321500040125102
+BM25-only,68,Hepatitis E,True,Jaundice,0,0.2,2.106199972331524
+BM25-only,69,Hypertension,False,Hypertension,1,1.0,0.9460999863222241
+BM25-only,70,Hypertension,True,Hypertension,1,1.0,1.468899950850755
+BM25-only,71,Hypertension,True,Hypertension,1,1.0,1.1240000021643937
+BM25-only,72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,1.2426000321283937
+BM25-only,73,Hyperthyroidism,True,Alcoholic hepatitis,0,0.5,2.4018000112846494
+BM25-only,74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,2.411500026937574
+BM25-only,75,Hypoglycemia,False,Hypoglycemia,1,1.0,1.271700020879507
+BM25-only,76,Hypoglycemia,True,Hypoglycemia,1,1.0,1.9174999906681478
+BM25-only,77,Hypoglycemia,True,Hypoglycemia,1,1.0,2.088799956254661
+BM25-only,78,Hypothyroidism,False,Hypothyroidism,1,1.0,2.4785000132396817
+BM25-only,79,Hypothyroidism,True,Hypothyroidism,1,1.0,4.639200051315129
+BM25-only,80,Hypothyroidism,True,Arthritis,0,0.5,4.4241000432521105
+BM25-only,81,Impetigo,False,Impetigo,1,1.0,1.8037999980151653
+BM25-only,82,Impetigo,True,Impetigo,1,1.0,2.0692000398412347
+BM25-only,83,Impetigo,True,Impetigo,1,1.0,2.291599987074733
+BM25-only,84,Jaundice,False,Jaundice,1,1.0,2.056600002106279
+BM25-only,85,Jaundice,True,Fungal infection,0,0.5,2.1308999857865274
+BM25-only,86,Jaundice,True,Fungal infection,0,0.3333333333333333,2.531500009354204
+BM25-only,87,Malaria,False,Malaria,1,1.0,1.1146000470034778
+BM25-only,88,Malaria,True,Hypertension,0,0.07142857142857142,1.4295000000856817
+BM25-only,89,Malaria,True,Hypertension,0,0.08333333333333333,1.498800003901124
+BM25-only,90,Migraine,False,Migraine,1,1.0,1.2787999585270882
+BM25-only,91,Migraine,True,Arthritis,0,0.5,1.4118999824859202
+BM25-only,92,Migraine,True,Migraine,1,1.0,1.3532000011764467
+BM25-only,93,Osteoarthristis,False,Osteoarthristis,1,1.0,1.7804999952204525
+BM25-only,94,Osteoarthristis,True,Arthritis,0,0.5,2.1702999947592616
+BM25-only,95,Osteoarthristis,True,Cervical spondylosis,0,0.5,1.5344000421464443
+BM25-only,96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,0.9574999567121267
+BM25-only,97,Paralysis (brain hemorrhage),True,Migraine,0,0.5,1.1719000176526606
+BM25-only,98,Paralysis (brain hemorrhage),True,Hypoglycemia,0,0.07692307692307693,1.3386000064201653
+BM25-only,99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,1.7665000050328672
+BM25-only,100,Peptic ulcer diseae,True,Psoriasis,0,0.5,1.7716000438667834
+BM25-only,101,Peptic ulcer diseae,True,Psoriasis,0,0.5,1.6550000291317701
+BM25-only,102,Pneumonia,False,Pneumonia,1,1.0,1.4940000255592167
+BM25-only,103,Pneumonia,True,Pneumonia,1,1.0,2.6003000093623996
+BM25-only,104,Pneumonia,True,Pneumonia,1,1.0,2.97660002252087
+BM25-only,105,Psoriasis,False,Psoriasis,1,1.0,1.1342999641783535
+BM25-only,106,Psoriasis,True,Psoriasis,1,1.0,1.274899987038225
+BM25-only,107,Psoriasis,True,Psoriasis,1,1.0,1.227299973834306
+BM25-only,108,Tuberculosis,False,Tuberculosis,1,1.0,1.5100999735295773
+BM25-only,109,Tuberculosis,True,Jaundice,0,0.0,3.0080999713391066
+BM25-only,110,Tuberculosis,True,Jaundice,0,0.0,3.4090999979525805
+BM25-only,111,Typhoid,False,Typhoid,1,1.0,1.2992999982088804
+BM25-only,112,Typhoid,True,Alcoholic hepatitis,0,0.0,1.671200036071241
+BM25-only,113,Typhoid,True,Alcoholic hepatitis,0,0.2,1.638100016862154
+BM25-only,114,Urinary tract infection,False,Urinary tract infection,1,1.0,1.0368000366725028
+BM25-only,115,Urinary tract infection,True,Urinary tract infection,1,1.0,1.103700022213161
+BM25-only,116,Urinary tract infection,True,Urinary tract infection,1,1.0,0.9881000150926411
+BM25-only,117,Varicose veins,False,Varicose veins,1,1.0,0.9443999733775854
+BM25-only,118,Varicose veins,True,Varicose veins,1,1.0,1.1954999645240605
+BM25-only,119,Varicose veins,True,Varicose veins,1,1.0,1.190899987705052
+BM25-only,120,hepatitis A,False,Hepatitis D,0,0.3333333333333333,1.2309000012464821
+BM25-only,121,hepatitis A,True,Jaundice,0,0.0,2.1717000054195523
+BM25-only,122,hepatitis A,True,Jaundice,0,0.0,2.1080999867990613
+Dense-only,0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,30.860800005029887
+Dense-only,1,(vertigo) Paroymsal  Positional Vertigo,True,Hypertension,0,0.5,33.16729998914525
+Dense-only,2,(vertigo) Paroymsal  Positional Vertigo,True,Hypertension,0,0.3333333333333333,27.841400005854666
+Dense-only,3,AIDS,False,AIDS,1,1.0,25.25990002322942
+Dense-only,4,AIDS,True,AIDS,1,1.0,25.155300041660666
+Dense-only,5,AIDS,True,AIDS,1,1.0,28.99939997587353
+Dense-only,6,Acne,False,Hepatitis C,0,0.2,35.62479995889589
+Dense-only,7,Acne,True,Impetigo,0,0.5,33.941500005312264
+Dense-only,8,Acne,True,Impetigo,0,0.5,20.953699946403503
+Dense-only,9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,22.9838999803178
+Dense-only,10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,21.57939999597147
+Dense-only,11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,20.759300037752837
+Dense-only,12,Allergy,False,Allergy,1,1.0,23.532599967438728
+Dense-only,13,Allergy,True,Allergy,1,1.0,29.739499965216964
+Dense-only,14,Allergy,True,Allergy,1,1.0,21.47159999003634
+Dense-only,15,Arthritis,False,Arthritis,1,1.0,25.620899978093803
+Dense-only,16,Arthritis,True,Arthritis,1,1.0,31.125799985602498
+Dense-only,17,Arthritis,True,Arthritis,1,1.0,25.41400003246963
+Dense-only,18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,29.742299986537546
+Dense-only,19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,21.097399992868304
+Dense-only,20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,22.362300020176917
+Dense-only,21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,26.481000008061528
+Dense-only,22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,26.445699972100556
+Dense-only,23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,29.335199971683323
+Dense-only,24,Chicken pox,False,Dengue,0,0.5,21.693099988624454
+Dense-only,25,Chicken pox,True,Drug Reaction,0,0.16666666666666666,30.06190003361553
+Dense-only,26,Chicken pox,True,Drug Reaction,0,0.25,31.467299966607243
+Dense-only,27,Chronic cholestasis,False,Hepatitis C,0,0.3333333333333333,19.983399950433522
+Dense-only,28,Chronic cholestasis,True,Drug Reaction,0,0.1,21.130400011315942
+Dense-only,29,Chronic cholestasis,True,hepatitis A,0,0.0,27.618300053291023
+Dense-only,30,Common Cold,False,Common Cold,1,1.0,27.026999974623322
+Dense-only,31,Common Cold,True,Bronchial Asthma,0,0.25,47.08679998293519
+Dense-only,32,Common Cold,True,Bronchial Asthma,0,0.2,27.04070002073422
+Dense-only,33,Dengue,False,Chicken pox,0,0.5,32.40570001071319
+Dense-only,34,Dengue,True,Drug Reaction,0,0.16666666666666666,23.62120000179857
+Dense-only,35,Dengue,True,Chicken pox,0,0.2,24.291299981996417
+Dense-only,36,Diabetes,False,Diabetes,1,1.0,29.51379999285564
+Dense-only,37,Diabetes,True,Diabetes,1,1.0,24.923300021328032
+Dense-only,38,Diabetes,True,Diabetes,1,1.0,23.165700025856495
+Dense-only,39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,22.568599961232394
+Dense-only,40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,21.211499988567084
+Dense-only,41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,36.45610000239685
+Dense-only,42,Drug Reaction,False,Drug Reaction,1,1.0,20.605499972589314
+Dense-only,43,Drug Reaction,True,Drug Reaction,1,1.0,31.690299976617098
+Dense-only,44,Drug Reaction,True,Drug Reaction,1,1.0,24.3618999957107
+Dense-only,45,Fungal infection,False,Fungal infection,1,1.0,21.43880003131926
+Dense-only,46,Fungal infection,True,Fungal infection,1,1.0,28.788199997507036
+Dense-only,47,Fungal infection,True,Fungal infection,1,1.0,21.707699983380735
+Dense-only,48,GERD,False,GERD,1,1.0,23.983900027815253
+Dense-only,49,GERD,True,GERD,1,1.0,26.170200027991086
+Dense-only,50,GERD,True,GERD,1,1.0,20.42999997502193
+Dense-only,51,Gastroenteritis,False,Gastroenteritis,1,1.0,22.99279998987913
+Dense-only,52,Gastroenteritis,True,Gastroenteritis,1,1.0,20.61639999737963
+Dense-only,53,Gastroenteritis,True,Gastroenteritis,1,1.0,22.272399975918233
+Dense-only,54,Heart attack,False,Heart attack,1,1.0,27.0301999989897
+Dense-only,55,Heart attack,True,Heart attack,1,1.0,28.114399989135563
+Dense-only,56,Heart attack,True,Heart attack,1,1.0,30.348600004799664
+Dense-only,57,Hepatitis B,False,Hepatitis B,1,1.0,23.48470001015812
+Dense-only,58,Hepatitis B,True,Drug Reaction,0,0.3333333333333333,29.332500009331852
+Dense-only,59,Hepatitis B,True,Hepatitis B,1,1.0,23.284299997612834
+Dense-only,60,Hepatitis C,False,Hepatitis C,1,1.0,20.681100024376065
+Dense-only,61,Hepatitis C,True,Hepatitis C,1,1.0,24.647400015965104
+Dense-only,62,Hepatitis C,True,Hepatitis C,1,1.0,21.440599986817688
+Dense-only,63,Hepatitis D,False,hepatitis A,0,0.3333333333333333,29.275499982759356
+Dense-only,64,Hepatitis D,True,hepatitis A,0,0.0,33.64440001314506
+Dense-only,65,Hepatitis D,True,hepatitis A,0,0.08333333333333333,21.238199959043413
+Dense-only,66,Hepatitis E,False,hepatitis A,0,0.5,21.930199989583343
+Dense-only,67,Hepatitis E,True,Drug Reaction,0,0.0,22.77669997420162
+Dense-only,68,Hepatitis E,True,hepatitis A,0,0.14285714285714285,21.20779996039346
+Dense-only,69,Hypertension,False,Heart attack,0,0.5,20.156200043857098
+Dense-only,70,Hypertension,True,Cervical spondylosis,0,0.5,35.06179997930303
+Dense-only,71,Hypertension,True,Heart attack,0,0.2,22.022100049071014
+Dense-only,72,Hyperthyroidism,False,Hypoglycemia,0,0.3333333333333333,29.256500012706965
+Dense-only,73,Hyperthyroidism,True,Diabetes,0,0.125,20.903100026771426
+Dense-only,74,Hyperthyroidism,True,Diabetes,0,0.2,25.64980002352968
+Dense-only,75,Hypoglycemia,False,Heart attack,0,0.5,29.065800015814602
+Dense-only,76,Hypoglycemia,True,Hypoglycemia,1,1.0,24.035299953538924
+Dense-only,77,Hypoglycemia,True,Hypoglycemia,1,1.0,26.55500004766509
+Dense-only,78,Hypothyroidism,False,Hypothyroidism,1,1.0,27.75629999814555
+Dense-only,79,Hypothyroidism,True,Hypothyroidism,1,1.0,36.93970001768321
+Dense-only,80,Hypothyroidism,True,Hypothyroidism,1,1.0,23.393299954477698
+Dense-only,81,Impetigo,False,Impetigo,1,1.0,23.966800014022738
+Dense-only,82,Impetigo,True,Impetigo,1,1.0,29.792999965138733
+Dense-only,83,Impetigo,True,Impetigo,1,1.0,25.383499974850565
+Dense-only,84,Jaundice,False,Jaundice,1,1.0,31.80559998145327
+Dense-only,85,Jaundice,True,Drug Reaction,0,0.16666666666666666,26.536800025496632
+Dense-only,86,Jaundice,True,Drug Reaction,0,0.16666666666666666,22.935000015422702
+Dense-only,87,Malaria,False,Malaria,1,1.0,26.967699988745153
+Dense-only,88,Malaria,True,AIDS,0,0.09090909090909091,32.981300028041005
+Dense-only,89,Malaria,True,hepatitis A,0,0.0,21.315099962521344
+Dense-only,90,Migraine,False,Migraine,1,1.0,25.52039996953681
+Dense-only,91,Migraine,True,Migraine,1,1.0,22.930400038603693
+Dense-only,92,Migraine,True,Migraine,1,1.0,34.20930000720546
+Dense-only,93,Osteoarthristis,False,Osteoarthristis,1,1.0,30.67939996253699
+Dense-only,94,Osteoarthristis,True,Arthritis,0,0.5,21.68329997221008
+Dense-only,95,Osteoarthristis,True,Arthritis,0,0.5,33.10669999336824
+Dense-only,96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,25.524099997710437
+Dense-only,97,Paralysis (brain hemorrhage),True,Cervical spondylosis,0,0.08333333333333333,28.670899977441877
+Dense-only,98,Paralysis (brain hemorrhage),True,Hypoglycemia,0,0.07692307692307693,34.37220002524555
+Dense-only,99,Peptic ulcer diseae,False,Chronic cholestasis,0,0.3333333333333333,26.783799985423684
+Dense-only,100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,35.322400042787194
+Dense-only,101,Peptic ulcer diseae,True,Drug Reaction,0,0.25,25.272699946071953
+Dense-only,102,Pneumonia,False,Pneumonia,1,1.0,24.500700004864484
+Dense-only,103,Pneumonia,True,Pneumonia,1,1.0,22.932599997147918
+Dense-only,104,Pneumonia,True,Pneumonia,1,1.0,30.058300006203353
+Dense-only,105,Psoriasis,False,Psoriasis,1,1.0,20.44340001884848
+Dense-only,106,Psoriasis,True,Psoriasis,1,1.0,33.06899999734014
+Dense-only,107,Psoriasis,True,Psoriasis,1,1.0,37.63299999991432
+Dense-only,108,Tuberculosis,False,Pneumonia,0,0.25,37.64049999881536
+Dense-only,109,Tuberculosis,True,Heart attack,0,0.0,24.764299974776804
+Dense-only,110,Tuberculosis,True,Heart attack,0,0.0,27.17269997810945
+Dense-only,111,Typhoid,False,Typhoid,1,1.0,31.719899969175458
+Dense-only,112,Typhoid,True,Typhoid,1,1.0,23.077399993781
+Dense-only,113,Typhoid,True,Typhoid,1,1.0,30.957100039813668
+Dense-only,114,Urinary tract infection,False,Urinary tract infection,1,1.0,26.189800002612174
+Dense-only,115,Urinary tract infection,True,Drug Reaction,0,0.5,29.71799997612834
+Dense-only,116,Urinary tract infection,True,Urinary tract infection,1,1.0,29.92559998529032
+Dense-only,117,Varicose veins,False,Varicose veins,1,1.0,23.183099983725697
+Dense-only,118,Varicose veins,True,Varicose veins,1,1.0,27.852199971675873
+Dense-only,119,Varicose veins,True,Varicose veins,1,1.0,27.8439000248909
+Dense-only,120,hepatitis A,False,hepatitis A,1,1.0,23.626599984709173
+Dense-only,121,hepatitis A,True,hepatitis A,1,1.0,31.526100006885827
+Dense-only,122,hepatitis A,True,hepatitis A,1,1.0,28.870899986941367
+Hybrid,0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,28.416900022421032
+Hybrid,1,(vertigo) Paroymsal  Positional Vertigo,True,Cervical spondylosis,0,0.2,31.491899979300797
+Hybrid,2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,30.863599968142807
+Hybrid,3,AIDS,False,AIDS,1,1.0,34.82950001489371
+Hybrid,4,AIDS,True,AIDS,1,1.0,28.218300023581833
+Hybrid,5,AIDS,True,AIDS,1,1.0,25.53380001336336
+Hybrid,6,Acne,False,Acne,1,1.0,20.42519999668002
+Hybrid,7,Acne,True,Acne,1,1.0,29.980799998156726
+Hybrid,8,Acne,True,Acne,1,1.0,26.736699976027012
+Hybrid,9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,21.59439999377355
+Hybrid,10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,30.323100043460727
+Hybrid,11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,32.38079999573529
+Hybrid,12,Allergy,False,Allergy,1,1.0,28.120099974330515
+Hybrid,13,Allergy,True,Varicose veins,0,0.08333333333333333,31.816500006243587
+Hybrid,14,Allergy,True,Drug Reaction,0,0.5,36.6725999629125
+Hybrid,15,Arthritis,False,Arthritis,1,1.0,28.908299980685115
+Hybrid,16,Arthritis,True,Arthritis,1,1.0,31.401999993249774
+Hybrid,17,Arthritis,True,Arthritis,1,1.0,32.02320000855252
+Hybrid,18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,31.008000019937754
+Hybrid,19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,30.077399977017194
+Hybrid,20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,48.62220003269613
+Hybrid,21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,25.518000009469688
+Hybrid,22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,24.97089997632429
+Hybrid,23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,34.368199994787574
+Hybrid,24,Chicken pox,False,Chicken pox,1,1.0,27.17440004926175
+Hybrid,25,Chicken pox,True,Chicken pox,1,1.0,38.281099987216294
+Hybrid,26,Chicken pox,True,Chicken pox,1,1.0,37.965499970596284
+Hybrid,27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,26.003099977970123
+Hybrid,28,Chronic cholestasis,True,Jaundice,0,0.0,37.03250002581626
+Hybrid,29,Chronic cholestasis,True,Jaundice,0,0.0,26.745599985588342
+Hybrid,30,Common Cold,False,Common Cold,1,1.0,37.02409996185452
+Hybrid,31,Common Cold,True,Common Cold,1,1.0,36.33749997243285
+Hybrid,32,Common Cold,True,Common Cold,1,1.0,30.585700005758554
+Hybrid,33,Dengue,False,Chicken pox,0,0.5,33.247800020035356
+Hybrid,34,Dengue,True,Chicken pox,0,0.3333333333333333,31.821199983824044
+Hybrid,35,Dengue,True,Chicken pox,0,0.5,36.255900049582124
+Hybrid,36,Diabetes,False,Diabetes,1,1.0,28.187900024931878
+Hybrid,37,Diabetes,True,Diabetes,1,1.0,27.737800031900406
+Hybrid,38,Diabetes,True,Diabetes,1,1.0,23.207199992612004
+Hybrid,39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,21.230600017588586
+Hybrid,40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,29.557599977124482
+Hybrid,41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,26.60049998667091
+Hybrid,42,Drug Reaction,False,Drug Reaction,1,1.0,31.97460004594177
+Hybrid,43,Drug Reaction,True,Drug Reaction,1,1.0,32.72969997487962
+Hybrid,44,Drug Reaction,True,Drug Reaction,1,1.0,23.527299985289574
+Hybrid,45,Fungal infection,False,Fungal infection,1,1.0,29.321299982257187
+Hybrid,46,Fungal infection,True,Fungal infection,1,1.0,22.980400011874735
+Hybrid,47,Fungal infection,True,Fungal infection,1,1.0,22.011099965311587
+Hybrid,48,GERD,False,GERD,1,1.0,27.746399980969727
+Hybrid,49,GERD,True,GERD,1,1.0,22.76660001371056
+Hybrid,50,GERD,True,Impetigo,0,0.5,22.27600000333041
+Hybrid,51,Gastroenteritis,False,Malaria,0,0.5,22.640100040007383
+Hybrid,52,Gastroenteritis,True,Jaundice,0,0.5,33.61279994715005
+Hybrid,53,Gastroenteritis,True,Jaundice,0,0.3333333333333333,22.19909999985248
+Hybrid,54,Heart attack,False,Pneumonia,0,0.5,35.42799997376278
+Hybrid,55,Heart attack,True,Hepatitis B,0,0.5,23.6610000138171
+Hybrid,56,Heart attack,True,Heart attack,1,1.0,23.8229000242427
+Hybrid,57,Hepatitis B,False,Hepatitis B,1,1.0,23.228899983223528
+Hybrid,58,Hepatitis B,True,Hepatitis B,1,1.0,33.52759999688715
+Hybrid,59,Hepatitis B,True,Hepatitis B,1,1.0,25.703600025735795
+Hybrid,60,Hepatitis C,False,Hepatitis C,1,1.0,23.60049996059388
+Hybrid,61,Hepatitis C,True,Jaundice,0,0.25,31.378199986647815
+Hybrid,62,Hepatitis C,True,Jaundice,0,0.25,34.47960002813488
+Hybrid,63,Hepatitis D,False,Hepatitis E,0,0.5,22.111099970061332
+Hybrid,64,Hepatitis D,True,Jaundice,0,0.0,32.959100033622235
+Hybrid,65,Hepatitis D,True,Jaundice,0,0.0,31.750200025271624
+Hybrid,66,Hepatitis E,False,Hepatitis D,0,0.5,27.311600046232343
+Hybrid,67,Hepatitis E,True,Jaundice,0,0.16666666666666666,40.46869999729097
+Hybrid,68,Hepatitis E,True,Alcoholic hepatitis,0,0.2,33.74780004378408
+Hybrid,69,Hypertension,False,Hypertension,1,1.0,33.98619999643415
+Hybrid,70,Hypertension,True,Hypertension,1,1.0,36.31090000271797
+Hybrid,71,Hypertension,True,Hypertension,1,1.0,23.86890002526343
+Hybrid,72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,37.411400000564754
+Hybrid,73,Hyperthyroidism,True,Hyperthyroidism,1,1.0,23.358000034932047
+Hybrid,74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,32.54400001605973
+Hybrid,75,Hypoglycemia,False,Hypoglycemia,1,1.0,26.375300018116832
+Hybrid,76,Hypoglycemia,True,Hypoglycemia,1,1.0,22.655899985693395
+Hybrid,77,Hypoglycemia,True,Hypoglycemia,1,1.0,32.59840002283454
+Hybrid,78,Hypothyroidism,False,Hypothyroidism,1,1.0,23.374199983663857
+Hybrid,79,Hypothyroidism,True,Hypothyroidism,1,1.0,27.270999969914556
+Hybrid,80,Hypothyroidism,True,Hypothyroidism,1,1.0,38.71120000258088
+Hybrid,81,Impetigo,False,Impetigo,1,1.0,23.81980000063777
+Hybrid,82,Impetigo,True,Impetigo,1,1.0,31.416499987244606
+Hybrid,83,Impetigo,True,Impetigo,1,1.0,27.322800015099347
+Hybrid,84,Jaundice,False,Jaundice,1,1.0,22.0967999775894
+Hybrid,85,Jaundice,True,Jaundice,1,1.0,24.02000001166016
+Hybrid,86,Jaundice,True,Jaundice,1,1.0,30.472900019958615
+Hybrid,87,Malaria,False,Malaria,1,1.0,36.165199999231845
+Hybrid,88,Malaria,True,Hypertension,0,0.09090909090909091,28.77140004420653
+Hybrid,89,Malaria,True,Hypertension,0,0.09090909090909091,35.54640000220388
+Hybrid,90,Migraine,False,Migraine,1,1.0,31.321999966166914
+Hybrid,91,Migraine,True,Migraine,1,1.0,22.91020000120625
+Hybrid,92,Migraine,True,Migraine,1,1.0,22.737300023436546
+Hybrid,93,Osteoarthristis,False,Osteoarthristis,1,1.0,21.69400005368516
+Hybrid,94,Osteoarthristis,True,Arthritis,0,0.5,20.96920000622049
+Hybrid,95,Osteoarthristis,True,Arthritis,0,0.5,25.337299972306937
+Hybrid,96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,29.47810001205653
+Hybrid,97,Paralysis (brain hemorrhage),True,Migraine,0,0.5,23.80970004014671
+Hybrid,98,Paralysis (brain hemorrhage),True,Hypoglycemia,0,0.125,24.900799966417253
+Hybrid,99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,21.545200026594102
+Hybrid,100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,30.766099982429296
+Hybrid,101,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,34.08750001108274
+Hybrid,102,Pneumonia,False,Pneumonia,1,1.0,24.30600003572181
+Hybrid,103,Pneumonia,True,Pneumonia,1,1.0,24.423700000625104
+Hybrid,104,Pneumonia,True,Pneumonia,1,1.0,37.97299996949732
+Hybrid,105,Psoriasis,False,Psoriasis,1,1.0,24.364399956539273
+Hybrid,106,Psoriasis,True,Psoriasis,1,1.0,36.23379999771714
+Hybrid,107,Psoriasis,True,Psoriasis,1,1.0,21.20340004330501
+Hybrid,108,Tuberculosis,False,Tuberculosis,1,1.0,33.904200012329966
+Hybrid,109,Tuberculosis,True,Jaundice,0,0.0,25.257299945224077
+Hybrid,110,Tuberculosis,True,Jaundice,0,0.0,26.78729995386675
+Hybrid,111,Typhoid,False,Typhoid,1,1.0,40.81640002550557
+Hybrid,112,Typhoid,True,Alcoholic hepatitis,0,0.1,24.741599976550788
+Hybrid,113,Typhoid,True,Alcoholic hepatitis,0,0.5,38.77949999878183
+Hybrid,114,Urinary tract infection,False,Urinary tract infection,1,1.0,27.531700034160167
+Hybrid,115,Urinary tract infection,True,Urinary tract infection,1,1.0,25.293300044722855
+Hybrid,116,Urinary tract infection,True,Urinary tract infection,1,1.0,37.45320002781227
+Hybrid,117,Varicose veins,False,Varicose veins,1,1.0,24.332900007721037
+Hybrid,118,Varicose veins,True,Varicose veins,1,1.0,25.92949999962002
+Hybrid,119,Varicose veins,True,Varicose veins,1,1.0,25.27630003169179
+Hybrid,120,hepatitis A,False,Hepatitis D,0,0.3333333333333333,25.131899979896843
+Hybrid,121,hepatitis A,True,Jaundice,0,0.1111111111111111,23.518200032413006
+Hybrid,122,hepatitis A,True,Jaundice,0,0.1,34.637900011148304
+Hybrid+KG (no recency),0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,44.32829999132082
+Hybrid+KG (no recency),1,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,40.65360000822693
+Hybrid+KG (no recency),2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,40.625100024044514
+Hybrid+KG (no recency),3,AIDS,False,AIDS,1,1.0,38.99759997148067
+Hybrid+KG (no recency),4,AIDS,True,AIDS,1,1.0,41.180600004736334
+Hybrid+KG (no recency),5,AIDS,True,AIDS,1,1.0,40.891500015277416
+Hybrid+KG (no recency),6,Acne,False,Acne,1,1.0,49.66899997089058
+Hybrid+KG (no recency),7,Acne,True,Acne,1,1.0,40.030800038948655
+Hybrid+KG (no recency),8,Acne,True,Acne,1,1.0,51.93499999586493
+Hybrid+KG (no recency),9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,39.845299965236336
+Hybrid+KG (no recency),10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,34.926499996799976
+Hybrid+KG (no recency),11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,42.075299948919564
+Hybrid+KG (no recency),12,Allergy,False,Allergy,1,1.0,39.73989997757599
+Hybrid+KG (no recency),13,Allergy,True,Allergy,1,1.0,36.91610001260415
+Hybrid+KG (no recency),14,Allergy,True,Allergy,1,1.0,40.69409996736795
+Hybrid+KG (no recency),15,Arthritis,False,Arthritis,1,1.0,36.03810002095997
+Hybrid+KG (no recency),16,Arthritis,True,Arthritis,1,1.0,39.01090001454577
+Hybrid+KG (no recency),17,Arthritis,True,Arthritis,1,1.0,37.83009998733178
+Hybrid+KG (no recency),18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,44.44710002280772
+Hybrid+KG (no recency),19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,40.38830002536997
+Hybrid+KG (no recency),20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,42.55699994973838
+Hybrid+KG (no recency),21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,49.4613999617286
+Hybrid+KG (no recency),22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,43.875600036699325
+Hybrid+KG (no recency),23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,40.252899983897805
+Hybrid+KG (no recency),24,Chicken pox,False,Chicken pox,1,1.0,41.63750004954636
+Hybrid+KG (no recency),25,Chicken pox,True,Chicken pox,1,1.0,37.46559994760901
+Hybrid+KG (no recency),26,Chicken pox,True,Chicken pox,1,1.0,45.71229999419302
+Hybrid+KG (no recency),27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,40.540400019381195
+Hybrid+KG (no recency),28,Chronic cholestasis,True,Jaundice,0,0.0,41.250100010074675
+Hybrid+KG (no recency),29,Chronic cholestasis,True,Jaundice,0,0.0,48.46959997667
+Hybrid+KG (no recency),30,Common Cold,False,Common Cold,1,1.0,42.593999998643994
+Hybrid+KG (no recency),31,Common Cold,True,Common Cold,1,1.0,52.91109997779131
+Hybrid+KG (no recency),32,Common Cold,True,Common Cold,1,1.0,54.97009999817237
+Hybrid+KG (no recency),33,Dengue,False,Dengue,1,1.0,46.706699999049306
+Hybrid+KG (no recency),34,Dengue,True,Dengue,1,1.0,45.680099981836975
+Hybrid+KG (no recency),35,Dengue,True,Dengue,1,1.0,40.87850003270432
+Hybrid+KG (no recency),36,Diabetes,False,Diabetes,1,1.0,35.59589997166768
+Hybrid+KG (no recency),37,Diabetes,True,Diabetes,1,1.0,53.006800008006394
+Hybrid+KG (no recency),38,Diabetes,True,Diabetes,1,1.0,37.51860000193119
+Hybrid+KG (no recency),39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,37.650999962352216
+Hybrid+KG (no recency),40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,34.29949999554083
+Hybrid+KG (no recency),41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,37.604100012686104
+Hybrid+KG (no recency),42,Drug Reaction,False,Drug Reaction,1,1.0,42.43939998559654
+Hybrid+KG (no recency),43,Drug Reaction,True,Drug Reaction,1,1.0,36.0960999969393
+Hybrid+KG (no recency),44,Drug Reaction,True,Drug Reaction,1,1.0,41.92240000702441
+Hybrid+KG (no recency),45,Fungal infection,False,Fungal infection,1,1.0,37.73910005111247
+Hybrid+KG (no recency),46,Fungal infection,True,Fungal infection,1,1.0,38.35390001768246
+Hybrid+KG (no recency),47,Fungal infection,True,Fungal infection,1,1.0,43.21360000176355
+Hybrid+KG (no recency),48,GERD,False,GERD,1,1.0,46.44100001314655
+Hybrid+KG (no recency),49,GERD,True,GERD,1,1.0,37.09150000941008
+Hybrid+KG (no recency),50,GERD,True,GERD,1,1.0,34.31279998039827
+Hybrid+KG (no recency),51,Gastroenteritis,False,Gastroenteritis,1,1.0,45.890600013080984
+Hybrid+KG (no recency),52,Gastroenteritis,True,Jaundice,0,0.5,40.7069000066258
+Hybrid+KG (no recency),53,Gastroenteritis,True,Jaundice,0,0.5,35.85479996399954
+Hybrid+KG (no recency),54,Heart attack,False,Heart attack,1,1.0,39.14150001946837
+Hybrid+KG (no recency),55,Heart attack,True,Heart attack,1,1.0,45.84959999192506
+Hybrid+KG (no recency),56,Heart attack,True,Heart attack,1,1.0,37.27400000207126
+Hybrid+KG (no recency),57,Hepatitis B,False,Hepatitis B,1,1.0,47.921799996402115
+Hybrid+KG (no recency),58,Hepatitis B,True,Hepatitis B,1,1.0,44.859200017526746
+Hybrid+KG (no recency),59,Hepatitis B,True,Hepatitis B,1,1.0,40.40190001251176
+Hybrid+KG (no recency),60,Hepatitis C,False,Hepatitis C,1,1.0,36.62099997745827
+Hybrid+KG (no recency),61,Hepatitis C,True,Hepatitis C,1,1.0,43.063800025265664
+Hybrid+KG (no recency),62,Hepatitis C,True,Hepatitis C,1,1.0,37.789000023622066
+Hybrid+KG (no recency),63,Hepatitis D,False,Hepatitis E,0,0.5,40.66549998242408
+Hybrid+KG (no recency),64,Hepatitis D,True,Jaundice,0,0.0,38.3482999750413
+Hybrid+KG (no recency),65,Hepatitis D,True,Jaundice,0,0.0,34.83740001684055
+Hybrid+KG (no recency),66,Hepatitis E,False,Hepatitis E,1,1.0,43.51899999892339
+Hybrid+KG (no recency),67,Hepatitis E,True,Hepatitis E,1,1.0,41.91660002106801
+Hybrid+KG (no recency),68,Hepatitis E,True,Hepatitis E,1,1.0,44.45839999243617
+Hybrid+KG (no recency),69,Hypertension,False,Hypertension,1,1.0,44.25560001982376
+Hybrid+KG (no recency),70,Hypertension,True,Hypertension,1,1.0,35.28190002543852
+Hybrid+KG (no recency),71,Hypertension,True,Hypertension,1,1.0,41.869500011671335
+Hybrid+KG (no recency),72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,43.29519998282194
+Hybrid+KG (no recency),73,Hyperthyroidism,True,Hyperthyroidism,1,1.0,37.347499979659915
+Hybrid+KG (no recency),74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,41.914000001270324
+Hybrid+KG (no recency),75,Hypoglycemia,False,Hypoglycemia,1,1.0,40.12650001095608
+Hybrid+KG (no recency),76,Hypoglycemia,True,Hypoglycemia,1,1.0,51.35270004393533
+Hybrid+KG (no recency),77,Hypoglycemia,True,Hypoglycemia,1,1.0,39.9619999807328
+Hybrid+KG (no recency),78,Hypothyroidism,False,Hypothyroidism,1,1.0,39.40200002398342
+Hybrid+KG (no recency),79,Hypothyroidism,True,Hypothyroidism,1,1.0,42.72839997429401
+Hybrid+KG (no recency),80,Hypothyroidism,True,Hypothyroidism,1,1.0,36.88120003789663
+Hybrid+KG (no recency),81,Impetigo,False,Impetigo,1,1.0,44.32799998903647
+Hybrid+KG (no recency),82,Impetigo,True,Impetigo,1,1.0,46.48989997804165
+Hybrid+KG (no recency),83,Impetigo,True,Impetigo,1,1.0,35.975800012238324
+Hybrid+KG (no recency),84,Jaundice,False,Jaundice,1,1.0,42.180699994787574
+Hybrid+KG (no recency),85,Jaundice,True,Jaundice,1,1.0,37.202199979219586
+Hybrid+KG (no recency),86,Jaundice,True,Jaundice,1,1.0,39.301700016949326
+Hybrid+KG (no recency),87,Malaria,False,Malaria,1,1.0,42.702000006102026
+Hybrid+KG (no recency),88,Malaria,True,AIDS,0,0.1,40.52489995956421
+Hybrid+KG (no recency),89,Malaria,True,Heart attack,0,0.25,41.33499995805323
+Hybrid+KG (no recency),90,Migraine,False,Migraine,1,1.0,52.76190000586212
+Hybrid+KG (no recency),91,Migraine,True,Migraine,1,1.0,39.13809999357909
+Hybrid+KG (no recency),92,Migraine,True,Migraine,1,1.0,33.79270003642887
+Hybrid+KG (no recency),93,Osteoarthristis,False,Osteoarthristis,1,1.0,38.03299996070564
+Hybrid+KG (no recency),94,Osteoarthristis,True,Arthritis,0,0.5,35.65739997429773
+Hybrid+KG (no recency),95,Osteoarthristis,True,Osteoarthristis,1,1.0,41.28100001253188
+Hybrid+KG (no recency),96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,37.3500999994576
+Hybrid+KG (no recency),97,Paralysis (brain hemorrhage),True,Migraine,0,0.5,35.223100043367594
+Hybrid+KG (no recency),98,Paralysis (brain hemorrhage),True,Hypoglycemia,0,0.1,43.39770000660792
+Hybrid+KG (no recency),99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,41.33859998546541
+Hybrid+KG (no recency),100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,33.31929998239502
+Hybrid+KG (no recency),101,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,42.98389999894425
+Hybrid+KG (no recency),102,Pneumonia,False,Pneumonia,1,1.0,40.528399986214936
+Hybrid+KG (no recency),103,Pneumonia,True,Pneumonia,1,1.0,40.26109998812899
+Hybrid+KG (no recency),104,Pneumonia,True,Pneumonia,1,1.0,47.78950003674254
+Hybrid+KG (no recency),105,Psoriasis,False,Psoriasis,1,1.0,35.30319995479658
+Hybrid+KG (no recency),106,Psoriasis,True,Psoriasis,1,1.0,36.110199987888336
+Hybrid+KG (no recency),107,Psoriasis,True,Psoriasis,1,1.0,51.45289999200031
+Hybrid+KG (no recency),108,Tuberculosis,False,Tuberculosis,1,1.0,50.46619998756796
+Hybrid+KG (no recency),109,Tuberculosis,True,Pneumonia,0,0.5,40.97530001308769
+Hybrid+KG (no recency),110,Tuberculosis,True,Pneumonia,0,0.5,52.80170001788065
+Hybrid+KG (no recency),111,Typhoid,False,Typhoid,1,1.0,43.48230001050979
+Hybrid+KG (no recency),112,Typhoid,True,Typhoid,1,1.0,36.120699951425195
+Hybrid+KG (no recency),113,Typhoid,True,Typhoid,1,1.0,38.22220000438392
+Hybrid+KG (no recency),114,Urinary tract infection,False,Urinary tract infection,1,1.0,34.99209997244179
+Hybrid+KG (no recency),115,Urinary tract infection,True,Urinary tract infection,1,1.0,36.2827000208199
+Hybrid+KG (no recency),116,Urinary tract infection,True,Urinary tract infection,1,1.0,41.687099961563945
+Hybrid+KG (no recency),117,Varicose veins,False,Varicose veins,1,1.0,40.62829999020323
+Hybrid+KG (no recency),118,Varicose veins,True,Varicose veins,1,1.0,41.968500008806586
+Hybrid+KG (no recency),119,Varicose veins,True,Varicose veins,1,1.0,38.999699987471104
+Hybrid+KG (no recency),120,hepatitis A,False,hepatitis A,1,1.0,40.64170003402978
+Hybrid+KG (no recency),121,hepatitis A,True,Arthritis,0,0.3333333333333333,45.19789997721091
+Hybrid+KG (no recency),122,hepatitis A,True,Jaundice,0,0.5,40.067499969154596
+Proposed (CRFS),0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,114.51250000391155
+Proposed (CRFS),1,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,90.18529998138547
+Proposed (CRFS),2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,80.45470004435629
+Proposed (CRFS),3,AIDS,False,AIDS,1,1.0,80.14030003687367
+Proposed (CRFS),4,AIDS,True,AIDS,1,1.0,82.31279999017715
+Proposed (CRFS),5,AIDS,True,AIDS,1,1.0,76.98369998252019
+Proposed (CRFS),6,Acne,False,Acne,1,1.0,76.34560001315549
+Proposed (CRFS),7,Acne,True,Acne,1,1.0,76.9952000118792
+Proposed (CRFS),8,Acne,True,Acne,1,1.0,74.18990001315251
+Proposed (CRFS),9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,83.85619998443872
+Proposed (CRFS),10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,78.5838000010699
+Proposed (CRFS),11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,81.57139999093488
+Proposed (CRFS),12,Allergy,False,Allergy,1,1.0,78.36079999106005
+Proposed (CRFS),13,Allergy,True,Allergy,1,1.0,128.98749997839332
+Proposed (CRFS),14,Allergy,True,Allergy,1,1.0,80.49239998217672
+Proposed (CRFS),15,Arthritis,False,Arthritis,1,1.0,83.14780000364408
+Proposed (CRFS),16,Arthritis,True,Arthritis,1,1.0,77.2510000388138
+Proposed (CRFS),17,Arthritis,True,Arthritis,1,1.0,72.17870000749826
+Proposed (CRFS),18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,79.59809998283163
+Proposed (CRFS),19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,88.42540002660826
+Proposed (CRFS),20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,90.72269999887794
+Proposed (CRFS),21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,80.02769999438897
+Proposed (CRFS),22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,76.97910000570118
+Proposed (CRFS),23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,74.43569996394217
+Proposed (CRFS),24,Chicken pox,False,Chicken pox,1,1.0,90.11679998366162
+Proposed (CRFS),25,Chicken pox,True,Chicken pox,1,1.0,79.67820001067594
+Proposed (CRFS),26,Chicken pox,True,Chicken pox,1,1.0,83.14040000550449
+Proposed (CRFS),27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,82.01650000410154
+Proposed (CRFS),28,Chronic cholestasis,True,Jaundice,0,0.0,84.6531999995932
+Proposed (CRFS),29,Chronic cholestasis,True,Jaundice,0,0.0,85.76099999481812
+Proposed (CRFS),30,Common Cold,False,Common Cold,1,1.0,91.3799999980256
+Proposed (CRFS),31,Common Cold,True,Common Cold,1,1.0,94.56529997987673
+Proposed (CRFS),32,Common Cold,True,Common Cold,1,1.0,123.5783000010997
+Proposed (CRFS),33,Dengue,False,Dengue,1,1.0,123.28270002035424
+Proposed (CRFS),34,Dengue,True,Dengue,1,1.0,101.57679999247193
+Proposed (CRFS),35,Dengue,True,Dengue,1,1.0,97.97750000143424
+Proposed (CRFS),36,Diabetes,False,Diabetes,1,1.0,90.7526999944821
+Proposed (CRFS),37,Diabetes,True,Diabetes,1,1.0,89.89329996984452
+Proposed (CRFS),38,Diabetes,True,Diabetes,1,1.0,94.36849999474362
+Proposed (CRFS),39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,98.18600001744926
+Proposed (CRFS),40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,93.40739995241165
+Proposed (CRFS),41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,92.92270004516467
+Proposed (CRFS),42,Drug Reaction,False,Drug Reaction,1,1.0,94.37870001420379
+Proposed (CRFS),43,Drug Reaction,True,Drug Reaction,1,1.0,93.67979998933151
+Proposed (CRFS),44,Drug Reaction,True,Drug Reaction,1,1.0,96.11729998141527
+Proposed (CRFS),45,Fungal infection,False,Fungal infection,1,1.0,90.34909994807094
+Proposed (CRFS),46,Fungal infection,True,Fungal infection,1,1.0,93.65219995379448
+Proposed (CRFS),47,Fungal infection,True,Fungal infection,1,1.0,95.07170005235821
+Proposed (CRFS),48,GERD,False,GERD,1,1.0,94.62689998326823
+Proposed (CRFS),49,GERD,True,GERD,1,1.0,107.15789999812841
+Proposed (CRFS),50,GERD,True,GERD,1,1.0,98.4852000256069
+Proposed (CRFS),51,Gastroenteritis,False,Gastroenteritis,1,1.0,89.57299997564405
+Proposed (CRFS),52,Gastroenteritis,True,Jaundice,0,0.5,92.88000001106411
+Proposed (CRFS),53,Gastroenteritis,True,Jaundice,0,0.5,93.13980001024902
+Proposed (CRFS),54,Heart attack,False,Heart attack,1,1.0,87.9484000033699
+Proposed (CRFS),55,Heart attack,True,Heart attack,1,1.0,94.95060000335798
+Proposed (CRFS),56,Heart attack,True,Heart attack,1,1.0,98.14110002480447
+Proposed (CRFS),57,Hepatitis B,False,Hepatitis B,1,1.0,101.95149999344721
+Proposed (CRFS),58,Hepatitis B,True,Hepatitis B,1,1.0,103.33900002297014
+Proposed (CRFS),59,Hepatitis B,True,Hepatitis B,1,1.0,106.37489997316152
+Proposed (CRFS),60,Hepatitis C,False,Hepatitis C,1,1.0,93.41359999962151
+Proposed (CRFS),61,Hepatitis C,True,Hepatitis C,1,1.0,97.69659995799884
+Proposed (CRFS),62,Hepatitis C,True,Hepatitis C,1,1.0,99.8309999704361
+Proposed (CRFS),63,Hepatitis D,False,Hepatitis E,0,0.5,100.52679997170344
+Proposed (CRFS),64,Hepatitis D,True,Jaundice,0,0.0,101.12549999030307
+Proposed (CRFS),65,Hepatitis D,True,Jaundice,0,0.07692307692307693,101.631700003054
+Proposed (CRFS),66,Hepatitis E,False,Hepatitis E,1,1.0,102.65610000351444
+Proposed (CRFS),67,Hepatitis E,True,Hepatitis E,1,1.0,103.59880002215505
+Proposed (CRFS),68,Hepatitis E,True,Hepatitis E,1,1.0,99.71959999529645
+Proposed (CRFS),69,Hypertension,False,Hypertension,1,1.0,97.34119998756796
+Proposed (CRFS),70,Hypertension,True,Hypertension,1,1.0,95.69619997637346
+Proposed (CRFS),71,Hypertension,True,Hypertension,1,1.0,95.59120004996657
+Proposed (CRFS),72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,103.20179996779189
+Proposed (CRFS),73,Hyperthyroidism,True,Hyperthyroidism,1,1.0,100.91440001269802
+Proposed (CRFS),74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,100.43400002177805
+Proposed (CRFS),75,Hypoglycemia,False,Hypoglycemia,1,1.0,106.29199998220429
+Proposed (CRFS),76,Hypoglycemia,True,Hypoglycemia,1,1.0,102.80460002832115
+Proposed (CRFS),77,Hypoglycemia,True,Hypoglycemia,1,1.0,103.47720002755523
+Proposed (CRFS),78,Hypothyroidism,False,Hypothyroidism,1,1.0,101.04909999063239
+Proposed (CRFS),79,Hypothyroidism,True,Hypothyroidism,1,1.0,102.0841000135988
+Proposed (CRFS),80,Hypothyroidism,True,Hypothyroidism,1,1.0,99.29600002942607
+Proposed (CRFS),81,Impetigo,False,Impetigo,1,1.0,96.33410000242293
+Proposed (CRFS),82,Impetigo,True,Impetigo,1,1.0,94.6546999621205
+Proposed (CRFS),83,Impetigo,True,Impetigo,1,1.0,96.834400028456
+Proposed (CRFS),84,Jaundice,False,Jaundice,1,1.0,101.38259996892884
+Proposed (CRFS),85,Jaundice,True,Alcoholic hepatitis,0,0.3333333333333333,101.66279994882643
+Proposed (CRFS),86,Jaundice,True,Jaundice,1,1.0,94.63270002743229
+Proposed (CRFS),87,Malaria,False,Malaria,1,1.0,101.50849999627098
+Proposed (CRFS),88,Malaria,True,AIDS,0,0.16666666666666666,96.72329999739304
+Proposed (CRFS),89,Malaria,True,Heart attack,0,0.5,102.91960003087297
+Proposed (CRFS),90,Migraine,False,Migraine,1,1.0,99.40780000761151
+Proposed (CRFS),91,Migraine,True,Migraine,1,1.0,97.90570003679022
+Proposed (CRFS),92,Migraine,True,Migraine,1,1.0,95.23440001066774
+Proposed (CRFS),93,Osteoarthristis,False,Osteoarthristis,1,1.0,94.73729995079339
+Proposed (CRFS),94,Osteoarthristis,True,Arthritis,0,0.5,94.49620003579184
+Proposed (CRFS),95,Osteoarthristis,True,Osteoarthristis,1,1.0,94.0097999991849
+Proposed (CRFS),96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,92.04790001967922
+Proposed (CRFS),97,Paralysis (brain hemorrhage),True,Migraine,0,0.3333333333333333,92.40650001447648
+Proposed (CRFS),98,Paralysis (brain hemorrhage),True,Heart attack,0,0.14285714285714285,92.73929998744279
+Proposed (CRFS),99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,94.67290004249662
+Proposed (CRFS),100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,96.79089998826385
+Proposed (CRFS),101,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,99.47090002242476
+Proposed (CRFS),102,Pneumonia,False,Pneumonia,1,1.0,107.57069999817759
+Proposed (CRFS),103,Pneumonia,True,Pneumonia,1,1.0,100.69019999355078
+Proposed (CRFS),104,Pneumonia,True,Pneumonia,1,1.0,100.50639999099076
+Proposed (CRFS),105,Psoriasis,False,Psoriasis,1,1.0,93.43520004767925
+Proposed (CRFS),106,Psoriasis,True,Psoriasis,1,1.0,108.96849998971447
+Proposed (CRFS),107,Psoriasis,True,Psoriasis,1,1.0,104.22370000742376
+Proposed (CRFS),108,Tuberculosis,False,Tuberculosis,1,1.0,104.50429999036714
+Proposed (CRFS),109,Tuberculosis,True,Pneumonia,0,0.5,102.03020001063123
+Proposed (CRFS),110,Tuberculosis,True,Pneumonia,0,0.5,108.07700001168996
+Proposed (CRFS),111,Typhoid,False,Typhoid,1,1.0,112.91369999526069
+Proposed (CRFS),112,Typhoid,True,Typhoid,1,1.0,138.7010000180453
+Proposed (CRFS),113,Typhoid,True,Typhoid,1,1.0,134.8534999997355
+Proposed (CRFS),114,Urinary tract infection,False,Urinary tract infection,1,1.0,124.62590000359342
+Proposed (CRFS),115,Urinary tract infection,True,Urinary tract infection,1,1.0,87.29190001031384
+Proposed (CRFS),116,Urinary tract infection,True,Urinary tract infection,1,1.0,89.54190002987161
+Proposed (CRFS),117,Varicose veins,False,Varicose veins,1,1.0,92.37570001278073
+Proposed (CRFS),118,Varicose veins,True,Varicose veins,1,1.0,87.0798000250943
+Proposed (CRFS),119,Varicose veins,True,Varicose veins,1,1.0,91.87479998217896
+Proposed (CRFS),120,hepatitis A,False,hepatitis A,1,1.0,96.94910002872348
+Proposed (CRFS),121,hepatitis A,True,Arthritis,0,0.3333333333333333,96.6474000015296
+Proposed (CRFS),122,hepatitis A,True,Jaundice,0,0.2,92.86030003568158
+Proposed (RRF+KG+Recency),0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,35.3278000256978
+Proposed (RRF+KG+Recency),1,(vertigo) Paroymsal  Positional Vertigo,True,Hypertension,0,0.0,53.98989998502657
+Proposed (RRF+KG+Recency),2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,35.97500000614673
+Proposed (RRF+KG+Recency),3,AIDS,False,AIDS,1,1.0,34.14050000719726
+Proposed (RRF+KG+Recency),4,AIDS,True,AIDS,1,1.0,36.90349997486919
+Proposed (RRF+KG+Recency),5,AIDS,True,AIDS,1,1.0,37.91300003649667
+Proposed (RRF+KG+Recency),6,Acne,False,Acne,1,1.0,32.9998999950476
+Proposed (RRF+KG+Recency),7,Acne,True,Acne,1,1.0,30.920299992430955
+Proposed (RRF+KG+Recency),8,Acne,True,Acne,1,1.0,24.042999953962862
+Proposed (RRF+KG+Recency),9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,25.284400035161525
+Proposed (RRF+KG+Recency),10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,34.270400006789714
+Proposed (RRF+KG+Recency),11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,23.036899976432323
+Proposed (RRF+KG+Recency),12,Allergy,False,Allergy,1,1.0,32.06940001109615
+Proposed (RRF+KG+Recency),13,Allergy,True,Heart attack,0,0.0,35.54370003985241
+Proposed (RRF+KG+Recency),14,Allergy,True,Allergy,1,1.0,30.17129999352619
+Proposed (RRF+KG+Recency),15,Arthritis,False,Arthritis,1,1.0,23.49530003266409
+Proposed (RRF+KG+Recency),16,Arthritis,True,Arthritis,1,1.0,23.376199998892844
+Proposed (RRF+KG+Recency),17,Arthritis,True,Arthritis,1,1.0,24.728899996262044
+Proposed (RRF+KG+Recency),18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,34.06050003832206
+Proposed (RRF+KG+Recency),19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,23.2193999690935
+Proposed (RRF+KG+Recency),20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,35.816999967209995
+Proposed (RRF+KG+Recency),21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,31.292200030293316
+Proposed (RRF+KG+Recency),22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,22.36649999395013
+Proposed (RRF+KG+Recency),23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,32.059699995443225
+Proposed (RRF+KG+Recency),24,Chicken pox,False,Chicken pox,1,1.0,30.438799993135035
+Proposed (RRF+KG+Recency),25,Chicken pox,True,Impetigo,0,0.5,36.14959999686107
+Proposed (RRF+KG+Recency),26,Chicken pox,True,Chicken pox,1,1.0,40.29120004270226
+Proposed (RRF+KG+Recency),27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,31.0649000457488
+Proposed (RRF+KG+Recency),28,Chronic cholestasis,True,Jaundice,0,0.0,33.64079998573288
+Proposed (RRF+KG+Recency),29,Chronic cholestasis,True,GERD,0,0.0,36.81530000176281
+Proposed (RRF+KG+Recency),30,Common Cold,False,Common Cold,1,1.0,34.19979999307543
+Proposed (RRF+KG+Recency),31,Common Cold,True,Common Cold,1,1.0,27.282900002319366
+Proposed (RRF+KG+Recency),32,Common Cold,True,Common Cold,1,1.0,43.25210000388324
+Proposed (RRF+KG+Recency),33,Dengue,False,Dengue,1,1.0,24.93690000846982
+Proposed (RRF+KG+Recency),34,Dengue,True,Dengue,1,1.0,36.63859999505803
+Proposed (RRF+KG+Recency),35,Dengue,True,Dengue,1,1.0,32.425699988380075
+Proposed (RRF+KG+Recency),36,Diabetes,False,Diabetes,1,1.0,25.56639997055754
+Proposed (RRF+KG+Recency),37,Diabetes,True,Diabetes,1,1.0,26.904899976216257
+Proposed (RRF+KG+Recency),38,Diabetes,True,Diabetes,1,1.0,39.33329996652901
+Proposed (RRF+KG+Recency),39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,27.53000002121553
+Proposed (RRF+KG+Recency),40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,32.37420000368729
+Proposed (RRF+KG+Recency),41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,26.949300023261458
+Proposed (RRF+KG+Recency),42,Drug Reaction,False,Drug Reaction,1,1.0,23.752599954605103
+Proposed (RRF+KG+Recency),43,Drug Reaction,True,Drug Reaction,1,1.0,26.7015999997966
+Proposed (RRF+KG+Recency),44,Drug Reaction,True,Drug Reaction,1,1.0,22.500200022477657
+Proposed (RRF+KG+Recency),45,Fungal infection,False,Fungal infection,1,1.0,23.675000004004687
+Proposed (RRF+KG+Recency),46,Fungal infection,True,Fungal infection,1,1.0,32.2679000091739
+Proposed (RRF+KG+Recency),47,Fungal infection,True,Fungal infection,1,1.0,32.52549999160692
+Proposed (RRF+KG+Recency),48,GERD,False,GERD,1,1.0,35.49219999695197
+Proposed (RRF+KG+Recency),49,GERD,True,GERD,1,1.0,38.491099956445396
+Proposed (RRF+KG+Recency),50,GERD,True,GERD,1,1.0,23.9904000191018
+Proposed (RRF+KG+Recency),51,Gastroenteritis,False,Gastroenteritis,1,1.0,25.40820004651323
+Proposed (RRF+KG+Recency),52,Gastroenteritis,True,Gastroenteritis,1,1.0,23.2389000011608
+Proposed (RRF+KG+Recency),53,Gastroenteritis,True,Gastroenteritis,1,1.0,30.71510000154376
+Proposed (RRF+KG+Recency),54,Heart attack,False,Pneumonia,0,0.5,27.546399971470237
+Proposed (RRF+KG+Recency),55,Heart attack,True,Heart attack,1,1.0,31.27060004044324
+Proposed (RRF+KG+Recency),56,Heart attack,True,Heart attack,1,1.0,31.449200003407896
+Proposed (RRF+KG+Recency),57,Hepatitis B,False,Hepatitis B,1,1.0,33.36860000854358
+Proposed (RRF+KG+Recency),58,Hepatitis B,True,Hepatitis B,1,1.0,32.99939999124035
+Proposed (RRF+KG+Recency),59,Hepatitis B,True,Hepatitis B,1,1.0,36.73320001689717
+Proposed (RRF+KG+Recency),60,Hepatitis C,False,Hepatitis C,1,1.0,29.65310000581667
+Proposed (RRF+KG+Recency),61,Hepatitis C,True,Hepatitis C,1,1.0,24.6031999704428
+Proposed (RRF+KG+Recency),62,Hepatitis C,True,Bronchial Asthma,0,0.5,30.191100027877837
+Proposed (RRF+KG+Recency),63,Hepatitis D,False,Hepatitis E,0,0.5,39.00590003468096
+Proposed (RRF+KG+Recency),64,Hepatitis D,True,Jaundice,0,0.0,24.868300009984523
+Proposed (RRF+KG+Recency),65,Hepatitis D,True,Arthritis,0,0.0,32.055500021670014
+Proposed (RRF+KG+Recency),66,Hepatitis E,False,Hepatitis E,1,1.0,25.014500017277896
+Proposed (RRF+KG+Recency),67,Hepatitis E,True,GERD,0,0.0,26.28049999475479
+Proposed (RRF+KG+Recency),68,Hepatitis E,True,Arthritis,0,0.0,28.93590001622215
+Proposed (RRF+KG+Recency),69,Hypertension,False,Hypertension,1,1.0,24.780600040685385
+Proposed (RRF+KG+Recency),70,Hypertension,True,Hypertension,1,1.0,38.98999997181818
+Proposed (RRF+KG+Recency),71,Hypertension,True,Hypertension,1,1.0,32.283400010783225
+Proposed (RRF+KG+Recency),72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,22.76309998705983
+Proposed (RRF+KG+Recency),73,Hyperthyroidism,True,Hyperthyroidism,1,1.0,31.023899966385216
+Proposed (RRF+KG+Recency),74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,32.77999995043501
+Proposed (RRF+KG+Recency),75,Hypoglycemia,False,Hypoglycemia,1,1.0,25.06289997836575
+Proposed (RRF+KG+Recency),76,Hypoglycemia,True,Hypoglycemia,1,1.0,33.09129999252036
+Proposed (RRF+KG+Recency),77,Hypoglycemia,True,Hypoglycemia,1,1.0,25.381800020113587
+Proposed (RRF+KG+Recency),78,Hypothyroidism,False,Hypothyroidism,1,1.0,30.12099995976314
+Proposed (RRF+KG+Recency),79,Hypothyroidism,True,Hypothyroidism,1,1.0,46.877099957782775
+Proposed (RRF+KG+Recency),80,Hypothyroidism,True,Hypothyroidism,1,1.0,26.082900003530085
+Proposed (RRF+KG+Recency),81,Impetigo,False,Impetigo,1,1.0,24.01549997739494
+Proposed (RRF+KG+Recency),82,Impetigo,True,Impetigo,1,1.0,23.74420000705868
+Proposed (RRF+KG+Recency),83,Impetigo,True,Impetigo,1,1.0,25.192300032358617
+Proposed (RRF+KG+Recency),84,Jaundice,False,Jaundice,1,1.0,24.163099995348603
+Proposed (RRF+KG+Recency),85,Jaundice,True,Alcoholic hepatitis,0,0.5,25.217599992174655
+Proposed (RRF+KG+Recency),86,Jaundice,True,Jaundice,1,1.0,23.87460001045838
+Proposed (RRF+KG+Recency),87,Malaria,False,Malaria,1,1.0,33.05189998354763
+Proposed (RRF+KG+Recency),88,Malaria,True,AIDS,0,0.0,26.568699977360666
+Proposed (RRF+KG+Recency),89,Malaria,True,Heart attack,0,0.0,24.695799977052957
+Proposed (RRF+KG+Recency),90,Migraine,False,Migraine,1,1.0,28.708700032439083
+Proposed (RRF+KG+Recency),91,Migraine,True,Migraine,1,1.0,27.859700028784573
+Proposed (RRF+KG+Recency),92,Migraine,True,Migraine,1,1.0,28.408999962266535
+Proposed (RRF+KG+Recency),93,Osteoarthristis,False,Osteoarthristis,1,1.0,26.10150002874434
+Proposed (RRF+KG+Recency),94,Osteoarthristis,True,Arthritis,0,0.5,29.125900007784367
+Proposed (RRF+KG+Recency),95,Osteoarthristis,True,Osteoarthristis,1,1.0,26.321300014387816
+Proposed (RRF+KG+Recency),96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,27.83490001456812
+Proposed (RRF+KG+Recency),97,Paralysis (brain hemorrhage),True,Migraine,0,0.0,31.763300008606166
+Proposed (RRF+KG+Recency),98,Paralysis (brain hemorrhage),True,Heart attack,0,0.0,33.43670000322163
+Proposed (RRF+KG+Recency),99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,29.355600010603666
+Proposed (RRF+KG+Recency),100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,34.32279999833554
+Proposed (RRF+KG+Recency),101,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,31.58770001027733
+Proposed (RRF+KG+Recency),102,Pneumonia,False,Pneumonia,1,1.0,26.11599996453151
+Proposed (RRF+KG+Recency),103,Pneumonia,True,Pneumonia,1,1.0,35.983100009616464
+Proposed (RRF+KG+Recency),104,Pneumonia,True,Pneumonia,1,1.0,43.68980001891032
+Proposed (RRF+KG+Recency),105,Psoriasis,False,Psoriasis,1,1.0,25.844499992672354
+Proposed (RRF+KG+Recency),106,Psoriasis,True,Psoriasis,1,1.0,29.96559999883175
+Proposed (RRF+KG+Recency),107,Psoriasis,True,Psoriasis,1,1.0,39.10230001201853
+Proposed (RRF+KG+Recency),108,Tuberculosis,False,Tuberculosis,1,1.0,28.828600014094263
+Proposed (RRF+KG+Recency),109,Tuberculosis,True,Common Cold,0,0.0,35.86190001806244
+Proposed (RRF+KG+Recency),110,Tuberculosis,True,Common Cold,0,0.0,32.36289997585118
+Proposed (RRF+KG+Recency),111,Typhoid,False,Typhoid,1,1.0,27.493700035847723
+Proposed (RRF+KG+Recency),112,Typhoid,True,Malaria,0,0.0,33.89039996545762
+Proposed (RRF+KG+Recency),113,Typhoid,True,Typhoid,1,1.0,35.679299966432154
+Proposed (RRF+KG+Recency),114,Urinary tract infection,False,Urinary tract infection,1,1.0,39.495899982284755
+Proposed (RRF+KG+Recency),115,Urinary tract infection,True,Urinary tract infection,1,1.0,26.157399988733232
+Proposed (RRF+KG+Recency),116,Urinary tract infection,True,Urinary tract infection,1,1.0,30.64989997074008
+Proposed (RRF+KG+Recency),117,Varicose veins,False,Varicose veins,1,1.0,28.125900018494576
+Proposed (RRF+KG+Recency),118,Varicose veins,True,Varicose veins,1,1.0,26.63480001501739
+Proposed (RRF+KG+Recency),119,Varicose veins,True,Varicose veins,1,1.0,31.161299964878708
+Proposed (RRF+KG+Recency),120,hepatitis A,False,hepatitis A,1,1.0,38.1618999526836
+Proposed (RRF+KG+Recency),121,hepatitis A,True,Arthritis,0,0.0,36.888299975544214
+Proposed (RRF+KG+Recency),122,hepatitis A,True,Jaundice,0,0.0,35.627500037662685
+N1 (Linear+KG @ Top-3),0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,51.01759999524802
+N1 (Linear+KG @ Top-3),1,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,36.45650000544265
+N1 (Linear+KG @ Top-3),2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,44.20760000357404
+N1 (Linear+KG @ Top-3),3,AIDS,False,AIDS,1,1.0,43.37550001218915
+N1 (Linear+KG @ Top-3),4,AIDS,True,AIDS,1,1.0,40.68939998978749
+N1 (Linear+KG @ Top-3),5,AIDS,True,AIDS,1,1.0,45.54909997386858
+N1 (Linear+KG @ Top-3),6,Acne,False,Acne,1,1.0,49.4071000139229
+N1 (Linear+KG @ Top-3),7,Acne,True,Acne,1,1.0,43.56530000222847
+N1 (Linear+KG @ Top-3),8,Acne,True,Acne,1,1.0,45.90460000326857
+N1 (Linear+KG @ Top-3),9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,43.56749996077269
+N1 (Linear+KG @ Top-3),10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,40.37860000971705
+N1 (Linear+KG @ Top-3),11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,45.99610000150278
+N1 (Linear+KG @ Top-3),12,Allergy,False,Allergy,1,1.0,45.27639999287203
+N1 (Linear+KG @ Top-3),13,Allergy,True,Allergy,1,1.0,36.52770002372563
+N1 (Linear+KG @ Top-3),14,Allergy,True,Allergy,1,1.0,50.89720000978559
+N1 (Linear+KG @ Top-3),15,Arthritis,False,Arthritis,1,1.0,51.8706000293605
+N1 (Linear+KG @ Top-3),16,Arthritis,True,Arthritis,1,1.0,45.36960000405088
+N1 (Linear+KG @ Top-3),17,Arthritis,True,Arthritis,1,1.0,46.57160001806915
+N1 (Linear+KG @ Top-3),18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,45.75609997846186
+N1 (Linear+KG @ Top-3),19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,34.59830000065267
+N1 (Linear+KG @ Top-3),20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,42.67159994924441
+N1 (Linear+KG @ Top-3),21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,36.470299994107336
+N1 (Linear+KG @ Top-3),22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,38.5101999854669
+N1 (Linear+KG @ Top-3),23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,38.88180002104491
+N1 (Linear+KG @ Top-3),24,Chicken pox,False,Chicken pox,1,1.0,45.85239995503798
+N1 (Linear+KG @ Top-3),25,Chicken pox,True,Chicken pox,1,1.0,39.107699994929135
+N1 (Linear+KG @ Top-3),26,Chicken pox,True,Chicken pox,1,1.0,36.53050004504621
+N1 (Linear+KG @ Top-3),27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,39.2979999887757
+N1 (Linear+KG @ Top-3),28,Chronic cholestasis,True,Jaundice,0,0.0,41.10149998450652
+N1 (Linear+KG @ Top-3),29,Chronic cholestasis,True,Jaundice,0,0.0,34.171000006608665
+N1 (Linear+KG @ Top-3),30,Common Cold,False,Common Cold,1,1.0,60.64789998345077
+N1 (Linear+KG @ Top-3),31,Common Cold,True,Common Cold,1,1.0,56.37959996238351
+N1 (Linear+KG @ Top-3),32,Common Cold,True,Common Cold,1,1.0,42.8715999587439
+N1 (Linear+KG @ Top-3),33,Dengue,False,Dengue,1,1.0,51.55690002720803
+N1 (Linear+KG @ Top-3),34,Dengue,True,Dengue,1,1.0,39.88009999739006
+N1 (Linear+KG @ Top-3),35,Dengue,True,Dengue,1,1.0,43.46389998681843
+N1 (Linear+KG @ Top-3),36,Diabetes,False,Diabetes,1,1.0,45.0260000070557
+N1 (Linear+KG @ Top-3),37,Diabetes,True,Diabetes,1,1.0,35.29909998178482
+N1 (Linear+KG @ Top-3),38,Diabetes,True,Diabetes,1,1.0,46.00949998712167
+N1 (Linear+KG @ Top-3),39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,37.37219999311492
+N1 (Linear+KG @ Top-3),40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,39.94390001753345
+N1 (Linear+KG @ Top-3),41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,42.76779998326674
+N1 (Linear+KG @ Top-3),42,Drug Reaction,False,Drug Reaction,1,1.0,34.85150000778958
+N1 (Linear+KG @ Top-3),43,Drug Reaction,True,Drug Reaction,1,1.0,48.74800000106916
+N1 (Linear+KG @ Top-3),44,Drug Reaction,True,Drug Reaction,1,1.0,37.663099996279925
+N1 (Linear+KG @ Top-3),45,Fungal infection,False,Fungal infection,1,1.0,35.089700017124414
+N1 (Linear+KG @ Top-3),46,Fungal infection,True,Fungal infection,1,1.0,34.6640000352636
+N1 (Linear+KG @ Top-3),47,Fungal infection,True,Fungal infection,1,1.0,36.53759998269379
+N1 (Linear+KG @ Top-3),48,GERD,False,GERD,1,1.0,45.866600004956126
+N1 (Linear+KG @ Top-3),49,GERD,True,GERD,1,1.0,39.21700001228601
+N1 (Linear+KG @ Top-3),50,GERD,True,GERD,1,1.0,36.1018999828957
+N1 (Linear+KG @ Top-3),51,Gastroenteritis,False,Gastroenteritis,1,1.0,38.37970003951341
+N1 (Linear+KG @ Top-3),52,Gastroenteritis,True,Jaundice,0,0.5,35.539800010155886
+N1 (Linear+KG @ Top-3),53,Gastroenteritis,True,Jaundice,0,0.5,32.83039998495951
+N1 (Linear+KG @ Top-3),54,Heart attack,False,Heart attack,1,1.0,51.01140000624582
+N1 (Linear+KG @ Top-3),55,Heart attack,True,Heart attack,1,1.0,35.84430000046268
+N1 (Linear+KG @ Top-3),56,Heart attack,True,Heart attack,1,1.0,34.33799999766052
+N1 (Linear+KG @ Top-3),57,Hepatitis B,False,Hepatitis B,1,1.0,45.16350000631064
+N1 (Linear+KG @ Top-3),58,Hepatitis B,True,Hepatitis B,1,1.0,35.655400017276406
+N1 (Linear+KG @ Top-3),59,Hepatitis B,True,Hepatitis B,1,1.0,47.91389999445528
+N1 (Linear+KG @ Top-3),60,Hepatitis C,False,Hepatitis C,1,1.0,40.844300005119294
+N1 (Linear+KG @ Top-3),61,Hepatitis C,True,Hepatitis C,1,1.0,34.16590002598241
+N1 (Linear+KG @ Top-3),62,Hepatitis C,True,Hepatitis C,1,1.0,40.35440000006929
+N1 (Linear+KG @ Top-3),63,Hepatitis D,False,Hepatitis E,0,0.5,49.05739997047931
+N1 (Linear+KG @ Top-3),64,Hepatitis D,True,Jaundice,0,0.0,38.271899975370616
+N1 (Linear+KG @ Top-3),65,Hepatitis D,True,Jaundice,0,0.0,34.32119998615235
+N1 (Linear+KG @ Top-3),66,Hepatitis E,False,Hepatitis E,1,1.0,54.271900036837906
+N1 (Linear+KG @ Top-3),67,Hepatitis E,True,Hepatitis E,1,1.0,41.73350002383813
+N1 (Linear+KG @ Top-3),68,Hepatitis E,True,Hepatitis E,1,1.0,35.679100023116916
+N1 (Linear+KG @ Top-3),69,Hypertension,False,Hypertension,1,1.0,42.07029996905476
+N1 (Linear+KG @ Top-3),70,Hypertension,True,Hypertension,1,1.0,40.21350003313273
+N1 (Linear+KG @ Top-3),71,Hypertension,True,Hypertension,1,1.0,39.184699999168515
+N1 (Linear+KG @ Top-3),72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,42.64190001413226
+N1 (Linear+KG @ Top-3),73,Hyperthyroidism,True,Hyperthyroidism,1,1.0,38.609699986409396
+N1 (Linear+KG @ Top-3),74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,51.13139998866245
+N1 (Linear+KG @ Top-3),75,Hypoglycemia,False,Hypoglycemia,1,1.0,43.665000004693866
+N1 (Linear+KG @ Top-3),76,Hypoglycemia,True,Hypoglycemia,1,1.0,41.00450000260025
+N1 (Linear+KG @ Top-3),77,Hypoglycemia,True,Hypoglycemia,1,1.0,37.58050000760704
+N1 (Linear+KG @ Top-3),78,Hypothyroidism,False,Hypothyroidism,1,1.0,39.888400002382696
+N1 (Linear+KG @ Top-3),79,Hypothyroidism,True,Hypothyroidism,1,1.0,41.123899980448186
+N1 (Linear+KG @ Top-3),80,Hypothyroidism,True,Hypothyroidism,1,1.0,46.88109998824075
+N1 (Linear+KG @ Top-3),81,Impetigo,False,Impetigo,1,1.0,42.578900000080466
+N1 (Linear+KG @ Top-3),82,Impetigo,True,Impetigo,1,1.0,36.67999996105209
+N1 (Linear+KG @ Top-3),83,Impetigo,True,Impetigo,1,1.0,35.023200034629554
+N1 (Linear+KG @ Top-3),84,Jaundice,False,Jaundice,1,1.0,51.75500002223998
+N1 (Linear+KG @ Top-3),85,Jaundice,True,Jaundice,1,1.0,34.163500007707626
+N1 (Linear+KG @ Top-3),86,Jaundice,True,Jaundice,1,1.0,37.22210001433268
+N1 (Linear+KG @ Top-3),87,Malaria,False,Malaria,1,1.0,41.239699989091605
+N1 (Linear+KG @ Top-3),88,Malaria,True,AIDS,0,0.0,39.5340999821201
+N1 (Linear+KG @ Top-3),89,Malaria,True,Heart attack,0,0.3333333333333333,36.6550000035204
+N1 (Linear+KG @ Top-3),90,Migraine,False,Migraine,1,1.0,37.22230001585558
+N1 (Linear+KG @ Top-3),91,Migraine,True,Migraine,1,1.0,36.202099989168346
+N1 (Linear+KG @ Top-3),92,Migraine,True,Migraine,1,1.0,39.5157000166364
+N1 (Linear+KG @ Top-3),93,Osteoarthristis,False,Osteoarthristis,1,1.0,36.3124999566935
+N1 (Linear+KG @ Top-3),94,Osteoarthristis,True,Arthritis,0,0.5,42.755200003739446
+N1 (Linear+KG @ Top-3),95,Osteoarthristis,True,Osteoarthristis,1,1.0,36.911699979100376
+N1 (Linear+KG @ Top-3),96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,34.64040003018454
+N1 (Linear+KG @ Top-3),97,Paralysis (brain hemorrhage),True,Migraine,0,0.5,37.48449997510761
+N1 (Linear+KG @ Top-3),98,Paralysis (brain hemorrhage),True,Hypoglycemia,0,0.0,39.18269998393953
+N1 (Linear+KG @ Top-3),99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,40.90109997196123
+N1 (Linear+KG @ Top-3),100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,38.23069995269179
+N1 (Linear+KG @ Top-3),101,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,36.0344999935478
+N1 (Linear+KG @ Top-3),102,Pneumonia,False,Pneumonia,1,1.0,43.46379998605698
+N1 (Linear+KG @ Top-3),103,Pneumonia,True,Pneumonia,1,1.0,37.88580000400543
+N1 (Linear+KG @ Top-3),104,Pneumonia,True,Pneumonia,1,1.0,50.85559998406097
+N1 (Linear+KG @ Top-3),105,Psoriasis,False,Psoriasis,1,1.0,65.69100002525374
+N1 (Linear+KG @ Top-3),106,Psoriasis,True,Psoriasis,1,1.0,38.9691999880597
+N1 (Linear+KG @ Top-3),107,Psoriasis,True,Psoriasis,1,1.0,41.08310001902282
+N1 (Linear+KG @ Top-3),108,Tuberculosis,False,Tuberculosis,1,1.0,46.66589997941628
+N1 (Linear+KG @ Top-3),109,Tuberculosis,True,Pneumonia,0,0.0,41.94379999535158
+N1 (Linear+KG @ Top-3),110,Tuberculosis,True,Pneumonia,0,0.0,38.76610001316294
+N1 (Linear+KG @ Top-3),111,Typhoid,False,Typhoid,1,1.0,46.259299968369305
+N1 (Linear+KG @ Top-3),112,Typhoid,True,Typhoid,1,1.0,36.66410001460463
+N1 (Linear+KG @ Top-3),113,Typhoid,True,Typhoid,1,1.0,43.87930000666529
+N1 (Linear+KG @ Top-3),114,Urinary tract infection,False,Urinary tract infection,1,1.0,43.654899985995144
+N1 (Linear+KG @ Top-3),115,Urinary tract infection,True,Urinary tract infection,1,1.0,35.080600006040186
+N1 (Linear+KG @ Top-3),116,Urinary tract infection,True,Urinary tract infection,1,1.0,38.8076999806799
+N1 (Linear+KG @ Top-3),117,Varicose veins,False,Varicose veins,1,1.0,43.376200017519295
+N1 (Linear+KG @ Top-3),118,Varicose veins,True,Varicose veins,1,1.0,36.748900020029396
+N1 (Linear+KG @ Top-3),119,Varicose veins,True,Varicose veins,1,1.0,36.160699964966625
+N1 (Linear+KG @ Top-3),120,hepatitis A,False,hepatitis A,1,1.0,38.45330001786351
+N1 (Linear+KG @ Top-3),121,hepatitis A,True,Arthritis,0,0.3333333333333333,38.43700001016259
+N1 (Linear+KG @ Top-3),122,hepatitis A,True,Jaundice,0,0.5,37.15539997210726
+"N2 (RRF+KG @ Top-3, no recency)",0,(vertigo) Paroymsal  Positional Vertigo,False,(vertigo) Paroymsal  Positional Vertigo,1,1.0,23.673700052313507
+"N2 (RRF+KG @ Top-3, no recency)",1,(vertigo) Paroymsal  Positional Vertigo,True,Hypertension,0,0.0,26.020399993285537
+"N2 (RRF+KG @ Top-3, no recency)",2,(vertigo) Paroymsal  Positional Vertigo,True,(vertigo) Paroymsal  Positional Vertigo,1,1.0,23.17679999396205
+"N2 (RRF+KG @ Top-3, no recency)",3,AIDS,False,AIDS,1,1.0,24.825500033330172
+"N2 (RRF+KG @ Top-3, no recency)",4,AIDS,True,AIDS,1,1.0,20.912099978886545
+"N2 (RRF+KG @ Top-3, no recency)",5,AIDS,True,AIDS,1,1.0,34.02149997418746
+"N2 (RRF+KG @ Top-3, no recency)",6,Acne,False,Acne,1,1.0,23.50099995965138
+"N2 (RRF+KG @ Top-3, no recency)",7,Acne,True,Acne,1,1.0,20.594700006768107
+"N2 (RRF+KG @ Top-3, no recency)",8,Acne,True,Acne,1,1.0,22.698500019032508
+"N2 (RRF+KG @ Top-3, no recency)",9,Alcoholic hepatitis,False,Alcoholic hepatitis,1,1.0,26.54470002744347
+"N2 (RRF+KG @ Top-3, no recency)",10,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,25.13530000578612
+"N2 (RRF+KG @ Top-3, no recency)",11,Alcoholic hepatitis,True,Alcoholic hepatitis,1,1.0,26.214699959382415
+"N2 (RRF+KG @ Top-3, no recency)",12,Allergy,False,Allergy,1,1.0,27.191100001800805
+"N2 (RRF+KG @ Top-3, no recency)",13,Allergy,True,Heart attack,0,0.0,29.709700029343367
+"N2 (RRF+KG @ Top-3, no recency)",14,Allergy,True,Allergy,1,1.0,28.582700004335493
+"N2 (RRF+KG @ Top-3, no recency)",15,Arthritis,False,Arthritis,1,1.0,21.52020001085475
+"N2 (RRF+KG @ Top-3, no recency)",16,Arthritis,True,Arthritis,1,1.0,23.63340003648773
+"N2 (RRF+KG @ Top-3, no recency)",17,Arthritis,True,Arthritis,1,1.0,24.887499981559813
+"N2 (RRF+KG @ Top-3, no recency)",18,Bronchial Asthma,False,Bronchial Asthma,1,1.0,22.01389998663217
+"N2 (RRF+KG @ Top-3, no recency)",19,Bronchial Asthma,True,Bronchial Asthma,1,1.0,29.527800041250885
+"N2 (RRF+KG @ Top-3, no recency)",20,Bronchial Asthma,True,Bronchial Asthma,1,1.0,22.901899996213615
+"N2 (RRF+KG @ Top-3, no recency)",21,Cervical spondylosis,False,Cervical spondylosis,1,1.0,24.779099971055984
+"N2 (RRF+KG @ Top-3, no recency)",22,Cervical spondylosis,True,Cervical spondylosis,1,1.0,28.22149998974055
+"N2 (RRF+KG @ Top-3, no recency)",23,Cervical spondylosis,True,Cervical spondylosis,1,1.0,25.263899995479733
+"N2 (RRF+KG @ Top-3, no recency)",24,Chicken pox,False,Chicken pox,1,1.0,30.644599988590926
+"N2 (RRF+KG @ Top-3, no recency)",25,Chicken pox,True,Impetigo,0,0.5,24.180400010664016
+"N2 (RRF+KG @ Top-3, no recency)",26,Chicken pox,True,Chicken pox,1,1.0,23.54870003182441
+"N2 (RRF+KG @ Top-3, no recency)",27,Chronic cholestasis,False,Chronic cholestasis,1,1.0,27.433999988716096
+"N2 (RRF+KG @ Top-3, no recency)",28,Chronic cholestasis,True,Jaundice,0,0.0,21.317699982319027
+"N2 (RRF+KG @ Top-3, no recency)",29,Chronic cholestasis,True,GERD,0,0.0,25.528900034260005
+"N2 (RRF+KG @ Top-3, no recency)",30,Common Cold,False,Common Cold,1,1.0,25.68939997581765
+"N2 (RRF+KG @ Top-3, no recency)",31,Common Cold,True,Common Cold,1,1.0,25.191400025505573
+"N2 (RRF+KG @ Top-3, no recency)",32,Common Cold,True,Common Cold,1,1.0,37.70280000753701
+"N2 (RRF+KG @ Top-3, no recency)",33,Dengue,False,Dengue,1,1.0,28.5448000067845
+"N2 (RRF+KG @ Top-3, no recency)",34,Dengue,True,Dengue,1,1.0,23.04650004953146
+"N2 (RRF+KG @ Top-3, no recency)",35,Dengue,True,Dengue,1,1.0,24.970599974039942
+"N2 (RRF+KG @ Top-3, no recency)",36,Diabetes,False,Diabetes,1,1.0,26.962400006596
+"N2 (RRF+KG @ Top-3, no recency)",37,Diabetes,True,Diabetes,1,1.0,30.65279999282211
+"N2 (RRF+KG @ Top-3, no recency)",38,Diabetes,True,Diabetes,1,1.0,21.938800055067986
+"N2 (RRF+KG @ Top-3, no recency)",39,Dimorphic hemmorhoids(piles),False,Dimorphic hemmorhoids(piles),1,1.0,21.863000001758337
+"N2 (RRF+KG @ Top-3, no recency)",40,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,23.230399994645268
+"N2 (RRF+KG @ Top-3, no recency)",41,Dimorphic hemmorhoids(piles),True,Dimorphic hemmorhoids(piles),1,1.0,20.98849997855723
+"N2 (RRF+KG @ Top-3, no recency)",42,Drug Reaction,False,Drug Reaction,1,1.0,30.195600003935397
+"N2 (RRF+KG @ Top-3, no recency)",43,Drug Reaction,True,Drug Reaction,1,1.0,24.748300027567893
+"N2 (RRF+KG @ Top-3, no recency)",44,Drug Reaction,True,Drug Reaction,1,1.0,24.23899999121204
+"N2 (RRF+KG @ Top-3, no recency)",45,Fungal infection,False,Fungal infection,1,1.0,21.046800015028566
+"N2 (RRF+KG @ Top-3, no recency)",46,Fungal infection,True,Fungal infection,1,1.0,33.147200010716915
+"N2 (RRF+KG @ Top-3, no recency)",47,Fungal infection,True,Fungal infection,1,1.0,21.00040001096204
+"N2 (RRF+KG @ Top-3, no recency)",48,GERD,False,GERD,1,1.0,24.399199988693
+"N2 (RRF+KG @ Top-3, no recency)",49,GERD,True,GERD,1,1.0,22.448500036261976
+"N2 (RRF+KG @ Top-3, no recency)",50,GERD,True,GERD,1,1.0,21.205299999564886
+"N2 (RRF+KG @ Top-3, no recency)",51,Gastroenteritis,False,Gastroenteritis,1,1.0,33.73070002999157
+"N2 (RRF+KG @ Top-3, no recency)",52,Gastroenteritis,True,Gastroenteritis,1,1.0,26.567699969746172
+"N2 (RRF+KG @ Top-3, no recency)",53,Gastroenteritis,True,Gastroenteritis,1,1.0,26.863500010222197
+"N2 (RRF+KG @ Top-3, no recency)",54,Heart attack,False,Pneumonia,0,0.5,21.63460000883788
+"N2 (RRF+KG @ Top-3, no recency)",55,Heart attack,True,Heart attack,1,1.0,23.89249997213483
+"N2 (RRF+KG @ Top-3, no recency)",56,Heart attack,True,Heart attack,1,1.0,23.204600031021982
+"N2 (RRF+KG @ Top-3, no recency)",57,Hepatitis B,False,Hepatitis B,1,1.0,21.825200004968792
+"N2 (RRF+KG @ Top-3, no recency)",58,Hepatitis B,True,Hepatitis B,1,1.0,24.93989997310564
+"N2 (RRF+KG @ Top-3, no recency)",59,Hepatitis B,True,Hepatitis B,1,1.0,23.78839999437332
+"N2 (RRF+KG @ Top-3, no recency)",60,Hepatitis C,False,Hepatitis C,1,1.0,24.743099987972528
+"N2 (RRF+KG @ Top-3, no recency)",61,Hepatitis C,True,Hepatitis C,1,1.0,23.71320000384003
+"N2 (RRF+KG @ Top-3, no recency)",62,Hepatitis C,True,Bronchial Asthma,0,0.5,21.977099997457117
+"N2 (RRF+KG @ Top-3, no recency)",63,Hepatitis D,False,Hepatitis E,0,0.5,22.9607000364922
+"N2 (RRF+KG @ Top-3, no recency)",64,Hepatitis D,True,Jaundice,0,0.0,25.924299960024655
+"N2 (RRF+KG @ Top-3, no recency)",65,Hepatitis D,True,Arthritis,0,0.0,30.37140000378713
+"N2 (RRF+KG @ Top-3, no recency)",66,Hepatitis E,False,Hepatitis E,1,1.0,21.262099966406822
+"N2 (RRF+KG @ Top-3, no recency)",67,Hepatitis E,True,GERD,0,0.0,34.134100016672164
+"N2 (RRF+KG @ Top-3, no recency)",68,Hepatitis E,True,Arthritis,0,0.0,29.5194000354968
+"N2 (RRF+KG @ Top-3, no recency)",69,Hypertension,False,Hypertension,1,1.0,21.568599971942604
+"N2 (RRF+KG @ Top-3, no recency)",70,Hypertension,True,Hypertension,1,1.0,28.401300020050257
+"N2 (RRF+KG @ Top-3, no recency)",71,Hypertension,True,Hypertension,1,1.0,21.506499964743853
+"N2 (RRF+KG @ Top-3, no recency)",72,Hyperthyroidism,False,Hyperthyroidism,1,1.0,26.724299998022616
+"N2 (RRF+KG @ Top-3, no recency)",73,Hyperthyroidism,True,Hyperthyroidism,1,1.0,23.650499992072582
+"N2 (RRF+KG @ Top-3, no recency)",74,Hyperthyroidism,True,Hyperthyroidism,1,1.0,21.937300043646246
+"N2 (RRF+KG @ Top-3, no recency)",75,Hypoglycemia,False,Hypoglycemia,1,1.0,29.64720001909882
+"N2 (RRF+KG @ Top-3, no recency)",76,Hypoglycemia,True,Hypoglycemia,1,1.0,24.186800001189113
+"N2 (RRF+KG @ Top-3, no recency)",77,Hypoglycemia,True,Hypoglycemia,1,1.0,22.131400008220226
+"N2 (RRF+KG @ Top-3, no recency)",78,Hypothyroidism,False,Hypothyroidism,1,1.0,27.3964999942109
+"N2 (RRF+KG @ Top-3, no recency)",79,Hypothyroidism,True,Hypothyroidism,1,1.0,24.67459999024868
+"N2 (RRF+KG @ Top-3, no recency)",80,Hypothyroidism,True,Hypothyroidism,1,1.0,41.83040000498295
+"N2 (RRF+KG @ Top-3, no recency)",81,Impetigo,False,Impetigo,1,1.0,21.562400041148067
+"N2 (RRF+KG @ Top-3, no recency)",82,Impetigo,True,Impetigo,1,1.0,32.102700031828135
+"N2 (RRF+KG @ Top-3, no recency)",83,Impetigo,True,Impetigo,1,1.0,30.9521000017412
+"N2 (RRF+KG @ Top-3, no recency)",84,Jaundice,False,Jaundice,1,1.0,22.686599986627698
+"N2 (RRF+KG @ Top-3, no recency)",85,Jaundice,True,Alcoholic hepatitis,0,0.5,25.441199948545545
+"N2 (RRF+KG @ Top-3, no recency)",86,Jaundice,True,Jaundice,1,1.0,23.52799999061972
+"N2 (RRF+KG @ Top-3, no recency)",87,Malaria,False,Malaria,1,1.0,21.264699986204505
+"N2 (RRF+KG @ Top-3, no recency)",88,Malaria,True,AIDS,0,0.0,25.053100020159036
+"N2 (RRF+KG @ Top-3, no recency)",89,Malaria,True,Heart attack,0,0.0,33.46060001058504
+"N2 (RRF+KG @ Top-3, no recency)",90,Migraine,False,Migraine,1,1.0,31.895399966742843
+"N2 (RRF+KG @ Top-3, no recency)",91,Migraine,True,Migraine,1,1.0,25.675799988675863
+"N2 (RRF+KG @ Top-3, no recency)",92,Migraine,True,Migraine,1,1.0,30.703999975230545
+"N2 (RRF+KG @ Top-3, no recency)",93,Osteoarthristis,False,Osteoarthristis,1,1.0,23.620499996468425
+"N2 (RRF+KG @ Top-3, no recency)",94,Osteoarthristis,True,Arthritis,0,0.5,26.33540000533685
+"N2 (RRF+KG @ Top-3, no recency)",95,Osteoarthristis,True,Osteoarthristis,1,1.0,33.414000004995614
+"N2 (RRF+KG @ Top-3, no recency)",96,Paralysis (brain hemorrhage),False,Paralysis (brain hemorrhage),1,1.0,21.18110004812479
+"N2 (RRF+KG @ Top-3, no recency)",97,Paralysis (brain hemorrhage),True,Migraine,0,0.0,22.510599985253066
+"N2 (RRF+KG @ Top-3, no recency)",98,Paralysis (brain hemorrhage),True,Heart attack,0,0.0,25.147899985313416
+"N2 (RRF+KG @ Top-3, no recency)",99,Peptic ulcer diseae,False,Peptic ulcer diseae,1,1.0,27.013600047212094
+"N2 (RRF+KG @ Top-3, no recency)",100,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,29.783499951008707
+"N2 (RRF+KG @ Top-3, no recency)",101,Peptic ulcer diseae,True,Peptic ulcer diseae,1,1.0,23.541799979284406
+"N2 (RRF+KG @ Top-3, no recency)",102,Pneumonia,False,Pneumonia,1,1.0,21.47869998589158
+"N2 (RRF+KG @ Top-3, no recency)",103,Pneumonia,True,Pneumonia,1,1.0,28.54040003148839
+"N2 (RRF+KG @ Top-3, no recency)",104,Pneumonia,True,Pneumonia,1,1.0,24.67760001309216
+"N2 (RRF+KG @ Top-3, no recency)",105,Psoriasis,False,Psoriasis,1,1.0,30.0336999935098
+"N2 (RRF+KG @ Top-3, no recency)",106,Psoriasis,True,Psoriasis,1,1.0,31.837499991524965
+"N2 (RRF+KG @ Top-3, no recency)",107,Psoriasis,True,Psoriasis,1,1.0,31.043700000736862
+"N2 (RRF+KG @ Top-3, no recency)",108,Tuberculosis,False,Tuberculosis,1,1.0,38.10980002162978
+"N2 (RRF+KG @ Top-3, no recency)",109,Tuberculosis,True,Common Cold,0,0.0,24.86870001303032
+"N2 (RRF+KG @ Top-3, no recency)",110,Tuberculosis,True,Common Cold,0,0.0,26.244200009386986
+"N2 (RRF+KG @ Top-3, no recency)",111,Typhoid,False,Typhoid,1,1.0,28.045799990650266
+"N2 (RRF+KG @ Top-3, no recency)",112,Typhoid,True,Malaria,0,0.0,26.441399997565895
+"N2 (RRF+KG @ Top-3, no recency)",113,Typhoid,True,Typhoid,1,1.0,26.746199990157038
+"N2 (RRF+KG @ Top-3, no recency)",114,Urinary tract infection,False,Urinary tract infection,1,1.0,25.775099988095462
+"N2 (RRF+KG @ Top-3, no recency)",115,Urinary tract infection,True,Urinary tract infection,1,1.0,21.4154000277631
+"N2 (RRF+KG @ Top-3, no recency)",116,Urinary tract infection,True,Urinary tract infection,1,1.0,35.29319999506697
+"N2 (RRF+KG @ Top-3, no recency)",117,Varicose veins,False,Varicose veins,1,1.0,26.360999967437238
+"N2 (RRF+KG @ Top-3, no recency)",118,Varicose veins,True,Varicose veins,1,1.0,21.767200028989464
+"N2 (RRF+KG @ Top-3, no recency)",119,Varicose veins,True,Varicose veins,1,1.0,21.783600037451833
+"N2 (RRF+KG @ Top-3, no recency)",120,hepatitis A,False,hepatitis A,1,1.0,35.67069995915517
+"N2 (RRF+KG @ Top-3, no recency)",121,hepatitis A,True,Arthritis,0,0.0,30.06600000662729
+"N2 (RRF+KG @ Top-3, no recency)",122,hepatitis A,True,Jaundice,0,0.0,26.39920002548024
+
+
+========== results\master_verification_v3\master_significance_v3.csv ==========
+comparison,n_pairs,b_right_a_wrong,a_right_b_wrong,mcnemar_exact_p
+Hybrid vs Proposed (RRF+KG+Recency),123,14,2,0.004180908203125
+Hybrid+KG (no recency) vs Proposed (RRF+KG+Recency),123,2,9,0.0654296875
+Proposed (CRFS) vs Proposed (RRF+KG+Recency),123,2,8,0.109375
+Dense-only vs Proposed (RRF+KG+Recency),123,27,6,0.0003240634687244892
+N1 (Linear+KG @ Top-3) vs Hybrid+KG (no recency),123,0,0,1.0
+N1 (Linear+KG @ Top-3) vs Proposed (RRF+KG+Recency),123,2,9,0.0654296875
+"N2 (RRF+KG @ Top-3, no recency) vs Proposed (RRF+KG+Recency)",123,0,0,1.0
+
+
+========== results\master_verification_v3\master_subset_breakdown_v3.csv ==========
+Method,Subset,N,Correct,Accuracy
+BM25-only,canonical,41,35,85.37
+BM25-only,paraphrased,82,41,50.0
+Dense-only,canonical,41,30,73.17
+Dense-only,paraphrased,82,49,59.76
+Hybrid,canonical,41,35,85.37
+Hybrid,paraphrased,82,53,64.63
+Hybrid+KG (no recency),canonical,41,40,97.56
+Hybrid+KG (no recency),paraphrased,82,67,81.71
+Proposed (CRFS),canonical,41,40,97.56
+Proposed (CRFS),paraphrased,82,66,80.49
+Proposed (RRF+KG+Recency),canonical,41,39,95.12
+Proposed (RRF+KG+Recency),paraphrased,82,61,74.39
+N1 (Linear+KG @ Top-3),canonical,41,40,97.56
+N1 (Linear+KG @ Top-3),paraphrased,82,67,81.71
+"N2 (RRF+KG @ Top-3, no recency)",canonical,41,39,95.12
+"N2 (RRF+KG @ Top-3, no recency)",paraphrased,82,61,74.39
+
+
+========== results\master_verification_v3\master_subset_claim_check_v3.csv ==========
+Method,Subset,Expected,Actual,Status
+BM25-only,canonical,87.8,85.37,MISMATCH
+BM25-only,paraphrased,54.88,50.0,MISMATCH
+Dense-only,canonical,73.17,73.17,MATCH
+Dense-only,paraphrased,60.98,59.76,MISMATCH
+Hybrid,canonical,87.8,85.37,MISMATCH
+Hybrid,paraphrased,63.41,64.63,MISMATCH
+Hybrid+KG (no recency),canonical,97.56,97.56,MATCH
+Hybrid+KG (no recency),paraphrased,81.71,81.71,MATCH
+Proposed (CRFS),canonical,100.0,97.56,MISMATCH
+Proposed (CRFS),paraphrased,81.71,80.49,MISMATCH
+Proposed (RRF+KG+Recency),canonical,95.12,95.12,MATCH
+Proposed (RRF+KG+Recency),paraphrased,73.17,74.39,MISMATCH
+N1 (Linear+KG @ Top-3),canonical,95.12,97.56,MISMATCH
+N1 (Linear+KG @ Top-3),paraphrased,73.17,81.71,MISMATCH
+"N2 (RRF+KG @ Top-3, no recency)",canonical,95.12,95.12,MATCH
+"N2 (RRF+KG @ Top-3, no recency)",paraphrased,73.17,74.39,MISMATCH
+
+
+========== results\master_verification_v3\master_summary_v3.csv ==========
+Method,N,Correct,Accuracy,Precision,Recall,F1,MRR,Latency_ms_mean,Latency_ms_std,shortlist_n,rrf_k
+BM25-only,123,76,61.79,70.64,61.79,59.92,0.725,1.79,0.73,,
+Dense-only,123,79,64.23,64.65,64.23,59.19,0.735,26.78,4.88,,
+Hybrid,123,88,71.54,75.34,71.54,68.31,0.795,29.04,5.55,,
+Hybrid+KG (no recency),123,107,86.99,90.85,86.99,85.48,0.909,41.3,4.7,,
+Proposed (CRFS),123,106,86.18,90.3,86.18,84.91,0.903,95.53,11.64,,
+Proposed (RRF+KG+Recency),123,100,81.3,84.58,81.3,79.76,0.837,30.68,5.66,3.0,60.0
+N1 (Linear+KG @ Top-3),123,107,86.99,90.85,86.99,85.48,0.9,41.38,5.8,3.0,
+"N2 (RRF+KG @ Top-3, no recency)",123,100,81.3,84.58,81.3,79.76,0.837,26.06,4.22,3.0,60.0
+
+
+========== results\master_verification_v3\per_disease_results_v3.csv ==========
+Method,Disease,N,Correct,Accuracy
+BM25-only,(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+BM25-only,AIDS,3,3,100.0
+BM25-only,Acne,3,3,100.0
+BM25-only,Alcoholic hepatitis,3,3,100.0
+BM25-only,Allergy,3,1,33.33
+BM25-only,Arthritis,3,3,100.0
+BM25-only,Bronchial Asthma,3,2,66.67
+BM25-only,Cervical spondylosis,3,3,100.0
+BM25-only,Chicken pox,3,2,66.67
+BM25-only,Chronic cholestasis,3,1,33.33
+BM25-only,Common Cold,3,3,100.0
+BM25-only,Dengue,3,0,0.0
+BM25-only,Diabetes,3,2,66.67
+BM25-only,Dimorphic hemmorhoids(piles),3,3,100.0
+BM25-only,Drug Reaction,3,2,66.67
+BM25-only,Fungal infection,3,3,100.0
+BM25-only,GERD,3,1,33.33
+BM25-only,Gastroenteritis,3,0,0.0
+BM25-only,Heart attack,3,1,33.33
+BM25-only,Hepatitis B,3,3,100.0
+BM25-only,Hepatitis C,3,1,33.33
+BM25-only,Hepatitis D,3,0,0.0
+BM25-only,Hepatitis E,3,0,0.0
+BM25-only,Hypertension,3,3,100.0
+BM25-only,Hyperthyroidism,3,2,66.67
+BM25-only,Hypoglycemia,3,3,100.0
+BM25-only,Hypothyroidism,3,2,66.67
+BM25-only,Impetigo,3,3,100.0
+BM25-only,Jaundice,3,1,33.33
+BM25-only,Malaria,3,1,33.33
+BM25-only,Migraine,3,2,66.67
+BM25-only,Osteoarthristis,3,1,33.33
+BM25-only,Paralysis (brain hemorrhage),3,1,33.33
+BM25-only,Peptic ulcer diseae,3,1,33.33
+BM25-only,Pneumonia,3,3,100.0
+BM25-only,Psoriasis,3,3,100.0
+BM25-only,Tuberculosis,3,1,33.33
+BM25-only,Typhoid,3,1,33.33
+BM25-only,Urinary tract infection,3,3,100.0
+BM25-only,Varicose veins,3,3,100.0
+BM25-only,hepatitis A,3,0,0.0
+Dense-only,(vertigo) Paroymsal  Positional Vertigo,3,1,33.33
+Dense-only,AIDS,3,3,100.0
+Dense-only,Acne,3,0,0.0
+Dense-only,Alcoholic hepatitis,3,3,100.0
+Dense-only,Allergy,3,3,100.0
+Dense-only,Arthritis,3,3,100.0
+Dense-only,Bronchial Asthma,3,3,100.0
+Dense-only,Cervical spondylosis,3,3,100.0
+Dense-only,Chicken pox,3,0,0.0
+Dense-only,Chronic cholestasis,3,0,0.0
+Dense-only,Common Cold,3,1,33.33
+Dense-only,Dengue,3,0,0.0
+Dense-only,Diabetes,3,3,100.0
+Dense-only,Dimorphic hemmorhoids(piles),3,3,100.0
+Dense-only,Drug Reaction,3,3,100.0
+Dense-only,Fungal infection,3,3,100.0
+Dense-only,GERD,3,3,100.0
+Dense-only,Gastroenteritis,3,3,100.0
+Dense-only,Heart attack,3,3,100.0
+Dense-only,Hepatitis B,3,2,66.67
+Dense-only,Hepatitis C,3,3,100.0
+Dense-only,Hepatitis D,3,0,0.0
+Dense-only,Hepatitis E,3,0,0.0
+Dense-only,Hypertension,3,0,0.0
+Dense-only,Hyperthyroidism,3,0,0.0
+Dense-only,Hypoglycemia,3,2,66.67
+Dense-only,Hypothyroidism,3,3,100.0
+Dense-only,Impetigo,3,3,100.0
+Dense-only,Jaundice,3,1,33.33
+Dense-only,Malaria,3,1,33.33
+Dense-only,Migraine,3,3,100.0
+Dense-only,Osteoarthristis,3,1,33.33
+Dense-only,Paralysis (brain hemorrhage),3,1,33.33
+Dense-only,Peptic ulcer diseae,3,1,33.33
+Dense-only,Pneumonia,3,3,100.0
+Dense-only,Psoriasis,3,3,100.0
+Dense-only,Tuberculosis,3,0,0.0
+Dense-only,Typhoid,3,3,100.0
+Dense-only,Urinary tract infection,3,2,66.67
+Dense-only,Varicose veins,3,3,100.0
+Dense-only,hepatitis A,3,3,100.0
+Hybrid,(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+Hybrid,AIDS,3,3,100.0
+Hybrid,Acne,3,3,100.0
+Hybrid,Alcoholic hepatitis,3,3,100.0
+Hybrid,Allergy,3,1,33.33
+Hybrid,Arthritis,3,3,100.0
+Hybrid,Bronchial Asthma,3,3,100.0
+Hybrid,Cervical spondylosis,3,3,100.0
+Hybrid,Chicken pox,3,3,100.0
+Hybrid,Chronic cholestasis,3,1,33.33
+Hybrid,Common Cold,3,3,100.0
+Hybrid,Dengue,3,0,0.0
+Hybrid,Diabetes,3,3,100.0
+Hybrid,Dimorphic hemmorhoids(piles),3,3,100.0
+Hybrid,Drug Reaction,3,3,100.0
+Hybrid,Fungal infection,3,3,100.0
+Hybrid,GERD,3,2,66.67
+Hybrid,Gastroenteritis,3,0,0.0
+Hybrid,Heart attack,3,1,33.33
+Hybrid,Hepatitis B,3,3,100.0
+Hybrid,Hepatitis C,3,1,33.33
+Hybrid,Hepatitis D,3,0,0.0
+Hybrid,Hepatitis E,3,0,0.0
+Hybrid,Hypertension,3,3,100.0
+Hybrid,Hyperthyroidism,3,3,100.0
+Hybrid,Hypoglycemia,3,3,100.0
+Hybrid,Hypothyroidism,3,3,100.0
+Hybrid,Impetigo,3,3,100.0
+Hybrid,Jaundice,3,3,100.0
+Hybrid,Malaria,3,1,33.33
+Hybrid,Migraine,3,3,100.0
+Hybrid,Osteoarthristis,3,1,33.33
+Hybrid,Paralysis (brain hemorrhage),3,1,33.33
+Hybrid,Peptic ulcer diseae,3,3,100.0
+Hybrid,Pneumonia,3,3,100.0
+Hybrid,Psoriasis,3,3,100.0
+Hybrid,Tuberculosis,3,1,33.33
+Hybrid,Typhoid,3,1,33.33
+Hybrid,Urinary tract infection,3,3,100.0
+Hybrid,Varicose veins,3,3,100.0
+Hybrid,hepatitis A,3,0,0.0
+Hybrid+KG (no recency),(vertigo) Paroymsal  Positional Vertigo,3,3,100.0
+Hybrid+KG (no recency),AIDS,3,3,100.0
+Hybrid+KG (no recency),Acne,3,3,100.0
+Hybrid+KG (no recency),Alcoholic hepatitis,3,3,100.0
+Hybrid+KG (no recency),Allergy,3,3,100.0
+Hybrid+KG (no recency),Arthritis,3,3,100.0
+Hybrid+KG (no recency),Bronchial Asthma,3,3,100.0
+Hybrid+KG (no recency),Cervical spondylosis,3,3,100.0
+Hybrid+KG (no recency),Chicken pox,3,3,100.0
+Hybrid+KG (no recency),Chronic cholestasis,3,1,33.33
+Hybrid+KG (no recency),Common Cold,3,3,100.0
+Hybrid+KG (no recency),Dengue,3,3,100.0
+Hybrid+KG (no recency),Diabetes,3,3,100.0
+Hybrid+KG (no recency),Dimorphic hemmorhoids(piles),3,3,100.0
+Hybrid+KG (no recency),Drug Reaction,3,3,100.0
+Hybrid+KG (no recency),Fungal infection,3,3,100.0
+Hybrid+KG (no recency),GERD,3,3,100.0
+Hybrid+KG (no recency),Gastroenteritis,3,1,33.33
+Hybrid+KG (no recency),Heart attack,3,3,100.0
+Hybrid+KG (no recency),Hepatitis B,3,3,100.0
+Hybrid+KG (no recency),Hepatitis C,3,3,100.0
+Hybrid+KG (no recency),Hepatitis D,3,0,0.0
+Hybrid+KG (no recency),Hepatitis E,3,3,100.0
+Hybrid+KG (no recency),Hypertension,3,3,100.0
+Hybrid+KG (no recency),Hyperthyroidism,3,3,100.0
+Hybrid+KG (no recency),Hypoglycemia,3,3,100.0
+Hybrid+KG (no recency),Hypothyroidism,3,3,100.0
+Hybrid+KG (no recency),Impetigo,3,3,100.0
+Hybrid+KG (no recency),Jaundice,3,3,100.0
+Hybrid+KG (no recency),Malaria,3,1,33.33
+Hybrid+KG (no recency),Migraine,3,3,100.0
+Hybrid+KG (no recency),Osteoarthristis,3,2,66.67
+Hybrid+KG (no recency),Paralysis (brain hemorrhage),3,1,33.33
+Hybrid+KG (no recency),Peptic ulcer diseae,3,3,100.0
+Hybrid+KG (no recency),Pneumonia,3,3,100.0
+Hybrid+KG (no recency),Psoriasis,3,3,100.0
+Hybrid+KG (no recency),Tuberculosis,3,1,33.33
+Hybrid+KG (no recency),Typhoid,3,3,100.0
+Hybrid+KG (no recency),Urinary tract infection,3,3,100.0
+Hybrid+KG (no recency),Varicose veins,3,3,100.0
+Hybrid+KG (no recency),hepatitis A,3,1,33.33
+Proposed (CRFS),(vertigo) Paroymsal  Positional Vertigo,3,3,100.0
+Proposed (CRFS),AIDS,3,3,100.0
+Proposed (CRFS),Acne,3,3,100.0
+Proposed (CRFS),Alcoholic hepatitis,3,3,100.0
+Proposed (CRFS),Allergy,3,3,100.0
+Proposed (CRFS),Arthritis,3,3,100.0
+Proposed (CRFS),Bronchial Asthma,3,3,100.0
+Proposed (CRFS),Cervical spondylosis,3,3,100.0
+Proposed (CRFS),Chicken pox,3,3,100.0
+Proposed (CRFS),Chronic cholestasis,3,1,33.33
+Proposed (CRFS),Common Cold,3,3,100.0
+Proposed (CRFS),Dengue,3,3,100.0
+Proposed (CRFS),Diabetes,3,3,100.0
+Proposed (CRFS),Dimorphic hemmorhoids(piles),3,3,100.0
+Proposed (CRFS),Drug Reaction,3,3,100.0
+Proposed (CRFS),Fungal infection,3,3,100.0
+Proposed (CRFS),GERD,3,3,100.0
+Proposed (CRFS),Gastroenteritis,3,1,33.33
+Proposed (CRFS),Heart attack,3,3,100.0
+Proposed (CRFS),Hepatitis B,3,3,100.0
+Proposed (CRFS),Hepatitis C,3,3,100.0
+Proposed (CRFS),Hepatitis D,3,0,0.0
+Proposed (CRFS),Hepatitis E,3,3,100.0
+Proposed (CRFS),Hypertension,3,3,100.0
+Proposed (CRFS),Hyperthyroidism,3,3,100.0
+Proposed (CRFS),Hypoglycemia,3,3,100.0
+Proposed (CRFS),Hypothyroidism,3,3,100.0
+Proposed (CRFS),Impetigo,3,3,100.0
+Proposed (CRFS),Jaundice,3,2,66.67
+Proposed (CRFS),Malaria,3,1,33.33
+Proposed (CRFS),Migraine,3,3,100.0
+Proposed (CRFS),Osteoarthristis,3,2,66.67
+Proposed (CRFS),Paralysis (brain hemorrhage),3,1,33.33
+Proposed (CRFS),Peptic ulcer diseae,3,3,100.0
+Proposed (CRFS),Pneumonia,3,3,100.0
+Proposed (CRFS),Psoriasis,3,3,100.0
+Proposed (CRFS),Tuberculosis,3,1,33.33
+Proposed (CRFS),Typhoid,3,3,100.0
+Proposed (CRFS),Urinary tract infection,3,3,100.0
+Proposed (CRFS),Varicose veins,3,3,100.0
+Proposed (CRFS),hepatitis A,3,1,33.33
+Proposed (RRF+KG+Recency),(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+Proposed (RRF+KG+Recency),AIDS,3,3,100.0
+Proposed (RRF+KG+Recency),Acne,3,3,100.0
+Proposed (RRF+KG+Recency),Alcoholic hepatitis,3,3,100.0
+Proposed (RRF+KG+Recency),Allergy,3,2,66.67
+Proposed (RRF+KG+Recency),Arthritis,3,3,100.0
+Proposed (RRF+KG+Recency),Bronchial Asthma,3,3,100.0
+Proposed (RRF+KG+Recency),Cervical spondylosis,3,3,100.0
+Proposed (RRF+KG+Recency),Chicken pox,3,2,66.67
+Proposed (RRF+KG+Recency),Chronic cholestasis,3,1,33.33
+Proposed (RRF+KG+Recency),Common Cold,3,3,100.0
+Proposed (RRF+KG+Recency),Dengue,3,3,100.0
+Proposed (RRF+KG+Recency),Diabetes,3,3,100.0
+Proposed (RRF+KG+Recency),Dimorphic hemmorhoids(piles),3,3,100.0
+Proposed (RRF+KG+Recency),Drug Reaction,3,3,100.0
+Proposed (RRF+KG+Recency),Fungal infection,3,3,100.0
+Proposed (RRF+KG+Recency),GERD,3,3,100.0
+Proposed (RRF+KG+Recency),Gastroenteritis,3,3,100.0
+Proposed (RRF+KG+Recency),Heart attack,3,2,66.67
+Proposed (RRF+KG+Recency),Hepatitis B,3,3,100.0
+Proposed (RRF+KG+Recency),Hepatitis C,3,2,66.67
+Proposed (RRF+KG+Recency),Hepatitis D,3,0,0.0
+Proposed (RRF+KG+Recency),Hepatitis E,3,1,33.33
+Proposed (RRF+KG+Recency),Hypertension,3,3,100.0
+Proposed (RRF+KG+Recency),Hyperthyroidism,3,3,100.0
+Proposed (RRF+KG+Recency),Hypoglycemia,3,3,100.0
+Proposed (RRF+KG+Recency),Hypothyroidism,3,3,100.0
+Proposed (RRF+KG+Recency),Impetigo,3,3,100.0
+Proposed (RRF+KG+Recency),Jaundice,3,2,66.67
+Proposed (RRF+KG+Recency),Malaria,3,1,33.33
+Proposed (RRF+KG+Recency),Migraine,3,3,100.0
+Proposed (RRF+KG+Recency),Osteoarthristis,3,2,66.67
+Proposed (RRF+KG+Recency),Paralysis (brain hemorrhage),3,1,33.33
+Proposed (RRF+KG+Recency),Peptic ulcer diseae,3,3,100.0
+Proposed (RRF+KG+Recency),Pneumonia,3,3,100.0
+Proposed (RRF+KG+Recency),Psoriasis,3,3,100.0
+Proposed (RRF+KG+Recency),Tuberculosis,3,1,33.33
+Proposed (RRF+KG+Recency),Typhoid,3,2,66.67
+Proposed (RRF+KG+Recency),Urinary tract infection,3,3,100.0
+Proposed (RRF+KG+Recency),Varicose veins,3,3,100.0
+Proposed (RRF+KG+Recency),hepatitis A,3,1,33.33
+N1 (Linear+KG @ Top-3),(vertigo) Paroymsal  Positional Vertigo,3,3,100.0
+N1 (Linear+KG @ Top-3),AIDS,3,3,100.0
+N1 (Linear+KG @ Top-3),Acne,3,3,100.0
+N1 (Linear+KG @ Top-3),Alcoholic hepatitis,3,3,100.0
+N1 (Linear+KG @ Top-3),Allergy,3,3,100.0
+N1 (Linear+KG @ Top-3),Arthritis,3,3,100.0
+N1 (Linear+KG @ Top-3),Bronchial Asthma,3,3,100.0
+N1 (Linear+KG @ Top-3),Cervical spondylosis,3,3,100.0
+N1 (Linear+KG @ Top-3),Chicken pox,3,3,100.0
+N1 (Linear+KG @ Top-3),Chronic cholestasis,3,1,33.33
+N1 (Linear+KG @ Top-3),Common Cold,3,3,100.0
+N1 (Linear+KG @ Top-3),Dengue,3,3,100.0
+N1 (Linear+KG @ Top-3),Diabetes,3,3,100.0
+N1 (Linear+KG @ Top-3),Dimorphic hemmorhoids(piles),3,3,100.0
+N1 (Linear+KG @ Top-3),Drug Reaction,3,3,100.0
+N1 (Linear+KG @ Top-3),Fungal infection,3,3,100.0
+N1 (Linear+KG @ Top-3),GERD,3,3,100.0
+N1 (Linear+KG @ Top-3),Gastroenteritis,3,1,33.33
+N1 (Linear+KG @ Top-3),Heart attack,3,3,100.0
+N1 (Linear+KG @ Top-3),Hepatitis B,3,3,100.0
+N1 (Linear+KG @ Top-3),Hepatitis C,3,3,100.0
+N1 (Linear+KG @ Top-3),Hepatitis D,3,0,0.0
+N1 (Linear+KG @ Top-3),Hepatitis E,3,3,100.0
+N1 (Linear+KG @ Top-3),Hypertension,3,3,100.0
+N1 (Linear+KG @ Top-3),Hyperthyroidism,3,3,100.0
+N1 (Linear+KG @ Top-3),Hypoglycemia,3,3,100.0
+N1 (Linear+KG @ Top-3),Hypothyroidism,3,3,100.0
+N1 (Linear+KG @ Top-3),Impetigo,3,3,100.0
+N1 (Linear+KG @ Top-3),Jaundice,3,3,100.0
+N1 (Linear+KG @ Top-3),Malaria,3,1,33.33
+N1 (Linear+KG @ Top-3),Migraine,3,3,100.0
+N1 (Linear+KG @ Top-3),Osteoarthristis,3,2,66.67
+N1 (Linear+KG @ Top-3),Paralysis (brain hemorrhage),3,1,33.33
+N1 (Linear+KG @ Top-3),Peptic ulcer diseae,3,3,100.0
+N1 (Linear+KG @ Top-3),Pneumonia,3,3,100.0
+N1 (Linear+KG @ Top-3),Psoriasis,3,3,100.0
+N1 (Linear+KG @ Top-3),Tuberculosis,3,1,33.33
+N1 (Linear+KG @ Top-3),Typhoid,3,3,100.0
+N1 (Linear+KG @ Top-3),Urinary tract infection,3,3,100.0
+N1 (Linear+KG @ Top-3),Varicose veins,3,3,100.0
+N1 (Linear+KG @ Top-3),hepatitis A,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",AIDS,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Acne,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Alcoholic hepatitis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Allergy,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Arthritis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Bronchial Asthma,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Cervical spondylosis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Chicken pox,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Chronic cholestasis,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Common Cold,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Dengue,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Diabetes,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Dimorphic hemmorhoids(piles),3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Drug Reaction,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Fungal infection,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",GERD,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Gastroenteritis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Heart attack,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis B,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis C,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis D,3,0,0.0
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis E,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Hypertension,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hyperthyroidism,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hypoglycemia,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hypothyroidism,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Impetigo,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Jaundice,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Malaria,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Migraine,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Osteoarthristis,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Paralysis (brain hemorrhage),3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Peptic ulcer diseae,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Pneumonia,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Psoriasis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Tuberculosis,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Typhoid,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Urinary tract infection,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Varicose veins,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",hepatitis A,3,1,33.33
+
+

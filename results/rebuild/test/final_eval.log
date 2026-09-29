@@ -1,0 +1,21 @@
+C:\Users\aryan\OneDrive\Desktop\health_paper\venv\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+C:\Users\aryan\OneDrive\Desktop\health_paper\venv\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+FINAL EVALUATION  commit 8d0a7c00a1aaf45ad2ae62872a1c677bc5e83e01  params {'query_max_length': 64, 'alpha': 0.3, 'C': 10.0, 'linker': 'sapbert', 'tau': 0.525, 'beta': 0.85, 'beta_exact_tuned': 0.45, 'beta_substring_tuned': 0.6, 'pool_beta': {'exact:3': 0.35, 'exact:5': 0.45, 'exact:10': 0.45, 'exact:20': 0.45, 'exact:all': 0.45, 'linked:3': 0.5, 'linked:5': 0.55, 'linked:10': 0.85, 'linked:20': 0.8, 'linked:all': 0.85}}
+  20/181 rows, 6s
+  40/181 rows, 10s
+  60/181 rows, 13s
+  80/181 rows, 17s
+  100/181 rows, 21s
+  120/181 rows, 25s
+  140/181 rows, 29s
+  160/181 rows, 33s
+  180/181 rows, 37s
+C:\Users\aryan\OneDrive\Desktop\health_paper\src\hsr\analysis.py:92: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  df = pd.concat(frames, ignore_index=True)
+id                a               b   condition lexicon  n_queries  n_diseases    mrr_a    mrr_b  delta_mrr   ci_low  ci_high       p  queries_a_better  queries_b_better   acc1_a   acc1_b  delta_acc1  delta_acc1_ci_low  delta_acc1_ci_high  p_holm  reject_at_0.05
+H1 Hybrid+KG-linked Hybrid+KG-exact    lay_full       B        181          41 0.746459 0.444205   0.302254 0.197815 0.400194 0.00003               114                18 0.635359 0.298343    0.337017           0.191617            0.472826 0.00012            True
+H2 Hybrid+KG-linked Hybrid+KG-exact lay_partial       B        349          41 0.489477 0.352580   0.136897 0.072674 0.198994 0.00044               175                70 0.323782 0.214900    0.108883           0.037901            0.179628 0.00088            True
+H3 Hybrid+KG-linked          Hybrid    lay_full       B        181          41 0.746459 0.456614   0.289845 0.175808 0.399017 0.00008               109                19 0.635359 0.325967    0.309392           0.160215            0.450782 0.00024            True
+H4 Hybrid+KG-linked          Hybrid lay_partial       B        349          41 0.489477 0.348250   0.141226 0.073013 0.207816 0.00059               179                69 0.323782 0.209169    0.114613           0.041377            0.186871 0.00088            True

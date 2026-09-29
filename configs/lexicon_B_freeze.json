@@ -1,0 +1,21 @@
+{
+  "file": "data/lexicons/lexicon_B_test.csv",
+  "sha256": "cd2a53e307926b4012264ae97229a25a6039638bbe5e10fc819c13208d91f78d",
+  "frozen_on": "2026-09-29",
+  "protocol_version": "1.1",
+  "source": "LLM fallback (data/lexicons/LEXICON_B_LLM_FALLBACK.md); provenance in data/lexicons/LEXICON_B_PROVENANCE.md",
+  "verification": {
+    "lexicon_check": "01_prepare_protocol.py --check-lexicon: OK (131 symptom keys, 262 variants, no clause delimiters)",
+    "words_per_variant": "5-12 (prompt rule: 3-15)",
+    "prompt_matches_fixed_prompt": true,
+    "exact_copies_of_lexicon_A_variants": 0
+  },
+  "notes": [
+    "Line endings: the working copy had CRLF endings and no final newline (sha256 1f8512cc...). The recorded hash cd2a53e3... is the identical text with LF endings and a final newline; those bytes were restored before freezing. No variant text was changed.",
+    "Prompt-rule deviations kept as generated (the fallback procedure permits punctuation fixes only): 'my acne is full of yellow stuff' (pus_filled_pimples) names the disease Acne, and 'my complexion looks completely jaundiced and off' (yellowish_skin) names the disease Jaundice. They occur in 39 of the 530 lexicon B lay test queries (38 via 'jaundiced', 1 via 'acne').",
+    "At freezing, LEXICON_B_PROVENANCE.md gave the model only as 'Gemini 1.5 Pro' and did not state the session or whether punctuation fixes were needed. On 2026-09-29, after the final evaluation, the author supplied: model gemini-1.5-pro-002; fresh, zero-context Python sandbox; no punctuation fixes. The lexicon file and its hash are unchanged."
+  ],
+  "model": "Gemini 1.5 Pro (gemini-1.5-pro-002)",
+  "session": "fresh, zero-context Python sandbox",
+  "punctuation_fixes": "none (validated programmatically before saving)"
+}

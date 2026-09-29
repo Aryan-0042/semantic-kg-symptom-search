@@ -1,0 +1,42 @@
+Disease,N,BM25-only,Dense-only,Hybrid,Hybrid+KG (no recency),Proposed (CRFS),Proposed (RRF+KG+Recency),N1 (Linear+KG @ shortlist),"N2 (Proposed, no recency tiebreak)"
+(vertigo) Paroymsal  Positional Vertigo,3,2,1,2,3,3,2,2,2
+AIDS,3,3,3,3,3,3,3,3,3
+Acne,3,3,0,3,3,3,3,3,3
+Alcoholic hepatitis,3,3,3,3,3,3,3,3,3
+Allergy,3,2,3,2,3,3,2,2,2
+Arthritis,3,3,3,3,3,3,3,3,3
+Bronchial Asthma,3,3,3,3,3,3,3,3,3
+Cervical spondylosis,3,3,3,3,3,3,3,3,3
+Chicken pox,3,1,0,2,3,3,3,3,3
+Chronic cholestasis,3,0,0,0,1,1,1,1,1
+Common Cold,3,3,0,3,3,3,3,3,3
+Dengue,3,0,0,0,3,3,0,0,0
+Diabetes,3,2,3,3,3,3,3,3,3
+Dimorphic hemmorhoids(piles),3,3,3,3,3,3,3,3,3
+Drug Reaction,3,3,3,3,3,3,3,3,3
+Fungal infection,3,3,3,3,3,3,3,3,3
+GERD,3,1,3,2,3,3,3,3,3
+Gastroenteritis,3,0,3,0,1,1,3,2,3
+Heart attack,3,2,3,2,3,3,3,3,3
+Hepatitis B,3,2,2,2,3,3,3,3,3
+Hepatitis C,3,1,3,1,3,3,1,1,1
+Hepatitis D,3,0,0,0,0,1,0,0,0
+Hepatitis E,3,1,0,1,3,3,1,1,1
+Hypertension,3,3,0,3,3,3,3,3,3
+Hyperthyroidism,3,3,2,3,3,3,3,3,3
+Hypoglycemia,3,2,2,2,3,3,3,3,3
+Hypothyroidism,3,3,3,3,3,3,3,3,3
+Impetigo,3,3,3,3,3,3,3,3,3
+Jaundice,3,1,1,3,3,3,2,3,2
+Malaria,3,1,1,1,1,1,1,1,1
+Migraine,3,2,3,3,3,3,3,3,3
+Osteoarthristis,3,1,1,2,2,2,2,2,2
+Paralysis (brain hemorrhage),3,1,1,1,1,1,1,1,1
+Peptic ulcer diseae,3,3,1,3,3,3,3,3,3
+Pneumonia,3,3,3,3,3,3,3,3,3
+Psoriasis,3,3,3,3,3,3,3,3,3
+Tuberculosis,3,1,0,1,1,1,1,1,1
+Typhoid,3,1,3,1,3,3,3,3,3
+Urinary tract infection,3,3,2,3,3,3,3,3,3
+Varicose veins,3,3,3,3,3,3,3,3,3
+hepatitis A,3,0,3,0,1,1,1,1,1

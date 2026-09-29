@@ -1,0 +1,14 @@
+{
+  "architecture": "RRF (BM25+Dense recall) -> KG rerank -> recency tiebreak",
+  "rrf_k": 60,
+  "rrf_k_tuned": false,
+  "selected_shortlist_n": 3,
+  "objective": "macro_F1_on_dev_val, tiebreak MRR, tiebreak smallest shortlist_n",
+  "dev_val_f1": 100.0,
+  "dev_val_accuracy": 100.0,
+  "dev_val_mrr": 1.0,
+  "n_candidates_searched": 8,
+  "n_val_queries": 33,
+  "selected_at": "2026-08-26T15:26:24.180793",
+  "note": "Selected using data/split_dev_train_v3.csv and data/split_dev_val_v3.csv ONLY. No test split (v1, v2, or v3) was loaded by this script."
+}

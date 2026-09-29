@@ -1,0 +1,239 @@
+"""
+retrieval_eval_final.py
+
+THE FINAL, FROZEN EVALUATION. Run this exactly once, after:
+  1. make_frozen_test_split.py has produced data/split_test_final.csv
+  2. make_dev_train_val_split.py has produced dev-train/dev-val
+  3. tune_crfs_weights.py has produced results/frozen_config.json
+  4. audit_corpus.py and audit_source_dates.py have been reviewed and
+     any necessary corpus fixes have been made and re-frozen
+
+This script:
+  - Builds BM25 / dense index / Knowledge Graph from the FULL development
+    set (data/split_dev.csv, dev-train + dev-val combined, ~222 rows) --
+    this is the standard "refit on train+val after hyperparameters are
+    chosen" step, and is legitimate because dev-val's ROWS were already
+    excluded from tuning's *objective computation*, not from ever being
+    usable as training signal once weights are frozen.
+  - Loads queries ONLY from data/split_test_final.csv (82 rows, 2 per
+    disease), which has not been touched by any tuning script.
+  - Runs the 5-method comparison and the 4-condition ablation using the
+    frozen weights from results/frozen_config.json.
+  - Computes accuracy/precision/recall/F1/MRR/latency, a Wilson
+    confidence interval on accuracy, and paired significance tests
+    (Hybrid vs Proposed, Hybrid+KG vs Proposed) via McNemar's exact
+    test on paired per-query binary correctness.
+
+Do not edit this script's weights, KG formula, or query construction
+after seeing its output. If the numbers are disappointing, that is the
+answer -- go back to tune_crfs_weights.py and dev-val, re-tune, and
+then this script must be re-run against the (still-unseen) test set
+exactly once again. Repeatedly "peeking and adjusting" against this
+specific 82-row set is precisely the leakage pattern this whole
+protocol exists to prevent.
+"""
+import json
+import numpy as np
+import pandas as pd
+from rank_bm25 import BM25Okapi
+from statsmodels.stats.contingency_tables import mcnemar
+
+from legacy.pipeline_common import (
+    load_guideline_corpus,
+    load_symptom_split,
+    build_queries_from_split,
+    build_retrieval_text,
+    build_kg,
+    MedCPTEncoder,
+    warmup,
+    run_condition,
+)
+
+
+def wilson_ci(successes, n, z=1.96):
+    """Wilson score interval for a binomial proportion (95% by default)."""
+    if n == 0:
+        return (float("nan"), float("nan"))
+    phat = successes / n
+    denom = 1 + z ** 2 / n
+    center = (phat + z ** 2 / (2 * n)) / denom
+    half = (z * np.sqrt((phat * (1 - phat) + z ** 2 / (4 * n)) / n)) / denom
+    return (max(0.0, center - half), min(1.0, center + half))
+
+
+def main():
+    print("=" * 60)
+    print("FINAL FROZEN EVALUATION -- RUN ONCE")
+    print("=" * 60)
+
+    with open("results/frozen_config.json") as f:
+        frozen = json.load(f)
+    w = frozen["selected_weights"]
+    weights = (w["w_bm25"], w["w_dense"], w["w_kg"], w["w_recency"])
+    print(f"Loaded frozen CRFS weights: {weights}")
+    print(f"(selected on dev-val, F1={frozen['dev_val_f1']}, "
+          f"{frozen['n_combinations_searched']} combinations searched)")
+
+    corpus_df = load_guideline_corpus()
+    dev_full = load_symptom_split("data/split_dev.csv")          # train+val combined
+    test_df = load_symptom_split("data/split_test_final.csv")     # NEVER used for tuning
+
+    test_queries, test_labels = build_queries_from_split(test_df)
+    print(f"\nFrozen test queries: {len(test_queries)} "
+          f"across {len(set(test_labels))} diseases (expect 82 / 41)")
+
+    print("\nBuilding retrieval-aware document text from FULL dev set (train+val)...")
+    retrieval_texts = build_retrieval_text(corpus_df, dev_full)
+
+    print("Building BM25 index...")
+    bm25 = BM25Okapi([t.lower().split() for t in retrieval_texts])
+
+    print("Loading MedCPT and encoding corpus...")
+    encoder = MedCPTEncoder()
+    doc_embeddings = encoder.encode_docs(retrieval_texts, batch_size=16)
+
+    print("Building Knowledge Graph from FULL dev set (train+val)...")
+    graph = build_kg(corpus_df, dev_full)
+
+    print("\nWarming up encoder/BM25 before timed calls...")
+    warmup(bm25, encoder)
+
+    # --------------------------------------------------------------
+    # Main comparison (Table II)
+    # --------------------------------------------------------------
+    methods = ["BM25-only", "Dense-only", "Hybrid", "Hybrid+KG (no recency)", "Proposed (CRFS)"]
+    comparison_rows = []
+    per_query_by_method = {}
+
+    print("\nRunning main comparison...\n")
+    for method in methods:
+        result, per_query = run_condition(
+            method, test_queries, test_labels, corpus_df,
+            bm25, encoder, doc_embeddings, graph, weights=weights, verbose=False,
+        )
+        comparison_rows.append(result)
+        per_query_by_method[method] = per_query
+        print(f"  {method:28s} Acc={result['Accuracy']:6.2f}  F1={result['F1']:6.2f}  "
+              f"MRR={result['MRR']:.3f}  Latency={result['Latency_ms_mean']:.2f}ms")
+
+    comparison_df = pd.DataFrame(comparison_rows)
+    import os
+    os.makedirs("results", exist_ok=True)
+    comparison_df.to_csv("results/retrieval_comparison.csv", index=False)
+
+    # --------------------------------------------------------------
+    # Ablation (Table III) -- same fusion formula/weights, different
+    # components switched on/off via requirements_override
+    # --------------------------------------------------------------
+    ablation_configs = {
+        "Full Proposed System":   dict(bm25=True, dense=True, kg=True,  recency=True),
+        "w/o Knowledge Graph":    dict(bm25=True, dense=True, kg=False, recency=True),
+        "w/o Recency Weight":     dict(bm25=True, dense=True, kg=True,  recency=False),
+        "w/o Both (Hybrid only)": dict(bm25=True, dense=True, kg=False, recency=False),
+    }
+    ablation_rows = []
+    print("\nRunning ablation...\n")
+    for label, req in ablation_configs.items():
+        result, per_query = run_condition(
+            "Proposed (CRFS)", test_queries, test_labels, corpus_df,
+            bm25, encoder, doc_embeddings, graph, weights=weights, verbose=False,
+            requirements_override=req,
+        )
+        result["Method"] = label
+        ablation_rows.append(result)
+        per_query_by_method[f"ablation::{label}"] = per_query
+        print(f"  {label:28s} Acc={result['Accuracy']:6.2f}  F1={result['F1']:6.2f}  "
+              f"MRR={result['MRR']:.3f}  Latency={result['Latency_ms_mean']:.2f}ms")
+
+    ablation_df = pd.DataFrame(ablation_rows)
+    ablation_df.to_csv("results/ablation.csv", index=False)
+
+    # --------------------------------------------------------------
+    # Statistics: Wilson CI + McNemar paired significance tests
+    # --------------------------------------------------------------
+    n = len(test_labels)
+    stats_rows = []
+    # Save raw per-query correctness for reproducibility and
+    # correct paired statistical testing (e.g., McNemar's test).
+    raw_rows = []
+    for method, correct_list in per_query_by_method.items():
+        for i, c in enumerate(correct_list):
+            raw_rows.append({
+                "method": method,
+                "query_index": i,
+                "true_label": test_labels[i],
+                "correct": int(c),
+            })
+
+    pd.DataFrame(raw_rows).to_csv(
+        "results/per_query_predictions.csv",
+        index=False
+    )
+
+    for method in methods:
+        successes = sum(per_query_by_method[method])
+        lo, hi = wilson_ci(successes, n)
+        stats_rows.append({
+            "Method": method, "N": n, "Correct": successes,
+            "Accuracy": round(100 * successes / n, 2),
+            "Wilson_95CI_low": round(100 * lo, 2),
+            "Wilson_95CI_high": round(100 * hi, 2),
+        })
+    stats_df = pd.DataFrame(stats_rows)
+
+    def mcnemar_paired(name_a, name_b):
+        a = np.array(per_query_by_method[name_a], dtype=int)
+        b = np.array(per_query_by_method[name_b], dtype=int)
+
+        n01 = int(np.sum((a == 0) & (b == 1)))  # A wrong, B right
+        n10 = int(np.sum((a == 1) & (b == 0)))  # A right, B wrong
+
+        table = [[0, n01], [n10, 0]]
+
+        result = mcnemar(table, exact=True)
+
+        return {
+            "comparison": f"{name_a} vs {name_b}",
+            "n_pairs": n,
+            "n_differing": n01 + n10,
+            "A_wrong_B_right": n01,
+            "A_right_B_wrong": n10,
+            "statistic": float("nan"),
+            "p_value": float(result.pvalue),
+            "note": "McNemar exact test on paired binary correctness.",
+        }
+
+    sig_rows = [
+        mcnemar_paired("Hybrid", "Proposed (CRFS)"),
+        mcnemar_paired("Hybrid+KG (no recency)", "Proposed (CRFS)"),
+    ]
+    sig_df = pd.DataFrame(sig_rows)
+
+    stats_df.to_csv("results/final_test_confidence_intervals.csv", index=False)
+    sig_df.to_csv("results/significance_tests.csv", index=False)
+
+    print("\n" + "=" * 60)
+    print("FINAL RESULTS (n=%d test queries, 2 per disease, frozen)" % n)
+    print("=" * 60)
+    print(stats_df.to_string(index=False))
+    print("\nMcNemar paired significance tests:")
+    print(sig_df.to_string(index=False))
+
+    print("\n" + "!" * 60)
+    print("THESE ARE THE FINAL NUMBERS.")
+    print("Do not re-tune weights or the KG formula and re-run this script")
+    print("against this same test set. If you need to iterate further,")
+    print("that requires a new frozen test set drawn with a new protocol,")
+    print("disclosed as such.")
+    print("!" * 60)
+
+    print("\nSaved:")
+    print("  results/retrieval_comparison.csv")
+    print("  results/ablation.csv")
+    print("  results/final_test_confidence_intervals.csv")
+    print("  results/significance_tests.csv")
+    print("  results/per_query_predictions.csv")
+
+
+if __name__ == "__main__":
+    main()

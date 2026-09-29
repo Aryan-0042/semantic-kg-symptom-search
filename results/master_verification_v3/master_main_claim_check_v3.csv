@@ -1,0 +1,7 @@
+Method,Status
+BM25-only,MISMATCH
+Dense-only,MISMATCH
+Hybrid,MISMATCH
+Hybrid+KG (no recency),MATCH
+Proposed (CRFS),MISMATCH
+Proposed (RRF+KG+Recency),MISMATCH

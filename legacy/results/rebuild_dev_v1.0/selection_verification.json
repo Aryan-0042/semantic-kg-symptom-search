@@ -1,0 +1,297 @@
+{
+  "all_ok": true,
+  "selected": {
+    "query_max_length": 64,
+    "alpha": 0.3,
+    "C": 10.0,
+    "linker": "sapbert",
+    "tau": 0.55,
+    "beta": 1.0,
+    "beta_exact_tuned": 0.45,
+    "beta_substring_tuned": 0.6,
+    "pool_beta": {
+      "exact:3": 0.35,
+      "exact:5": 0.45,
+      "exact:10": 0.45,
+      "exact:20": 0.45,
+      "exact:all": 0.45,
+      "linked:3": 1.0,
+      "linked:5": 1.0,
+      "linked:10": 1.0,
+      "linked:20": 1.0,
+      "linked:all": 1.0
+    }
+  },
+  "checks": [
+    {
+      "check": "grid: query lengths",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: alpha",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: C",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: joint size = linkers x tau x beta",
+      "ok": true,
+      "detail": "1134"
+    },
+    {
+      "check": "grid: joint linkers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: joint tau",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: joint beta",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: joint unique cells",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: beta_exact_tuned",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: beta_substring_tuned",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "grid: pool cells",
+      "ok": true,
+      "detail": "210"
+    },
+    {
+      "check": "step 0: query_max_length",
+      "ok": true,
+      "detail": "expected 64, got 64"
+    },
+    {
+      "check": "step 0: query_length_is_standard flag",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "step 1: alpha",
+      "ok": true,
+      "detail": "expected 0.3, got 0.3"
+    },
+    {
+      "check": "step 2: C",
+      "ok": true,
+      "detail": "expected 10.0, got 10.0"
+    },
+    {
+      "check": "step 3: linker",
+      "ok": true,
+      "detail": "expected sapbert, got sapbert"
+    },
+    {
+      "check": "step 3: tau",
+      "ok": true,
+      "detail": "expected 0.55, got 0.55"
+    },
+    {
+      "check": "step 3: beta",
+      "ok": true,
+      "detail": "expected 1.0, got 1.0"
+    },
+    {
+      "check": "step 4: beta_exact_tuned",
+      "ok": true,
+      "detail": "expected 0.45, got 0.45"
+    },
+    {
+      "check": "step 4: beta_substring_tuned",
+      "ok": true,
+      "detail": "expected 0.6, got 0.6"
+    },
+    {
+      "check": "step 5: pool_beta exact:10",
+      "ok": true,
+      "detail": "expected 0.45, got 0.45"
+    },
+    {
+      "check": "step 5: pool_beta exact:20",
+      "ok": true,
+      "detail": "expected 0.45, got 0.45"
+    },
+    {
+      "check": "step 5: pool_beta exact:3",
+      "ok": true,
+      "detail": "expected 0.35, got 0.35"
+    },
+    {
+      "check": "step 5: pool_beta exact:5",
+      "ok": true,
+      "detail": "expected 0.45, got 0.45"
+    },
+    {
+      "check": "step 5: pool_beta exact:all",
+      "ok": true,
+      "detail": "expected 0.45, got 0.45"
+    },
+    {
+      "check": "step 5: pool_beta linked:10",
+      "ok": true,
+      "detail": "expected 1.0, got 1.0"
+    },
+    {
+      "check": "step 5: pool_beta linked:20",
+      "ok": true,
+      "detail": "expected 1.0, got 1.0"
+    },
+    {
+      "check": "step 5: pool_beta linked:3",
+      "ok": true,
+      "detail": "expected 1.0, got 1.0"
+    },
+    {
+      "check": "step 5: pool_beta linked:5",
+      "ok": true,
+      "detail": "expected 1.0, got 1.0"
+    },
+    {
+      "check": "step 5: pool_beta linked:all",
+      "ok": true,
+      "detail": "expected 1.0, got 1.0"
+    },
+    {
+      "check": "step 5: pool linked:all == beta (n = all is the primary system)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "step 5: pool exact:all == beta_exact_tuned",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "values on grids",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "objective consistent: Dense",
+      "ok": true,
+      "detail": "tuning 0.678013032308 vs evaluated 0.678013032308"
+    },
+    {
+      "check": "objective consistent: Hybrid",
+      "ok": true,
+      "detail": "tuning 0.715341925879 vs evaluated 0.715341925879"
+    },
+    {
+      "check": "objective consistent: Classifier",
+      "ok": true,
+      "detail": "tuning 0.645268419132 vs evaluated 0.645268419132"
+    },
+    {
+      "check": "objective consistent: Hybrid+KG-linked",
+      "ok": true,
+      "detail": "tuning 0.847014008469 vs evaluated 0.847014008469"
+    },
+    {
+      "check": "objective consistent: Hybrid+KG-exact-tuned",
+      "ok": true,
+      "detail": "tuning 0.739534942933 vs evaluated 0.739534942933"
+    },
+    {
+      "check": "objective consistent: Hybrid+KG-substring-tuned",
+      "ok": true,
+      "detail": "tuning 0.743813973833 vs evaluated 0.743813973833"
+    },
+    {
+      "check": "per-query rows are development rows only",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "all 123 development rows queried",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no lexicon B query",
+      "ok": true,
+      "detail": "['A', 'none']"
+    },
+    {
+      "check": "700 queries per system",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "identical query sets across systems",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no final results exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "lexicon A hash recorded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "protocol version recorded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "tracked code/config/data unchanged since the sweep's commit",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "tie_notes": [
+    {
+      "step": "0 query length",
+      "tied_at_max": 1,
+      "best_gain_over_64": 0.003385411360379287
+    },
+    {
+      "step": "1 alpha",
+      "tied_at_max": 1
+    },
+    {
+      "step": "2 C",
+      "tied_at_max": 1
+    },
+    {
+      "step": "3 joint",
+      "tied_at_max": 1,
+      "tied_linkers": [
+        "sapbert"
+      ]
+    },
+    {
+      "step": "4 beta_exact_tuned",
+      "tied_at_max": 11
+    },
+    {
+      "step": "4 beta_substring_tuned",
+      "tied_at_max": 8
+    }
+  ]
+}

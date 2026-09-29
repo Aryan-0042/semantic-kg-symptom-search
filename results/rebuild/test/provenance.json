@@ -1,0 +1,47 @@
+{
+  "git_at_start": {
+    "commit": "8d0a7c00a1aaf45ad2ae62872a1c677bc5e83e01",
+    "dirty": false
+  },
+  "protocol_version": "1.1",
+  "selected_params": {
+    "params": {
+      "query_max_length": 64,
+      "alpha": 0.3,
+      "C": 10.0,
+      "linker": "sapbert",
+      "tau": 0.525,
+      "beta": 0.85,
+      "beta_exact_tuned": 0.45,
+      "beta_substring_tuned": 0.6,
+      "pool_beta": {
+        "exact:3": 0.35,
+        "exact:5": 0.45,
+        "exact:10": 0.45,
+        "exact:20": 0.45,
+        "exact:all": 0.45,
+        "linked:3": 0.5,
+        "linked:5": 0.55,
+        "linked:10": 0.85,
+        "linked:20": 0.8,
+        "linked:all": 0.85
+      }
+    },
+    "protocol_version": "1.1",
+    "objective": "mean over the 4 groups of the group MRR (lexicon A, development LORO)",
+    "n_dev_rows": 123,
+    "n_dev_queries": 700,
+    "lexicon_A_sha256": "fb46fdcf666786eaaab8fbd2259e8988657a063ffeefcc9aeb35c1d7835ec6b5",
+    "git": {
+      "commit": "605a4b931ec346c6a7ab506a82f8bf778915a61b",
+      "dirty": true
+    },
+    "query_length_is_standard": true
+  },
+  "lexicon_A_sha256": "fb46fdcf666786eaaab8fbd2259e8988657a063ffeefcc9aeb35c1d7835ec6b5",
+  "lexicon_B_sha256": "cd2a53e307926b4012264ae97229a25a6039638bbe5e10fc819c13208d91f78d",
+  "n_test_rows": 181,
+  "n_index_rows": 123,
+  "n_queries": 1590,
+  "finished": "2026-09-29T19:34:11.607255"
+}

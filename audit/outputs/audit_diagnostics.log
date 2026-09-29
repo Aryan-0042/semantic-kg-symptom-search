@@ -1,0 +1,11 @@
+== 1. KG-only lookup (strict: a tie at the top counts as wrong)
+canonical 95.12%  paraphrased 68.29%  overall 77.24%  (tied top: 28, all-zero: 16)
+== 3. per-query component cost as implemented (CPU)
+KG over 104 docs 7.1 ms | recency recomputed over 104 docs 20.6 ms | KG once per disease 2.0 ms
+== 4. cached embeddings vs corpus
+models/medcpt_doc_embeddings.npy: shape (108, 768); current corpus has 104 documents
+models/medcpt_retrieval_embeddings.npy: shape (108, 768); current corpus has 104 documents
+== 2. what the document text contributes
+guideline text only (+disease name)              | BM25-only 7.3% (canon 9.8 / para 6.1) | Dense-only 26.0% (canon 19.5 / para 29.3)
+guideline text only (no disease name)            | BM25-only 7.3% (canon 9.8 / para 6.1) | Dense-only 17.9% (canon 7.3 / para 23.2)
+as published (disease + top-8 symptoms + text)   | BM25-only 65.8% (canon 87.8 / para 54.9) | Dense-only 65.0% (canon 73.2 / para 61.0)

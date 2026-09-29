@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Bridging the Lay-to-Clinical Vocabulary Gap: Hybrid Retrieval with Semantic Knowledge Graph Linking for Symptom-to-Condition Search"
+type: software
+authors:
+  - family-names: Panwar
+    given-names: Dhairya
+    affiliation: "Sharda University"
+  - family-names: Doule
+    given-names: Aryan Raosaheb
+    affiliation: "Sharda University"
+keywords:
+  - lay-to-clinical retrieval
+  - offline evaluation
+  - semantic knowledge graph
+  - hybrid retrieval
+  - biomedical entity linking
+  - symptom checkers
+repository-code: "https://github.com/Aryan-0042/semantic-kg-symptom-search"

@@ -1,0 +1,131 @@
+# Experimental protocol (machine-readable). See PROTOCOL.md for definitions and rationale.
+# Lifecycle: draft -> frozen (committed) before the development sweep. After freezing,
+# any change requires a new version number and an entry in PROTOCOL.md section 12.
+version: "1.1"
+status: frozen
+frozen_on: "2026-09-29"
+amendments:
+  - {version: "1.1", date: "2026-09-29", change: "proposed-system beta grid excludes 0 and 1 (grids.beta_proposed)", reason: "see PROTOCOL.md section 12"}
+
+seeds:
+  partition: 2026      # development/test row partition
+  queries: 7           # per-row streams: 1 = partial-subset permutation, 2 = lexicon variant choice
+  bootstrap: 11
+  permutation: 13
+
+data:
+  rows: data/symptom_disease.csv                  # 304 deduplicated rows, 41 diseases, 131 symptoms
+  corpus: data/guideline_corpus.jsonl             # 104 fixed passages (not row-derived)
+  partition: data/protocol/partition.csv          # written once from seeds.partition, then verified
+  diseases: data/protocol/diseases.csv            # disease id = position in sorted name list = tie-break order
+  dev_rows_per_disease: 3
+  lexicon_dev: data/lexicons/lexicon_A_dev.csv    # development only
+  lexicon_test: data/lexicons/lexicon_B_test.csv  # independent; frozen by SHA-256 before the final evaluation
+
+queries:
+  partial_k: [2, 3]    # nested prefixes of one seeded permutation of the row's symptoms; only k < n
+  conditions: [canonical_full, canonical_partial_k2, canonical_partial_k3, lay_full, lay_partial_k2, lay_partial_k3]
+  groups:              # analysis groups; 'partial' pools its k2 and k3 queries
+    canonical_full: [canonical_full]
+    canonical_partial: [canonical_partial_k2, canonical_partial_k3]
+    lay_full: [lay_full]
+    lay_partial: [lay_partial_k2, lay_partial_k3]
+
+regimes:
+  development:
+    query_rows: development rows (123)
+    index_rows: the other 122 development rows (leave-one-row-out)
+    lexicon: A
+  final_test:
+    query_rows: test rows (181)
+    index_rows: the 123 development rows (one fixed index; no test row enters any index)
+    lexicon: B           # primary; lexicon A on the same test rows is a diagnostic only
+
+models:
+  dense_query: {name: ncbi/MedCPT-Query-Encoder, pooling: cls}          # max_length: tuning.query_length
+  dense_doc: {name: ncbi/MedCPT-Article-Encoder, max_length: 512, pooling: cls}
+  linker_candidates:
+    medcpt: {name: ncbi/MedCPT-Query-Encoder, max_length: 64, pooling: cls}
+    sapbert: {name: cambridgeltl/SapBERT-from-PubMedBERT-fulltext, max_length: 64, pooling: cls}
+
+fixed:
+  bm25: {k1: 1.5, b: 0.75, tokens: "lower-cased [a-z0-9]+"}
+  aggregation: maxp                         # disease score = best passage score
+  rrf_k: 60
+  kg_weight: "idf(s) = ln((D + 1) / (df(s) + 1)) + 1, D = 41"
+  exact_matcher: normalised, per clause, whole-word/phrase, leftmost-longest, non-overlapping
+  ranking: {round_decimals: 12, tie_break: ascending disease id}
+  recency: excluded
+
+tuning:   # development regime only; the test partition and lexicon B are never used
+  objective: mean over the 4 groups of the group MRR (lexicon A, development LORO)
+  query_length:        # step 0, selected on Dense alone
+    standard: 64
+    grid: [64, 128, 256, 512]
+    min_gain: 0.01     # a longer length is used only if it beats 64 by >= 0.01 objective
+  grids:
+    alpha: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]        # BM25 weight in Hybrid
+    beta: [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0]
+    # v1.1: the proposed fused system (and its shared-beta H1/H2 control, and the linked cells of the
+    # pool analysis) use the interior grid; beta = 0 is the Hybrid control, beta = 1 the KG-linked baseline
+    beta_proposed: [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95]
+    tau: [0.30, 0.325, 0.35, 0.375, 0.40, 0.425, 0.45, 0.475, 0.50, 0.525, 0.55, 0.575, 0.60, 0.625, 0.65, 0.675, 0.70, 0.725, 0.75, 0.775, 0.80, 0.825, 0.85, 0.875, 0.90, 0.925, 0.95]
+    classifier_C: [0.1, 1.0, 10.0]
+    linker: [medcpt, sapbert]
+  order:
+    - query_max_length               # Dense
+    - alpha                          # Hybrid
+    - classifier_C                   # Classifier
+    - [linker, tau, beta]            # jointly, Hybrid+KG-linked, beta from beta_proposed; shared by the H1/H2 control
+    - [beta_exact_tuned, beta_substring_tuned]   # secondary systems
+    - pool_beta                      # per (kg, n), linear rule; linked cells: beta_proposed, exact cells: beta
+  tie_break:           # applied, in this order, to exact ties of the objective
+    query_max_length: shortest
+    alpha: closest to 0.5, then smaller
+    classifier_C: closest to 1.0, then smaller
+    joint: [beta smallest, tau largest, linker medcpt]
+    beta: smallest
+
+systems:
+  baselines: [BM25, Dense, Hybrid, RRF, Classifier, KG-exact]
+  proposed: Hybrid+KG-linked        # fused, beta in beta_proposed (0 < beta < 1)
+  controls: {H1_H2: Hybrid+KG-exact, H3_H4: Hybrid}
+  components: [KG-linked]           # = the proposed system at beta = 1 (same linker, tau); reported baseline
+  secondary: [KG-substring, Hybrid+KG-exact-tuned, Hybrid+KG-substring-tuned]
+
+metrics:
+  primary: MRR over the full 41-disease ranking (deterministic tie-break)
+  secondary: [Acc@1, Hit@3, Hit@5]
+  diagnostics: [tie rates, query truncation rates, linking recall/precision]
+
+primary_comparisons:   # Holm-corrected family of four, two-sided, alpha 0.05, test partition, lexicon B
+  - {id: H1, a: Hybrid+KG-linked, b: Hybrid+KG-exact, condition: lay_full,    metric: RR}
+  - {id: H2, a: Hybrid+KG-linked, b: Hybrid+KG-exact, condition: lay_partial, metric: RR}
+  - {id: H3, a: Hybrid+KG-linked, b: Hybrid,          condition: lay_full,    metric: RR}
+  - {id: H4, a: Hybrid+KG-linked, b: Hybrid,          condition: lay_partial, metric: RR}
+
+statistics:
+  statistic: T = mean over the group's queries of RR(a) - RR(b) (= delta MRR)
+  test: paired sign-flip randomisation, disease clusters, 100000 draws, two-sided
+  interval: disease-clustered percentile bootstrap, 10000 resamples, 95%
+  correction: Holm over H1-H4
+  n_perm: 100000
+  n_boot: 10000
+  level: 0.95
+  alpha: 0.05
+
+secondary_analyses:    # descriptive, outside the family
+  all_systems: every system x group and condition, clustered 95% CIs (MRR, Acc@1, Hit@3, Hit@5)
+  partial_by_k: k2 and k3 reported separately
+  query_length: development objective per length and truncation rates (development and test)
+  linker_selection: development results of both linker candidates
+  matcher_sensitivity: Hybrid+KG-exact-tuned, Hybrid+KG-substring-tuned, KG-substring
+  linking_accuracy: per-segment recall and precision of exact, substring and semantic linking
+  lexicon_diagnostic: lay conditions on test rows with lexicon A vs B (diagnostic only)
+  ties: tie rates per system and group
+  pool_size:
+    generator: Hybrid
+    n: [3, 5, 10, 20, all]
+    rules: [linear, rrf]
+    kg: [exact, linked]
+  latency: per stage, GPU-synchronised, warm-up, 5 repeats, median and p95

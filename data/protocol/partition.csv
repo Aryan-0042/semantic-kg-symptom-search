@@ -1,0 +1,305 @@
+row_id,disease,split
+0,Fungal infection,test
+1,Fungal infection,dev
+2,Fungal infection,test
+3,Fungal infection,dev
+4,Fungal infection,dev
+5,Allergy,dev
+6,Allergy,test
+7,Allergy,test
+8,Allergy,dev
+9,Allergy,dev
+10,GERD,test
+11,GERD,test
+12,GERD,dev
+13,GERD,test
+14,GERD,dev
+15,GERD,test
+16,GERD,dev
+17,Chronic cholestasis,dev
+18,Chronic cholestasis,test
+19,Chronic cholestasis,test
+20,Chronic cholestasis,dev
+21,Chronic cholestasis,test
+22,Chronic cholestasis,dev
+23,Chronic cholestasis,test
+24,Chronic cholestasis,test
+25,Drug Reaction,test
+26,Drug Reaction,dev
+27,Drug Reaction,test
+28,Drug Reaction,test
+29,Drug Reaction,dev
+30,Drug Reaction,dev
+31,Peptic ulcer diseae,dev
+32,Peptic ulcer diseae,test
+33,Peptic ulcer diseae,dev
+34,Peptic ulcer diseae,test
+35,Peptic ulcer diseae,test
+36,Peptic ulcer diseae,test
+37,Peptic ulcer diseae,dev
+38,AIDS,dev
+39,AIDS,dev
+40,AIDS,test
+41,AIDS,test
+42,AIDS,dev
+43,Diabetes,test
+44,Diabetes,dev
+45,Diabetes,test
+46,Diabetes,test
+47,Diabetes,test
+48,Diabetes,test
+49,Diabetes,dev
+50,Diabetes,test
+51,Diabetes,dev
+52,Gastroenteritis,dev
+53,Gastroenteritis,test
+54,Gastroenteritis,test
+55,Gastroenteritis,dev
+56,Gastroenteritis,dev
+57,Bronchial Asthma,test
+58,Bronchial Asthma,test
+59,Bronchial Asthma,test
+60,Bronchial Asthma,dev
+61,Bronchial Asthma,dev
+62,Bronchial Asthma,test
+63,Bronchial Asthma,dev
+64,Hypertension,dev
+65,Hypertension,dev
+66,Hypertension,test
+67,Hypertension,dev
+68,Hypertension,test
+69,Hypertension,test
+70,Migraine,test
+71,Migraine,test
+72,Migraine,dev
+73,Migraine,test
+74,Migraine,test
+75,Migraine,dev
+76,Migraine,test
+77,Migraine,dev
+78,Migraine,test
+79,Migraine,test
+80,Cervical spondylosis,dev
+81,Cervical spondylosis,dev
+82,Cervical spondylosis,test
+83,Cervical spondylosis,test
+84,Cervical spondylosis,test
+85,Cervical spondylosis,dev
+86,Paralysis (brain hemorrhage),dev
+87,Paralysis (brain hemorrhage),dev
+88,Paralysis (brain hemorrhage),dev
+89,Paralysis (brain hemorrhage),test
+90,Paralysis (brain hemorrhage),test
+91,Jaundice,test
+92,Jaundice,test
+93,Jaundice,dev
+94,Jaundice,test
+95,Jaundice,dev
+96,Jaundice,dev
+97,Jaundice,test
+98,Jaundice,test
+99,Jaundice,test
+100,Malaria,test
+101,Malaria,test
+102,Malaria,test
+103,Malaria,dev
+104,Malaria,dev
+105,Malaria,test
+106,Malaria,test
+107,Malaria,dev
+108,Chicken pox,dev
+109,Chicken pox,test
+110,Chicken pox,test
+111,Chicken pox,test
+112,Chicken pox,dev
+113,Chicken pox,test
+114,Chicken pox,dev
+115,Chicken pox,test
+116,Chicken pox,test
+117,Chicken pox,test
+118,Dengue,test
+119,Dengue,test
+120,Dengue,dev
+121,Dengue,test
+122,Dengue,dev
+123,Dengue,test
+124,Dengue,test
+125,Dengue,test
+126,Dengue,test
+127,Dengue,dev
+128,Typhoid,test
+129,Typhoid,dev
+130,Typhoid,test
+131,Typhoid,test
+132,Typhoid,test
+133,Typhoid,test
+134,Typhoid,dev
+135,Typhoid,dev
+136,Typhoid,test
+137,hepatitis A,test
+138,hepatitis A,test
+139,hepatitis A,test
+140,hepatitis A,test
+141,hepatitis A,dev
+142,hepatitis A,dev
+143,hepatitis A,dev
+144,hepatitis A,test
+145,hepatitis A,test
+146,Hepatitis B,test
+147,Hepatitis B,dev
+148,Hepatitis B,test
+149,Hepatitis B,test
+150,Hepatitis B,test
+151,Hepatitis B,test
+152,Hepatitis B,dev
+153,Hepatitis B,dev
+154,Hepatitis B,test
+155,Hepatitis C,dev
+156,Hepatitis C,test
+157,Hepatitis C,dev
+158,Hepatitis C,dev
+159,Hepatitis C,test
+160,Hepatitis C,test
+161,Hepatitis C,test
+162,Hepatitis D,test
+163,Hepatitis D,test
+164,Hepatitis D,test
+165,Hepatitis D,dev
+166,Hepatitis D,dev
+167,Hepatitis D,test
+168,Hepatitis D,dev
+169,Hepatitis D,test
+170,Hepatitis D,test
+171,Hepatitis D,test
+172,Hepatitis E,dev
+173,Hepatitis E,test
+174,Hepatitis E,test
+175,Hepatitis E,test
+176,Hepatitis E,test
+177,Hepatitis E,dev
+178,Hepatitis E,test
+179,Hepatitis E,dev
+180,Hepatitis E,test
+181,Alcoholic hepatitis,test
+182,Alcoholic hepatitis,dev
+183,Alcoholic hepatitis,test
+184,Alcoholic hepatitis,test
+185,Alcoholic hepatitis,test
+186,Alcoholic hepatitis,dev
+187,Alcoholic hepatitis,dev
+188,Alcoholic hepatitis,test
+189,Tuberculosis,test
+190,Tuberculosis,dev
+191,Tuberculosis,dev
+192,Tuberculosis,test
+193,Tuberculosis,test
+194,Tuberculosis,test
+195,Tuberculosis,test
+196,Tuberculosis,dev
+197,Tuberculosis,test
+198,Common Cold,test
+199,Common Cold,dev
+200,Common Cold,dev
+201,Common Cold,test
+202,Common Cold,test
+203,Common Cold,test
+204,Common Cold,dev
+205,Common Cold,test
+206,Common Cold,test
+207,Pneumonia,test
+208,Pneumonia,test
+209,Pneumonia,test
+210,Pneumonia,test
+211,Pneumonia,dev
+212,Pneumonia,dev
+213,Pneumonia,test
+214,Pneumonia,test
+215,Pneumonia,dev
+216,Dimorphic hemmorhoids(piles),test
+217,Dimorphic hemmorhoids(piles),test
+218,Dimorphic hemmorhoids(piles),dev
+219,Dimorphic hemmorhoids(piles),dev
+220,Dimorphic hemmorhoids(piles),test
+221,Dimorphic hemmorhoids(piles),dev
+222,Heart attack,test
+223,Heart attack,dev
+224,Heart attack,dev
+225,Heart attack,dev
+226,Heart attack,test
+227,Varicose veins,test
+228,Varicose veins,dev
+229,Varicose veins,test
+230,Varicose veins,test
+231,Varicose veins,test
+232,Varicose veins,dev
+233,Varicose veins,dev
+234,Varicose veins,test
+235,Hypothyroidism,test
+236,Hypothyroidism,test
+237,Hypothyroidism,dev
+238,Hypothyroidism,test
+239,Hypothyroidism,test
+240,Hypothyroidism,test
+241,Hypothyroidism,dev
+242,Hypothyroidism,dev
+243,Hyperthyroidism,test
+244,Hyperthyroidism,test
+245,Hyperthyroidism,test
+246,Hyperthyroidism,test
+247,Hyperthyroidism,dev
+248,Hyperthyroidism,test
+249,Hyperthyroidism,dev
+250,Hyperthyroidism,test
+251,Hyperthyroidism,dev
+252,Hypoglycemia,dev
+253,Hypoglycemia,test
+254,Hypoglycemia,dev
+255,Hypoglycemia,dev
+256,Hypoglycemia,test
+257,Hypoglycemia,test
+258,Hypoglycemia,test
+259,Hypoglycemia,test
+260,Hypoglycemia,test
+261,Osteoarthristis,dev
+262,Osteoarthristis,dev
+263,Osteoarthristis,test
+264,Osteoarthristis,test
+265,Osteoarthristis,dev
+266,Osteoarthristis,test
+267,Osteoarthristis,test
+268,Arthritis,test
+269,Arthritis,test
+270,Arthritis,dev
+271,Arthritis,dev
+272,Arthritis,dev
+273,Arthritis,test
+274,(vertigo) Paroymsal  Positional Vertigo,dev
+275,(vertigo) Paroymsal  Positional Vertigo,dev
+276,(vertigo) Paroymsal  Positional Vertigo,test
+277,(vertigo) Paroymsal  Positional Vertigo,test
+278,(vertigo) Paroymsal  Positional Vertigo,dev
+279,(vertigo) Paroymsal  Positional Vertigo,test
+280,(vertigo) Paroymsal  Positional Vertigo,test
+281,Acne,test
+282,Acne,test
+283,Acne,dev
+284,Acne,dev
+285,Acne,dev
+286,Urinary tract infection,dev
+287,Urinary tract infection,test
+288,Urinary tract infection,dev
+289,Urinary tract infection,test
+290,Urinary tract infection,dev
+291,Psoriasis,test
+292,Psoriasis,test
+293,Psoriasis,dev
+294,Psoriasis,dev
+295,Psoriasis,test
+296,Psoriasis,test
+297,Psoriasis,dev
+298,Impetigo,test
+299,Impetigo,dev
+300,Impetigo,test
+301,Impetigo,dev
+302,Impetigo,dev
+303,Impetigo,test

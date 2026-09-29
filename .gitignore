@@ -1,0 +1,54 @@
+# Python environment and bytecode
+venv/
+.venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
+
+# Editor / OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+
+# Provenance: every result file under results/rebuild/ is versioned, including logs
+# (which the *.log rule above would otherwise hide), and so are the audit logs.
+!results/rebuild/**/*.csv
+!results/rebuild/**/*.json
+!results/rebuild/**/*.log
+!audit/outputs/*.log
+!legacy/**/*.log
+
+# Regenerable embedding caches written by the pipeline (keyed by text hash)
+cache/
+
+# Local replication runs (experiments/08_reproduce_paper.py, 05_latency.py --out ...)
+results/reproduction/
+
+# Folder exported for the public GitHub release
+github_release/
+
+# Out-of-scope raw dataset, excluded deliberately (see DATA_SOURCES.md):
+# 167 MB (over GitHub's 100 MB file limit), Reddit posts collected via Pushshift,
+# used only by the out-of-scope safety-set builder, and re-downloadable from Kaggle.
+data/raw/Suicide_Detection.csv
+
+# Smoke runs of the draft pipeline were mechanics checks on development rows, not
+# results (PROTOCOL.md section 11); they stay local.
+results/rebuild/smoke/

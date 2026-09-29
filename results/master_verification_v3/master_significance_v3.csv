@@ -1,0 +1,8 @@
+comparison,n_pairs,b_right_a_wrong,a_right_b_wrong,mcnemar_exact_p
+Hybrid vs Proposed (RRF+KG+Recency),123,14,2,0.004180908203125
+Hybrid+KG (no recency) vs Proposed (RRF+KG+Recency),123,2,9,0.0654296875
+Proposed (CRFS) vs Proposed (RRF+KG+Recency),123,2,8,0.109375
+Dense-only vs Proposed (RRF+KG+Recency),123,27,6,0.0003240634687244892
+N1 (Linear+KG @ Top-3) vs Hybrid+KG (no recency),123,0,0,1.0
+N1 (Linear+KG @ Top-3) vs Proposed (RRF+KG+Recency),123,2,9,0.0654296875
+"N2 (RRF+KG @ Top-3, no recency) vs Proposed (RRF+KG+Recency)",123,0,0,1.0

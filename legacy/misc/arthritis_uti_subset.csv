@@ -1,0 +1,12 @@
+Disease,Symptom_1,Symptom_2,Symptom_3,Symptom_4,Symptom_5,Symptom_6,Symptom_7,Symptom_8,Symptom_9,Symptom_10,Symptom_11,Symptom_12,Symptom_13,Symptom_14,Symptom_15,Symptom_16,Symptom_17,Urgency
+Arthritis,muscle_weakness,stiff_neck,swelling_joints,movement_stiffness,painful_walking,,,,,,,,,,,,,0
+Arthritis,stiff_neck,swelling_joints,movement_stiffness,painful_walking,,,,,,,,,,,,,,0
+Arthritis,muscle_weakness,swelling_joints,movement_stiffness,painful_walking,,,,,,,,,,,,,,0
+Arthritis,muscle_weakness,stiff_neck,movement_stiffness,painful_walking,,,,,,,,,,,,,,0
+Arthritis,muscle_weakness,stiff_neck,swelling_joints,painful_walking,,,,,,,,,,,,,,0
+Arthritis,muscle_weakness,stiff_neck,swelling_joints,movement_stiffness,,,,,,,,,,,,,,0
+Urinary tract infection,burning_micturition,bladder_discomfort,foul_smell_of urine,continuous_feel_of_urine,,,,,,,,,,,,,,1
+Urinary tract infection,bladder_discomfort,foul_smell_of urine,continuous_feel_of_urine,,,,,,,,,,,,,,,1
+Urinary tract infection,burning_micturition,foul_smell_of urine,continuous_feel_of_urine,,,,,,,,,,,,,,,1
+Urinary tract infection,burning_micturition,bladder_discomfort,continuous_feel_of_urine,,,,,,,,,,,,,,,1
+Urinary tract infection,burning_micturition,bladder_discomfort,foul_smell_of urine,,,,,,,,,,,,,,,1

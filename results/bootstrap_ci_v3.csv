@@ -1,0 +1,8 @@
+comparison,bootstrap_mean_diff_pp,bootstrap_95CI_low_pp,bootstrap_95CI_high_pp
+Proposed (RRF+KG+Recency) minus Hybrid,8.92,4.07,14.63
+Proposed (RRF+KG+Recency) minus Hybrid+KG (no recency),-6.53,-12.2,-1.63
+Proposed (RRF+KG+Recency) minus Proposed (CRFS),-7.31,-13.01,-2.44
+Proposed (RRF+KG+Recency) minus Dense-only,15.48,7.32,23.58
+N1 (Linear+KG @ shortlist) minus Hybrid+KG (no recency),-6.51,-11.38,-1.63
+Proposed (RRF+KG+Recency) minus N1 (Linear+KG @ shortlist),-0.02,-2.44,2.44
+"Proposed (RRF+KG+Recency) minus N2 (Proposed, no recency tiebreak)",0.0,0.0,0.0

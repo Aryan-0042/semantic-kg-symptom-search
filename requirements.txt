@@ -1,0 +1,15 @@
+# Exact environment used for the v4 rebuild (Python 3.11.9, CUDA 12.1 build of torch).
+# legacy/old_configs/requirements_v1_v3.txt is the original (v1-v3) list; it pins torch 2.2.2 and omits
+# statsmodels and PyYAML, which do not match the venv that produced the v3 results.
+torch==2.5.1+cu121
+transformers==4.39.3
+tokenizers==0.15.2
+huggingface_hub==0.36.2
+rank-bm25==0.2.2
+scikit-learn==1.4.2
+scipy==1.13.0
+numpy==1.26.4
+pandas==2.2.2
+networkx==3.2.1
+statsmodels==0.14.6
+PyYAML==6.0.3

@@ -1,0 +1,101 @@
+sklearn 1.4.2 (v0 reconstruction depends on train_test_split behaviour)
+v4 partition: 123 dev rows, 181 test rows
+
+Per historical set
+               set                     category  queries  unique_rows  diseases  rows_in_v4_test  rows_in_v4_dev  share_of_v4_test_touched
+           v1_test               retrieval test       82           82        41               50              32                     0.276
+           v2_test               retrieval test       82           82        41               45              37                     0.249
+           v3_test               retrieval test      123          123        41               61              62                     0.337
+         v1_devval  retrieval tuning validation       41           41        41               20              21                     0.110
+         v3_devval  retrieval tuning validation       33           33        33               23              10                     0.127
+      v0_7015_test retrieval v0 (reconstructed)       46           46        27               31              15                     0.171
+v0_one_per_disease retrieval v0 (reconstructed)       41           41        41               17              24                     0.094
+     safety_benign     other task: safety texts      150          150        40               86              64                     0.475
+         triage_cv       other task: urgency CV      304          304        41              181             123                     1.000
+
+Unions
+                                   tier  union_rows  union_in_v4_dev  union_in_v4_test  v4_test_untouched
+   A: historical test sets (v1, v2, v3)         208               95               113                 68
+ B: A + tuning validation sets (v1, v3)         237              106               131                 50
+C: B + v0 reconstructed (both variants)         258              110               148                 33
+
+Pairwise row overlap between historical retrieval sets
+       set_a              set_b  shared_rows
+     v1_test            v2_test           24
+     v1_test            v3_test           31
+     v1_test          v1_devval            0
+     v1_test          v3_devval           12
+     v1_test       v0_7015_test            9
+     v1_test v0_one_per_disease           12
+     v2_test            v3_test           37
+     v2_test          v1_devval           17
+     v2_test          v3_devval            6
+     v2_test       v0_7015_test            8
+     v2_test v0_one_per_disease           16
+     v3_test          v1_devval           19
+     v3_test          v3_devval            0
+     v3_test       v0_7015_test           19
+     v3_test v0_one_per_disease           21
+   v1_devval          v3_devval            1
+   v1_devval       v0_7015_test            7
+   v1_devval v0_one_per_disease            2
+   v3_devval       v0_7015_test            5
+   v3_devval v0_one_per_disease            6
+v0_7015_test v0_one_per_disease            3
+
+v4 test rows by number of historical retrieval sets containing them
+n_historical_retrieval_sets
+0    33
+1    80
+2    41
+3    23
+4     4
+
+v4 test rows by v3 role: {'dev(index/tuning)': 120, 'test': 61}
+
+Per disease
+                                disease  rows  v4_dev  v4_test  v4_test_in_test_sets_A  v4_test_in_any_retrieval_C  v4_test_untouched_C
+(vertigo) Paroymsal  Positional Vertigo     7       3        4                       3                           4                    0
+                                   AIDS     5       3        2                       1                           2                    0
+                                   Acne     5       3        2                       2                           2                    0
+                    Alcoholic hepatitis     8       3        5                       4                           4                    1
+                                Allergy     5       3        2                       2                           2                    0
+                              Arthritis     6       3        3                       2                           3                    0
+                       Bronchial Asthma     7       3        4                       3                           3                    1
+                   Cervical spondylosis     6       3        3                       1                           2                    1
+                            Chicken pox    10       3        7                       4                           6                    1
+                    Chronic cholestasis     8       3        5                       4                           5                    0
+                            Common Cold     9       3        6                       4                           6                    0
+                                 Dengue    10       3        7                       3                           6                    1
+                               Diabetes     9       3        6                       3                           6                    0
+           Dimorphic hemmorhoids(piles)     6       3        3                       1                           2                    1
+                          Drug Reaction     6       3        3                       3                           3                    0
+                       Fungal infection     5       3        2                       1                           1                    1
+                                   GERD     7       3        4                       3                           4                    0
+                        Gastroenteritis     5       3        2                       2                           2                    0
+                           Heart attack     5       3        2                       1                           2                    0
+                            Hepatitis B     9       3        6                       3                           4                    2
+                            Hepatitis C     7       3        4                       3                           4                    0
+                            Hepatitis D    10       3        7                       5                           5                    2
+                            Hepatitis E     9       3        6                       4                           5                    1
+                           Hypertension     6       3        3                       2                           2                    1
+                        Hyperthyroidism     9       3        6                       4                           6                    0
+                           Hypoglycemia     9       3        6                       3                           4                    2
+                         Hypothyroidism     8       3        5                       4                           4                    1
+                               Impetigo     6       3        3                       3                           3                    0
+                               Jaundice     9       3        6                       3                           4                    2
+                                Malaria     8       3        5                       3                           4                    1
+                               Migraine    10       3        7                       2                           5                    2
+                        Osteoarthristis     7       3        4                       3                           3                    1
+           Paralysis (brain hemorrhage)     5       3        2                       2                           2                    0
+                    Peptic ulcer diseae     7       3        4                       3                           3                    1
+                              Pneumonia     9       3        6                       3                           5                    1
+                              Psoriasis     7       3        4                       4                           4                    0
+                           Tuberculosis     9       3        6                       3                           4                    2
+                                Typhoid     9       3        6                       2                           3                    3
+                Urinary tract infection     5       3        2                       2                           2                    0
+                         Varicose veins     8       3        5                       2                           2                    3
+                            hepatitis A     9       3        6                       3                           5                    1
+
+diseases with every v4 test row historically evaluated (C): 18 / 41
+diseases with no untouched v4 test row under A: 8

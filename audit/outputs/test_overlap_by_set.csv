@@ -1,0 +1,10 @@
+set,category,queries,unique_rows,diseases,rows_in_v4_test,rows_in_v4_dev,share_of_v4_test_touched
+v1_test,retrieval test,82,82,41,50,32,0.276
+v2_test,retrieval test,82,82,41,45,37,0.249
+v3_test,retrieval test,123,123,41,61,62,0.337
+v1_devval,retrieval tuning validation,41,41,41,20,21,0.11
+v3_devval,retrieval tuning validation,33,33,33,23,10,0.127
+v0_7015_test,retrieval v0 (reconstructed),46,46,27,31,15,0.171
+v0_one_per_disease,retrieval v0 (reconstructed),41,41,41,17,24,0.094
+safety_benign,other task: safety texts,150,150,40,86,64,0.475
+triage_cv,other task: urgency CV,304,304,41,181,123,1.0

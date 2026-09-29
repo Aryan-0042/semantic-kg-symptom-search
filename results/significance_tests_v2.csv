@@ -1,0 +1,5 @@
+comparison,n_pairs,b_right_a_wrong,a_right_b_wrong,mcnemar_exact_p,note
+Hybrid vs Proposed (RRF+KG+Recency),82,5,1,0.21875,
+Hybrid+KG (no recency) vs Proposed (RRF+KG+Recency),82,3,1,0.625,
+Proposed (CRFS) vs Proposed (RRF+KG+Recency),82,3,1,0.625,
+Dense-only vs Proposed (RRF+KG+Recency),82,17,3,0.0025768280029296875,

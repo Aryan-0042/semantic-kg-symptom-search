@@ -1,0 +1,43 @@
+v1                                 BM25-only                            correct= 78 stored= 78 per-query diffs=0
+v1                                 Dense-only                           correct= 64 stored= 64 per-query diffs=0
+v1                                 Hybrid                               correct= 78 stored= 78 per-query diffs=0
+v1                                 Hybrid+KG (no recency)               correct= 80 stored= 80 per-query diffs=0
+v1                                 Proposed (CRFS)                      correct= 80 stored= 80 per-query diffs=0
+v2                                 BM25-only                            correct= 62 stored= 62 per-query diffs=0
+v2                                 Dense-only                           correct= 58 stored= 58 per-query diffs=0
+v2                                 Hybrid                               correct= 68 stored= 68 per-query diffs=0
+v2                                 Hybrid+KG (no recency)               correct= 70 stored= 70 per-query diffs=0
+v2                                 Proposed (CRFS)                      correct= 70 stored= 70 per-query diffs=0
+v2                                 Proposed (RRF+KG+Recency)            correct= 72 stored= 72 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 BM25-only                            correct= 81 stored= 81 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 Dense-only                           correct= 80 stored= 80 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 Hybrid                               correct= 88 stored= 88 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 Hybrid+KG (no recency)               correct=107 stored=107 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 Proposed (CRFS)                      correct=108 stored=108 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 Proposed (RRF+KG+Recency)            correct= 99 stored= 99 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 N1 (Linear+KG @ shortlist)           correct= 99 stored= 99 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=2026-08-28 N2 (Proposed, no recency tiebreak)   correct= 99 stored= 99 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   BM25-only                            correct= 81 stored= 81 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   Dense-only                           correct= 80 stored= 80 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   Hybrid                               correct= 88 stored= 88 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   Hybrid+KG (no recency)               correct=107 stored=107 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   Proposed (CRFS)                      correct=108 stored=108 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   Proposed (RRF+KG+Recency)            correct= 99 stored= 99 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   N1 (Linear+KG @ shortlist)           correct= 99 stored= 99 per-query diffs=0
+v3 pool=split_dev_v3.csv ref=now   N2 (Proposed, no recency tiebreak)   correct= 99 stored= 99 per-query diffs=0
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 BM25-only                            correct= 76 stored= 81 per-query diffs=13
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 Dense-only                           correct= 79 stored= 80 per-query diffs=3
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 Hybrid                               correct= 88 stored= 88 per-query diffs=8
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 Hybrid+KG (no recency)               correct=107 stored=107 per-query diffs=0
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 Proposed (CRFS)                      correct=106 stored=108 per-query diffs=2
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 Proposed (RRF+KG+Recency)            correct=100 stored= 99 per-query diffs=7
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 N1 (Linear+KG @ shortlist)           correct=101 stored= 99 per-query diffs=8
+v3 pool=split_dev_train_v3.csv ref=2026-08-28 N2 (Proposed, no recency tiebreak)   correct=100 stored= 99 per-query diffs=7
+v3 pool=split_dev_train_v3.csv ref=now BM25-only                            correct= 76 stored= 81 per-query diffs=13
+v3 pool=split_dev_train_v3.csv ref=now Dense-only                           correct= 79 stored= 80 per-query diffs=3
+v3 pool=split_dev_train_v3.csv ref=now Hybrid                               correct= 88 stored= 88 per-query diffs=8
+v3 pool=split_dev_train_v3.csv ref=now Hybrid+KG (no recency)               correct=107 stored=107 per-query diffs=0
+v3 pool=split_dev_train_v3.csv ref=now Proposed (CRFS)                      correct=106 stored=108 per-query diffs=2
+v3 pool=split_dev_train_v3.csv ref=now Proposed (RRF+KG+Recency)            correct=100 stored= 99 per-query diffs=7
+v3 pool=split_dev_train_v3.csv ref=now N1 (Linear+KG @ shortlist)           correct=101 stored= 99 per-query diffs=8
+v3 pool=split_dev_train_v3.csv ref=now N2 (Proposed, no recency tiebreak)   correct=100 stored= 99 per-query diffs=7

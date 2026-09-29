@@ -1,0 +1,329 @@
+Method,Disease,N,Correct,Accuracy
+BM25-only,(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+BM25-only,AIDS,3,3,100.0
+BM25-only,Acne,3,3,100.0
+BM25-only,Alcoholic hepatitis,3,3,100.0
+BM25-only,Allergy,3,1,33.33
+BM25-only,Arthritis,3,3,100.0
+BM25-only,Bronchial Asthma,3,2,66.67
+BM25-only,Cervical spondylosis,3,3,100.0
+BM25-only,Chicken pox,3,2,66.67
+BM25-only,Chronic cholestasis,3,1,33.33
+BM25-only,Common Cold,3,3,100.0
+BM25-only,Dengue,3,0,0.0
+BM25-only,Diabetes,3,2,66.67
+BM25-only,Dimorphic hemmorhoids(piles),3,3,100.0
+BM25-only,Drug Reaction,3,2,66.67
+BM25-only,Fungal infection,3,3,100.0
+BM25-only,GERD,3,1,33.33
+BM25-only,Gastroenteritis,3,0,0.0
+BM25-only,Heart attack,3,1,33.33
+BM25-only,Hepatitis B,3,3,100.0
+BM25-only,Hepatitis C,3,1,33.33
+BM25-only,Hepatitis D,3,0,0.0
+BM25-only,Hepatitis E,3,0,0.0
+BM25-only,Hypertension,3,3,100.0
+BM25-only,Hyperthyroidism,3,2,66.67
+BM25-only,Hypoglycemia,3,3,100.0
+BM25-only,Hypothyroidism,3,2,66.67
+BM25-only,Impetigo,3,3,100.0
+BM25-only,Jaundice,3,1,33.33
+BM25-only,Malaria,3,1,33.33
+BM25-only,Migraine,3,2,66.67
+BM25-only,Osteoarthristis,3,1,33.33
+BM25-only,Paralysis (brain hemorrhage),3,1,33.33
+BM25-only,Peptic ulcer diseae,3,1,33.33
+BM25-only,Pneumonia,3,3,100.0
+BM25-only,Psoriasis,3,3,100.0
+BM25-only,Tuberculosis,3,1,33.33
+BM25-only,Typhoid,3,1,33.33
+BM25-only,Urinary tract infection,3,3,100.0
+BM25-only,Varicose veins,3,3,100.0
+BM25-only,hepatitis A,3,0,0.0
+Dense-only,(vertigo) Paroymsal  Positional Vertigo,3,1,33.33
+Dense-only,AIDS,3,3,100.0
+Dense-only,Acne,3,0,0.0
+Dense-only,Alcoholic hepatitis,3,3,100.0
+Dense-only,Allergy,3,3,100.0
+Dense-only,Arthritis,3,3,100.0
+Dense-only,Bronchial Asthma,3,3,100.0
+Dense-only,Cervical spondylosis,3,3,100.0
+Dense-only,Chicken pox,3,0,0.0
+Dense-only,Chronic cholestasis,3,0,0.0
+Dense-only,Common Cold,3,1,33.33
+Dense-only,Dengue,3,0,0.0
+Dense-only,Diabetes,3,3,100.0
+Dense-only,Dimorphic hemmorhoids(piles),3,3,100.0
+Dense-only,Drug Reaction,3,3,100.0
+Dense-only,Fungal infection,3,3,100.0
+Dense-only,GERD,3,3,100.0
+Dense-only,Gastroenteritis,3,3,100.0
+Dense-only,Heart attack,3,3,100.0
+Dense-only,Hepatitis B,3,2,66.67
+Dense-only,Hepatitis C,3,3,100.0
+Dense-only,Hepatitis D,3,0,0.0
+Dense-only,Hepatitis E,3,0,0.0
+Dense-only,Hypertension,3,0,0.0
+Dense-only,Hyperthyroidism,3,0,0.0
+Dense-only,Hypoglycemia,3,2,66.67
+Dense-only,Hypothyroidism,3,3,100.0
+Dense-only,Impetigo,3,3,100.0
+Dense-only,Jaundice,3,1,33.33
+Dense-only,Malaria,3,1,33.33
+Dense-only,Migraine,3,3,100.0
+Dense-only,Osteoarthristis,3,1,33.33
+Dense-only,Paralysis (brain hemorrhage),3,1,33.33
+Dense-only,Peptic ulcer diseae,3,1,33.33
+Dense-only,Pneumonia,3,3,100.0
+Dense-only,Psoriasis,3,3,100.0
+Dense-only,Tuberculosis,3,0,0.0
+Dense-only,Typhoid,3,3,100.0
+Dense-only,Urinary tract infection,3,2,66.67
+Dense-only,Varicose veins,3,3,100.0
+Dense-only,hepatitis A,3,3,100.0
+Hybrid,(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+Hybrid,AIDS,3,3,100.0
+Hybrid,Acne,3,3,100.0
+Hybrid,Alcoholic hepatitis,3,3,100.0
+Hybrid,Allergy,3,1,33.33
+Hybrid,Arthritis,3,3,100.0
+Hybrid,Bronchial Asthma,3,3,100.0
+Hybrid,Cervical spondylosis,3,3,100.0
+Hybrid,Chicken pox,3,3,100.0
+Hybrid,Chronic cholestasis,3,1,33.33
+Hybrid,Common Cold,3,3,100.0
+Hybrid,Dengue,3,0,0.0
+Hybrid,Diabetes,3,3,100.0
+Hybrid,Dimorphic hemmorhoids(piles),3,3,100.0
+Hybrid,Drug Reaction,3,3,100.0
+Hybrid,Fungal infection,3,3,100.0
+Hybrid,GERD,3,2,66.67
+Hybrid,Gastroenteritis,3,0,0.0
+Hybrid,Heart attack,3,1,33.33
+Hybrid,Hepatitis B,3,3,100.0
+Hybrid,Hepatitis C,3,1,33.33
+Hybrid,Hepatitis D,3,0,0.0
+Hybrid,Hepatitis E,3,0,0.0
+Hybrid,Hypertension,3,3,100.0
+Hybrid,Hyperthyroidism,3,3,100.0
+Hybrid,Hypoglycemia,3,3,100.0
+Hybrid,Hypothyroidism,3,3,100.0
+Hybrid,Impetigo,3,3,100.0
+Hybrid,Jaundice,3,3,100.0
+Hybrid,Malaria,3,1,33.33
+Hybrid,Migraine,3,3,100.0
+Hybrid,Osteoarthristis,3,1,33.33
+Hybrid,Paralysis (brain hemorrhage),3,1,33.33
+Hybrid,Peptic ulcer diseae,3,3,100.0
+Hybrid,Pneumonia,3,3,100.0
+Hybrid,Psoriasis,3,3,100.0
+Hybrid,Tuberculosis,3,1,33.33
+Hybrid,Typhoid,3,1,33.33
+Hybrid,Urinary tract infection,3,3,100.0
+Hybrid,Varicose veins,3,3,100.0
+Hybrid,hepatitis A,3,0,0.0
+Hybrid+KG (no recency),(vertigo) Paroymsal  Positional Vertigo,3,3,100.0
+Hybrid+KG (no recency),AIDS,3,3,100.0
+Hybrid+KG (no recency),Acne,3,3,100.0
+Hybrid+KG (no recency),Alcoholic hepatitis,3,3,100.0
+Hybrid+KG (no recency),Allergy,3,3,100.0
+Hybrid+KG (no recency),Arthritis,3,3,100.0
+Hybrid+KG (no recency),Bronchial Asthma,3,3,100.0
+Hybrid+KG (no recency),Cervical spondylosis,3,3,100.0
+Hybrid+KG (no recency),Chicken pox,3,3,100.0
+Hybrid+KG (no recency),Chronic cholestasis,3,1,33.33
+Hybrid+KG (no recency),Common Cold,3,3,100.0
+Hybrid+KG (no recency),Dengue,3,3,100.0
+Hybrid+KG (no recency),Diabetes,3,3,100.0
+Hybrid+KG (no recency),Dimorphic hemmorhoids(piles),3,3,100.0
+Hybrid+KG (no recency),Drug Reaction,3,3,100.0
+Hybrid+KG (no recency),Fungal infection,3,3,100.0
+Hybrid+KG (no recency),GERD,3,3,100.0
+Hybrid+KG (no recency),Gastroenteritis,3,1,33.33
+Hybrid+KG (no recency),Heart attack,3,3,100.0
+Hybrid+KG (no recency),Hepatitis B,3,3,100.0
+Hybrid+KG (no recency),Hepatitis C,3,3,100.0
+Hybrid+KG (no recency),Hepatitis D,3,0,0.0
+Hybrid+KG (no recency),Hepatitis E,3,3,100.0
+Hybrid+KG (no recency),Hypertension,3,3,100.0
+Hybrid+KG (no recency),Hyperthyroidism,3,3,100.0
+Hybrid+KG (no recency),Hypoglycemia,3,3,100.0
+Hybrid+KG (no recency),Hypothyroidism,3,3,100.0
+Hybrid+KG (no recency),Impetigo,3,3,100.0
+Hybrid+KG (no recency),Jaundice,3,3,100.0
+Hybrid+KG (no recency),Malaria,3,1,33.33
+Hybrid+KG (no recency),Migraine,3,3,100.0
+Hybrid+KG (no recency),Osteoarthristis,3,2,66.67
+Hybrid+KG (no recency),Paralysis (brain hemorrhage),3,1,33.33
+Hybrid+KG (no recency),Peptic ulcer diseae,3,3,100.0
+Hybrid+KG (no recency),Pneumonia,3,3,100.0
+Hybrid+KG (no recency),Psoriasis,3,3,100.0
+Hybrid+KG (no recency),Tuberculosis,3,1,33.33
+Hybrid+KG (no recency),Typhoid,3,3,100.0
+Hybrid+KG (no recency),Urinary tract infection,3,3,100.0
+Hybrid+KG (no recency),Varicose veins,3,3,100.0
+Hybrid+KG (no recency),hepatitis A,3,1,33.33
+Proposed (CRFS),(vertigo) Paroymsal  Positional Vertigo,3,3,100.0
+Proposed (CRFS),AIDS,3,3,100.0
+Proposed (CRFS),Acne,3,3,100.0
+Proposed (CRFS),Alcoholic hepatitis,3,3,100.0
+Proposed (CRFS),Allergy,3,3,100.0
+Proposed (CRFS),Arthritis,3,3,100.0
+Proposed (CRFS),Bronchial Asthma,3,3,100.0
+Proposed (CRFS),Cervical spondylosis,3,3,100.0
+Proposed (CRFS),Chicken pox,3,3,100.0
+Proposed (CRFS),Chronic cholestasis,3,1,33.33
+Proposed (CRFS),Common Cold,3,3,100.0
+Proposed (CRFS),Dengue,3,3,100.0
+Proposed (CRFS),Diabetes,3,3,100.0
+Proposed (CRFS),Dimorphic hemmorhoids(piles),3,3,100.0
+Proposed (CRFS),Drug Reaction,3,3,100.0
+Proposed (CRFS),Fungal infection,3,3,100.0
+Proposed (CRFS),GERD,3,3,100.0
+Proposed (CRFS),Gastroenteritis,3,1,33.33
+Proposed (CRFS),Heart attack,3,3,100.0
+Proposed (CRFS),Hepatitis B,3,3,100.0
+Proposed (CRFS),Hepatitis C,3,3,100.0
+Proposed (CRFS),Hepatitis D,3,0,0.0
+Proposed (CRFS),Hepatitis E,3,3,100.0
+Proposed (CRFS),Hypertension,3,3,100.0
+Proposed (CRFS),Hyperthyroidism,3,3,100.0
+Proposed (CRFS),Hypoglycemia,3,3,100.0
+Proposed (CRFS),Hypothyroidism,3,3,100.0
+Proposed (CRFS),Impetigo,3,3,100.0
+Proposed (CRFS),Jaundice,3,2,66.67
+Proposed (CRFS),Malaria,3,1,33.33
+Proposed (CRFS),Migraine,3,3,100.0
+Proposed (CRFS),Osteoarthristis,3,2,66.67
+Proposed (CRFS),Paralysis (brain hemorrhage),3,1,33.33
+Proposed (CRFS),Peptic ulcer diseae,3,3,100.0
+Proposed (CRFS),Pneumonia,3,3,100.0
+Proposed (CRFS),Psoriasis,3,3,100.0
+Proposed (CRFS),Tuberculosis,3,1,33.33
+Proposed (CRFS),Typhoid,3,3,100.0
+Proposed (CRFS),Urinary tract infection,3,3,100.0
+Proposed (CRFS),Varicose veins,3,3,100.0
+Proposed (CRFS),hepatitis A,3,1,33.33
+Proposed (RRF+KG+Recency),(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+Proposed (RRF+KG+Recency),AIDS,3,3,100.0
+Proposed (RRF+KG+Recency),Acne,3,3,100.0
+Proposed (RRF+KG+Recency),Alcoholic hepatitis,3,3,100.0
+Proposed (RRF+KG+Recency),Allergy,3,2,66.67
+Proposed (RRF+KG+Recency),Arthritis,3,3,100.0
+Proposed (RRF+KG+Recency),Bronchial Asthma,3,3,100.0
+Proposed (RRF+KG+Recency),Cervical spondylosis,3,3,100.0
+Proposed (RRF+KG+Recency),Chicken pox,3,2,66.67
+Proposed (RRF+KG+Recency),Chronic cholestasis,3,1,33.33
+Proposed (RRF+KG+Recency),Common Cold,3,3,100.0
+Proposed (RRF+KG+Recency),Dengue,3,3,100.0
+Proposed (RRF+KG+Recency),Diabetes,3,3,100.0
+Proposed (RRF+KG+Recency),Dimorphic hemmorhoids(piles),3,3,100.0
+Proposed (RRF+KG+Recency),Drug Reaction,3,3,100.0
+Proposed (RRF+KG+Recency),Fungal infection,3,3,100.0
+Proposed (RRF+KG+Recency),GERD,3,3,100.0
+Proposed (RRF+KG+Recency),Gastroenteritis,3,3,100.0
+Proposed (RRF+KG+Recency),Heart attack,3,2,66.67
+Proposed (RRF+KG+Recency),Hepatitis B,3,3,100.0
+Proposed (RRF+KG+Recency),Hepatitis C,3,2,66.67
+Proposed (RRF+KG+Recency),Hepatitis D,3,0,0.0
+Proposed (RRF+KG+Recency),Hepatitis E,3,1,33.33
+Proposed (RRF+KG+Recency),Hypertension,3,3,100.0
+Proposed (RRF+KG+Recency),Hyperthyroidism,3,3,100.0
+Proposed (RRF+KG+Recency),Hypoglycemia,3,3,100.0
+Proposed (RRF+KG+Recency),Hypothyroidism,3,3,100.0
+Proposed (RRF+KG+Recency),Impetigo,3,3,100.0
+Proposed (RRF+KG+Recency),Jaundice,3,2,66.67
+Proposed (RRF+KG+Recency),Malaria,3,1,33.33
+Proposed (RRF+KG+Recency),Migraine,3,3,100.0
+Proposed (RRF+KG+Recency),Osteoarthristis,3,2,66.67
+Proposed (RRF+KG+Recency),Paralysis (brain hemorrhage),3,1,33.33
+Proposed (RRF+KG+Recency),Peptic ulcer diseae,3,3,100.0
+Proposed (RRF+KG+Recency),Pneumonia,3,3,100.0
+Proposed (RRF+KG+Recency),Psoriasis,3,3,100.0
+Proposed (RRF+KG+Recency),Tuberculosis,3,1,33.33
+Proposed (RRF+KG+Recency),Typhoid,3,2,66.67
+Proposed (RRF+KG+Recency),Urinary tract infection,3,3,100.0
+Proposed (RRF+KG+Recency),Varicose veins,3,3,100.0
+Proposed (RRF+KG+Recency),hepatitis A,3,1,33.33
+N1 (Linear+KG @ Top-3),(vertigo) Paroymsal  Positional Vertigo,3,3,100.0
+N1 (Linear+KG @ Top-3),AIDS,3,3,100.0
+N1 (Linear+KG @ Top-3),Acne,3,3,100.0
+N1 (Linear+KG @ Top-3),Alcoholic hepatitis,3,3,100.0
+N1 (Linear+KG @ Top-3),Allergy,3,3,100.0
+N1 (Linear+KG @ Top-3),Arthritis,3,3,100.0
+N1 (Linear+KG @ Top-3),Bronchial Asthma,3,3,100.0
+N1 (Linear+KG @ Top-3),Cervical spondylosis,3,3,100.0
+N1 (Linear+KG @ Top-3),Chicken pox,3,3,100.0
+N1 (Linear+KG @ Top-3),Chronic cholestasis,3,1,33.33
+N1 (Linear+KG @ Top-3),Common Cold,3,3,100.0
+N1 (Linear+KG @ Top-3),Dengue,3,3,100.0
+N1 (Linear+KG @ Top-3),Diabetes,3,3,100.0
+N1 (Linear+KG @ Top-3),Dimorphic hemmorhoids(piles),3,3,100.0
+N1 (Linear+KG @ Top-3),Drug Reaction,3,3,100.0
+N1 (Linear+KG @ Top-3),Fungal infection,3,3,100.0
+N1 (Linear+KG @ Top-3),GERD,3,3,100.0
+N1 (Linear+KG @ Top-3),Gastroenteritis,3,1,33.33
+N1 (Linear+KG @ Top-3),Heart attack,3,3,100.0
+N1 (Linear+KG @ Top-3),Hepatitis B,3,3,100.0
+N1 (Linear+KG @ Top-3),Hepatitis C,3,3,100.0
+N1 (Linear+KG @ Top-3),Hepatitis D,3,0,0.0
+N1 (Linear+KG @ Top-3),Hepatitis E,3,3,100.0
+N1 (Linear+KG @ Top-3),Hypertension,3,3,100.0
+N1 (Linear+KG @ Top-3),Hyperthyroidism,3,3,100.0
+N1 (Linear+KG @ Top-3),Hypoglycemia,3,3,100.0
+N1 (Linear+KG @ Top-3),Hypothyroidism,3,3,100.0
+N1 (Linear+KG @ Top-3),Impetigo,3,3,100.0
+N1 (Linear+KG @ Top-3),Jaundice,3,3,100.0
+N1 (Linear+KG @ Top-3),Malaria,3,1,33.33
+N1 (Linear+KG @ Top-3),Migraine,3,3,100.0
+N1 (Linear+KG @ Top-3),Osteoarthristis,3,2,66.67
+N1 (Linear+KG @ Top-3),Paralysis (brain hemorrhage),3,1,33.33
+N1 (Linear+KG @ Top-3),Peptic ulcer diseae,3,3,100.0
+N1 (Linear+KG @ Top-3),Pneumonia,3,3,100.0
+N1 (Linear+KG @ Top-3),Psoriasis,3,3,100.0
+N1 (Linear+KG @ Top-3),Tuberculosis,3,1,33.33
+N1 (Linear+KG @ Top-3),Typhoid,3,3,100.0
+N1 (Linear+KG @ Top-3),Urinary tract infection,3,3,100.0
+N1 (Linear+KG @ Top-3),Varicose veins,3,3,100.0
+N1 (Linear+KG @ Top-3),hepatitis A,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",(vertigo) Paroymsal  Positional Vertigo,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",AIDS,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Acne,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Alcoholic hepatitis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Allergy,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Arthritis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Bronchial Asthma,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Cervical spondylosis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Chicken pox,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Chronic cholestasis,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Common Cold,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Dengue,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Diabetes,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Dimorphic hemmorhoids(piles),3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Drug Reaction,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Fungal infection,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",GERD,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Gastroenteritis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Heart attack,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis B,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis C,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis D,3,0,0.0
+"N2 (RRF+KG @ Top-3, no recency)",Hepatitis E,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Hypertension,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hyperthyroidism,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hypoglycemia,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Hypothyroidism,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Impetigo,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Jaundice,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Malaria,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Migraine,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Osteoarthristis,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Paralysis (brain hemorrhage),3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Peptic ulcer diseae,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Pneumonia,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Psoriasis,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Tuberculosis,3,1,33.33
+"N2 (RRF+KG @ Top-3, no recency)",Typhoid,3,2,66.67
+"N2 (RRF+KG @ Top-3, no recency)",Urinary tract infection,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",Varicose veins,3,3,100.0
+"N2 (RRF+KG @ Top-3, no recency)",hepatitis A,3,1,33.33

@@ -1,0 +1,67 @@
+================================================================================
+RRF SHORTLIST DIAGNOSTIC — V3
+================================================================================
+
+[1] DATA / CORPUS
+Corpus documents: 104
+Retrieval rows expected: 104
+Dev-train rows: 148
+Dev-val rows: 33
+Validation queries: 33
+Validation diseases: 33
+RRF k: 60
+
+[2] RRF IMPLEMENTATION CHECK
+009:     shortlist_n,
+011:     top_k=20,
+019:     shortlist_n: size of the RRF-selected candidate pool handed to the
+037:         shortlist = np.argsort(rrf_scores)[::-1][:shortlist_n]
+038:         reranked = kg_rerank(shortlist, rrf_scores, corpus_df, query, graph)
+041:         # run_condition(), applied over the reranked shortlist instead of
+047:         for rank, idx in enumerate(reranked[:top_k], start=1):
+079:         "shortlist_n": shortlist_n,
+
+Contains [:shortlist_n]: True
+Passes shortlist to kg_rerank(): True
+
+[3] BUILDING REAL V3 DEV-TRAIN RETRIEVAL INFRASTRUCTURE
+Retrieval texts: 104
+Encoding guideline corpus...
+Warming up...
+Warm-up complete.
+
+[4] DECISIVE 5 VS 50 CHECK
+
+Running shortlist_n=5...
+shortlist_n=5 | Accuracy=100.00 | F1=100.00 | MRR=1.000 | Correct=33/33
+
+Running shortlist_n=50...
+shortlist_n=50 | Accuracy=96.97 | F1=95.96 | MRR=0.985 | Correct=32/33
+
+5 vs 50 identical aggregate metrics: False
+5 vs 50 identical per-query correctness: False
+Differing validation query indices: [17]
+
+[5] FULL 10/15/20/30/50 RECHECK
+Running shortlist_n=10...
+  10: Acc=96.97, F1=95.96, MRR=0.985, Correct=32/33
+Running shortlist_n=15...
+  15: Acc=96.97, F1=95.96, MRR=0.985, Correct=32/33
+Running shortlist_n=20...
+  20: Acc=96.97, F1=95.96, MRR=0.985, Correct=32/33
+Running shortlist_n=30...
+  30: Acc=96.97, F1=95.96, MRR=0.985, Correct=32/33
+Running shortlist_n=50...
+  50: Acc=96.97, F1=95.96, MRR=0.985, Correct=32/33
+
+Grid results:
+ shortlist_n  Accuracy    F1   MRR  Correct_count  N
+          10     96.97 95.96 0.985             32 33
+          15     96.97 95.96 0.985             32 33
+          20     96.97 95.96 0.985             32 33
+          30     96.97 95.96 0.985             32 33
+          50     96.97 95.96 0.985             32 33
+
+[6] INTERPRETATION
+Corpus has >=10 documents, so shortlist 10..50 genuinely truncate the corpus.
+5 and 50 produce different predictions; shortlist_n is affecting the decision path.

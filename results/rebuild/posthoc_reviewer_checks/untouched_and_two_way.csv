@@ -1,0 +1,9 @@
+analysis,lexicon,id,control,group,n_queries,delta_mrr,ci_condition,ci_two_way,two_way_excludes_zero,untouched_n_queries,untouched_n_conditions,untouched_delta_mrr,untouched_ci,untouched_p_uncorrected
+POST-HOC (not pre-registered),B (Gemini),H1,Hybrid+KG-exact,lay_full,181,0.3022539145535333,"[0.198, 0.400]","[0.185, 0.410]",True,33,23,0.41502580358782715,"[0.261, 0.560]",1.999980000199998e-05
+POST-HOC (not pre-registered),B (Gemini),H2,Hybrid+KG-exact,lay_partial,349,0.13689690301956786,"[0.073, 0.199]","[0.060, 0.215]",True,66,23,0.12698497008644472,"[0.032, 0.229]",0.01823981760182398
+POST-HOC (not pre-registered),B (Gemini),H3,Hybrid,lay_full,181,0.2898449861883192,"[0.176, 0.399]","[0.163, 0.408]",True,33,23,0.37383952648918123,"[0.205, 0.537]",0.0002899971000289997
+POST-HOC (not pre-registered),B (Gemini),H4,Hybrid,lay_partial,349,0.14122645513059648,"[0.073, 0.208]","[0.061, 0.223]",True,66,23,0.1297828324208489,"[0.031, 0.237]",0.02013979860201398
+POST-HOC (not pre-registered),C (co-author),H1,Hybrid+KG-exact,lay_full,181,0.32777514137880437,"[0.221, 0.428]","[0.209, 0.436]",True,33,23,0.3638299856214295,"[0.189, 0.537]",0.0007199928000719992
+POST-HOC (not pre-registered),C (co-author),H2,Hybrid+KG-exact,lay_partial,349,0.14828764253323734,"[0.089, 0.206]","[0.070, 0.225]",True,66,23,0.27813907295171714,"[0.133, 0.425]",0.0011899881001189987
+POST-HOC (not pre-registered),C (co-author),H3,Hybrid,lay_full,181,0.29009261212168946,"[0.186, 0.392]","[0.175, 0.402]",True,33,23,0.34779046958191345,"[0.173, 0.522]",0.0013399866001339987
+POST-HOC (not pre-registered),C (co-author),H4,Hybrid,lay_partial,349,0.1425569835074494,"[0.084, 0.201]","[0.064, 0.221]",True,66,23,0.27813907295171714,"[0.133, 0.425]",0.0011899881001189987

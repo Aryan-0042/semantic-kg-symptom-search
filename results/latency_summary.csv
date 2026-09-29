@@ -1,0 +1,2 @@
+method,hardware_mode,n_queries,n_repeats,total_measurements,mean_ms,std_ms,median_ms,p95_ms,min_ms,max_ms,throughput_qps,shortlist_n,rrf_k
+Proposed (RRF+KG+Recency),local,82,3,246,28.840632926861932,5.432480667536069,27.112400000078196,43.65507499983323,23.14600000045175,48.86450000049081,34.67330285489706,15,60

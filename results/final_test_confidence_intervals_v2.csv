@@ -1,0 +1,7 @@
+Method,N,Correct,Accuracy,Wilson_95CI_low,Wilson_95CI_high
+BM25-only,82,62,75.61,65.31,83.62
+Dense-only,82,58,70.73,60.13,79.47
+Hybrid,82,68,82.93,73.36,89.55
+Hybrid+KG (no recency),82,70,85.37,76.14,91.43
+Proposed (CRFS),82,70,85.37,76.14,91.43
+Proposed (RRF+KG+Recency),82,72,87.8,78.99,93.24

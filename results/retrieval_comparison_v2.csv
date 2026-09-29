@@ -1,0 +1,7 @@
+Method,Accuracy,Precision,Recall,F1,MRR,Latency_ms_mean,Latency_ms_std,N,shortlist_n,rrf_k
+BM25-only,75.61,83.68,75.61,75.91,0.822,1.03,0.42,82,,
+Dense-only,70.73,67.12,70.73,65.57,0.79,19.99,3.41,82,,
+Hybrid,82.93,89.23,82.93,83.01,0.879,24.4,6.56,82,,
+Hybrid+KG (no recency),85.37,88.7,85.37,84.92,0.895,38.44,6.87,82,,
+Proposed (CRFS),85.37,88.7,85.37,84.92,0.895,78.32,17.7,82,,
+Proposed (RRF+KG+Recency),87.8,90.81,87.8,86.76,0.909,20.8,4.14,82,15.0,60.0

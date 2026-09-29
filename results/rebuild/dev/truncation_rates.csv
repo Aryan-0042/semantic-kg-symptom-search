@@ -1,0 +1,7 @@
+lexicon,condition,n,median_tokens,max_tokens,truncated_at_64,truncated_at_128,truncated_at_256,truncated_at_512
+A,lay_full,123,48.0,131,0.34959349593495936,0.016260162601626018,0.0,0.0
+A,lay_partial_k2,123,18.0,27,0.0,0.0,0.0,0.0
+A,lay_partial_k3,104,26.0,39,0.0,0.0,0.0,0.0
+none,canonical_full,123,21.0,59,0.0,0.0,0.0,0.0
+none,canonical_partial_k2,123,8.0,14,0.0,0.0,0.0,0.0
+none,canonical_partial_k3,104,11.0,18,0.0,0.0,0.0,0.0

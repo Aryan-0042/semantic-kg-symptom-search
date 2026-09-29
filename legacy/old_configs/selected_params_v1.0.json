@@ -1,0 +1,34 @@
+{
+  "params": {
+    "query_max_length": 64,
+    "alpha": 0.3,
+    "C": 10.0,
+    "linker": "sapbert",
+    "tau": 0.55,
+    "beta": 1.0,
+    "beta_exact_tuned": 0.45,
+    "beta_substring_tuned": 0.6,
+    "pool_beta": {
+      "exact:3": 0.35,
+      "exact:5": 0.45,
+      "exact:10": 0.45,
+      "exact:20": 0.45,
+      "exact:all": 0.45,
+      "linked:3": 1.0,
+      "linked:5": 1.0,
+      "linked:10": 1.0,
+      "linked:20": 1.0,
+      "linked:all": 1.0
+    }
+  },
+  "protocol_version": "1.0",
+  "objective": "mean over the 4 groups of the group MRR (lexicon A, development LORO)",
+  "n_dev_rows": 123,
+  "n_dev_queries": 700,
+  "lexicon_A_sha256": "fb46fdcf666786eaaab8fbd2259e8988657a063ffeefcc9aeb35c1d7835ec6b5",
+  "git": {
+    "commit": "e2652045011a9f086ef8c257785ffa3f3f988a17",
+    "dirty": true
+  },
+  "query_length_is_standard": true
+}

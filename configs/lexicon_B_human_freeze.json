@@ -1,0 +1,7 @@
+{
+  "file": "data/lexicons/lexicon_B_human.csv",
+  "sha256": "ea4bf24d0bb0c5596a95daf487bfb584d7426b6d5655c97fd5bdf93fd0f576b1",
+  "frozen_on": "2026-09-29",
+  "author": "co-author of the study, hand-written without access to lexicon A, the Gemini lexicon B, code or results (as stated by the project lead)",
+  "role": "second test lexicon, evaluated once with the frozen system after the primary final evaluation; reported alongside, not replacing, the Gemini lexicon B results"
+}

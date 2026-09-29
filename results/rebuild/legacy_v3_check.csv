@@ -1,0 +1,9 @@
+method,stored_correct,legacy_mode_correct,n,per_query_diffs
+BM25-only,81,81,123,0
+Dense-only,80,80,123,0
+Hybrid,88,88,123,0
+Hybrid+KG (no recency),107,107,123,0
+Proposed (CRFS),108,108,123,0
+Proposed (RRF+KG+Recency),99,99,123,0
+N1 (Linear+KG @ shortlist),99,99,123,0
+"N2 (Proposed, no recency tiebreak)",99,99,123,0

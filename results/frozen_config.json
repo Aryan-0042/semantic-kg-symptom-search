@@ -1,0 +1,17 @@
+{
+  "selected_weights": {
+    "w_bm25": 0.4,
+    "w_dense": 0.0,
+    "w_kg": 0.6,
+    "w_recency": 0.0
+  },
+  "objective": "macro_F1_on_dev_val",
+  "dev_val_f1": 100.0,
+  "dev_val_accuracy": 100.0,
+  "dev_val_mrr": 1.0,
+  "n_combinations_searched": 286,
+  "search_step": 0.1,
+  "n_val_queries": 41,
+  "selected_at": "2026-08-06T16:45:45.893191",
+  "note": "Selected using data/split_dev_train.csv and data/split_dev_val.csv ONLY. data/split_test_final.csv was never loaded by this script."
+}

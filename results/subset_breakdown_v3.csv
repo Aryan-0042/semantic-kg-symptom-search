@@ -1,0 +1,17 @@
+Method,Subset,N,Correct,Accuracy
+BM25-only,canonical,41,36,87.8
+BM25-only,paraphrased,82,45,54.88
+Dense-only,canonical,41,30,73.17
+Dense-only,paraphrased,82,50,60.98
+Hybrid,canonical,41,36,87.8
+Hybrid,paraphrased,82,52,63.41
+Hybrid+KG (no recency),canonical,41,40,97.56
+Hybrid+KG (no recency),paraphrased,82,67,81.71
+Proposed (CRFS),canonical,41,41,100.0
+Proposed (CRFS),paraphrased,82,67,81.71
+Proposed (RRF+KG+Recency),canonical,41,39,95.12
+Proposed (RRF+KG+Recency),paraphrased,82,60,73.17
+N1 (Linear+KG @ shortlist),canonical,41,39,95.12
+N1 (Linear+KG @ shortlist),paraphrased,82,60,73.17
+"N2 (Proposed, no recency tiebreak)",canonical,41,39,95.12
+"N2 (Proposed, no recency tiebreak)",paraphrased,82,60,73.17

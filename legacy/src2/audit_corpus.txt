@@ -1,0 +1,69 @@
+"""
+audit_corpus.py
+
+Content-hash audit of data/guideline_corpus.jsonl. Detects chunks whose
+TEXT is duplicated across different disease_tag values -- the pattern
+predicted in the audit for diseases that share a source URL (e.g. the
+hepatitis family mapped to a single generic MedlinePlus page).
+
+This script only REPORTS. It does not modify the corpus. Fixing (finding
+a more specific source page, or explicitly merging/flagging affected
+diseases) is a manual decision to be made after reading the report.
+"""
+import hashlib
+import pandas as pd
+
+IN_PATH = "data/guideline_corpus.jsonl"
+OUT_PATH = "results/corpus_dedup_report.csv"
+
+
+def main():
+    df = pd.read_json(IN_PATH, lines=True)
+    df["text_hash"] = df["text"].apply(lambda t: hashlib.md5(str(t).encode("utf-8")).hexdigest())
+
+    dup_hashes = df[df.duplicated("text_hash", keep=False)]["text_hash"].unique()
+
+    report_rows = []
+    for h in dup_hashes:
+        group = df[df["text_hash"] == h]
+        diseases = sorted(group["disease_tag"].unique().tolist())
+        urls = sorted(group["source_url"].unique().tolist())
+        report_rows.append({
+            "text_hash": h,
+            "n_duplicate_chunks": len(group),
+            "disease_tags_involved": " | ".join(diseases),
+            "n_diseases_involved": len(diseases),
+            "source_urls_involved": " | ".join(urls),
+            "n_distinct_urls": len(urls),
+            "sample_text": group["text"].iloc[0][:150] + "...",
+        })
+
+    report_df = pd.DataFrame(report_rows).sort_values("n_diseases_involved", ascending=False)
+
+    import os
+    os.makedirs("results", exist_ok=True)
+    report_df.to_csv(OUT_PATH, index=False)
+
+    print("=" * 60)
+    print("CORPUS DUPLICATE-CONTENT AUDIT")
+    print("=" * 60)
+    print(f"Total chunks                         : {len(df)}")
+    print(f"Distinct text hashes                  : {df['text_hash'].nunique()}")
+    print(f"Chunks involved in a text duplicate    : {len(df[df['text_hash'].isin(dup_hashes)])}")
+    print(f"Duplicate-content groups               : {len(report_df)}")
+
+    cross_disease = report_df[report_df["n_diseases_involved"] > 1]
+    print(f"Groups spanning >1 disease_tag (SEVERE): {len(cross_disease)}")
+    if len(cross_disease):
+        print("\nThese are the groups to resolve before final results -- the same")
+        print("guideline text is currently indistinguishable to BM25/Dense retrieval")
+        print("under two or more disease labels:\n")
+        print(cross_disease[["disease_tags_involved", "n_duplicate_chunks", "source_urls_involved"]].to_string(index=False))
+    else:
+        print("\nNo cross-disease text duplication detected in this corpus.")
+
+    print(f"\nFull report written to {OUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()
