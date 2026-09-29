@@ -112,4 +112,4 @@ python experiments/02b_verify_selection.py  # re-derives every selected paramete
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). The repository URL and the publication details will be added once available.
+See [`CITATION.cff`](CITATION.cff).
